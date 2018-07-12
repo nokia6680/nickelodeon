@@ -1,17 +1,13 @@
-$tablet-width: 768px;
-$desktop-width: 1024px;
-$desktop-wide: 1200px;
+$phones: 320px;
+$smartphones: 480px;
+$tablets: 768px;
+$netbooks: 1200px;
+$notebooks: 1440px;
+$hd: 1920px;
 
-$main-font: "PFSquareSansPro", sans-serif;
-$body-text: #ffffff;
-$body-text-black: #333333;
+
+$main-font: "Gotham", sans-serif;
+$text-white: #fff;
+$text-black: #000;
 /*Цвета фона*/
-$body-bg: #ffffff;
-
-$btn-bg: #89c029;
-$btn-border: #89c029;
-$btn-reset-text: #1191db;
-$btn-reser-hover: #ff0000;
-
-$feature-bg: #ffbd2e;
-$feauter-important-text: #ffbd2e;
+$body-bg: #073f72;

@@ -21,9 +21,13 @@ html {
 
 body {
   background-color: $body-bg;
+  background-image: url('../img/body-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
 
   min-width: 320px;
-  font-family: "PFSquareSansPro", sans-serif;
+  font-family: $main-font;
   margin: 0 auto;
   padding: 0;
 }
