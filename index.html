@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Бронирование квартир</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"  type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<main class="main">
+		<!--Шапка сайта-->
+		<section class="main__parallax main__parallax--head parallax-head">
+			<h2 class="visually-hidden parallax-head__title">Заглавный слайд</h2>
+			<nav class="parallax-head__nav head-nav">
+				<div class="head-nav__logo">
+					<a href="index.html" class="head-nav__link">
+						<picture>
+							<img class="head-nav__image" src="img/logo.svg" width="140" height="116" alt="Main logo">
+						</picture>
+					</a>
+				</div>
+				<div class="head-nav__controls">
+					<button class="head-nav__toggle" type="button"><i class="fa fa-navicon"></i></button>
+					<span class="head-nav__title">Меню</span>
+				</div>
+				<div class="head-nav__callback callback">
+					<div class="callback__details details">
+						<p class="details__schedule">10:00 - 19:00</p>
+						<b class="details__number">+7(495)109-06-02</b>
+						<button class="details__btn" type="button">Обратный звонок</button>
+					</div>
+					<div class="callback__icon">
+						<button class="callback__initiate" type="button"><i class="fa fa-phone"></i></button>
+					</div>
+				</div>
+			</nav>
+			<div class="parallax-head__intro head-intro">
+				<div class="head-intro__details intro-details">
+					<p class="intro-details__address">Солнечногорский район, п. Андреевка, вблизи ул. Ясная</p>
+					<h1 class="intro-details__title">ЖК &laquo;Андреевка&raquo;</h1>
+					<p class="intro-details__description">Экологически&nbsp;чистый&nbsp;район в&nbsp;живописном&nbsp;месте</p>
+				</div>
+				<div class="head-intro__features intro-features">
+					<article class="intro-features__item features-item intro-features__item--prices">
+						<div class="features-item__icon">
+							<picture>
+								<img class="features-item__image features-item__image--price" src="../img/feature-1.svg" width="80" height="78" alt="feature-1">
+							</picture>
+						</div>
+						<h3 class="features-item__title">Низкие&nbsp;цены</h3>
+						<div class="features-item__description features-item__description--prices">
+							<b class="features-item__important">Квартиры от 1,5млн. рублей</b>
+							<span class="features-item__about">В том числе экономичные студии до 24м<sup>2</sup></span>
+						</div>
+					</article>
+					<article class="intro-features__item features-item intro-features__item--infrastructure">
+						<div class="features-item__icon">
+							<picture>
+								<img class="features-item__image features-item__image--infrastructure" src="../img/feature-2.svg" width="83" height="81" alt="feature-2">
+							</picture>
+						</div>
+						<h3 class="features-item__title">Развитая инфраструктура</h3>
+						<div class="features-item__description features-item__description--infrastructure">
+							<b class="features-item__important">Подземный паркинг на 600 мест, детский сад на 60 мест</b>
+							<span class="features-item__about">Собственная торговая инфраструктура</span>
+						</div>
+					</article>
+					<article class="intro-features__item features-item intro-features__item--rose">
+						<div class="features-item__icon">
+							<picture>
+								<img class="features-item__image features-item__image--rose" src="../img/feature-3.svg" width="83" height="83" alt="feature-3">
+							</picture>
+						</div>
+						<h3 class="features-item__title">Благоприятная роза&nbsp;ветров</h3>
+						<div class="features-item__description">
+							<b class="features-item__important">Вдали от шума, с видом на лесопарк</b>
+							<span class="features-item__about">где можно гулять с детьми, тихие соседи</span>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<!--Секция с выползающим модальным окном-->
+		<section class="main__choose choose">
+			<h2 class="main__title choose__title">Подберите квартиру для себя</h2>
+			<p class="choose__description">Доступное жилье по привлекательной цене</p>
+			<button class="choose__btn" type="button">Подбор квартиры</button>
+			<!--Модальное окно фильтра квартир по нажатию на дом-->
+			<div class="search-overlay">
+				<div class="modal modal-search">
+					<div class="modal-search__header">
+						<h2 class="modal-search__title">Подбор параметров будущего жилья</h2>
+						<button class="modal-search__close" type="button"><i class="fa fa-close"></i></button>
+					</div>
+					<div class="modal-search__wrapper">
+						<form class="modal-search__form search-form" method="get" action="#">
+							<div class="search-form__item form-item search-form__item--stage">
+								<h3 class="form-item__title">Этаж</h3>
+								<ul class="form-item__list form-list form-item__list--stage">
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="1" id="one">
+										<label class="list-item__label" for="one">1</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="2" id="two">
+										<label class="list-item__label" for="two">2</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="3" id="three">
+										<label class="list-item__label" for="three">3</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="4" id="four">
+										<label class="list-item__label" for="four">4</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="5" id="five">
+										<label class="list-item__label" for="five">5</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="6" id="six">
+										<label class="list-item__label" for="six">6</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="7" id="seven">
+										<label class="list-item__label" for="seven">7</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="8" id="eight">
+										<label class="list-item__label" for="eight">8</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="9" id="nine">
+										<label class="list-item__label" for="nine">9</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="10" id="ten">
+										<label class="list-item__label" for="ten">10</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="11" id="eleven">
+										<label class="list-item__label" for="eleven">11</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="12" id="twelve">
+										<label class="list-item__label" for="twelve">12</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="13" id="thirteen">
+										<label class="list-item__label" for="thirteen">13</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="14" id="fourteen">
+										<label class="list-item__label" for="fourteen">14</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="15" id="fifteen">
+										<label class="list-item__label" for="fifteen">15</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="16" id="sixteen">
+										<label class="list-item__label" for="sixteen">16</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="17" id="seventeen">
+										<label class="list-item__label" for="seventeen">17</label>
+									</li>
+								</ul>
+							</div>
+							<div class="search-form__item form-item search-form__item--type">
+								<h3 class="form-item__title">Тип</h3>
+								<ul class="form-item__list form-list form-item__list--type">
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="any" id="any">
+										<label class="list-item__label" for="any">Любая</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="1-room" id="1-room">
+										<label class="list-item__label" for="1-room">1-комнатная</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="2-room" id="2-room">
+										<label class="list-item__label" for="2-room">2-комнатная</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="3-room" id="3-room">
+										<label class="list-item__label" for="3-room">3-комнатная</label>
+									</li>
+									<li class="form-list__item list-item">
+										<input class="visually-hidden list-item__input list-item__input--checkbox" type="checkbox" name="commercial" id="commercial">
+										<label class="list-item__label" for="commercial">Нежилые помещения</label>
+									</li>
+								</ul>
+							</div>
+							<div class="search-form__item form-item search-form__item--square">
+								<h3 class="form-item__title">Площадь, м<sup>2</sup></h3>
+								<div class="form-item__divider">
+									<p class="form-item__half">
+										<input class="form-item__data" type="number" name="from" id="from" placeholder="0"/>
+										<label class="form-item__label" for="from">От</label>
+									</p>
+									<p class="form-item__half">
+										<input class="form-item__data" type="number" name="to" id="to" placeholder="213,5"/>
+										<label class="form-item__label" for="to">до</label>
+									</p>
+								</div>
+							</div>
+							<div class="search-form__item form-item search-form__item--price">
+								<h3 class="form-item__title">Стоимость, руб.</h3>
+								<div class="form-item__divider">
+									<p class="form-item__half">
+										<input class="form-item__data" type="number" name="from1" id="from1" placeholder="0"/>
+										<label class="form-item__label" for="from1">От</label>
+									</p>
+									<p class="form-item__half">
+										<input class="form-item__data" type="number" name="to1" id="to1" placeholder="100000"/>
+										<label class="form-item__label" for="to1">до</label>
+									</p>
+								</div>
+							</div>
+							<div class="search-form__item form-item search-form__item--checkout">
+								<button class="form-item__submit" type="submit">Подобрать варианты</button>
+								<button class="form-item__reset" type="reset">Сбросить фильтр</button>
+							</div>
+						</form>
+						<div class="modal-search__results search-results">
+							<article class="search-results__item results-item">
+								<img class="results-item__photo" src="http://via.placeholder.com/280x170" alt="flat1" width="280" height="170" />
+								<div class="results-item__info results-info">
+									<ul class="results-details__list results-list">
+											<li class="results-list__item">
+												<span class="results-list__name">Квартиры:</span>
+												<span class="results-list__value">40</span>
+											</li>
+											<li class="results-list__item">
+												<span class="results-list__name">Этажи:</span>
+												<span class="results-list__value">1-16</span>
+											</li>
+											<li class="results-list__item">
+												<span class="results-list__name">Площади от:</span>
+												<span class="results-list__value">32.70м<sup>2</sup></span>
+											</li>
+										</ul>
+									<div class="results-info__price">
+										<p class="results-info__final">от 2 536 287 р.</p>
+									</div>
+								</div>
+							</article>
+							<article class="search-results__item results-item">
+								<img class="results-item__photo" src="http://via.placeholder.com/280x170" alt="flat2" width="280" height="170" />
+								<div class="results-item__info results-info">
+									<ul class="results-details__list results-list">
+											<li class="results-list__item">
+												<span class="results-list__name">Квартиры:</span>
+												<span class="results-list__value">40</span>
+											</li>
+											<li class="results-list__item">
+												<span class="results-list__name">Этажи:</span>
+												<span class="results-list__value">1-16</span>
+											</li>
+											<li class="results-list__item">
+												<span class="results-list__name">Площади от:</span>
+												<span class="results-list__value">32.70м<sup>2</sup></span>
+											</li>
+										</ul>
+									<div class="results-info__price">
+										<p class="results-info__final">от 2 536 287 р.</p>
+									</div>
+								</div>
+							</article>
+							<article class="search-results__item results-item">
+								<img class="results-item__photo" src="http://via.placeholder.com/280x170" alt="flat3" width="280" height="170" />
+								<div class="results-item__info results-info">
+									<ul class="results-details__list results-list">
+											<li class="results-list__item">
+												<span class="results-list__name">Квартиры:</span>
+												<span class="results-list__value">40</span>
+											</li>
+											<li class="results-list__item">
+												<span class="results-list__name">Этажи:</span>
+												<span class="results-list__value">1-16</span>
+											</li>
+											<li class="results-list__item">
+												<span class="results-list__name">Площади от:</span>
+												<span class="results-list__value">32.70м<sup>2</sup></span>
+											</li>
+										</ul>
+									<div class="results-info__price">
+										<p class="results-info__final">от 2 536 287 р.</p>
+									</div>
+								</div>
+							</article>
+							<article class="search-results__item results-item">
+								<img class="results-item__photo" src="http://via.placeholder.com/280x170" alt="flat4" width="280" height="170" />
+								<div class="results-item__info results-info">
+									<ul class="results-details__list results-list">
+											<li class="results-list__item">
+												<span class="results-list__name">Квартиры:</span>
+												<span class="results-list__value">40</span>
+											</li>
+											<li class="results-list__item">
+												<span class="results-list__name">Этажи:</span>
+												<span class="results-list__value">1-16</span>
+											</li>
+											<li class="results-list__item">
+												<span class="results-list__name">Площади от:</span>
+												<span class="results-list__value">32.70м<sup>2</sup></span>
+											</li>
+										</ul>
+									<div class="results-info__price">
+										<p class="results-info__final">от 2 536 287 р.</p>
+									</div>
+								</div>
+							</article>
+							<article class="search-results__item results-item">
+								<img class="results-item__photo" src="http://via.placeholder.com/280x170" alt="flat5" width="280" height="170" />
+								<div class="results-item__info results-info">
+									<ul class="results-details__list results-list">
+											<li class="results-list__item">
+												<span class="results-list__name">Квартиры:</span>
+												<span class="results-list__value">40</span>
+											</li>
+											<li class="results-list__item">
+												<span class="results-list__name">Этажи:</span>
+												<span class="results-list__value">1-16</span>
+											</li>
+											<li class="results-list__item">
+												<span class="results-list__name">Площади от:</span>
+												<span class="results-list__value">32.70м<sup>2</sup></span>
+											</li>
+										</ul>
+									<div class="results-info__price">
+										<p class="results-info__final">от 2 536 287 р.</p>
+									</div>
+								</div>
+							</article>
+							<article class="search-results__item results-item">
+								<img class="results-item__photo" src="http://via.placeholder.com/280x170" alt="flat6" width="280" height="170" />
+								<div class="results-item__info results-info">
+									<ul class="results-details__list results-list">
+											<li class="results-list__item">
+												<span class="results-list__name">Квартиры:</span>
+												<span class="results-list__value">40</span>
+											</li>
+											<li class="results-list__item">
+												<span class="results-list__name">Этажи:</span>
+												<span class="results-list__value">1-16</span>
+											</li>
+											<li class="results-list__item">
+												<span class="results-list__name">Площади от:</span>
+												<span class="results-list__value">32.70м<sup>2</sup></span>
+											</li>
+										</ul>
+									<div class="results-info__price">
+										<p class="results-info__final">от 2 536 287 р.</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="main__parallax1 main__parallax--bottom"> <!--Второй блок с фоном, под кнопкой для модалки-->
+			<div class="house-layer">
+				<h2 class="visually-hidden">Дом номер 1</h2>
+			</div>
+		</div>
+		<section class="main__book book">
+			<div class="book__info">
+				<h2 class="main__title book__title">Успейте&nbsp;забронировать понравившуюся&nbsp;квартиру</h2>
+				<b class="book__number">+7(495)109-06-02</b>
+				<p class="book__schedule">10:00 - 19:00</p>
+			</div>
+			<form class="book__form book-form" method="get" action="#">
+				<p class="book-form__item">
+					<input class="book-form__input" type="text" name="name" id="name" placeholder="Ваше имя"/>
+				</p>
+				<p class="book-form__item">
+					<input class="book-form__input" type="tel" name="tel" id="tel" placeholder="Ваш телефон"/>
+				</p>
+				<button class="book-form__btn" type="submit">Записаться на просмотр</button>
+			</form>
+		</section>
+	</main>
+
+	<!--Модальное окно на "Заказать звонок"-->
+	<div class="overlay">
+  	<div class="call">
+    	<h2 class="call__title">Запрос на обратный звонок</h2>
+    	<b class="call__option">Введите контактные данные:</b>
+    	<form class="call__form call-popup" method="post" action="№">
+    	  <ul class="call-popup__list call-list">
+        	<li class="call-list__item">
+          	<input class="call-list__input" type="text" id="name2" name="name1">
+          	<label class="call-list__label" for="name1">Ваше имя:</label>
+        	</li>
+					<li class="call-list__item">
+          	<input class="call-list__input" type="tel" id="phone2" name="phone1">
+          	<label class="call-list__label" for="phone1">Номер телефона:</label>
+        	</li>
+      	</ul>
+      	<button class="call__submit" type="submit" value="Заказать">Заказать звонок</button>
+    	</form>
+  	</div>
+  </div>
+	<script src="js/script.js"></script>
+</body>
+</html>

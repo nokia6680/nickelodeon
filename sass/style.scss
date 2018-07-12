@@ -1,0 +1,27 @@
+@import "variables.scss";
+@import "normalize.scss";
+@import "global-styles.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "main.scss";  /*Файл с параллаксом*/
+@import "head-nav.scss";
+@import "callback.scss";
+@import "details.scss";
+@import "head-intro.scss";
+@import "intro-details.scss";
+@import "intro-features.scss";
+@import "features-item.scss";
+@import "choose.scss";
+@import "call.scss";
+@import "filters/modal.scss";
+@import "filters/modal-search.scss";
+@import "filters/search-form.scss";
+@import "filters/form-item.scss";
+@import "filters/form-list.scss";
+@import "filters/list-item.scss";
+@import "filters/search-results.scss";
+@import "filters/results-item.scss";
+@import "filters/results-info.scss";
+@import "filters/results-list.scss";
+@import "book.scss";
+@import "book-form.scss";
