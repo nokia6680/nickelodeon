@@ -3,11 +3,23 @@ $smartphones: 480px;
 $tablets: 768px;
 $netbooks: 1200px;
 $notebooks: 1440px;
+$widebooks: 1600px;
 $hd: 1920px;
 
 
 $main-font: "Gotham", sans-serif;
+$secondary-font: "Monly", sans-serif;
+
 $text-white: #fff;
 $text-black: #000;
+$text-label: #34bfb7;
+$text-input: #073f72;
+$text-error: #ff626b;
 /*Цвета фона*/
 $body-bg: #073f72;
+$team-bg: #fffbef;
+
+/*Цвета интерфейса*/
+$border-bg: #34bfb7;
+$btn-enter: #073f72;
+$btn-submit: #ff6700;

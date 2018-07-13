@@ -1,0 +1,60 @@
+.form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-bottom: 15px;
+
+  &__label {
+    font: {
+      family: $main-font;
+      size: 15px;
+      weight: 900;
+    }
+
+    color: $text-label;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid $border-bg;
+    outline: none;
+
+    padding-bottom: 4px;
+
+    font: {
+      size: 24px;
+      weight: 900;
+      family: $main-font;
+    }
+
+    line-height: normal;
+    color: $text-input;
+    text-transform: uppercase;
+  }
+
+  &__error {
+    font: {
+      family: $main-font;
+      size: 12px;
+      weight: 900;
+    }
+
+    color: $text-error;
+    line-height: normal;
+
+    margin-top: 5px;
+
+    display: none;
+  }
+
+  &__input--name {
+    width: 290px;
+  }
+
+  &__input--phone {
+    width: 235px;
+  }
+}

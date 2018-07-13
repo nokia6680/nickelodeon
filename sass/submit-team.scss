@@ -1,0 +1,76 @@
+.submit-team {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__enter {
+    background-color: $btn-enter;
+    border: none;
+    border-radius: 30px;
+
+    position: relative;
+
+    font: {
+      family: $main-font;
+      size: 14px;
+      weight: 900;
+    }
+
+    color: $text-white;
+    line-height: normal;
+    text-transform: uppercase;
+
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+
+    cursor: pointer;
+    outline: none;
+  }
+
+  .fa-vk::before {
+    position: absolute;
+    content: '\f189';
+    font-size: 23px;
+    color: $text-white;
+    top: 5px;
+    left: 8px;
+  }
+
+  &__submit {
+    font: {
+      size: 28px;
+      family: $main-font;
+      weight: 900;
+    }
+
+    width: 237px;
+
+    color: $text-white;
+    line-height: normal;
+
+    background-color: transparent;
+    border: none;
+
+    background-image: url('../img/btn-submit-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 237px 46px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    text-align: center;
+
+    margin-right: -10px;
+
+    text-transform: uppercase;
+
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    position: relative;
+  }
+}

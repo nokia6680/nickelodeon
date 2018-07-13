@@ -1,0 +1,26 @@
+.register-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 52%;
+
+  margin-bottom: 18px;
+
+  &__title {
+    background-image: url('../img/team-header-bg.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    width: 392px;
+    height: 50px;
+
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+
+  &__wrapper {
+    margin-top: 16px;
+  }
+}

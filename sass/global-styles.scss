@@ -28,9 +28,10 @@ body {
 
   min-width: 320px;
   max-height: 100vh;
-  font-family: $main-font;
   margin: 0 auto;
   padding: 0;
+
+  text-transform: uppercase;
 
   overflow: hidden;
 }
@@ -38,4 +39,16 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+h2 {
+  font: {
+    family: $main-font;
+    size: 30px;
+    weight: 900;
+  }
+
+  color: $text-white;
+  margin: 0;
+  line-height: 1;
 }

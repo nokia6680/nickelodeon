@@ -21,12 +21,14 @@
 		<!--Yellow Sidebar-->
 		<section class="main__sidebar sidebar">
 			<div class="sidebar__logo">
-				<img class="sidebar__image" src="img/logo.svg" />
+				<a class="sidebar__link" href="#" target="_self">
+					<img class="sidebar__image" src="img/logo.svg" />
+				</a>
 			</div>
 			<div class="sidebar__info sidebar-info">
 				<h1 class="sidebar-info__title">Стань</h1>
 				<img class="sidebar-info__captain" src="img/captain.svg" />
-				<p class="sidebar-info__promo">и собери команду</p>
+				<span class="sidebar-info__promo">и собери</span><span class="sidebar-info__team">команду</span>
 			</div>
 		</section>
 		<!--Основное содержимое страницы-->
@@ -37,27 +39,29 @@
 				<div class="team__register register-team">
 					<h2 class="register-team__title">Зарегистрируйся</h2>
 					<!--Блок формы и фото-->
-					<div class="register-team__form register-wrapper">
+					<div class="register-team__wrapper register-wrapper">
 						<div class="register-wrapper__image">
-							<img class="register-wrapper__pic" src="img/avatar.png"/>
+							<img class="register-wrapper__pic" src="img/team-avatar-big.svg"/>
 						</div>
 						<form class="register-wrapper__form register-form" method="post" action="#">
 							<ul class="register-form__list form-list">
 								<li class="form-list__item form-item">
-									<label class="register-form__label" for="name">Твое имя:</label>
-									<input class="register-form__input" type="text" id="name" name="name" />
+									<label class="form-item__label" for="name">Твое имя:</label>
+									<input class="form-item__input form-item__input--name" type="text" id="name" name="name" />
+									<span class="form-item__error">Укажи имя!</span>
 								</li>
 								<li class="form-list__item form-item">
-									<label class="register-form__label" for="tel">Номер телефона:</label>
-									<input class="register-form__input" type="tel" id="tel" name="tel" />
+									<label class="form-item__label" for="tel">Номер телефона:</label>
+									<input class="form-item__input form-item__input--phone" type="tel" id="tel" name="tel" />
+									<span class="form-item__error">Укажи номер телефона!</span>
 								</li>
 							</ul>
 						</form>
-					</div>
-					<!--Блок авторизации и отправки данных формы-->
-					<div class="register-team__submit submit-team">
-						<button class="submit-team__enter" type="button">авторизация</button>
-						<button class="submit-team__submit" type="submit">Отправить!</button>
+						<!--Блок авторизации и отправки данных формы-->
+						<div class="register-wrapper__submit submit-team">
+							<button class="submit-team__enter" type="button"><i class="fa fa-vk"></i>авторизация</button>
+							<button class="submit-team__submit" type="submit">Отправить!</button>
+						</div>
 					</div>
 				</div>
 				<!--Блок приглашенных в команду-->

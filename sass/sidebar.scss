@@ -1,20 +1,31 @@
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+@media (min-width: $widebooks) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 
-  background-image: url('../img/sidebar-bg.svg');
-  background-repeat: repeat-y;
-  background-position: center right;
-  background-size: auto 100vh;
+    background-image: url('../img/sidebar-bg.svg');
+    background-repeat: repeat-y;
+    background-position: top -5px right;
+    background-size: auto 100vh;
 
-  margin-left: -55px;
+    margin-left: -55px;
 
-  height: 100vh;
-  width: 34.375%;
+    height: 100vh;
+    width: 36.5%;
 
-  &__logo {
-    width: 51.2%;
+    &__logo {
+      width: 51.2%;
+      padding-left: 55px;
+      padding-top: 30px;
+    }
+
+    &__link {
+      width: 100%;
+      height: 100%;
+
+      text-decoration: none;
+    }
   }
 }
