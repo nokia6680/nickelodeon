@@ -1,0 +1,108 @@
+.single-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  background-color: $team-bg;
+
+  box-shadow:-4px 4px 0px 0px rgba(28,131,9,1);
+  -webkit-box-shadow:-4px 4px 0px 0px rgba(28,131,9,1);
+  -moz-box-shadow:-4px 4px 0px 0px rgba(28,131,9,1);
+
+  &--send {
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: relative;
+
+    padding-bottom: 10px;
+
+    box-shadow:-4px 4px 0px 0px rgba(255,209,0,1);
+    -webkit-box-shadow:-4px 4px 0px 0px rgba(255,209,0,1);
+    -moz-box-shadow:-4px 4px 0px 0px rgba(255,209,0,1);
+
+    .single-info__copy {
+      width: 36px;
+      height: 36px;
+
+      position: absolute;
+
+      top: -15px;
+      right: -70px;
+    }
+  }
+
+  &__image {
+    width: 55px;
+    height: 57px;
+
+    margin-left: 22px;
+  }
+
+  &__description {
+    font: {
+      family: $main-font;
+      size: 16px;
+      weight: 900;
+    }
+
+    color: $text-invite;
+    line-height: normal;
+    text-transform: uppercase;
+
+    width: 225px;
+
+    margin-left: 25px;
+  }
+
+  &__description--send {
+    color: $text-send;
+    margin-left: 30px;
+
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  &__link {
+    font: {
+      family: $main-font;
+      size: 16px;
+      weight: 900;
+    }
+
+    color: $text-invite;
+    line-height: normal;
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    border-bottom: 3px solid $text-send;
+
+    margin-left: 30px;
+    margin-bottom: 5px;
+
+    position: relative;
+  }
+
+  &__success {
+    font: {
+      family: $main-font;
+      size: 14px;
+      weight: 900;
+    }
+
+    color: $text-send;
+    margin-left: 30px;
+  }
+
+  &__status {
+    width: 48px;
+    height: 48px;
+
+    margin-right: 30px;
+    margin-left: auto;
+  }
+}

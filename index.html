@@ -68,62 +68,54 @@
 				<div class="team__invite invite-team">
 					<h2 class="invite-team__title">Пригласи друзей</h2>
 					<ul class="invite-team__list invite-list">
-						<li class="invite-list__item invite-item">
-							<article class="invite-item__single single-item">
-								<header class="single-item__header single-header">
-									<b class="single-header__nr">1</b>
+						<!--Скрыл блок, что приглашение отправлено, стилизован-->
+						<li class="invite-list__item invite-item visually-hidden">
+							<header class="invite-item__header single-header single-header--sent">
+									<b class="single-header__nr single-header__nr--sent">1</b>
 									<h3 class="single-header__name">Алексей Иванов</h3>
 									<button class="single-header__delete" type="button">-</button>
 								</header>
-								<div class="single-item__info single-info">
-									<img class="single-info__image" src="img/avatar-small-1.png" />
+							<div class="invite-item__info single-info">
+									<img class="single-info__image" src="img/team-avatar-small.svg" />
 									<p class="single-info__description">Алексей Иванов зарегистрирован!</p>
-									<img class="single-info__status" src="img/status.png" />
+									<img class="single-info__status" src="img/invite-checkbox.svg" />
 								</div>
-							</article>
 						</li>
 						<li class="invite-list__item invite-item">
-							<article class="invite-item__single single-item">
-								<header class="single-item__header single-header">
-									<b class="single-header__nr">2</b>
-									<h3 class="single-header__name">Алексей Иванов</h3>
-									<button class="single-header__delete" type="button">-</button>
-								</header>
-								<div class="single-item__info single-info">
-									<img class="single-info__image" src="img/avatar-small-1.png" />
-									<p class="single-info__description">Алексей Иванов зарегистрирован!</p>
-									<img class="single-info__status" src="img/status.png" />
-								</div>
-							</article>
+							<header class="invite-item__header single-header">
+								<b class="single-header__nr">2</b>
+								<h3 class="single-header__name">Алексей Иванов</h3>
+								<button class="single-header__delete" type="button">-</button>
+							</header>
+							<div class="invite-item__info single-info">
+								<img class="single-info__image" src="img/team-avatar-small.svg" />
+								<p class="single-info__description">Алексей Иванов зарегистрирован!</p>
+								<img class="single-info__status" src="img/invite-checkbox.svg" />
+							</div>
 						</li>
 						<li class="invite-list__item invite-item">
-							<article class="invite-item__single single-item">
-								<header class="single-item__header single-header">
-									<b class="single-header__nr">3</b>
-									<h3 class="single-header__name">Алексей Иванов</h3>
-									<button class="single-header__delete" type="button">-</button>
-								</header>
-								<div class="single-item__info single-info">
-									<img class="single-info__image" src="img/avatar-small-1.png" />
-									<p class="single-info__description">Алексей Иванов зарегистрирован!</p>
-									<img class="single-info__status" src="img/status.png" />
-								</div>
-							</article>
+							<header class="invite-item__header single-header">
+								<b class="single-header__nr">3</b>
+								<h3 class="single-header__name">Алексей Иванов</h3>
+								<button class="single-header__delete" type="button">-</button>
+							</header>
+							<div class="invite-item__info single-info">
+								<img class="single-info__image" src="img/team-avatar-small.svg" />
+								<p class="single-info__description">Алексей Иванов зарегистрирован!</p>
+								<img class="single-info__status" src="img/invite-checkbox.svg" />
+							</div>
 						</li>
 						<li class="invite-list__item invite-item invite-item--send">
-							<article class="invite-item__single single-item">
-								<header class="single-item__header single-header">
-									<b class="single-header__nr">4</b>
-									<h3 class="single-header__name">Отправь приглашение</h3>
-									<button class="single-header__delete" type="button">-</button>
-								</header>
-								<div class="single-item__info single-info">
-									<p class="single-info__description">Отправь ссылку:</p>
-									<a class="single-info__link" href="#">Nickelodeon.ru/id345jbd99</a>
-									<span class="single-info__success">ссылка скопирована в буфер обмена!</span>
-									<img class="single-info__copy" src="img/copy.png" />
-								</div>
-							</article>
+							<header class="invite-item__header single-header single-header--send">
+								<b class="single-header__nr single-header__nr--send">4</b>
+								<h3 class="single-header__name">Отправь приглашение</h3>
+								<button class="single-header__delete" type="button">-</button>
+							</header>
+							<div class="invite-item__info single-info single-info--send">
+								<p class="single-info__description single-info__description--send">Отправь ссылку:</p>
+								<a class="single-info__link" href="#">Nickelodeon.ru/id345jbd99<img class="single-info__copy" src="img/copy.svg" /></a>
+								<span class="single-info__success">ссылка скопирована в буфер обмена!</span>
+							</div>
 						</li>
 					</ul>
 				</div>
