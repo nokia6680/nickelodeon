@@ -27,9 +27,12 @@ body {
   background-size: auto;
 
   min-width: 320px;
+  max-height: 100vh;
   font-family: $main-font;
   margin: 0 auto;
   padding: 0;
+
+  overflow: hidden;
 }
 
 img {
