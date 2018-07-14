@@ -15,6 +15,8 @@
     height: 1080px;
     width: 36.5%;
 
+    position: relative;
+
     &__logo {
       width: 51.2%;
       padding-left: 55px;
@@ -26,6 +28,22 @@
       height: 100%;
 
       text-decoration: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/slime-big-part.svg');
+      background-size: 524px 527px;
+
+      bottom: 100px;
+      left: -70px;
+
+      width: 524px;
+      height: 320px;
+
+      z-index: 10;
     }
   }
 }

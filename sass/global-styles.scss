@@ -21,10 +21,10 @@ html {
 
 body {
   background-color: $body-bg;
-  background-image: url('../img/body-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
+  background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom -55px right -65px, top center;
+  background-size: 674px 633px, auto;
 
   min-width: 320px;
   margin: 0 auto;

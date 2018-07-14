@@ -14,6 +14,38 @@
 
   margin-left: 28%;
 
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    background-image: url('../img/kid.svg');
+    background-size: 618px 770px;
+
+    top: 200px;
+    left: -275px;
+
+    width: 618px;
+    height: 677px;
+
+    z-index: 10;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    background-image: url('../img/slime-small-2.svg');
+    background-size: 170px 91px;
+
+    width: 55px;
+    height: 89px;
+
+    bottom: 15px;
+    right: 35px;
+    z-index: 10;
+  }
+
   &__title {
     font: {
       family: $main-font;
