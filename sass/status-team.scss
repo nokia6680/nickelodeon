@@ -1,0 +1,19 @@
+.status-team {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__notification {
+    font: {
+      family: $main-font;
+      size: 21px;
+      weight: 900;
+    }
+
+    color: $text-white;
+    line-height: normal;
+  }
+}

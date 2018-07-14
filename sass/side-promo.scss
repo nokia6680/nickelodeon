@@ -1,0 +1,54 @@
+.side-promo {
+  width: 87%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-image: url('../img/promo-bg-new.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-left: 33px;
+  padding-top: 63px;
+  padding-bottom: 157px;
+
+  position: relative;
+
+  &__description {
+    font: {
+      size: 30px;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-white;
+
+    width: 440px;
+  }
+
+  &__logo {
+    width: 319px;
+    height: 138px;
+
+    position: absolute;
+
+    right: -10px;
+    bottom: 30px;
+
+    padding-left: 30px;
+    padding-top: 20px;
+
+    background-color: $promo-rt-bg;
+    box-shadow:-4px 4px 1px 1px rgba(252,215,38,1);
+    -webkit-box-shadow:-4px 4px 1px 1px rgba(252,215,38,1);
+    -moz-box-shadow:-4px 4px 1px 1px rgba(252,215,38,1);
+  }
+
+  &__image {
+    width: 232px;
+    height: auto;
+  }
+}

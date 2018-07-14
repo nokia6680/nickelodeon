@@ -95,6 +95,18 @@
 						</li>
 						<li class="invite-list__item invite-item">
 							<header class="invite-item__header single-header">
+								<b class="single-header__nr">2</b>
+								<h3 class="single-header__name">Алексей Иванов</h3>
+								<button class="single-header__delete" type="button">-</button>
+							</header>
+							<div class="invite-item__info single-info">
+								<img class="single-info__image" src="img/team-avatar-small.svg" />
+								<p class="single-info__description">Алексей Иванов зарегистрирован!</p>
+								<img class="single-info__status" src="img/invite-checkbox.svg" />
+							</div>
+						</li>
+						<li class="invite-list__item invite-item">
+							<header class="invite-item__header single-header">
 								<b class="single-header__nr">3</b>
 								<h3 class="single-header__name">Алексей Иванов</h3>
 								<button class="single-header__delete" type="button">-</button>
@@ -138,7 +150,7 @@
 
 						</li>
 					</ul>
-					<span class="status-team__notification status-team__notification--unready">Команда не собрана!</span>
+					<span class="status-team__notification status-team__notification--unready visually-hidden">Команда не собрана!</span>
 					<span class="status-team__notification status-team__notification--ready">Команда готова!</span>
 				</div>
 				<!--Блок старта задания и информации-->
@@ -150,14 +162,25 @@
 			<!--Блок информации по созданным командам-->
 			<div class="content__side side">
 				<div class="side__slider side-slider">
-						<h2 class="side-slider__title"></h2>
+						<h2 class="side-slider__title">Твои команды</h2>
 						<!-- Swiper slider-->
 					  <div class="swiper-container">
 					    <div class="swiper-wrapper side-slider__wrapper">
-					      <a class="swiper-slide side-slider__item" href="#">Slide 1</a>
-					      <a class="swiper-slide side-slider__item" href="#">Slide 2</a>
-					      <a class="swiper-slide side-slider__item" href="#">Slide 3</a>
-					      <a class="swiper-slide side-slider__item" href="#">Slide 4</a>
+					      <div class="swiper-slide side-slider__item">
+									<img class="side-slider__image" src="img/slide-avatar.svg" />
+									<b class="side-slider__nr">5</b>
+									<span class="side-slider__captain"></span>
+									<b class="side-slider__name"></b>
+								</div>
+								<div class="swiper-slide side-slider__item">
+
+								</div>
+								<div class="swiper-slide side-slider__item">
+
+								</div>
+								<div class="swiper-slide side-slider__item">
+
+								</div>
 					    </div>
 					    <!-- Add Arrows -->
 					    <div class="swiper-button-next"></div>
@@ -165,15 +188,37 @@
 					  </div>
 					</div>
 				<!--Рекламный блок-->
-				<div class="side__advert side-advert">
-						<p class="side-advert__description">Смотри любимые мультсериалы на Nickelodeon в Интерактивном ТВ от «Ростелеком» на кнопке номер 301</p>
-						<div class="side-advert__logo">
-							<img class="side-advert__image" scr="img/rt.png" />
-						</div>
+				<div class="side__promo side-promo">
+					<p class="side-promo__description">Смотри&nbsp;любимые мультсериалы на&nbsp;Nickelodeon в&nbsp;Интерактивном ТВ&nbsp;от&nbsp;«Ростелеком» на&nbsp;кнопке&nbsp;номер&nbsp;301</p>
+					<div class="side-promo__logo">
+						<img class="side-promo__image" src="img/rt.svg" />
 					</div>
+				</div>
 			</div>
 		</section>
 	</main>
+	<footer class="footer">
+		<ul class="footer__social footer-social">
+			<li class="footer-social__item social-item social-item--yt">
+				<a class="social-item__link" href="#"><i class="fa fa-youtube-play"></i></a>
+			</li>
+			<li class="footer-social__item social-item social-item--fb">
+				<a class="social-item__link" href="#"><i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="footer-social__item social-item social-item--vk">
+				<a class="social-item__link" href="#"><i class="fa fa-vk"></i></a>
+			</li>
+			<li class="footer-social__item social-item social-item--tw">
+				<a class="social-item__link" href="#"><i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="footer-social__item social-item social-item--in">
+				<a class="social-item__link" href="#"><i class="fa fa-instagram"></i></a>
+			</li>
+			<li class="footer-social__item social-item social-item--ok">
+				<a class="social-item__link" href="#"><i class="fa fa-odnoklassniki"></i></a>
+			</li>
+		</ul>
+	</footer>
 	<script src="../js/swiper.min.js"></script>
 </body>
 </html>

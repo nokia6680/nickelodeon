@@ -27,13 +27,12 @@ body {
   background-size: auto;
 
   min-width: 320px;
-  max-height: 100vh;
   margin: 0 auto;
   padding: 0;
 
   text-transform: uppercase;
 
-  overflow: hidden;
+  position: relative;
 }
 
 img {
@@ -44,7 +43,7 @@ img {
 h2 {
   font: {
     family: $main-font;
-    size: 30px;
+    size: 27px;
     weight: 900;
   }
 

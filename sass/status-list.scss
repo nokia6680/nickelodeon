@@ -1,0 +1,54 @@
+.status-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  border-bottom: 4.5px solid #fff;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 4.5px;
+    height: 20px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 4.5px;
+    height: 20px;
+    background-color: #fff;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__item {
+    width: 36px;
+    height: 39.5px;
+
+    background-color: $status-item;
+    border-radius: 15px;
+
+    margin-right: 7px;
+  }
+
+  &__item:last-of-type {
+    margin-right: 0;
+  }
+}
