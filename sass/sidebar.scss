@@ -1,49 +1,38 @@
-@media (min-width: $widebooks) {
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-image: url("../img/sidebar-bg.svg");
+  background-repeat: repeat-y;
+  background-position: top -5px right;
+  background-size: cover;
+  margin-left: -55px;
+  height: 1080px;
+  width: 36.5%;
+  position: relative;
 
-    background-image: url('../img/sidebar-bg.svg');
-    background-repeat: repeat-y;
-    background-position: top -5px right;
-    background-size: cover;
+  &__logo {
+    width: 51.2%;
+    padding-left: 55px;
+    padding-top: 30px;
+  }
 
-    margin-left: -55px;
+  &__link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
 
-    height: 1080px;
-    width: 36.5%;
-
-    position: relative;
-
-    &__logo {
-      width: 51.2%;
-      padding-left: 55px;
-      padding-top: 30px;
-    }
-
-    &__link {
-      width: 100%;
-      height: 100%;
-
-      text-decoration: none;
-    }
-
-    &::after {
-      position: absolute;
-      content: '';
-
-      background-image: url('../img/slime-big-part.svg');
-      background-size: 524px 527px;
-
-      bottom: 100px;
-      left: -70px;
-
-      width: 524px;
-      height: 320px;
-
-      z-index: 10;
-    }
+  &::after {
+    position: absolute;
+    content: '';
+    background-image: url("../img/slime-big-part.svg");
+    background-size: 524px 527px;
+    bottom: 100px;
+    left: -70px;
+    width: 524px;
+    height: 320px;
+    z-index: 10;
   }
 }

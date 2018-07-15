@@ -61,7 +61,6 @@ if (overlaySearch) {
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   initialSlide: 1,
-  spaceBetween: 180,
   centeredSlides: true,
   grabCursor: true,
   loop: true,

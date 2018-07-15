@@ -27,7 +27,20 @@
     }
 
     @media (min-width: $notebooks){
-      max-width: 1920px;
+      max-width: 100%;
+      width: auto;
+      margin: 0 auto;
+      padding: 0 55px;
+    }
+    @media (min-width: $widebooks) {
+      max-width: 100%;
+      width: auto;
+      margin: 0 auto;
+      padding: 0 55px;
+    }
+
+    @media (min-width: $hd) {
+      max-width: 2560px;
       margin: 0 auto;
       padding: 0 55px;
     }

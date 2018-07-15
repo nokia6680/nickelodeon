@@ -1,10 +1,8 @@
-@media (min-width: $widebooks) {
-  .main {
-    @include container;
+.main {
+  @include container;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
