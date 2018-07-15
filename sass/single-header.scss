@@ -45,6 +45,8 @@
     left: -15px;
 
     background-color: $single-header;
+
+    z-index: 10;
   }
 
   &__nr--sent {
