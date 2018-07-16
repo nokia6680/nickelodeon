@@ -52,4 +52,10 @@
       margin: 0 auto;
       padding: 0 55px;
     }
+    @media (min-width: 1921px) {
+      max-width: $fhd;
+      width: auto;
+      margin: 0 auto;
+      padding: 0 55px;
+    }
   }
