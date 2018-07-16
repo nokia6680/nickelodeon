@@ -12,47 +12,47 @@
       padding: 0 10px;
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       width: auto;
       max-width: $laptop;
       margin: 0 auto;
       padding: 0 20px;
     }
 
-    @media (min-width: 1025px) {
+    @media (min-width: 1024px) {
       width: auto;
       max-width: $netbooks;
       margin: 0 auto;
       padding: 0 20px;
     }
 
-    @media (min-width: 1281px) {
+    @media (min-width: 1280px) {
       width: auto;
       max-width: $wide-netbooks;
       margin: 0 auto;
       padding: 0 20px;
     }
 
-    @media (min-width: 1367px) {
+    @media (min-width: 1366px) {
       width: auto;
       max-width: $notebooks;
       margin: 0 auto;
       padding: 0 20px;
     }
 
-    @media (min-width: 1441px){
+    @media (min-width: 1440px){
       max-width: $widebooks;
       width: auto;
       margin: 0 auto;
       padding: 0 55px;
     }
-    @media (min-width: 1601px) {
+    @media (min-width: 1600px) {
       max-width: $hd;
       width: auto;
       margin: 0 auto;
       padding: 0 55px;
     }
-    @media (min-width: 1921px) {
+    @media (min-width: 1920px) {
       max-width: $fhd;
       width: auto;
       margin: 0 auto;
