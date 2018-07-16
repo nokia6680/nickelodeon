@@ -14,6 +14,70 @@
     -webkit-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
     -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
 
+    &--done {
+      display: none;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      background-color: $team-bg;
+      padding-left: 27px;
+      padding-top: 12px;
+      padding-bottom: 18px;
+      box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+      -webkit-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+      -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+
+      margin-left: 21px;
+      width: 83.3%;
+
+      position: relative;
+
+      .register-wrapper__rank {
+        background-image: url('../img/register-done.svg');
+        background-repeat: no-repeat;
+        background-size: 146px 29px;
+
+        width: 146px;
+        height: 29px;
+
+        display: block;
+
+        padding-left: 20px;
+        padding-top: 2px;
+
+        position: absolute;
+        top: 10px;
+        right: -4px;
+
+        font: {
+          size: 21px;
+          family: $main-font;
+          weight: 900;
+        }
+
+        color: $text-white;
+        line-height: normal;
+
+        text-transform: uppercase;
+      }
+
+      .register-wrapper__name {
+        font: {
+          size: 45px;
+          weight: 900;
+          family: $main-font;
+        }
+
+        color: #073f72;
+        line-height: normal;
+
+        text-transform: uppercase;
+
+        margin-left: 30px;
+      }
+    }
+
     &__upper {
       width: 100%;
       display: flex;
@@ -38,12 +102,71 @@
     margin-left: 28px;
     width: 83.3%;
     padding-left: 36px;
-    padding-top: 14px;
-    padding-bottom: 21px;
+    padding-top: 22px;
+    padding-bottom: 22px;
 
     &__image {
       width: 189px;
       height: 192px;
+    }
+
+    &--done {
+      background-color: $team-bg;
+      padding-left: 27px;
+      padding-top: 12px;
+      padding-bottom: 18px;
+      box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+      -webkit-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+      -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+
+      margin-left: 28px;
+      width: 83.3%;
+
+      position: relative;
+
+      .register-wrapper__rank {
+        background-image: url('../img/register-done.svg');
+        background-repeat: no-repeat;
+        background-size: 194px 38px;
+
+        width: 194px;
+        height: 38px;
+
+        display: block;
+
+        padding-left: 20px;
+        padding-top: 2px;
+
+        position: absolute;
+        top: 10px;
+        right: -4px;
+
+        font: {
+          size: 28px;
+          family: $main-font;
+          weight: 900;
+        }
+
+        color: $text-white;
+        line-height: normal;
+
+        text-transform: uppercase;
+      }
+
+      .register-wrapper__name {
+        font: {
+          size: 54px;
+          weight: 900;
+          family: $main-font;
+        }
+
+        color: #073f72;
+        line-height: normal;
+
+        text-transform: uppercase;
+
+        margin-left: 30px;
+      }
     }
   }
 }

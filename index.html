@@ -66,6 +66,14 @@
 							<button class="submit-team__submit" type="submit">Отправить!</button>
 						</div>
 					</div>
+					<!---done-->
+					<div class="register-team__wrapper register-wrapper--done">
+						<div class="register-wrapper__image">
+							<img class="register-wrapper__pic" src="img/team-avatar-big.svg"/>
+						</div>
+						<h2 class="register-wrapper__name">Иван<br />Петров</h2>
+						<b class="register-wrapper__rank">Капитан</b>
+					</div>
 				</div>
 				<!--Блок приглашенных в команду-->
 				<div class="team__invite invite-team">
@@ -231,6 +239,17 @@
 			</li>
 		</ul>
 	</footer>
+
+	<!--Popup-->
+	<div class="overlay overlay-on">
+		<div class="popup popup-delete popup-delete__hidden">
+			<p class="popup-delete__title">Вы точно хотите удалить участника из команды?</p>
+			<div class="popup-delete__controls">
+				<button class="popup-delete__no" type="button">Нет</button>
+				<button class="popup-delete__yes" type="button">Да</button>
+			</div>
+		</div>
+	</div>
 	<script src="../js/script.js"></script>
 </body>
 </html>
