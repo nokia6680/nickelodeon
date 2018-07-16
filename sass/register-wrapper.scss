@@ -1,4 +1,236 @@
-@media (min-width: $widebooks) {
+@media (min-width: 1025px) {
+  .register-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 21px;
+    width: 83.3%;
+    background-color: $team-bg;
+    padding-left: 27px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    padding-right: 10px;
+    box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+    -webkit-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+    -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+
+    &--done {
+      display: none;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      background-color: $team-bg;
+      padding-left: 27px;
+      padding-top: 12px;
+      padding-bottom: 18px;
+      box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+      -webkit-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+      -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+
+      margin-left: 21px;
+      width: 83.3%;
+
+      position: relative;
+
+      .register-wrapper__rank {
+        background-image: url('../img/register-done.svg');
+        background-repeat: no-repeat;
+        background-size: 146px 29px;
+
+        width: 146px;
+        height: 29px;
+
+        display: block;
+
+        padding-left: 20px;
+        padding-top: 2px;
+
+        position: absolute;
+        top: 10px;
+        right: -4px;
+
+        font: {
+          size: 21px;
+          family: $main-font;
+          weight: 900;
+        }
+
+        color: $text-white;
+        line-height: normal;
+
+        text-transform: uppercase;
+      }
+
+      .register-wrapper__name {
+        font: {
+          size: 24px;
+          weight: 900;
+          family: $main-font;
+        }
+
+        color: #073f72;
+        line-height: normal;
+
+        text-transform: uppercase;
+
+        margin-left: 24px;
+        margin-top: 10px;
+      }
+
+      &__image {
+        width: 100px;
+        height: 110px;
+      }
+    }
+
+    &__upper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__image {
+      width: 100px;
+      height: 110px;
+    }
+
+    &__submit {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1281px) {
+  .register-wrapper {
+    display: flex;
+
+    &--done {
+      display: none;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      background-color: $team-bg;
+      padding-left: 27px;
+      padding-top: 12px;
+      padding-bottom: 18px;
+      box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+      -webkit-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+      -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+
+      margin-left: 21px;
+      width: 83.3%;
+
+      position: relative;
+
+      .register-wrapper__rank {
+        text-transform: uppercase;
+      }
+
+      .register-wrapper__name {
+        font: {
+          size: 30px;
+        }
+      }
+
+      &__image {
+        width: 122px;
+        height: 124px;
+
+        margin-top: 10px;
+      }
+    }
+
+    &__upper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__image {
+      width: 122px;
+      height: 124px;
+    }
+
+    &__submit {
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 1367px) {
+  .register-wrapper {
+    display: flex;
+
+    &--done {
+      display: none;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      .register-wrapper__name {
+        font: {
+          size: 30px;
+        }
+      }
+
+      &__image {
+        width: 122px;
+        height: 124px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .register-wrapper {
+    display: flex;
+
+    &--done {
+      display: none;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      background-color: $team-bg;
+      padding-left: 27px;
+      padding-top: 12px;
+      padding-bottom: 18px;
+      box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+      -webkit-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+      -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+
+      margin-left: 21px;
+      width: 83.3%;
+
+      position: relative;
+
+      .register-wrapper__name {
+        font: {
+          size: 32px;
+          weight: 900;
+          family: $main-font;
+        }
+      }
+
+      &__image {
+        width: 142px;
+        height: 144px;
+      }
+    }
+
+    &__image {
+      width: 142px;
+      height: 144px;
+    }
+  }
+}
+@media (min-width: 1601px) {
   .register-wrapper {
     display: flex;
     flex-direction: column;
@@ -97,7 +329,7 @@
   }
 }
 
-@media (min-width: $hd) {
+@media (min-width: 1921px) {
   .register-wrapper {
     margin-left: 28px;
     width: 83.3%;

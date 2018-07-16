@@ -1,4 +1,226 @@
-@media (min-width: $widebooks) {
+@media (min-width: 1025px) {
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+    &__label {
+      font: {
+        family: $main-font;
+        size: 12px;
+        weight: 900;
+      }
+      color: $text-label;
+    }
+
+    &__input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid $border-bg;
+      outline: none;
+      padding-bottom: 4px;
+      padding-left: 5px;
+      font: {
+        size: 16px;
+        weight: 900;
+        family: $main-font;
+      }
+      line-height: normal;
+      color: $text-input;
+      text-transform: uppercase;
+    }
+
+    &__error {
+      font: {
+        family: $main-font;
+        size: 10px;
+        weight: 900;
+      }
+      color: $text-error;
+      line-height: normal;
+      margin-top: 2px;
+      display: none;
+    }
+
+    &__input--name {
+      width: 160px;
+    }
+
+    &__input--phone {
+      width: 126px;
+    }
+  }
+}
+
+@media (min-width: 1281px) {
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+    &__label {
+      font: {
+        family: $main-font;
+        size: 15px;
+        weight: 900;
+      }
+      color: $text-label;
+    }
+
+    &__input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid $border-bg;
+      outline: none;
+      padding-bottom: 4px;
+      padding-left: 5px;
+      font: {
+        size: 20px;
+        weight: 900;
+        family: $main-font;
+      }
+      line-height: normal;
+      color: $text-input;
+      text-transform: uppercase;
+    }
+
+    &__error {
+      font: {
+        family: $main-font;
+        size: 12px;
+        weight: 900;
+      }
+      color: $text-error;
+      line-height: normal;
+      margin-top: 5px;
+      display: none;
+    }
+
+    &__input--name {
+      width: 200px;
+    }
+
+    &__input--phone {
+      width: 157px;
+    }
+  }
+}
+@media (min-width: 1367px) {
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+    &__label {
+      font: {
+        family: $main-font;
+        size: 15px;
+        weight: 900;
+      }
+      color: $text-label;
+    }
+
+    &__input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid $border-bg;
+      outline: none;
+      padding-bottom: 4px;
+      padding-left: 5px;
+      font: {
+        size: 20px;
+        weight: 900;
+        family: $main-font;
+      }
+      line-height: normal;
+      color: $text-input;
+      text-transform: uppercase;
+    }
+
+    &__error {
+      font: {
+        family: $main-font;
+        size: 12px;
+        weight: 900;
+      }
+      color: $text-error;
+      line-height: normal;
+      margin-top: 5px;
+      display: none;
+    }
+
+    &__input--name {
+      width: 213px;
+    }
+
+    &__input--phone {
+      width: 168px;
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+    &__label {
+      font: {
+        family: $main-font;
+        size: 15px;
+        weight: 900;
+      }
+      color: $text-label;
+    }
+
+    &__input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid $border-bg;
+      outline: none;
+      padding-bottom: 4px;
+      padding-left: 5px;
+      font: {
+        size: 24px;
+        weight: 900;
+        family: $main-font;
+      }
+      line-height: normal;
+      color: $text-input;
+      text-transform: uppercase;
+    }
+
+    &__error {
+      font: {
+        family: $main-font;
+        size: 12px;
+        weight: 900;
+      }
+      color: $text-error;
+      line-height: normal;
+      margin-top: 5px;
+      display: none;
+    }
+
+    &__input--name {
+      width: 220px;
+    }
+
+    &__input--phone {
+      width: 180px;
+    }
+  }
+}
+@media (min-width: 1601px) {
   .form-item {
     display: flex;
     flex-direction: column;
@@ -53,7 +275,7 @@
     }
   }
 }
-@media (min-width: $hd) {
+@media (min-width: 1921px) {
   .form-item {
     margin-bottom: 15px;
 

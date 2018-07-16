@@ -1,4 +1,4 @@
-@media (min-width: $widebooks) {
+@media (min-width: 1025px) {
   .invite-item {
     display: flex;
     flex-direction: column;
@@ -12,7 +12,62 @@
   }
 }
 
-@media (min-width: $hd) {
+@media (min-width: 1281px) {
+  .invite-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-left: 29px;
+    margin-bottom: 11.25px;
+
+    width: 83%;
+  }
+}
+@media (min-width: 1367px) {
+  .invite-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-left: 29px;
+    margin-bottom: 11.25px;
+
+    width: 83%;
+  }
+}
+
+@media (min-width: 1441px) {
+  .invite-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-left: 29px;
+    margin-bottom: 11.25px;
+
+    width: 83%;
+  }
+}
+
+@media (min-width: 1601px) {
+  .invite-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-left: 29px;
+    margin-bottom: 11.25px;
+
+    width: 83%;
+  }
+}
+
+@media (min-width: 1921px) {
   .invite-item {
     display: flex;
     flex-direction: column;

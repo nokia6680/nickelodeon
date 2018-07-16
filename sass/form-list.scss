@@ -1,4 +1,4 @@
-@media (min-width: $widebooks) {
+@media (min-width: 1025px) {
   .form-list {
     margin: 0;
     padding: 0;
@@ -12,7 +12,61 @@
   }
 }
 
-@media (min-width: $hd) {
+@media (min-width: 1281px) {
+  .form-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1367px) {
+  .form-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1441px) {
+  .form-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1601px) {
+  .form-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1921px) {
   .form-list {
     margin: 0;
     padding: 0;

@@ -1,4 +1,4 @@
-@media (min-width: $widebooks) {
+@media (min-width: 1025px) {
   .start-team {
     width: 100%;
     display: flex;
@@ -9,7 +9,7 @@
 
     &__btn {
       font: {
-        size: 30px;
+        size: 20px;
         weight: 900;
         family: $main-font;
       }
@@ -47,53 +47,74 @@
     }
   }
 }
-@media (min-width: $hd) {
+
+@media (min-width: 1281px) {
   .start-team {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 24px;
+
+    &__btn {
+      font: {
+        size: 30px;
+      }
+    }
+  }
+}
+@media (min-width: 1367px) {
+  .start-team {
+    width: 100%;
+
+    &__btn {
+      font: {
+        size: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .start-team {
+    width: 100%;
+
+    &__btn {
+      font: {
+        size: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1601px) {
+  .start-team {
+    width: 100%;
+
+    &__btn {
+      font: {
+        size: 30px;
+      }
+    }
+  }
+}
+@media (min-width: 1921px) {
+  .start-team {
+    width: 100%;
     margin-left: 20px;
 
     &__btn {
       font: {
         size: 48px;
-        weight: 900;
-        family: $main-font;
       }
-      color: $text-white;
       line-height: 48px;
-      text-transform: uppercase;
-      background-color: $start-btn;
-      border-radius: 30px;
-      border: none;
-      padding: 10px 22px;
-      box-shadow: 1px 3px 1px 1px rgba(255,255,255,1);
-      -webkit-box-shadow: 1px 3px 1px 1px rgba(255,255,255,1);
-      -moz-box-shadow: 1px 3px 1px 1px rgba(255,255,255,1);
-      cursor: pointer;
-      outline: none;
     }
 
     &__info {
       font: {
         size: 48px;
-        weight: 900;
-        family: $main-font;
+
       }
-      color: $text-white;
       line-height: 48px;
-      text-transform: uppercase;
-      background-color: $start-info;
-      border: none;
-      border-radius: 30px;
       width: 54px;
       height: 54px;
       margin-left: 10px;
-      cursor: pointer;
-      outline: none;
     }
   }
 }

@@ -1,4 +1,199 @@
-@media (min-width: $widebooks) {
+@media (min-width: 1025px) {
+  .submit-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__enter {
+      background-color: $btn-enter;
+      border: none;
+      border-radius: 30px;
+      position: relative;
+      font: {
+        family: $main-font;
+        size: 12px;
+        weight: 900;
+      }
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+      padding: 7px 10px 7px 30px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .fa-vk::before {
+      position: absolute;
+      content: '\f189';
+      font-size: 18px;
+      color: $text-white;
+      top: 5px;
+      left: 8px;
+    }
+
+    &__submit {
+      font-size: 14px;
+      font-family: "Gotham", sans-serif;
+      font-weight: 900;
+      width: 165px;
+      color: #fff;
+      line-height: normal;
+      background-color: transparent;
+      border: none;
+      background-image: url('../img/btn-submit-bg.svg');
+      background-repeat: no-repeat;
+      background-size: 130px 30px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      text-align: center;
+      margin-right: -14px;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+    }
+  }
+}
+
+@media (min-width: 1281px) {
+  .submit-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__enter {
+      background-color: $btn-enter;
+      border: none;
+      border-radius: 30px;
+      position: relative;
+      font: {
+        family: $main-font;
+        size: 14px;
+        weight: 900;
+      }
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+      padding: 10px 15px 10px 40px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .fa-vk::before {
+      position: absolute;
+      content: '\f189';
+      font-size: 23px;
+      color: $text-white;
+      top: 5px;
+      left: 8px;
+    }
+
+    &__submit {
+      font: {
+        size: 18px;
+        family: $main-font;
+        weight: 900;
+      }
+      width: 170px;
+      color: $text-white;
+      line-height: normal;
+      background-color: transparent;
+      border: none;
+      background-image: url("../img/btn-submit-bg.svg");
+      background-repeat: no-repeat;
+      background-size: 170px 33px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      text-align: center;
+      margin-right: -14px;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+    }
+  }
+}
+@media (min-width: 1367px) {
+  .submit-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__enter {
+      background-color: $btn-enter;
+      border: none;
+      border-radius: 30px;
+      position: relative;
+      font: {
+        family: $main-font;
+        size: 14px;
+        weight: 900;
+      }
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+      padding: 10px 15px 10px 40px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .fa-vk::before {
+      position: absolute;
+      content: '\f189';
+      font-size: 23px;
+      color: $text-white;
+      top: 5px;
+      left: 8px;
+    }
+
+    &__submit {
+      font: {
+        size: 18px;
+        family: $main-font;
+        weight: 900;
+      }
+      width: 170px;
+      color: $text-white;
+      line-height: normal;
+      background-color: transparent;
+      border: none;
+      background-image: url("../img/btn-submit-bg.svg");
+      background-repeat: no-repeat;
+      background-size: 170px 33px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      text-align: center;
+      margin-right: -14px;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .submit-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__submit {
+      margin-right: -19px;
+    }
+  }
+}
+@media (min-width: 1601px) {
   .submit-team {
     display: flex;
     flex-direction: row;
@@ -58,7 +253,7 @@
     }
   }
 }
-@media (min-width: $hd) {
+@media (min-width: 1921px) {
   .submit-team {
     display: flex;
 

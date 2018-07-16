@@ -1,4 +1,4 @@
-@media (min-width: $widebooks) {
+@media (min-width: 1025px) {
   .register-team {
     display: flex;
     flex-direction: column;
@@ -11,8 +11,8 @@
       background-image: url("../img/team-header-bg.svg");
       background-repeat: no-repeat;
       background-size: auto;
-      width: 392px;
-      height: 50px;
+      width: 307px;
+      height: 40px;
       padding-left: 30px;
       padding-top: 10px;
     }
@@ -22,7 +22,42 @@
     }
   }
 }
-@media (min-width: $hd) {
+@media (min-width: 1281px) {
+  .register-team {
+    display: flex;
+  }
+}
+@media (min-width: 1367px) {
+  .register-team {
+    display: flex;
+
+    &__title {
+      width: 320px;
+      height: 40px;
+    }
+  }
+}
+@media (min-width: 1441px) {
+  .register-team {
+    display: flex;
+
+    &__title {
+      width: 350px;
+      height: 45px;
+    }
+  }
+}
+@media (min-width: 1601px) {
+  .register-team {
+    margin-bottom: 14px;
+
+    &__title {
+      width: 392px;
+      height: 50px;
+    }
+  }
+}
+@media (min-width: 1921px) {
   .register-team {
     margin-bottom: 18px;
 

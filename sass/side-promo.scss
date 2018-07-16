@@ -1,4 +1,4 @@
-@media (min-width: $widebooks) {
+@media (min-width: 1025px) {
   .side-promo {
     width: 87%;
     height: auto;
@@ -95,7 +95,398 @@
     }
   }
 }
-@media (min-width: $hd) {
+
+@media (min-width: 1281px) {
+  .side-promo {
+    width: 87%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/promo-bg-new.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 33px;
+    padding-top: 63px;
+    padding-bottom: 157px;
+    margin-top: 45px;
+    margin-left: 20px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url("../img/cloud-2.svg");
+      background-size: 184px 73px;
+      width: 184px;
+      height: 73px;
+      bottom: 30px;
+      left: -80px;
+      z-index: 10;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url("../img/cloud-1.svg");
+      background-size: 230px 74px;
+      width: 230px;
+      height: 74px;
+      top: -40px;
+      right: -50px;
+      z-index: 10;
+    }
+
+    &__description {
+      font: {
+        size: 30px;
+        weight: 900;
+        family: $main-font;
+      }
+      color: $text-white;
+      width: 440px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url("../img/toy-1.svg");
+        background-size: 77px 72px;
+        width: 77px;
+        height: 72px;
+        top: -115px;
+        left: 0;
+        z-index: 10;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url("../img/slime-small-2.svg");
+        background-size: 170px 91px;
+        width: 170px;
+        height: 91px;
+        top: 15px;
+        right: -100px;
+        z-index: 10;
+      }
+    }
+
+    &__logo {
+      width: 319px;
+      height: 138px;
+      position: absolute;
+      right: -10px;
+      bottom: 30px;
+      padding-left: 30px;
+      padding-top: 20px;
+      background-color: $promo-rt-bg;
+      box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+      -webkit-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+      -moz-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+    }
+
+    &__image {
+      width: 232px;
+      height: auto;
+    }
+  }
+}
+@media (min-width: 1367px) {
+  .side-promo {
+    width: 87%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/promo-bg-new.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 33px;
+    padding-top: 63px;
+    padding-bottom: 157px;
+    margin-top: 45px;
+    margin-left: 20px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url("../img/cloud-2.svg");
+      background-size: 184px 73px;
+      width: 184px;
+      height: 73px;
+      bottom: 30px;
+      left: -80px;
+      z-index: 10;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url("../img/cloud-1.svg");
+      background-size: 230px 74px;
+      width: 230px;
+      height: 74px;
+      top: -40px;
+      right: -50px;
+      z-index: 10;
+    }
+
+    &__description {
+      font: {
+        size: 30px;
+        weight: 900;
+        family: $main-font;
+      }
+      color: $text-white;
+      width: 440px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url("../img/toy-1.svg");
+        background-size: 77px 72px;
+        width: 77px;
+        height: 72px;
+        top: -115px;
+        left: 0;
+        z-index: 10;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url("../img/slime-small-2.svg");
+        background-size: 170px 91px;
+        width: 170px;
+        height: 91px;
+        top: 15px;
+        right: -100px;
+        z-index: 10;
+      }
+    }
+
+    &__logo {
+      width: 319px;
+      height: 138px;
+      position: absolute;
+      right: -10px;
+      bottom: 30px;
+      padding-left: 30px;
+      padding-top: 20px;
+      background-color: $promo-rt-bg;
+      box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+      -webkit-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+      -moz-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+    }
+
+    &__image {
+      width: 232px;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .side-promo {
+    width: 87%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/promo-bg-new.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 33px;
+    padding-top: 63px;
+    padding-bottom: 157px;
+    margin-top: 45px;
+    margin-left: 20px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url("../img/cloud-2.svg");
+      background-size: 184px 73px;
+      width: 184px;
+      height: 73px;
+      bottom: 30px;
+      left: -80px;
+      z-index: 10;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url("../img/cloud-1.svg");
+      background-size: 230px 74px;
+      width: 230px;
+      height: 74px;
+      top: -40px;
+      right: -50px;
+      z-index: 10;
+    }
+
+    &__description {
+      font: {
+        size: 30px;
+        weight: 900;
+        family: $main-font;
+      }
+      color: $text-white;
+      width: 440px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url("../img/toy-1.svg");
+        background-size: 77px 72px;
+        width: 77px;
+        height: 72px;
+        top: -115px;
+        left: 0;
+        z-index: 10;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url("../img/slime-small-2.svg");
+        background-size: 170px 91px;
+        width: 170px;
+        height: 91px;
+        top: 15px;
+        right: -100px;
+        z-index: 10;
+      }
+    }
+
+    &__logo {
+      width: 319px;
+      height: 138px;
+      position: absolute;
+      right: -10px;
+      bottom: 30px;
+      padding-left: 30px;
+      padding-top: 20px;
+      background-color: $promo-rt-bg;
+      box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+      -webkit-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+      -moz-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+    }
+
+    &__image {
+      width: 232px;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 1601px) {
+  .side-promo {
+    width: 87%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/promo-bg-new.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 33px;
+    padding-top: 63px;
+    padding-bottom: 157px;
+    margin-top: 45px;
+    margin-left: 20px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url("../img/cloud-2.svg");
+      background-size: 184px 73px;
+      width: 184px;
+      height: 73px;
+      bottom: 30px;
+      left: -80px;
+      z-index: 10;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url("../img/cloud-1.svg");
+      background-size: 230px 74px;
+      width: 230px;
+      height: 74px;
+      top: -40px;
+      right: -50px;
+      z-index: 10;
+    }
+
+    &__description {
+      font: {
+        size: 30px;
+        weight: 900;
+        family: $main-font;
+      }
+      color: $text-white;
+      width: 440px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url("../img/toy-1.svg");
+        background-size: 77px 72px;
+        width: 77px;
+        height: 72px;
+        top: -115px;
+        left: 0;
+        z-index: 10;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url("../img/slime-small-2.svg");
+        background-size: 170px 91px;
+        width: 170px;
+        height: 91px;
+        top: 15px;
+        right: -100px;
+        z-index: 10;
+      }
+    }
+
+    &__logo {
+      width: 319px;
+      height: 138px;
+      position: absolute;
+      right: -10px;
+      bottom: 30px;
+      padding-left: 30px;
+      padding-top: 20px;
+      background-color: $promo-rt-bg;
+      box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+      -webkit-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+      -moz-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+    }
+
+    &__image {
+      width: 232px;
+      height: auto;
+    }
+  }
+}
+@media (min-width: 1921px) {
   .side-promo {
     width: 87%;
     height: auto;

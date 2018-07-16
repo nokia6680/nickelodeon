@@ -1,4 +1,275 @@
-@media (min-width: $widebooks) {
+@media (min-width: 1025px) {
+  .sidebar-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../img/sidebar-info.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 58%;
+    height: 33%;
+    margin-left: 20%;
+    margin-top: 30%;
+    position: relative;
+
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url("../img/slime-small-2.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 55px;
+      height: 65px;
+      bottom: -3px;
+      right: -12px;
+      z-index: 10;
+    }
+
+    &__title {
+      font: {
+        family: $main-font;
+        size: 25px;
+        weight: 900;
+      }
+      color: $text-white;
+      margin-bottom: 0;
+      margin-top: 30px;
+    }
+
+    &__promo {
+      font: {
+        family: $secondary-font;
+        size: 36px;
+        weight: 700;
+      }
+      line-height: 40px;
+      text-align: center;
+      color: $text-white;
+      margin: 0;
+    }
+
+    &__team {
+      font: {
+        family: $secondary-font;
+        size: 42px;
+        weight: 700;
+      }
+      line-height: 44px;
+      text-align: center;
+      color: $text-white;
+      margin: 0;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 1281px) {
+  .sidebar-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../img/sidebar-info.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 58%;
+    height: 33%;
+    margin-left: 20%;
+    margin-top: 0;
+    position: relative;
+
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url("../img/slime-small-2.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 55px;
+      height: 65px;
+      bottom: -3px;
+      right: -12px;
+      z-index: 10;
+    }
+
+    &__title {
+      font: {
+        family: $main-font;
+        size: 36px;
+        weight: 900;
+      }
+      color: $text-white;
+      margin-bottom: 0;
+      margin-top: 48px;
+    }
+
+    &__promo {
+      font: {
+        family: $secondary-font;
+        size: 50px;
+        weight: 700;
+      }
+      line-height: 50px;
+      text-align: center;
+      color: $text-white;
+      margin: 0;
+    }
+
+    &__team {
+      font: {
+        family: $secondary-font;
+        size: 60px;
+        weight: 700;
+      }
+      line-height: 60px;
+      text-align: center;
+      color: $text-white;
+      margin: 0;
+      padding-bottom: 40px;
+    }
+  }
+}
+@media (min-width: 1367px) {
+  .sidebar-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../img/sidebar-info.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 58%;
+    height: 33%;
+    margin-left: 20%;
+    margin-top: 0;
+    position: relative;
+
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url("../img/slime-small-2.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 55px;
+      height: 65px;
+      bottom: -3px;
+      right: -12px;
+      z-index: 10;
+    }
+
+    &__title {
+      font: {
+        family: $main-font;
+        size: 36px;
+        weight: 900;
+      }
+      color: $text-white;
+      margin-bottom: 0;
+      margin-top: 48px;
+    }
+
+    &__promo {
+      font: {
+        family: $secondary-font;
+        size: 50px;
+        weight: 700;
+      }
+      line-height: 50px;
+      text-align: center;
+      color: $text-white;
+      margin: 0;
+    }
+
+    &__team {
+      font: {
+        family: $secondary-font;
+        size: 60px;
+        weight: 700;
+      }
+      line-height: 60px;
+      text-align: center;
+      color: $text-white;
+      margin: 0;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .sidebar-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../img/sidebar-info.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 58%;
+    height: 33%;
+    margin-left: 20%;
+    margin-top: 10%;
+    position: relative;
+
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url("../img/slime-small-2.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 55px;
+      height: 65px;
+      bottom: -3px;
+      right: -12px;
+      z-index: 10;
+    }
+
+    &__title {
+      font: {
+        family: $main-font;
+        size: 36px;
+        weight: 900;
+      }
+      color: $text-white;
+      margin-bottom: 0;
+      margin-top: 48px;
+    }
+
+    &__promo {
+      font: {
+        family: $secondary-font;
+        size: 50px;
+        weight: 700;
+      }
+      line-height: 50px;
+      text-align: center;
+      color: $text-white;
+      margin: 0;
+    }
+
+    &__team {
+      font: {
+        family: $secondary-font;
+        size: 60px;
+        weight: 700;
+      }
+      line-height: 60px;
+      text-align: center;
+      color: $text-white;
+      margin: 0;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: 1601px) {
   .sidebar-info {
     display: flex;
     flex-direction: column;
@@ -11,6 +282,7 @@
     width: 58%;
     height: 33%;
     margin-left: 28%;
+    margin-top: 0;
     position: relative;
 
     &::after {
@@ -61,7 +333,7 @@
     }
   }
 }
-@media (min-width: $hd) {
+@media (min-width: 1921px) {
   .sidebar-info {
     display: flex;
     flex-direction: column;

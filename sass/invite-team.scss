@@ -1,4 +1,4 @@
-@media (min-width: $widebooks) {
+@media (min-width: 1025px) {
   .invite-team {
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
       background-image: url("../img/team-header-bg.svg");
       background-repeat: no-repeat;
       background-size: auto;
-      width: 392px;
+      width: 307px;
       height: 50px;
       padding-left: 30px;
       padding-top: 10px;
@@ -19,7 +19,45 @@
     }
   }
 }
-@media (min-width: $hd) {
+
+@media (min-width: 1281px) {
+  .invite-team {
+    display: flex;
+
+    &__title {
+      width: 307px;
+    }
+  }
+}
+@media (min-width: 1367px) {
+  .invite-team {
+    display: flex;
+
+    &__title {
+      width: 320px;
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .invite-team {
+    display: flex;
+
+    &__title {
+      width: 350px;
+    }
+  }
+}
+@media (min-width: 1601px) {
+  .invite-team {
+    display: flex;
+
+    &__title {
+      width: 392px;
+    }
+  }
+}
+@media (min-width: 1921px) {
   .invite-team {
     margin-bottom: 18px;
 

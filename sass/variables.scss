@@ -1,11 +1,13 @@
 $phones: 321px;
 $smartphones: 481px;
-$tablets: 769px;
-$netbooks: 1201px;
-$notebooks: 1441px;
-$widebooks: 1601px;
-$hd: 1921px;
-$fhdk: 2560px;
+$tablets: 768px;
+$laptop: 1024px;
+$netbooks: 1280px;
+$wide-netbooks: 1366px;
+$notebooks: 1440px;
+$widebooks: 1600px;
+$hd: 1920px;
+$fhd: 2560px;
 
 
 $main-font: "Gotham", sans-serif;
@@ -38,3 +40,18 @@ $start-btn: #b7b7b7;
 $start-info: #34bfb7;
 $social-item-bg: #ffffff;
 $social-hover: #ff6700;
+
+@media (min-width: 1025px) {
+
+}
+
+@media (min-width: 1281px) {
+
+}
+@media (min-width: 1367px) {
+
+}
+
+@media (min-width: 1441px) {
+
+}

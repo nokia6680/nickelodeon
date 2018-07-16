@@ -1,4 +1,4 @@
-@media (min-width: $widebooks) {
+@media (min-width: 1025px) {
   .content {
     display: flex;
     flex-direction: row;
@@ -9,12 +9,32 @@
 
     overflow: visible;
 
+    width: 60%;
+    padding-top: 15px;
+  }
+}
+@media (min-width: 1281px) {
+  .content {
+    width: 66.5%;
+  }
+}
+@media (min-width: 1367px) {
+  .content {
+    width: 66.5%;
+  }
+}
+@media (min-width: 1441px) {
+  .content {
+    width: 66.5%;
+  }
+}
+@media (min-width: 1601px) {
+  .content {
     width: 66.5%;
     padding-top: 15px;
   }
 }
-
-@media (min-width: $hd) {
+@media (min-width: 1921px) {
   .content {
     padding-top: 20px;
   }

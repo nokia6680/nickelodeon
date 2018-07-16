@@ -1,10 +1,32 @@
-@media (min-width: $widebooks) {
+@media (min-width: 1025px) {
+  .register-form {
+    margin-left: 12px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .register-form {
+    margin-left: 14px;
+  }
+}
+@media (min-width: 1367px) {
+  .register-form {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .register-form {
+    margin-left: 25px;
+  }
+}
+@media (min-width: 1601px) {
   .register-form {
     margin-left: 30px;
   }
 }
 
-@media (min-width: $hd) {
+@media (min-width: 1921px) {
   .register-form {
     margin-left: 42px;
   }

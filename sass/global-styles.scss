@@ -20,7 +20,76 @@ html {
 }
 
 body {
-  @media (min-width: $widebooks) {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  text-transform: uppercase;
+
+  position: relative;
+
+  @media (min-width: 1025px) {
+    background-color: $body-bg;
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 449px 422px, auto;
+
+    margin: 0 auto;
+    padding: 0;
+
+    text-transform: uppercase;
+
+    position: relative;
+  }
+
+  @media (min-width: 1281px) {
+    background-color: $body-bg;
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 479px 450px, auto;
+
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+
+    text-transform: uppercase;
+
+    position: relative;
+  }
+  @media (min-width: 1367px) {
+    background-color: $body-bg;
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 505px 474px, auto;
+
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+
+    text-transform: uppercase;
+
+    position: relative;
+  }
+
+  @media (min-width: 1441px) {
+    background-color: $body-bg;
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 561px 527px, auto;
+
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+
+    text-transform: uppercase;
+
+    position: relative;
+  }
+  @media (min-width: 1601px) {
     background-color: $body-bg;
     background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
     background-repeat: no-repeat, no-repeat;
@@ -36,7 +105,7 @@ body {
     position: relative;
   }
 
-  @media (min-width: $hd){
+  @media (min-width: 1921px){
     background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
     background-repeat: no-repeat, no-repeat;
     background-position: bottom -55px right -65px, top center;
@@ -58,7 +127,41 @@ img {
 }
 
 h2 {
-  @media (min-width: $widebooks) {
+  @media (min-width: 1025px) {
+    font: {
+      family: $main-font;
+      size: 20px;
+      weight: 900;
+    }
+
+    color: $text-white;
+    margin: 0;
+    line-height: 1;
+  }
+
+  @media (min-width: 1281px) {
+    font: {
+      family: $main-font;
+      size: 21.34px;
+      weight: 900;
+    }
+  }
+  @media (min-width: 1367px) {
+    font: {
+      family: $main-font;
+      size: 22.5px;
+      weight: 900;
+    }
+  }
+
+  @media (min-width: 1441px) {
+    font: {
+      family: $main-font;
+      size: 25px;
+      weight: 900;
+    }
+  }
+  @media (min-width: 1601px) {
     font: {
       family: $main-font;
       size: 27px;
@@ -69,7 +172,7 @@ h2 {
     margin: 0;
     line-height: 1;
   }
-  @media (min-width: $hd) {
+  @media (min-width: 1921px) {
     font: {
       size: 40px;
     }

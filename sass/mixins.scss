@@ -12,35 +12,43 @@
       padding: 0 10px;
     }
 
-    @media (min-width: $tablets) {
+    @media (min-width: 769px) {
       width: auto;
-      max-width: 100%;
+      max-width: $laptop;
       margin: 0 auto;
       padding: 0 20px;
     }
 
-    @media (min-width: $netbooks) {
+    @media (min-width: 1025px) {
       width: auto;
-      max-width: 100%;
+      max-width: $netbooks;
       margin: 0 auto;
       padding: 0 20px;
     }
 
-    @media (min-width: $notebooks){
-      max-width: 100%;
+    @media (min-width: 1281px) {
       width: auto;
+      max-width: $wide-netbooks;
       margin: 0 auto;
-      padding: 0 55px;
-    }
-    @media (min-width: $widebooks) {
-      max-width: 100%;
-      width: auto;
-      margin: 0 auto;
-      padding: 0 55px;
+      padding: 0 20px;
     }
 
-    @media (min-width: $hd) {
-      max-width: 2560px;
+    @media (min-width: 1367px) {
+      width: auto;
+      max-width: $notebooks;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    @media (min-width: 1441px){
+      max-width: $widebooks;
+      width: auto;
+      margin: 0 auto;
+      padding: 0 55px;
+    }
+    @media (min-width: 1601px) {
+      max-width: $hd;
+      width: auto;
       margin: 0 auto;
       padding: 0 55px;
     }
