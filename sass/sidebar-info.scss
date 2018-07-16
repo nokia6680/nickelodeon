@@ -1,89 +1,100 @@
-.sidebar-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+@media (min-width: $widebooks) {
+  .sidebar-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../img/sidebar-info.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 58%;
+    height: 33%;
+    margin-left: 28%;
+    position: relative;
 
-  background-image: url('../img/sidebar-info.svg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%s;
-
-  width: 58%;
-  height: 33%;
-
-  margin-left: 28%;
-
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: '';
-
-    background-image: url('../img/kid.svg');
-    background-size: 618px 770px;
-
-    top: 200px;
-    left: -275px;
-
-    width: 618px;
-    height: 677px;
-
-    z-index: 10;
-  }
-
-  &::after {
-    position: absolute;
-    content: '';
-    background-image: url('../img/slime-small-2.svg');
-    background-size: 170px 91px;
-
-    width: 55px;
-    height: 89px;
-
-    bottom: 15px;
-    right: 35px;
-    z-index: 10;
-  }
-
-  &__title {
-    font: {
-      family: $main-font;
-      size: 47px;
-      weight: 900;
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url("../img/slime-small-2.svg");
+      background-size: 170px 91px;
+      width: 55px;
+      height: 89px;
+      bottom: 15px;
+      right: 35px;
+      z-index: 10;
     }
 
-    color: $text-white;
-
-    margin-bottom: 0;
-    margin-top: 70px;
-  }
-
-  &__promo {
-    font: {
-      family: $secondary-font;
-      size: 67px;
-      weight: 700;
+    &__title {
+      font: {
+        family: $main-font;
+        size: 47px;
+        weight: 900;
+      }
+      color: $text-white;
+      margin-bottom: 0;
+      margin-top: 70px;
     }
 
-    line-height: 70px;
-    text-align: center;
-    color: $text-white;
-
-    margin: 0;
-  }
-
-  &__team {
-    font: {
-      family: $secondary-font;
-      size: 84px;
-      weight: 700;
+    &__promo {
+      font: {
+        family: $secondary-font;
+        size: 67px;
+        weight: 700;
+      }
+      line-height: 70px;
+      text-align: center;
+      color: $text-white;
+      margin: 0;
     }
 
-    line-height: 70px;
-    text-align: center;
-    color: $text-white;
+    &__team {
+      font: {
+        family: $secondary-font;
+        size: 84px;
+        weight: 700;
+      }
+      line-height: 70px;
+      text-align: center;
+      color: $text-white;
+      margin: 0;
+    }
+  }
+}
+@media (min-width: $hd) {
+  .sidebar-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../img/sidebar-info.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 57.7%;
+    height: 33.5%;
+    margin-left: 30%;
+    position: relative;
 
-    margin: 0;
+    &__title {
+      font: {
+        size: 63px;
+      }
+      margin-top: 105px;
+    }
+
+    &__promo {
+      font: {
+        size: 87px;
+      }
+      line-height: 87px;
+    }
+
+    &__team {
+      font: {
+        size: 113px;
+      }
+      line-height: 113px;
+    }
   }
 }

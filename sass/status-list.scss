@@ -1,54 +1,93 @@
-.status-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media (min-width: $widebooks) {
+  .status-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 4.5px solid #fff;
+    position: relative;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 4.5px;
+      height: 20px;
+      background-color: #fff;
+      bottom: 0;
+      left: 0;
+    }
 
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 4.5px;
+      height: 20px;
+      background-color: #fff;
+      bottom: 0;
+      right: 0;
+    }
 
-  border-bottom: 4.5px solid #fff;
+    &__item {
+      width: 36px;
+      height: 39.5px;
+      background-color: $status-item;
+      border-radius: 15px;
+      margin-right: 7px;
+    }
 
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: '';
-    width: 4.5px;
-    height: 20px;
-    background-color: #fff;
-    bottom: 0;
-    left: 0;
+    &__item:last-of-type {
+      margin-right: 0;
+    }
   }
+}
+@media (min-width: $hd) {
+  .status-list {
 
-  &::after {
-    position: absolute;
-    content: '';
-    width: 4.5px;
-    height: 20px;
-    background-color: #fff;
-    bottom: 0;
-    right: 0;
-  }
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 4.5px solid #fff;
+    position: relative;
 
-  &__item {
-    width: 36px;
-    height: 39.5px;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 4.5px;
+      height: 20px;
+      background-color: #fff;
+      bottom: 0;
+      left: 0;
+    }
 
-    background-color: $status-item;
-    border-radius: 15px;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 4.5px;
+      height: 20px;
+      background-color: #fff;
+      bottom: 0;
+      right: 0;
+    }
 
-    margin-right: 7px;
-  }
+    &__item {
+      width: 56px;
+      height: 67px;
+      background-color: $status-item;
+      border-radius: 15px;
+      margin-right: 7px;
+    }
 
-  &__item:last-of-type {
-    margin-right: 0;
+    &__item:last-of-type {
+      margin-right: 0;
+    }
   }
 }

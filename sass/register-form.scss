@@ -1,3 +1,11 @@
-.register-form {
-  margin-left: 30px;
+@media (min-width: $widebooks) {
+  .register-form {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $hd) {
+  .register-form {
+    margin-left: 42px;
+  }
 }

@@ -41,23 +41,25 @@
 					<h2 class="register-team__title">Зарегистрируйся</h2>
 					<!--Блок формы и фото-->
 					<div class="register-team__wrapper register-wrapper">
-						<div class="register-wrapper__image">
-							<img class="register-wrapper__pic" src="img/team-avatar-big.svg"/>
+						<div class="register-wrapper__upper">
+							<div class="register-wrapper__image">
+								<img class="register-wrapper__pic" src="img/team-avatar-big.svg"/>
+							</div>
+							<form class="register-wrapper__form register-form" method="post" action="#">
+								<ul class="register-form__list form-list">
+									<li class="form-list__item form-item">
+										<label class="form-item__label" for="name">Твое имя:</label>
+										<input class="form-item__input form-item__input--name" type="text" id="name" name="name" />
+										<span class="form-item__error">Укажи имя!</span>
+									</li>
+									<li class="form-list__item form-item">
+										<label class="form-item__label" for="tel">Номер телефона:</label>
+										<input class="form-item__input form-item__input--phone" type="tel" id="tel" name="tel" />
+										<span class="form-item__error">Укажи номер телефона!</span>
+									</li>
+								</ul>
+							</form>
 						</div>
-						<form class="register-wrapper__form register-form" method="post" action="#">
-							<ul class="register-form__list form-list">
-								<li class="form-list__item form-item">
-									<label class="form-item__label" for="name">Твое имя:</label>
-									<input class="form-item__input form-item__input--name" type="text" id="name" name="name" />
-									<span class="form-item__error">Укажи имя!</span>
-								</li>
-								<li class="form-list__item form-item">
-									<label class="form-item__label" for="tel">Номер телефона:</label>
-									<input class="form-item__input form-item__input--phone" type="tel" id="tel" name="tel" />
-									<span class="form-item__error">Укажи номер телефона!</span>
-								</li>
-							</ul>
-						</form>
 						<!--Блок авторизации и отправки данных формы-->
 						<div class="register-wrapper__submit submit-team">
 							<button class="submit-team__enter" type="button"><i class="fa fa-vk"></i>авторизация</button>

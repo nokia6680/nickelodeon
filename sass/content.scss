@@ -1,13 +1,21 @@
-.content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+@media (min-width: $widebooks) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 
-  flex-wrap: nowrap;
+    flex-wrap: nowrap;
 
-  overflow: visible;
+    overflow: visible;
 
-  width: 66.5%;
-  padding-top: 15px;
+    width: 66.5%;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: $hd) {
+  .content {
+    padding-top: 20px;
+  }
 }

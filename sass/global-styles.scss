@@ -20,19 +20,28 @@ html {
 }
 
 body {
-  background-color: $body-bg;
-  background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom -55px right -65px, top center;
-  background-size: 674px 633px, auto;
+  @media (min-width: $widebooks) {
+    background-color: $body-bg;
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 674px 633px, auto;
 
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0;
 
-  text-transform: uppercase;
+    text-transform: uppercase;
 
-  position: relative;
+    position: relative;
+  }
+
+  @media (min-width: $hd){
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 898px 844px, auto;
+  }
 }
 
 img {
@@ -41,13 +50,20 @@ img {
 }
 
 h2 {
-  font: {
-    family: $main-font;
-    size: 27px;
-    weight: 900;
-  }
+  @media (min-width: $widebooks) {
+    font: {
+      family: $main-font;
+      size: 27px;
+      weight: 900;
+    }
 
-  color: $text-white;
-  margin: 0;
-  line-height: 1;
+    color: $text-white;
+    margin: 0;
+    line-height: 1;
+  }
+  @media (min-width: $hd) {
+    font: {
+      size: 40px;
+    }
+  }
 }

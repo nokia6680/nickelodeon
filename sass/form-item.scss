@@ -1,60 +1,86 @@
-.form-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+@media (min-width: $widebooks) {
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 12px;
 
-  margin-bottom: 15px;
-
-  &__label {
-    font: {
-      family: $main-font;
-      size: 15px;
-      weight: 900;
+    &__label {
+      font: {
+        family: $main-font;
+        size: 15px;
+        weight: 900;
+      }
+      color: $text-label;
     }
 
-    color: $text-label;
-  }
-
-  &__input {
-    background-color: transparent;
-    border: none;
-    border-bottom: 3px solid $border-bg;
-    outline: none;
-
-    padding-bottom: 4px;
-
-    font: {
-      size: 24px;
-      weight: 900;
-      family: $main-font;
+    &__input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid $border-bg;
+      outline: none;
+      padding-bottom: 4px;
+      padding-left: 5px;
+      font: {
+        size: 24px;
+        weight: 900;
+        family: $main-font;
+      }
+      line-height: normal;
+      color: $text-input;
+      text-transform: uppercase;
     }
 
-    line-height: normal;
-    color: $text-input;
-    text-transform: uppercase;
-  }
-
-  &__error {
-    font: {
-      family: $main-font;
-      size: 12px;
-      weight: 900;
+    &__error {
+      font: {
+        family: $main-font;
+        size: 12px;
+        weight: 900;
+      }
+      color: $text-error;
+      line-height: normal;
+      margin-top: 5px;
+      display: none;
     }
 
-    color: $text-error;
-    line-height: normal;
+    &__input--name {
+      width: 290px;
+    }
 
-    margin-top: 5px;
-
-    display: none;
+    &__input--phone {
+      width: 235px;
+    }
   }
+}
+@media (min-width: $hd) {
+  .form-item {
+    margin-bottom: 15px;
 
-  &__input--name {
-    width: 290px;
-  }
+    &__label {
+      font: {
+        size: 20px;
+      }
+    }
 
-  &__input--phone {
-    width: 235px;
+    &__input {
+      font: {
+        size: 36px;
+      }
+    }
+
+    &__error {
+      font: {
+        size: 16px;
+      }
+    }
+
+    &__input--name {
+      width: 400px;
+    }
+
+    &__input--phone {
+      width: 315px;
+    }
   }
 }

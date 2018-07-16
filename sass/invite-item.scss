@@ -1,11 +1,27 @@
-.invite-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+@media (min-width: $widebooks) {
+  .invite-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 
-  margin-left: 29px;
-  margin-bottom: 11.25px;
+    margin-left: 29px;
+    margin-bottom: 11.25px;
 
-  width: 490px;
+    width: 83%;
+  }
+}
+
+@media (min-width: $hd) {
+  .invite-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-left: 34px;
+    margin-bottom: 16px;
+
+    width: 83%;
+  }
 }

@@ -1,24 +1,31 @@
-.invite-team {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+@media (min-width: $widebooks) {
+  .invite-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 14px;
 
-  width: 100%s;
+    &__title {
+      background-image: url("../img/team-header-bg.svg");
+      background-repeat: no-repeat;
+      background-size: auto;
+      width: 392px;
+      height: 50px;
+      padding-left: 30px;
+      padding-top: 10px;
+      margin-bottom: 12px;
+    }
+  }
+}
+@media (min-width: $hd) {
+  .invite-team {
+    margin-bottom: 18px;
 
-  margin-bottom: 18px;
-
-  &__title {
-    background-image: url('../img/team-header-bg.svg');
-    background-repeat: no-repeat;
-    background-size: auto;
-
-    width: 392px;
-    height: 50px;
-
-    padding-left: 30px;
-    padding-top: 10px;
-
-    margin-bottom: 12px;
+    &__title {
+      width: 523px;
+      height: 66px;
+    }
   }
 }
