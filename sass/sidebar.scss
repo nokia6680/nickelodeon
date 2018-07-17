@@ -1,4 +1,57 @@
-@media (min-width: 1025px) {
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-image: url("../img/sidebar-bg.svg");
+  background-repeat: repeat-y;
+  background-position: top -5px right;
+  background-size: cover;
+  margin-left: -55px;
+  min-height: 768px;
+  max-height: 100vh;
+  width: 40%;
+  position: relative;
+
+  &__logo {
+    width: 75%;
+    padding-left: 55px;
+    padding-top: 30px;
+  }
+  &__link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    background-image: url("../img/slime-big-part.svg");
+    background-repeat: no-repeat;
+    background-size: 327px 329px;
+    bottom: 0;
+    left: -115px;
+    width: 327px;
+    height: 262px;
+    z-index: 10;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url("../img/kid.svg");
+    background-repeat: no-repeat;
+    background-size: 405px 481px;
+    bottom: 0;
+    left: -130px;
+    width: 405px;
+    height: 455px;
+    z-index: 10;
+  }
+}
+
+@media (min-width: $laptop) {
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -10,7 +63,7 @@
     background-size: cover;
     margin-left: -55px;
     min-height: 1024px;
-    max-height: 100vh;
+    max-height: 100%;
     width: 40%;
     position: relative;
 
@@ -52,8 +105,7 @@
     }
   }
 }
-
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -106,7 +158,7 @@
     }
   }
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -159,8 +211,7 @@
     }
   }
 }
-
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -214,7 +265,7 @@
     }
   }
 }
-@media (min-width: 1601px) {
+@media (min-width: $widebooks) {
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -266,7 +317,59 @@
     }
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: $hd) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/sidebar-bg.svg");
+    background-repeat: repeat-y;
+    background-position: top -5px right;
+    background-size: cover;
+    margin-left: -55px;
+    max-height: 100vh;
+    width: 36%;
+    position: relative;
+
+    &__logo {
+      width: 51.2%;
+      padding-left: 55px;
+      padding-top: 30px;
+    }
+
+    &__link {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url("../img/slime-big-part.svg");
+      background-size: 524px 527px;
+      bottom: 115px;
+      left: -70px;
+      width: 524px;
+      height: 320px;
+      z-index: 10;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url("../img/kid.svg");
+      background-size: 618px 770px;
+      bottom: 0;
+      left: -95px;
+      width: 618px;
+      height: 677px;
+      z-index: 10;
+    }
+  }
+}
+@media (min-width: $fhd) {
   .sidebar {
     display: flex;
     flex-direction: column;

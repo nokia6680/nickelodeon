@@ -1,4 +1,4 @@
-@media (min-width: 1025px) {
+@media (min-width: $laptop) {
   .status-team {
     width: 100%;
     display: flex;
@@ -17,8 +17,7 @@
     }
   }
 }
-
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
   .status-team {
     width: 100%;
     display: flex;
@@ -37,7 +36,7 @@
     }
   }
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
   .status-team {
     width: 100%;
     display: flex;
@@ -56,8 +55,7 @@
     }
   }
 }
-
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
   .status-team {
     width: 100%;
     display: flex;
@@ -76,8 +74,7 @@
     }
   }
 }
-
-@media (min-width: 1601px) {
+@media (min-width: $widebooks) {
   .status-team {
     width: 100%;
     display: flex;
@@ -96,7 +93,26 @@
     }
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: $hd) {
+  .status-team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__notification {
+      font: {
+        family: $main-font;
+        size: 21px;
+        weight: 900;
+      }
+      color: $text-white;
+      line-height: normal;
+    }
+  }
+}
+@media (min-width: $fhd) {
   .status-team {
     width: 100%;
 

@@ -23,12 +23,13 @@ body {
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
+  height: 100%;
 
   text-transform: uppercase;
 
   position: relative;
 
-  @media (min-width: 1025px) {
+  @media (min-width: $laptop) {
     background-color: $body-bg;
     background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
     background-repeat: no-repeat, no-repeat;
@@ -42,8 +43,7 @@ body {
 
     position: relative;
   }
-
-  @media (min-width: 1281px) {
+  @media (min-width: $netbooks) {
     background-color: $body-bg;
     background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
     background-repeat: no-repeat, no-repeat;
@@ -58,7 +58,7 @@ body {
 
     position: relative;
   }
-  @media (min-width: 1367px) {
+  @media (min-width: $wide-netbooks) {
     background-color: $body-bg;
     background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
     background-repeat: no-repeat, no-repeat;
@@ -73,8 +73,7 @@ body {
 
     position: relative;
   }
-
-  @media (min-width: 1441px) {
+  @media (min-width: $notebooks) {
     background-color: $body-bg;
     background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
     background-repeat: no-repeat, no-repeat;
@@ -89,7 +88,7 @@ body {
 
     position: relative;
   }
-  @media (min-width: 1601px) {
+  @media (min-width: $widebooks) {
     background-color: $body-bg;
     background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
     background-repeat: no-repeat, no-repeat;
@@ -104,8 +103,22 @@ body {
 
     position: relative;
   }
+  @media (min-width: $hd) {
+    background-color: $body-bg;
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 674px 633px, auto;
 
-  @media (min-width: 1921px){
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+
+    text-transform: uppercase;
+
+    position: relative;
+  }
+  @media (min-width: $fhd){
     background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
     background-repeat: no-repeat, no-repeat;
     background-position: bottom -55px right -65px, top center;
@@ -127,7 +140,7 @@ img {
 }
 
 h2 {
-  @media (min-width: 1025px) {
+  @media (min-width: $laptop) {
     font: {
       family: $main-font;
       size: 20px;
@@ -138,30 +151,28 @@ h2 {
     margin: 0;
     line-height: 1;
   }
-
-  @media (min-width: 1281px) {
+  @media (min-width: $netbooks) {
     font: {
       family: $main-font;
       size: 21.34px;
       weight: 900;
     }
   }
-  @media (min-width: 1367px) {
+  @media (min-width: $wide-netbooks) {
     font: {
       family: $main-font;
       size: 22.5px;
       weight: 900;
     }
   }
-
-  @media (min-width: 1441px) {
+  @media (min-width: $notebooks) {
     font: {
       family: $main-font;
       size: 25px;
       weight: 900;
     }
   }
-  @media (min-width: 1601px) {
+  @media (min-width: $widebooks) {
     font: {
       family: $main-font;
       size: 27px;
@@ -172,7 +183,18 @@ h2 {
     margin: 0;
     line-height: 1;
   }
-  @media (min-width: 1921px) {
+  @media (min-width: $hd) {
+    font: {
+      family: $main-font;
+      size: 27px;
+      weight: 900;
+    }
+
+    color: $text-white;
+    margin: 0;
+    line-height: 1;
+  }
+  @media (min-width: $fhd) {
     font: {
       size: 40px;
     }

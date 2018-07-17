@@ -1,4 +1,4 @@
-@media (min-width: 1025px) {
+@media (min-width: $laptop) {
   .single-info {
     display: flex;
     flex-direction: row;
@@ -30,20 +30,50 @@
       }
     }
 
+    &--captain {
+      position: relative;
+      padding-top: 20px;
+
+      .single-info__rank {
+        background-image: url('../img/register-done.svg');
+        background-repeat: no-repeat;
+        background-size: 120px 29px;
+        width: 120px;
+        height: 29px;
+        display: block;
+        padding-left: 20px;
+        padding-top: 6px;
+        position: absolute;
+        top: 2px;
+        right: -4px;
+
+        font: {
+          size: 14px;
+          family: $main-font;
+          weight: 900;
+        }
+
+        color: $text-white;
+        line-height: normal;
+
+        text-transform: uppercase;
+      }
+    }
+
     &__image {
       width: 35px;
       height: 35px;
-      margin-left: 16px;
+      margin-left: 10px;
     }
 
     &__description {
       font: {
         family: $main-font;
-        size: 14px;
+        size: 12px;
         weight: 900;
       }
       color: $text-invite;
-      line-height: 20px;
+      line-height: 14px;
       text-transform: uppercase;
       width: 225px;
       margin-left: 15px;
@@ -90,8 +120,7 @@
     }
   }
 }
-
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
   .single-info {
     display: flex;
     flex-direction: row;
@@ -123,6 +152,40 @@
       }
     }
 
+    &--captain {
+      position: relative;
+      padding-top: 0;
+
+      .single-info__rank {
+        background-image: url('../img/register-done.svg');
+        background-repeat: no-repeat;
+        background-size: 130px 29px;
+
+        width: 130px;
+        height: 29px;
+
+        display: block;
+
+        padding-left: 20px;
+        padding-top: 3px;
+
+        position: absolute;
+        top: 10px;
+        right: -4px;
+
+        font: {
+          size: 18px;
+          family: $main-font;
+          weight: 900;
+        }
+
+        color: $text-white;
+        line-height: normal;
+
+        text-transform: uppercase;
+      }
+    }
+
     &__image {
       width: 35px;
       height: 35px;
@@ -183,7 +246,7 @@
     }
   }
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
   .single-info {
     display: flex;
     flex-direction: row;
@@ -210,6 +273,39 @@
         position: absolute;
         top: -15px;
         right: -70px;
+      }
+    }
+
+    &--captain {
+      position: relative;
+
+      .single-info__rank {
+        background-image: url('../img/register-done.svg');
+        background-repeat: no-repeat;
+        background-size: 130px 29px;
+
+        width: 130px;
+        height: 29px;
+
+        display: block;
+
+        padding-left: 20px;
+        padding-top: 3px;
+
+        position: absolute;
+        top: 5px;
+        right: -4px;
+
+        font: {
+          size: 18px;
+          family: $main-font;
+          weight: 900;
+        }
+
+        color: $text-white;
+        line-height: normal;
+
+        text-transform: uppercase;
       }
     }
 
@@ -229,7 +325,7 @@
       line-height: 16px;
       text-transform: uppercase;
       width: 225px;
-      margin-left: 25px;
+      margin-left: 15px;
     }
 
     &__description--send {
@@ -273,8 +369,7 @@
     }
   }
 }
-
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
   .single-info {
     display: flex;
     flex-direction: row;
@@ -301,6 +396,162 @@
         position: absolute;
         top: -15px;
         right: -70px;
+      }
+    }
+
+    &--captain {
+      position: relative;
+
+      .single-info__rank {
+        background-image: url('../img/register-done.svg');
+        background-repeat: no-repeat;
+        background-size: 130px 29px;
+
+        width: 130px;
+        height: 29px;
+
+        display: block;
+
+        padding-left: 20px;
+        padding-top: 4px;
+
+        position: absolute;
+        top: 5px;
+        right: -4px;
+
+        font: {
+          size: 18px;
+          family: $main-font;
+          weight: 900;
+        }
+
+        color: $text-white;
+        line-height: normal;
+
+        text-transform: uppercase;
+      }
+    }
+
+    &__image {
+      width: 55px;
+      height: 57px;
+      margin-left: 22px;
+    }
+
+    &__description {
+      font: {
+        family: $main-font;
+        size: 16px;
+        weight: 900;
+      }
+      color: $text-invite;
+      line-height: normal;
+      text-transform: uppercase;
+      width: 225px;
+      margin-left: 15px;
+    }
+
+    &__description--send {
+      color: $text-send;
+      margin-left: 30px;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+
+    &__link {
+      font: {
+        family: $main-font;
+        size: 16px;
+        weight: 900;
+      }
+      color: $text-invite;
+      line-height: normal;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-bottom: 3px solid $text-send;
+      margin-left: 30px;
+      margin-bottom: 5px;
+      position: relative;
+    }
+
+    &__success {
+      font: {
+        family: $main-font;
+        size: 14px;
+        weight: 900;
+      }
+      color: $text-send;
+      margin-left: 30px;
+    }
+
+    &__status {
+      width: 48px;
+      height: 48px;
+      margin-right: 30px;
+      margin-left: auto;
+    }
+  }
+}
+@media (min-width: $widebooks) {
+  .single-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: $team-bg;
+    box-shadow: -4px 4px 0 0 rgba(28,131,9,1);
+    -webkit-box-shadow: -4px 4px 0 0 rgba(28,131,9,1);
+    -moz-box-shadow: -4px 4px 0 0 rgba(28,131,9,1);
+
+    &--send {
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      padding-bottom: 10px;
+      box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
+      -webkit-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
+      -moz-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
+
+      .single-info__copy {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: -15px;
+        right: -70px;
+      }
+    }
+
+    &--captain {
+      position: relative;
+
+      .single-info__rank {
+        background-image: url('../img/register-done.svg');
+        background-repeat: no-repeat;
+        background-size: 146px 29px;
+
+        width: 146px;
+        height: 29px;
+
+        display: block;
+
+        padding-left: 20px;
+        padding-top: 2px;
+
+        position: absolute;
+        top: 10px;
+        right: -4px;
+
+        font: {
+          size: 21px;
+          family: $main-font;
+          weight: 900;
+        }
+
+        color: $text-white;
+        line-height: normal;
+
+        text-transform: uppercase;
       }
     }
 
@@ -364,8 +615,7 @@
     }
   }
 }
-
-@media (min-width: 1601px) {
+@media (min-width: $hd) {
   .single-info {
     display: flex;
     flex-direction: row;
@@ -392,6 +642,39 @@
         position: absolute;
         top: -15px;
         right: -70px;
+      }
+    }
+
+    &--captain {
+      position: relative;
+
+      .single-info__rank {
+        background-image: url('../img/register-done.svg');
+        background-repeat: no-repeat;
+        background-size: 146px 29px;
+
+        width: 146px;
+        height: 29px;
+
+        display: block;
+
+        padding-left: 20px;
+        padding-top: 2px;
+
+        position: absolute;
+        top: 10px;
+        right: -4px;
+
+        font: {
+          size: 21px;
+          family: $main-font;
+          weight: 900;
+        }
+
+        color: $text-white;
+        line-height: normal;
+
+        text-transform: uppercase;
       }
     }
 
@@ -455,7 +738,7 @@
     }
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: $fhd) {
   .single-info {
     width: 100%;
     background-color: $team-bg;
@@ -478,6 +761,39 @@
         position: absolute;
         top: -15px;
         right: -70px;
+      }
+    }
+
+    &--captain {
+      position: relative;
+
+      .single-info__rank {
+        background-image: url('../img/register-done.svg');
+        background-repeat: no-repeat;
+        background-size: 146px 29px;
+
+        width: 146px;
+        height: 29px;
+
+        display: block;
+
+        padding-left: 20px;
+        padding-top: 2px;
+
+        position: absolute;
+        top: 10px;
+        right: -4px;
+
+        font: {
+          size: 21px;
+          family: $main-font;
+          weight: 900;
+        }
+
+        color: $text-white;
+        line-height: normal;
+
+        text-transform: uppercase;
       }
     }
 

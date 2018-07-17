@@ -12,47 +12,54 @@
       padding: 0 10px;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablets) {
       width: auto;
-      max-width: $laptop;
+      max-width: 100%;
       margin: 0 auto;
       padding: 0 20px;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: $laptop) {
       width: auto;
-      max-width: $netbooks;
+      max-width: 100%;
       margin: 0 auto;
       padding: 0 20px;
     }
 
-    @media (min-width: 1280px) {
+    @media (min-width: $netbooks) {
       width: auto;
-      max-width: $wide-netbooks;
+      max-width: 100%;
       margin: 0 auto;
       padding: 0 20px;
     }
 
-    @media (min-width: 1366px) {
+    @media (min-width: $wide-netbooks) {
       width: auto;
-      max-width: $notebooks;
+      max-width: 100%;
       margin: 0 auto;
       padding: 0 20px;
     }
 
-    @media (min-width: 1440px){
-      max-width: $widebooks;
+    @media (min-width: $notebooks) {
+      max-width: 100%;;
       width: auto;
       margin: 0 auto;
       padding: 0 55px;
     }
-    @media (min-width: 1600px) {
-      max-width: $hd;
+    @media (min-width: $widebooks) {
+      max-width: 100%;
       width: auto;
       margin: 0 auto;
       padding: 0 55px;
     }
-    @media (min-width: 1920px) {
+    @media (min-width: $hd) {
+      max-width: 100%;
+      width: auto;
+      margin: 0 auto;
+      padding: 0 55px;
+    }
+
+    @media (min-width: $fhd) {
       max-width: $fhd;
       width: auto;
       margin: 0 auto;

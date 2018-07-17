@@ -1,4 +1,4 @@
-@media (min-width: 1025px) {
+@media (min-width: $laptop) {
   .content {
     display: flex;
     flex-direction: row;
@@ -13,28 +13,34 @@
     padding-top: 15px;
   }
 }
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
   .content {
     width: 66.5%;
   }
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
   .content {
     width: 66.5%;
   }
 }
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
   .content {
     width: 66.5%;
   }
 }
-@media (min-width: 1601px) {
+@media (min-width: $widebooks) {
   .content {
     width: 66.5%;
     padding-top: 15px;
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: $hd) {
+  .content {
+    width: 66.5%;
+    padding-top: 15px;
+  }
+}
+@media (min-width: $fhd) {
   .content {
     padding-top: 20px;
   }

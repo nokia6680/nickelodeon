@@ -1,4 +1,4 @@
-@media (min-width: 1025px) {
+@media (min-width: $laptop) {
   .single-header {
     display: flex;
     flex-direction: row;
@@ -87,8 +87,7 @@
     }
   }
 }
-
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
   .single-header {
     display: flex;
     flex-direction: row;
@@ -133,7 +132,7 @@
     }
   }
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
   .single-header {
     display: flex;
     flex-direction: row;
@@ -159,19 +158,22 @@
     }
   }
 }
-
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
   .single-header {
     display: flex;
   }
 }
-
-@media (min-width: 1601px) {
+@media (min-width: $widebooks) {
   .single-header {
     display: flex;
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: $hd) {
+  .single-header {
+    display: flex;
+  }
+}
+@media (min-width: $fhd) {
   .single-header {
     width: 100%;
     height: 34px;

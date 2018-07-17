@@ -1,4 +1,4 @@
-@media (min-width: 1025px) {
+@media (min-width: $laptop) {
   .invite-team {
     display: flex;
     flex-direction: column;
@@ -19,8 +19,7 @@
     }
   }
 }
-
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
   .invite-team {
     display: flex;
 
@@ -29,7 +28,7 @@
     }
   }
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
   .invite-team {
     display: flex;
 
@@ -38,8 +37,7 @@
     }
   }
 }
-
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
   .invite-team {
     display: flex;
 
@@ -48,7 +46,7 @@
     }
   }
 }
-@media (min-width: 1601px) {
+@media (min-width: $widebooks) {
   .invite-team {
     display: flex;
 
@@ -57,7 +55,16 @@
     }
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: $hd) {
+  .invite-team {
+    display: flex;
+
+    &__title {
+      width: 392px;
+    }
+  }
+}
+@media (min-width: $fhd) {
   .invite-team {
     margin-bottom: 18px;
 
