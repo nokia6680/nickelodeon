@@ -434,7 +434,7 @@
       width: 230px;
       height: 74px;
       top: -40px;
-      right: -50px;
+      right: -15px;
       z-index: 10;
     }
 
@@ -562,12 +562,11 @@
         position: absolute;
         content: '';
         background-image: url("../img/slime-small-2.svg");
-        background-size: 141px 91px;
-        width: 140px;
+        background-size: 193px 91px;
+        width: 100px;
         height: 91px;
         top: 15px;
-        right: -60px;
-        z-index: 10;
+        right: -10px;
       }
     }
 
@@ -660,10 +659,10 @@
         content: '';
         background-image: url("../img/slime-small-2.svg");
         background-size: 226px 121px;
-        width: 226px;
+        width: 91px;
         height: 121px;
         top: 33px;
-        right: -152px;
+        right: -15px;
         z-index: 10;
       }
     }

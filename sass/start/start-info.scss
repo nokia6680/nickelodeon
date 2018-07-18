@@ -65,15 +65,17 @@
     justify-content: flex-start;
     align-items: center;
 
-    width: 280px;
+    width: 260px;
     margin-top: 30px;
+    margin-left: 10px;
 
-    align-self: flex-end;
+    align-self: flex-start;
+
 
     &__wrapper {
       background-image: url('../img/start-description.svg');
       background-repeat: no-repeat;
-      background-size: 276px 208px;
+      background-size: 247px 208px;
       padding-bottom: 40px;
       width: 100%;
     }
@@ -81,16 +83,16 @@
     &__description {
       font: {
         family: $main-font;
-        size: 15.2px;
+        size: 13.2px;
         weight: 900;
       }
 
-      width: 200px;
+      width: 189px;
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
 
-      padding-left: 30px;
+      padding-left: 32px;
       padding-top: 20px;
     }
 
@@ -129,9 +131,9 @@
 
     width: 345px;
     margin-top: 30px;
-    margin-left: -100px;
+    margin-right: 50px;
 
-    align-self: flex-end;
+    align-self: flex-start;
 
     &__wrapper {
       background-image: url('../img/start-description.svg');
@@ -185,11 +187,11 @@
 
 @media (min-width: $notebooks) {
   .start-info {
-    margin-top: 0px;
-    margin-left: auto;
+    margin-top: 30px;
+    margin-left: 0;
     margin-right: 20px;
 
-    align-self: center;
+    align-self: flex-start;
   }
 }
 
