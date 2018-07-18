@@ -5,4 +5,62 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+
+  @media (min-width: $laptop) {
+    background-color: $body-bg;
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 449px 520px, auto;
+
+    margin: 0 auto;
+    padding: 0;
+
+    text-transform: uppercase;
+
+    position: relative;
+  }
+  @media (min-width: $netbooks) {
+    background-color: $body-bg;
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 479px 450px, auto;
+
+  }
+  @media (min-width: $wide-netbooks) {
+    background-color: $body-bg;
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 505px 474px, auto;
+  }
+  @media (min-width: $notebooks) {
+    background-color: $body-bg;
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 561px 527px, auto;
+  }
+  @media (min-width: $widebooks) {
+    background-color: $body-bg;
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 674px 633px, auto;
+  }
+  @media (min-width: $hd) {
+    background-color: $body-bg;
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 674px 633px, auto;
+
+  }
+  @media (min-width: $fhd){
+    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -55px right -65px, top center;
+    background-size: 898px 844px, auto;
+  }
 }

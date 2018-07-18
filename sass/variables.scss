@@ -41,17 +41,29 @@ $start-info: #34bfb7;
 $social-item-bg: #ffffff;
 $social-hover: #ff6700;
 
-@media (min-width: 1025px) {
+@media (min-width: $laptop) {
 
 }
 
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
 
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
 
 }
 
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
+
+}
+
+@media (min-width: $widebooks) {
+
+}
+
+@media (min-width: $hd) {
+
+}
+
+@media (min-width: $fhd) {
 
 }

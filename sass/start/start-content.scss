@@ -1,0 +1,34 @@
+@media (min-width: $laptop) {
+ .start-content {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+
+   width: 100%;
+   height: 100%;
+ }
+}
+
+@media (min-width: $netbooks) {
+
+}
+@media (min-width: $wide-netbooks) {
+
+}
+
+@media (min-width: $notebooks) {
+
+}
+
+@media (min-width: $widebooks) {
+
+}
+
+@media (min-width: $hd) {
+
+}
+
+@media (min-width: $fhd) {
+
+}

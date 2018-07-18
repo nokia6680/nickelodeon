@@ -1,0 +1,21 @@
+@media (min-width: $laptop) {
+  .start-header {
+    width: 100%;
+    height: 160px;
+    background-image: url('../img/start-header-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__logo {
+      width: 18%;
+      padding-left: 55px;
+      padding-top: 30px;
+    }
+
+    &__link {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+  }
+}

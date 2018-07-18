@@ -1,0 +1,34 @@
+@media (min-width: $laptop) {
+  .start-main {
+    background-image: url('../img/start-bg.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    width: 100%;
+    min-height: 1024px;
+  }
+}
+
+@media (min-width: $netbooks) {
+
+}
+@media (min-width: $wide-netbooks) {
+
+}
+
+@media (min-width: $notebooks) {
+
+}
+
+@media (min-width: $widebooks) {
+
+}
+
+@media (min-width: $hd) {
+
+}
+
+@media (min-width: $fhd) {
+
+}
