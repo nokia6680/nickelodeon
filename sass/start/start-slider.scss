@@ -1,3 +1,58 @@
 .start-slider {
-  display: none;
+  display: block;
+  position: relative;
+
+  &__image {
+    width: 74%;
+    height: auto;
+  }
+
+  .swiper-container {
+    width: 460px !important;
+    height: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 20px !important;
+
+    margin-top: 35px;
+  }
+
+  .swiper-slide {
+    width: 64% !important;
+    height: 170px !important;
+    margin-left: 18% !important;
+    margin-right: 18% !important;
+
+    text-align: center;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-button-prev {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68.25' height='84.353' viewBox='0 0 91 112.47'%3E%3Cmetadata%3E%3C%3Fxpacket begin=' ' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fef9eb; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Polygon_900_copy' data-name='Polygon 900 copy' class='cls-1' d='M2437,1129.18l87.18,59.3,3.83-112.49Z' transform='translate%28-2437 -1076%29'/%3E%3C/svg%3E") !important;
+    background-size: 36px 45px;
+    width: 36px;
+    height: 45px;
+    top: 45%;
+  }
+
+  .swiper-button-next {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68.13' height='84.33' viewBox='0 0 90.84 112.44'%3E%3Cmetadata%3E%3C%3Fxpacket begin=' ' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fef9eb; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Polygon_900' data-name='Polygon 900' class='cls-1' d='M3073,1129.72l-87.04,59.27-3.82-112.44Z' transform='translate%28-2982.16 -1076.56%29'/%3E%3C/svg%3E%0A") !important;
+    background-size: 36px 45px;
+    width: 36px;
+    height: 45px;
+    top: 45%;
+  }
 }

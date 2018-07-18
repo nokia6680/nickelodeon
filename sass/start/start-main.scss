@@ -1,5 +1,11 @@
 @media (min-width: $laptop) {
   .start-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    background-color: $start-bg;
     background-image: url('../img/start-bg.svg');
     background-repeat: no-repeat;
     background-position: top center;

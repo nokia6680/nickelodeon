@@ -19,16 +19,15 @@
 </head>
 
 <body>
-  <!--Header страницы-->
-  <header class="start-header">
-    <div class="start-header__logo">
-      <a class="start-header__link" href="index.html" target="_self">
-        <img class="start-header__image" src="img/logo.svg" />
-      </a>
-    </div>
-  </header>
   <!--Все содержимое страницы-->
   <main class="start-main">
+    <section class="start-main__header start-header">
+      <div class="start-header__logo">
+        <a class="start-header__link" href="index.html" target="_self">
+          <img class="start-header__image" src="img/logo.svg" />
+        </a>
+      </div>
+    </section>
     <!--Содержимое блока кастомизации персонажа + описание-->
     <div class="start-main__content start-content">
       <!--Кастомизация персонажа-->
@@ -142,8 +141,8 @@
           </li>
         </ul>
         <!--Отправка всего этого-->
-        <button class="start-content__submit" type="submit">Отправить коллаж</button>
       </div>
+      <button class="start-content__submit" type="submit">Отправить коллаж</button>
       <!--Инфо блок-->
       <div class="start-content__info start-info">
         <div class="start-info__wrapper">

@@ -10,6 +10,40 @@
     align-items: flex-end;
 
     flex-wrap: nowrap;
+
+    width: 466px;
+
+    position: relative;
+
+    &__item--chest {
+      position: absolute;
+      top: -20px;
+      left: 150px;
+    }
+
+    &__item--leftarm {
+      position: absolute;
+      top: 10px;
+      left: 48px;
+    }
+
+    &__item--rightarm {
+      position: absolute;
+      top: 10px;
+      right: -75px;
+    }
+
+    &__item--leftleg {
+      position: absolute;
+      top: 347px;
+      left: 150px;
+    }
+
+    &__item--rightleg {
+      position: absolute;
+      top: 347px;
+      right: 22px;
+    }
   }
 }
 
