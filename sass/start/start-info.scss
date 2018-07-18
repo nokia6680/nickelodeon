@@ -5,5 +5,259 @@
   align-items: center;
 
   width: 280px;
-  
+  margin-top: 30px;
+
+  align-self: flex-start;
+
+  &__wrapper {
+    background-image: url('../img/start-description.svg');
+    background-repeat: no-repeat;
+    background-size: 276px 208px;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+
+  &__description {
+    font: {
+      family: $main-font;
+      size: 15.2px;
+      weight: 900;
+    }
+
+    width: 200px;
+    color: $text-white;
+    line-height: normal;
+    text-transform: uppercase;
+
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+
+  &__home {
+    font: {
+      family: $main-font;
+      size: 24px;
+      weight: 900;
+    }
+
+    width: 220px;
+    height: 47px;
+    color: $text-white;
+    line-height: normal;
+    text-transform: uppercase;
+
+    background-image: url('../img/start-home.svg');
+    background-repeat: no-repeat;
+    background-size: 220px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    text-align: center;
+    padding-top: 9px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .start-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 280px;
+    margin-top: 30px;
+
+    align-self: flex-end;
+
+    &__wrapper {
+      background-image: url('../img/start-description.svg');
+      background-repeat: no-repeat;
+      background-size: 276px 208px;
+      padding-bottom: 40px;
+      width: 100%;
+    }
+
+    &__description {
+      font: {
+        family: $main-font;
+        size: 15.2px;
+        weight: 900;
+      }
+
+      width: 200px;
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+
+    &__home {
+      font: {
+        family: $main-font;
+        size: 24px;
+        weight: 900;
+      }
+
+      width: 220px;
+      height: 47px;
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+
+      background-image: url('../img/start-home.svg');
+      background-repeat: no-repeat;
+      background-size: 220px;
+
+      text-decoration: none;
+      text-transform: uppercase;
+
+      text-align: center;
+      padding-top: 9px;
+    }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .start-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 345px;
+    margin-top: 30px;
+    margin-left: -100px;
+
+    align-self: flex-end;
+
+    &__wrapper {
+      background-image: url('../img/start-description.svg');
+      background-repeat: no-repeat;
+      background-size: 345px 260px;
+      padding-bottom: 40px;
+      width: 100%;
+    }
+
+    &__description {
+      font: {
+        family: $main-font;
+        size: 19px;
+        weight: 900;
+      }
+
+      width: 220px;
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+
+    &__home {
+      font: {
+        family: $main-font;
+        size: 30px;
+        weight: 900;
+      }
+
+      width: 275px;
+      height: 59px;
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+
+      background-image: url('../img/start-home.svg');
+      background-repeat: no-repeat;
+      background-size: 275px;
+
+      text-decoration: none;
+      text-transform: uppercase;
+
+      text-align: center;
+      padding-top: 9px;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .start-info {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: 20px;
+
+    align-self: center;
+  }
+}
+
+
+@media (min-width: $hd) {
+  .start-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 495px;
+    margin-top: 0px;
+    margin-left: 1%;
+    margin-right: 0;
+
+    align-self: center;
+
+    &__wrapper {
+      background-image: url('../img/start-description.svg');
+      background-repeat: no-repeat;
+      background-size: 517px 390px;
+      padding-bottom: 40px;
+      width: 100%;
+    }
+
+    &__description {
+      font: {
+        family: $main-font;
+        size: 28px;
+        weight: 900;
+      }
+
+      width: 400px;
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+
+    &__home {
+      font: {
+        family: $main-font;
+        size: 45px;
+        weight: 900;
+      }
+
+      width: 411px;
+      height: 88px;
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+
+      background-image: url('../img/start-home.svg');
+      background-repeat: no-repeat;
+      background-size: 411px;
+
+      text-decoration: none;
+      text-transform: uppercase;
+
+      text-align: center;
+      padding-top: 9px;
+    }
+  }
+}
+
+@media (min-width: $fhd) {
+
 }

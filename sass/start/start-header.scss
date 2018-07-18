@@ -22,3 +22,39 @@
     }
   }
 }
+
+@media (min-width: $netbooks) {
+  .start-header {
+    height: 200px;
+  }
+}
+
+@media (min-width: $wide-netbooks) {
+  .start-header {
+    height: 213px;
+  }
+}
+
+@media (min-width: $notebooks) {
+  .start-header {
+    height: 225px;
+  }
+}
+
+@media (min-width: $widebooks) {
+  .start-header {
+    height: 250px;
+  }
+}
+
+@media (min-width: $hd) {
+  .start-header {
+    height: 300px;
+  }
+}
+
+@media (min-width: $fhd) {
+  .start-header {
+    height: 400px;
+  }
+}

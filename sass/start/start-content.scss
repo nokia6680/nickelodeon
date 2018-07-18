@@ -1,36 +1,124 @@
 @media (min-width: $laptop) {
- .start-content {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
+  .start-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    margin-left: 15%;
+    padding-bottom: 10%;
 
-   width: 100%;
-   height: 100%;
+    z-index: 20;
 
-   position: relative;
- }
+    &__submit {
+      align-self: flex-start;
+      position: absolute;
+      bottom: 250px;
+      left: -100px;
+      width: 505px;
+      height: 65px;
+      background-image: url("../img/start-submit.svg");
+      background-repeat: no-repeat;
+      background-size: 505px 65px;
+      background-color: transparent;
+      border: none;
+      font: {
+        family: $main-font;
+        size: 36px;
+        weight: 900;
+      }
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
 }
-
 @media (min-width: $netbooks) {
+  .start-content {
+    margin-left: 25%;
 
+    &__submit {
+      bottom: 20%;
+      left: -120px;
+    }
+  }
 }
 @media (min-width: $wide-netbooks) {
-
+  .start-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 23%;
+    padding-bottom: 10%;
+  }
 }
-
 @media (min-width: $notebooks) {
+  .start-content {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 18%;
+    padding-bottom: 20%;
+    position: relative;
 
+    &__submit {
+      position: absolute;
+      bottom: 13%;
+      left: 15%;
+    }
+  }
 }
-
 @media (min-width: $widebooks) {
+  .start-content {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 25%;
+    padding-bottom: 10%;
 
+    &__submit {
+      bottom: 7%;
+    }
+  }
 }
-
 @media (min-width: $hd) {
+  .start-content {
+    flex-direction: row;
 
+    align-items: center;
+    margin-left: 28%;
+    padding-bottom: 10%;
+
+    width: 70%;
+    justify-content: space-evenly;
+
+    &__submit {
+      align-self: flex-start;
+      position: absolute;
+      bottom: 100px;
+      right: 0;
+      width: 505px;
+      height: 65px;
+      background-image: url("../img/start-submit.svg");
+      background-repeat: no-repeat;
+      background-size: 505px 65px;
+      background-color: transparent;
+      border: none;
+      font: {
+        family: $main-font;
+        size: 36px;
+        weight: 900;
+      }
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
 }
-
 @media (min-width: $fhd) {
-
+  .start-content {
+    width: 70%;
+    justify-content: space-evenly;
+  }
 }

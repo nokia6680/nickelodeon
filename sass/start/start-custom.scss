@@ -10,9 +10,39 @@
     justify-content: flex-start;
     align-items: center;
 
-    width: 703px;
-    height: 955px;
+    width: 753px;
+    height: 1023px;
 
-    margin-top: -90px;
+    margin-top: -10%;
+  }
+}
+
+@media (min-width: $netbooks){
+  .start-custom {
+    width: 753px;
+    height: 1023px;
+  }
+}
+
+@media (min-width: $wide-netbooks){
+  .start-custom {
+    width: 830px;
+    height: 1130px;
+  }
+}
+
+@media (min-width: $notebooks){
+  .start-custom {
+    width: 830px;
+    height: 1130px;
+  }
+}
+
+@media (min-width: $hd) {
+  .start-custom {
+    width: 830px;
+    height: 1130px;
+
+    margin-top: -15%;
   }
 }

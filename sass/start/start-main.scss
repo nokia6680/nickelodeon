@@ -1,40 +1,133 @@
+.start-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: $start-bg;
+  background-image: url("../img/start-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  min-height: 1024px;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    background-image: url('../img/spunchbob.svg');
+    background-repeat: no-repeat;
+    background-size: 324px 359px;
+
+    width: 324px;
+    height: 359px;
+
+    bottom: 0;
+    left: 0;
+  }
+}
 @media (min-width: $laptop) {
   .start-main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    
     background-color: $start-bg;
-    background-image: url('../img/start-bg.svg');
+    background-image: url("../img/start-bg.svg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-
     width: 100%;
     min-height: 1024px;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url('../img/spunchbob.svg');
+      background-repeat: no-repeat;
+      background-size: 812px 899px;
+
+      width: 812px;
+      height: 899px;
+
+      top: 30%;
+      left: -40%;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../img/slime-start.svg');
+      background-repeat: no-repeat;
+      background-size: 771px 515px;
+
+      width: 771px;
+      height: 515px;
+
+      bottom: 0;
+      left: -40%;
+
+      z-index: 2;
+    }
   }
 }
 
 @media (min-width: $netbooks) {
+  .start-main {
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url('../img/spunchbob.svg');
+      background-repeat: no-repeat;
+      background-size: 812px 899px;
 
-}
-@media (min-width: $wide-netbooks) {
+      width: 812px;
+      height: 899px;
 
-}
+      top: 30%;
+      left: -20%;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../img/slime-start.svg');
+      background-repeat: no-repeat;
+      background-size: 771px 515px;
 
-@media (min-width: $notebooks) {
+      width: 771px;
+      height: 515px;
 
+      bottom: 0;
+      left: -20%;
+    }
+  }
 }
 
 @media (min-width: $widebooks) {
-
-}
-
-@media (min-width: $hd) {
-
+  .start-main {
+    &::after {
+      top: 30%;
+      left: -10%;
+    }
+    &::before {
+      bottom: 0;
+      left: -10%;
+    }
+  }
 }
 
 @media (min-width: $fhd) {
-
+  .start-main {
+    &::after {
+      top: 30%;
+      left: -7%;
+    }
+    &::before {
+      bottom: 0;
+      left: -7%;
+    }
+  }
 }
