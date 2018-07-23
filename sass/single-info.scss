@@ -20,13 +20,11 @@
       -moz-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
 
       .single-info__copy {
-        width: 36px;
-        height: 36px;
+        width: 24px;
+        height: 24px;
         position: absolute;
         top: -5px;
-        right: -40px;
-
-        display: none;
+        right: -27px;
       }
     }
 
@@ -89,7 +87,7 @@
     &__link {
       font: {
         family: $main-font;
-        size: 14px;
+        size: 10px;
         weight: 900;
       }
       color: $text-invite;
@@ -215,7 +213,7 @@
     &__link {
       font: {
         family: $main-font;
-        size: 14px;
+        size: 12px;
         weight: 900;
       }
       color: $text-invite;
@@ -338,7 +336,7 @@
     &__link {
       font: {
         family: $main-font;
-        size: 16px;
+        size: 13px;
         weight: 900;
       }
       color: $text-invite;
@@ -461,7 +459,7 @@
     &__link {
       font: {
         family: $main-font;
-        size: 16px;
+        size: 14px;
         weight: 900;
       }
       color: $text-invite;
