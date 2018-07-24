@@ -1,0 +1,16 @@
+.gallery-items {
+  margin-top: 10px;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .swiper-container-1 {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  .swiper-slide {
+    width: 187px !important;
+    height: 278px !important;
+  }
+}

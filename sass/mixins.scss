@@ -1,68 +1,61 @@
 @mixin container {
-    min-width: $phones;
+  min-width: $phones;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  @media (min-width: $smartphones) {
     width: auto;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 10px;
-
-    @media (min-width: $smartphones) {
-      width: auto;
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 0 10px;
-    }
-
-    @media (min-width: $tablets) {
-      width: auto;
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    @media (min-width: $laptop) {
-      width: auto;
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    @media (min-width: $netbooks) {
-      width: auto;
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    @media (min-width: $wide-netbooks) {
-      width: auto;
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    @media (min-width: $notebooks) {
-      max-width: 100%;;
-      width: auto;
-      margin: 0 auto;
-      padding: 0 55px;
-    }
-    @media (min-width: $widebooks) {
-      max-width: 100%;
-      width: auto;
-      margin: 0 auto;
-      padding: 0 55px;
-    }
-    @media (min-width: $hd) {
-      max-width: 100%;
-      width: auto;
-      margin: 0 auto;
-      padding: 0 55px;
-    }
-
-    @media (min-width: $fhd) {
-      max-width: $fhd;
-      width: auto;
-      margin: 0 auto;
-      padding: 0 55px;
-    }
   }
+  @media (min-width: $tablets) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  @media (min-width: $laptop) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  @media (min-width: $netbooks) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  @media (min-width: $wide-netbooks) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  @media (min-width: $notebooks) {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+  @media (min-width: $widebooks) {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+  @media (min-width: $hd) {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+  @media (min-width: $fhd) {
+    max-width: $fhd;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+}
