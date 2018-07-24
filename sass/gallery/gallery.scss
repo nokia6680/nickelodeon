@@ -1,0 +1,12 @@
+.gallery {
+  background-image: url('../img/gallery-main-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  height: 100vh;
+}
