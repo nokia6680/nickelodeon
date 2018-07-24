@@ -1,23 +1,132 @@
 .slide-item {
   position: absolute;
-
+  /*Для 5ти частей тела*/
   &--leftarm {
+    top: -10px;
+    left: 40px;
 
+    .slide-item__pic--leftarm {
+      width: 21px;
+      height: 88px;
+    }
   }
-
   &--chest {
+    top: -20px;
+    left: 60px;
 
+    .slide-item__pic--chest {
+      width: 64px;
+      height: 88px;
+    }
   }
-
   &--rightarm {
+    top: -10px;
+    right: 43px;
 
+    .slide-item__pic--rightarm {
+      width: 21px;
+      height: 88px;
+    }
   }
-
   &--leftleg {
+    top: 66px;
+    left: 60px;
 
+    .slide-item__pic--leftleg {
+      width: 28px;
+      height: 70px;
+    }
   }
-
   &--rightleg {
-    
+    top: 66px;
+    right: 63px;
+
+    .slide-item__pic--rightleg {
+      width: 28px;
+      height: 70px;
+    }
+  }
+  /*Для 4х частей тела*/
+  &--lefttop {
+    top: -15px;
+    left: 40px;
+
+    .slide-list__pic--lefttop {
+      width: 54px;
+      height: 91px;
+    }
+  }
+  &--righttop {
+    top: -15px;
+    right: 40px;
+
+    .slide-list__pic--righttop {
+      width: 54px;
+      height: 91px;
+    }
+  }
+  &--leftbottom {
+    top: 54px;
+    left: 62px;
+
+    .slide-list__pic--leftbottom {
+      width: 32px;
+      height: 83px;
+    }
+  }
+  &--rightbottom {
+    top: 54px;
+    right: 62px;
+
+    .slide-list__pic--rightbottom {
+      width: 32px;
+      height: 83px;
+    }
+  }
+  /*Для 3х частей тела*/
+  &--lefthalf {
+    top: -15px;
+    left: 40px;
+
+    .slide-list__pic--lefthalf {
+      width: 54px;
+      height: 91px;
+    }
+  }
+  &--righthalf {
+    top: -15px;
+    right: 40px;
+
+    .slide-list__pic--righthalf {
+      width: 54px;
+      height: 91px;
+    }
+  }
+  &--doubleleg {
+    top: 54px;
+    left: 61px;
+
+    .slide-list__pic--doubleleg {
+      width: 64px;
+      height: 83px;
+    }
+  }
+  /*Для 2х частей тела*/
+  &--tophalf {
+    top: -15px;
+    left: 40px;
+    .slide-list__pic--tophalf {
+      width: 107px;
+      height: 91px;
+    }
+  }
+  &--bottomhalf {
+    top: 54px;
+    left: 61.5px;
+
+    .slide-list__pic--bottomhalf {
+      width: 64px;
+      height: 83px;
+    }
   }
 }
