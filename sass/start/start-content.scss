@@ -20,6 +20,7 @@
     }
 
     &__submit {
+      display: block;
       align-self: flex-start;
       position: absolute;
       bottom: 10%;
@@ -42,6 +43,10 @@
 
       cursor: pointer;
       outline: none;
+
+      text-decoration: none;
+      text-align: center;
+      padding-top: 10px;
     }
   }
 }

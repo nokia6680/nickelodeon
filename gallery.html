@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nickelodeon</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"  type="text/css">
+	<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!--Основное содержание-->
+<main class="gallery">
+  <!--Боковая панель-->
+  <section class="gallery__sidebar gallery-sidebar">
+    <div class="gallery-sidebar__logo">
+      <a class="gallery-sidebar__link" href="#" target="_self">
+        <img class="gallery-sidebar__image" src="img/logo.svg" />
+      </a>
+    </div>
+    <!--Фильтр сайдбара-->
+    <div class="gallery-sidebar__filter gallery-filter">
+      <h2 class="gallery-filter__title">Сортировать:</h2>
+      <ul class="gallery-filter__list filter-list">
+        <li class="filter-list__item filter-item">
+          <label class="filter-item__label filter-item__label--people" for="people"></label>
+          <input class="filter-item__checkbox filter-item__checkbox--people" type="checkbox" name="people" id="people"/>
+        </li>
+        <li class="filter-list__item filter-item">
+          <label class="filter-item__label filter-item__label--like" for="like"></label>
+          <input class="filter-item__checkbox filter-item__checkbox--like" type="checkbox" name="like" id="like"/>
+        </li>
+        <li class="filter-list__item filter-item">
+          <label class="filter-item__label filter-item__label--share" for="share"></label>
+          <input class="filter-item__checkbox filter-item__checkbox--share" type="checkbox" name="share" id="share"/>
+        </li>
+      </ul>
+      <a class="gallery-filter__home" href="index.html">На главную</a>
+    </div>
+    <!--Сайдбар промо-->
+    <div class="gallery-sidebar__promo gallery-promo">
+      <div class="gallery-promo__wrapper">
+        <p class="gallery-promo__description"></p>
+        <img class="gallery-promo__image" src="img/gallery-rt.svg" />
+      </div>
+      <a class="gallery-promo__parent" href="">Я родитель</a>
+    </div>
+  </section>
+  <!--Контент страницы-->
+  <section class="gallery__content gallery-content">
+    <h2 class="gallery-content__title visually-hidden">Список зарегистрированных команд</h2>
+    <!-- Swiper -->
+    <div class="gallery-content__items gallery-items">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!---Single item-->
+          <article class="swiper-slide gallery-slide">
+            <h3 class="gallery-items__title" id="name-1">Сергей К.</h3>
+            <img class="gallery-slide__head" src="img/hero-small-1.png" />
+            <!--Из 5ти частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--five">
+
+            </ul>
+            <!--Из 4х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--four visually-hidden">
+
+            </ul>
+            <!--Из 3х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--three visually-hidden">
+
+            </ul>
+            <!--Из 2х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--two visually-hidden">
+
+            </ul>
+            <div class="gallery-slide__actions gallery-actions">
+              <span class="gallery-actions__like"><i class="fa fa-heart"></i></span>
+              <b class="gallery-actions__count">345</b>
+              <button class="gallery-actions__share" type="button"><i class="fa fa-share"></i></button>
+            </div>
+          </article>
+          <!---Single item-->
+          <article class="swiper-slide gallery-slide">
+            <h3 class="gallery-items__title" id="name-1">Сергей К.</h3>
+            <img class="gallery-slide__head" src="img/hero-small-1.png" />
+            <!--Из 5ти частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--five">
+
+            </ul>
+            <!--Из 4х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--four visually-hidden">
+
+            </ul>
+            <!--Из 3х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--three visually-hidden">
+
+            </ul>
+            <!--Из 2х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--two visually-hidden">
+
+            </ul>
+            <div class="gallery-slide__actions gallery-actions">
+              <span class="gallery-actions__like"><i class="fa fa-heart"></i></span>
+              <b class="gallery-actions__count">345</b>
+              <button class="gallery-actions__share" type="button"><i class="fa fa-share"></i></button>
+            </div>
+          </article>
+          <!---Single item-->
+          <article class="swiper-slide gallery-slide">
+            <h3 class="gallery-items__title" id="name-1">Сергей К.</h3>
+            <img class="gallery-slide__head" src="img/hero-small-1.png" />
+            <!--Из 5ти частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--five">
+
+            </ul>
+            <!--Из 4х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--four visually-hidden">
+
+            </ul>
+            <!--Из 3х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--three visually-hidden">
+
+            </ul>
+            <!--Из 2х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--two visually-hidden">
+
+            </ul>
+            <div class="gallery-slide__actions gallery-actions">
+              <span class="gallery-actions__like"><i class="fa fa-heart"></i></span>
+              <b class="gallery-actions__count">345</b>
+              <button class="gallery-actions__share" type="button"><i class="fa fa-share"></i></button>
+            </div>
+          </article>
+          <!---Single item-->
+          <article class="swiper-slide gallery-slide">
+            <h3 class="gallery-items__title" id="name-1">Сергей К.</h3>
+            <img class="gallery-slide__head" src="img/hero-small-1.png" />
+            <!--Из 5ти частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--five">
+
+            </ul>
+            <!--Из 4х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--four visually-hidden">
+
+            </ul>
+            <!--Из 3х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--three visually-hidden">
+
+            </ul>
+            <!--Из 2х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--two visually-hidden">
+
+            </ul>
+            <div class="gallery-slide__actions gallery-actions">
+              <span class="gallery-actions__like"><i class="fa fa-heart"></i></span>
+              <b class="gallery-actions__count">345</b>
+              <button class="gallery-actions__share" type="button"><i class="fa fa-share"></i></button>
+            </div>
+          </article>
+          <!---Single item-->
+          <article class="swiper-slide gallery-slide">
+            <h3 class="gallery-items__title" id="name-1">Сергей К.</h3>
+            <img class="gallery-slide__head" src="img/hero-small-1.png" />
+            <!--Из 5ти частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--five">
+
+            </ul>
+            <!--Из 4х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--four visually-hidden">
+
+            </ul>
+            <!--Из 3х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--three visually-hidden">
+
+            </ul>
+            <!--Из 2х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--two visually-hidden">
+
+            </ul>
+            <div class="gallery-slide__actions gallery-actions">
+              <span class="gallery-actions__like"><i class="fa fa-heart"></i></span>
+              <b class="gallery-actions__count">345</b>
+              <button class="gallery-actions__share" type="button"><i class="fa fa-share"></i></button>
+            </div>
+          </article>
+          <!---Single item-->
+          <article class="swiper-slide gallery-slide">
+            <h3 class="gallery-items__title" id="name-1">Сергей К.</h3>
+            <img class="gallery-slide__head" src="img/hero-small-1.png" />
+            <!--Из 5ти частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--five">
+
+            </ul>
+            <!--Из 4х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--four visually-hidden">
+
+            </ul>
+            <!--Из 3х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--three visually-hidden">
+
+            </ul>
+            <!--Из 2х частей тела-->
+            <ul class="gallery-slide__list slide-list slide-list--two visually-hidden">
+
+            </ul>
+            <div class="gallery-slide__actions gallery-actions">
+              <span class="gallery-actions__like"><i class="fa fa-heart"></i></span>
+              <b class="gallery-actions__count">345</b>
+              <button class="gallery-actions__share" type="button"><i class="fa fa-share"></i></button>
+            </div>
+          </article>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<!--Подвал страницы-->
+<footer class="footer">
+  <ul class="footer__social footer-social">
+    <li class="footer-social__item social-item social-item--yt">
+      <a class="social-item__link" href="#"><i class="fa fa-youtube-play"></i></a>
+    </li>
+    <li class="footer-social__item social-item social-item--fb">
+      <a class="social-item__link" href="#"><i class="fa fa-facebook"></i></a>
+    </li>
+    <li class="footer-social__item social-item social-item--vk">
+      <a class="social-item__link" href="#"><i class="fa fa-vk"></i></a>
+    </li>
+    <li class="footer-social__item social-item social-item--tw">
+      <a class="social-item__link" href="#"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li class="footer-social__item social-item social-item--in">
+      <a class="social-item__link" href="#"><i class="fa fa-instagram"></i></a>
+    </li>
+    <li class="footer-social__item social-item social-item--ok">
+      <a class="social-item__link" href="#"><i class="fa fa-odnoklassniki"></i></a>
+    </li>
+  </ul>
+</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>
