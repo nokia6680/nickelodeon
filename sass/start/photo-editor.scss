@@ -9,8 +9,8 @@
   -moz-box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
 
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 25%;
+  left: 5%;
 
   z-index: 9999;
 
@@ -48,8 +48,8 @@
     -moz-box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
 
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 25%;
+    left: 5%;
 
     z-index: 9999;
 
@@ -76,11 +76,10 @@
   }
 }
 
-@media (min-width: $widebooks) {
+@media (min-width: $fhd) {
   .photo-editor {
     width: 844px;
     height: 1027px;
-
 
     &__container {
       display: flex;
