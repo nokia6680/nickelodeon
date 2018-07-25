@@ -23,13 +23,31 @@
 		<section class="main__sidebar sidebar">
 			<div class="sidebar__logo">
 				<a class="sidebar__link" href="#" target="_self">
-					<img class="sidebar__image" src="img/logo.svg" />
+					<img class="sidebar__image" src="img/logo-1.svg" />
 				</a>
 			</div>
 			<div class="sidebar__info sidebar-info">
 				<h1 class="sidebar-info__title">Стань</h1>
 				<img class="sidebar-info__captain" src="img/captain.svg" />
 				<span class="sidebar-info__promo">и собери</span><span class="sidebar-info__team">команду</span>
+			</div>
+			<!--Выдвигающаяся реклама-->
+			<div class="sidebar__slide slide-panel">
+				<input class="open" id="top-box" type="checkbox" hidden>
+				<label class="btn" for="top-box"></label>
+				<div class="top-panel">
+					<div class="message">
+						<h3>Главный приз</h3>
+						<div class="slide-panel__upper">
+							<p class="slide-panel__description slide-panel__description--blue">Sony&nbsp;Playstation&nbsp;4&nbsp;500Gb Slim&nbsp;Black&nbsp;+&nbsp;Подписка Playstation&nbsp;на&nbsp;3&nbsp; месяца&nbsp;каждому&nbsp;члену&nbsp;команды!</p>
+						</div>
+						<div class="slide-panel__lower">
+							<p class="slide-panel__description slide-panel__description--white">А&nbsp;еще&nbsp;каждый&nbsp;день мы&nbsp;разыгрываем&nbsp;одну коробку&nbsp;дня,&nbsp;когда пора&nbsp;играть!</p>
+							<span class="slide-panel__notification">Внешний&nbsp;вид,&nbsp;цвета&nbsp;и&nbsp;модели&nbsp;приза&nbsp;могут&nbsp;отличаться от&nbsp;изображений&nbsp;на&nbsp;баннере/сайте.</span>
+							<span class="slide-panel__notification">Информация об организаторе, о правилах проведения, количестве призов, сроках, месте и порядке их получения доступна на сайте igraem.NICKELODEON.ru.</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<!--Основное содержимое страницы-->
@@ -182,6 +200,9 @@
 						<!-- Swiper slider-->
 					  <div class="swiper-container">
 					    <div class="swiper-wrapper side-slider__wrapper">
+								<a class="swiper-slide side-slider__item side-slider__item--create" href="#">
+									<h3 class="side-slider__create">Создать<br />команду!</h3>
+								</a>
 					      <a class="swiper-slide side-slider__item" href="#">
 									<img class="side-slider__image" src="img/other-avatar.svg" />
 									<b class="side-slider__nr">5</b>
@@ -219,10 +240,13 @@
 						<img class="side-promo__image" src="img/rt.svg" />
 					</div>
 				</div>
+				<!--Ссылка на переход в галерею-->
+				<a class="side__gallery" href="gallery.html">Галерея работ</a>
 			</div>
 		</section>
 	</main>
 	<footer class="footer">
+		<button class="footer__rules" type="button">Правила участия</button>
 		<ul class="footer__social footer-social">
 			<li class="footer-social__item social-item social-item--yt">
 				<a class="social-item__link" href="#"><i class="fa fa-youtube-play"></i></a>
@@ -246,13 +270,52 @@
 	</footer>
 
 	<!--Popup-->
-	<div class="overlay overlay-on">
+	<div class="overlay overlay--on">
+		<!--Попап удаления участника-->
 		<div class="popup popup-delete popup-delete__hidden">
 			<p class="popup-delete__title">Вы точно хотите удалить участника из команды?</p>
 			<div class="popup-delete__controls">
 				<button class="popup-delete__no" type="button">Нет</button>
 				<button class="popup-delete__yes" type="button">Да</button>
 			</div>
+		</div>
+		<!--Попап вопроса про Ростелеком-->
+		<div class="popup popup-rt popup-rt__hidden">
+			<p class="popup-rt__title">Являешься&nbsp;ли&nbsp;ты&nbsp;абонентом интерактивного&nbsp;ТВ &laquo;Ростелеком&raquo;&nbsp;(Онлайм)?</p>
+			<div class="popup-rt__controls">
+				<button class="popup-rt__no" type="button">Нет</button>
+				<button class="popup-rt__yes" type="button">Да</button>
+			</div>
+		</div>
+		<!--Попап вопроса про Николодеон-->
+		<div class="popup popup-nl popup-nl__hidden">
+			<p class="popup-nl__title">У тебя есть канал NICKELODEON?</p>
+			<div class="popup-nl__controls">
+				<button class="popup-nl__no" type="button">Нет</button>
+				<button class="popup-nl__yes" type="button">Да</button>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-1 overlay-1--on">
+		<div class="popup-rules">
+			<ol class="popup-rules__list">
+				<li class="popup-rules__item">
+					<p class="popup-rules__description">Зарегистрируйся на сайте с<br />помощью своего профиля во<br />ВКонтакте</p>
+				</li>
+				<li class="popup-rules__item">
+					<p class="popup-rules__description">Позови друзей, отправив им<br />ссылку-приглашение</p>
+				</li>
+				<li class="popup-rules__item">
+					<p class="popup-rules__description">Собери команду от 2 до 5 человек.<br />Каждый день сотая команда<br />получает крутую коробку с набором<br />для дня, когда пора играть</p>
+				</li>
+				<li class="popup-rules__item">
+					<p class="popup-rules__description">Составь с друзьями коллаж из ваших<br />фотографий и поделись им в<br />соцсетях</p>
+				</li>
+				<li class="popup-rules__item">
+					<p class="popup-rules__description">Выиграй приставки Sony Playstation 4<br />на всю команду!</p>
+				</li>
+			</ol>
+			<p class="popup-rules__disclaimer">Не забывай, что твои друзья тоже могут создать свои собственные команды и пригласить тебя, увеличив ваши шансы на победу!</p>
 		</div>
 	</div>
 	<script src="../js/script.js"></script>

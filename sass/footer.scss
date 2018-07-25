@@ -10,4 +10,34 @@
   -moz-box-shadow: 0 -4px 21px 0 rgba(38,50,56,1);
   box-shadow: 0 -4px 21px 0 rgba(38,50,56,1);
   z-index: 111;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__rules {
+    background-color: transparent;
+    border: 2px solid #fff;
+
+    font: {
+      size: 30px;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-white;
+    line-height: normal;
+    text-align: center;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    text-transform: uppercase;
+
+    margin-left: 55px;
+
+    cursor: pointer;
+    outline: none;
+  }
 }

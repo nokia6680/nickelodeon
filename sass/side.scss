@@ -23,6 +23,34 @@
       right: 130px;
       z-index: 10;
     }
+
+    &__gallery {
+      display: block;
+
+      background-image: url('../img/side-link.png');
+      background-repeat: no-repeat;
+      background-size: 207px 47px;
+
+      width: 207px;
+      height: 47px;
+
+      font: {
+        size: 21px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $text-gallery;
+      line-height: normal;
+
+      text-align: center;
+
+      margin-top: 60px;
+      margin-left: 70px;
+      padding-top: 10px;
+
+      text-decoration: none;
+    }
   }
 }
 @media (min-width: $netbooks) {
@@ -50,6 +78,17 @@
       right: 130px;
       z-index: 10;
     }
+
+    &__gallery {
+      background-size: 259px 59px;
+      width: 259px;
+      height: 59px;
+
+      font-size: 27px;
+
+      margin-top: 40px;
+      padding-top: 13px;
+    }
   }
 }
 @media (min-width: $wide-netbooks) {
@@ -73,9 +112,20 @@
       width: 70px;
       height: 68px;
 
-      bottom: -30px;
+      bottom: 0;
       right: 130px;
       z-index: 10;
+    }
+
+    &__gallery {
+      background-size: 273px 62px;
+      width: 273px;
+      height: 62px;
+
+      font-size: 28px;
+
+      margin-top: 40px;
+      padding-top: 13px;
     }
   }
 }
@@ -100,9 +150,20 @@
       width: 101px;
       height: 99px;
 
-      bottom: 115px;
+      bottom: 0px;
       right: 130px;
       z-index: 10;
+    }
+
+    &__gallery {
+      background-size: 273px 62px;
+      width: 273px;
+      height: 62px;
+
+      font-size: 28px;
+
+      margin-top: 40px;
+      padding-top: 13px;
     }
   }
 }
@@ -127,9 +188,20 @@
       width: 101px;
       height: 99px;
 
-      bottom: 115px;
+      bottom: 0px;
       right: 130px;
       z-index: 10;
+    }
+
+    &__gallery {
+      background-size: 324px 73px;
+      width: 324px;
+      height: 73px;
+
+      font-size: 33px;
+
+      margin-top: 40px;
+      padding-top: 13px;
     }
   }
 }
@@ -154,9 +226,20 @@
       width: 101px;
       height: 99px;
 
-      bottom: 0px;
+      bottom: -110px;
       right: 130px;
       z-index: 10;
+    }
+
+    &__gallery {
+      background-size: 389px 88px;
+      width: 389px;
+      height: 88px;
+
+      font-size: 40px;
+
+      margin-top: 40px;
+      padding-top: 20px;
     }
   }
 }
@@ -184,6 +267,17 @@
       bottom: 155px;
       right: 180px;
       z-index: 10;
+    }
+
+    &__gallery {
+      background-size: 519px 118px;
+      width: 519px;
+      height: 118px;
+
+      font-size: 54px;
+
+      margin-top: 50px;
+      padding-top: 20px;
     }
   }
 }
