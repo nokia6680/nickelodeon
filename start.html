@@ -220,6 +220,27 @@
       </li>
     </ul>
   </footer>
+  <!--Попап редактирования фото-->
+  <div class="my_crop photo-editor">
+    <div class="crop_wrap croopie-container photo-editor__container" id="my_crop_wrap">
+      <div class="cr-boundary photo-editor__backside" aria-dropeffect="none">
+
+      </div>
+      <div class="cr-slider-wrap photo-editor__slider photo-slider">
+        <input class="cr-slider photo-slider__input" type="range" step="0.0001" aria-label="zoom" min="0.3958" max="1.5000" aria-valuenow="0.475" />
+      </div>
+      <div class="actions photo-editor__actions photo-actions">
+        <div class="photo-actions__upper">
+          <button class="basic-rotate rotation-left" data-deg="-90">Повернуть влево</button>
+          <button class="basic-rotate rotation-right" data-deg="90">Повернуть вправо</button>
+        </div>
+        <div class="photo-actions__lower">
+          <button class="basic-save cancel-btn">Отменить</button>
+          <button class="basic-cancel save-btn">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="../js/script.js"></script>
 </body>
 </html>
