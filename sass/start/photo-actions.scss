@@ -148,3 +148,303 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .photo-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+
+    &__upper {
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .rotation-left,
+      .rotation-right {
+        font: {
+          size: 22.5px;
+          weight: 900;
+          family: $main-font;
+        }
+
+        color: #073f72;
+        line-height: normal;
+
+        text-transform: uppercase;
+        text-align: center;
+
+        background-color: transparent;
+        border: none;
+
+        cursor: pointer;
+        outline: none;
+      }
+
+      .rotation-left {
+        padding-left: 82px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: '';
+
+          width: 56.25px;
+          height: 48.75px;
+
+          left: 24px;
+          top: 0;
+
+          background-color: #ffd100;
+        }
+
+        &::after {
+          position: absolute;
+          content: '';
+
+          width: 41.25px;
+          height: 33.75px;
+
+          top: 7px;
+          left: 30px;
+
+          background-image: url('../img/rotate-left.png');
+          background-repeat: no-repeat;
+          background-size: 41px 33px;
+        }
+      }
+
+      .rotation-right {
+        padding-right: 82px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: '';
+
+          width: 56.25px;
+          height: 48.75px;
+
+          right: 24px;
+          top: 0;
+
+          background-color: #ffd100;
+        }
+
+        &::after {
+          position: absolute;
+          content: '';
+
+          width: 41.25px;
+          height: 33.75px;
+
+          top: 7px;
+          right: 30px;
+
+          background-image: url('../img/rotate-right.png');
+          background-repeat: no-repeat;
+          background-size: 41px 33px;
+        }
+      }
+    }
+
+    &__lower {
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      padding-left: 24px;
+      padding-right: 24px;
+
+      margin-top: 10px;
+
+      .save-btn,
+      .cancel-btn {
+        font: {
+          size: 22.5px;
+          weight: 900;
+          family: $main-font;
+        }
+
+        color: $text-white;
+        line-height: normal;
+
+        text-transform: uppercase;
+        text-align: center;
+
+        background-color: transparent;
+        border: none;
+
+        cursor: pointer;
+        outline: none;
+
+        width: 210px;
+        height: 40px;
+      }
+
+      .save-btn {
+        background-color: #50be4b;
+      }
+
+      .cancel-btn {
+        background-color: #f0646b;
+      }
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .photo-actions {
+    margin-top: 20px;
+    &__upper {
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .rotation-left,
+      .rotation-right {
+        font: {
+          size: 36px;
+          weight: 900;
+          family: $main-font;
+        }
+
+        color: #073f72;
+        line-height: normal;
+
+        text-transform: uppercase;
+        text-align: center;
+
+        background-color: transparent;
+        border: none;
+
+        cursor: pointer;
+        outline: none;
+      }
+
+      .rotation-left {
+        padding-left: 82px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: '';
+
+          width: 90px;
+          height: 78px;
+
+          left: 24px;
+          top: 0;
+
+          background-color: #ffd100;
+        }
+
+        &::after {
+          position: absolute;
+          content: '';
+
+          width: 66px;
+          height: 54px;
+
+          top: 7px;
+          left: 30px;
+
+          background-image: url('../img/rotate-left.png');
+          background-repeat: no-repeat;
+          background-size: 66px 54px;
+        }
+      }
+
+      .rotation-right {
+        padding-right: 82px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: '';
+
+          width: 90px;
+          height: 78px;
+
+          right: 24px;
+          top: 0;
+
+          background-color: #ffd100;
+        }
+
+        &::after {
+          position: absolute;
+          content: '';
+
+          width: 66px;
+          height: 54px;
+
+          top: 7px;
+          right: 30px;
+
+          background-image: url('../img/rotate-right.png');
+          background-repeat: no-repeat;
+          background-size: 66px 54px;
+        }
+      }
+    }
+
+    &__lower {
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      padding-left: 24px;
+      padding-right: 24px;
+
+      margin-top: 10px;
+
+      .save-btn,
+      .cancel-btn {
+        font: {
+          size: 36px;
+          weight: 900;
+          family: $main-font;
+        }
+
+        color: $text-white;
+        line-height: normal;
+
+        text-transform: uppercase;
+        text-align: center;
+
+        background-color: transparent;
+        border: none;
+
+        cursor: pointer;
+        outline: none;
+
+        width: 337px;
+        height: 63px;
+      }
+
+      .save-btn {
+        background-color: #50be4b;
+      }
+
+      .cancel-btn {
+        background-color: #f0646b;
+      }
+    }
+  }
+}
