@@ -24,8 +24,15 @@ var swiper = new Swiper('.swiper-container-1', {
 });
 
 $(document).ready(function(){
-	$("div.slide-panel p.open").toggle(function(){
-		$("div.slide-panel").animate({left:'201px'},500);}, function() {
-		$("div.slide-panel").animate({left:0},500);
+	$("div.slide-panel p.open").click(function(){
+    event.preventDefault();
+		$("div.top-panel").animate({left:'0'},500);
 	});
+});
+
+$(document).ready(function(){
+  $(".message__close" ).click(function() {
+    event.preventDefault();
+    $("div.top-panel").animate({left:'-200%'},500);
+  });
 });
