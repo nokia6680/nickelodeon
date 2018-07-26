@@ -14,3 +14,67 @@
     height: 278px !important;
   }
 }
+
+@media (min-width: $netbooks) {
+  .gallery-items {
+    margin-left: 20px;
+    margin-top: 7%;
+    .swiper-slide {
+      width: 248px !important;
+      height: 348px !important;
+    }
+  }
+}
+@media (min-width: $wide-netbooks) {
+  .gallery-items {
+    margin-top: 5%;
+    padding-top: 0;
+    margin-left: 20px;
+    .swiper-slide {
+      width: 187px !important;
+      height: 278px !important;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .gallery-items {
+    margin-top: 0;
+    padding-top: 0;
+    .swiper-slide {
+      width: 279px !important;
+      height: 391px !important;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .gallery-items {
+    margin-top: 5%;
+    padding-top: 0;
+
+    .swiper-slide {
+      width: 310px !important;
+      height: 435px !important;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .gallery-items {
+    margin-top: 0;
+    .swiper-slide {
+      width: 310px !important;
+      height: 435px !important;
+    }
+  }
+}
+
+@media (min-width: $fhd) {
+  .gallery-items {
+    .swiper-slide {
+      width: 496px !important;
+      height: 696px !important;
+    }
+  }
+}

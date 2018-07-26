@@ -81,3 +81,397 @@
     padding-right: 20px;
   }
 }
+
+@media (min-width: $netbooks) {
+  .gallery-slide {
+    margin-top: 20px;
+    margin-left: 5px;
+
+    &:nth-of-type(3n+1) {
+      background-size: 248px 348px;
+
+      width: 248px;
+      height: 348px;
+    }
+
+    &:nth-of-type(3n+2) {
+      background-size: 248px 348px;
+
+      width: 248px;
+      height: 348px;
+    }
+
+    &:nth-of-type(3n+3) {
+      background-size: 248px 348px;
+
+      width: 248px;
+      height: 348px;
+    }
+
+    &:nth-of-type(3n+4) {
+      background-size: 248px 348px;
+
+      width: 248px;
+      height: 348px;
+    }
+
+    &__title {
+      font: {
+        size: 17px;
+      }
+
+      background-size: 222px 31px;
+
+      width: 222px;
+      height: 31px;
+
+      text-align: left;
+      padding-top: 5px;
+      padding-left: 20px;
+
+      margin: 0;
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+
+    &__head {
+      max-height: 115px;
+      margin: 0 auto;
+
+      z-index: 100;
+    }
+
+    &__head--ninja {
+      padding-right: 20px;
+    }
+  }
+}
+@media (min-width: $wide-netbooks) {
+  .gallery-slide {
+    margin-top: 20px;
+    margin-left: 5px;
+
+    &:nth-of-type(3n+1) {
+      background-size: 187px 278px;
+      background-repeat: no-repeat;
+
+      width: 187px;
+      height: 278px;
+    }
+
+    &:nth-of-type(3n+2) {
+      background-size: 187px 278px;
+      background-repeat: no-repeat;
+
+      width: 187px;
+      height: 278px;
+    }
+
+    &:nth-of-type(3n+3) {
+      background-size: 187px 278px;
+      background-repeat: no-repeat;
+
+      width: 187px;
+      height: 278px;
+    }
+
+    &:nth-of-type(3n+4) {
+      background-size: 187px 278px;
+      background-repeat: no-repeat;
+
+      width: 187px;
+      height: 278px;
+    }
+
+    &__title {
+      font: {
+        size: 13px;
+      }
+
+      background-size: 177px 24px;
+
+      display: block;
+      width: 177px;
+      height: 24px;
+
+      text-align: left;
+      padding-top: 5px;
+      padding-left: 20px;
+
+      margin: 0;
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+
+    &__head {
+      max-height: 80px;
+      margin: 0 auto;
+
+      z-index: 100;
+    }
+
+    &__head--ninja {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .gallery-slide {
+    margin-top: 20px;
+    margin-left: 5px;
+
+    &:nth-of-type(3n+1) {
+      background-size: 279px 391px;
+
+      width: 279px;
+      height: 391px;
+    }
+
+    &:nth-of-type(3n+2) {
+      background-size: 279px 391px;
+
+      width: 279px;
+      height: 391px;
+    }
+
+    &:nth-of-type(3n+3) {
+      background-size: 279px 391px;
+
+      width: 279px;
+      height: 391px;
+    }
+
+    &:nth-of-type(3n+4) {
+      background-size: 279px 391px;
+
+      width: 279px;
+      height: 391px;
+    }
+
+    &__title {
+      font: {
+        size: 19px;
+      }
+
+      background-size: 249px 34px;
+
+      width: 249px;
+      height: 34px;
+
+      text-align: left;
+      padding-top: 5px;
+      padding-left: 20px;
+
+      margin: 0;
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+
+    &__head {
+      max-height: 122px;
+      margin: 0 auto;
+
+      z-index: 100;
+    }
+
+    &__head--ninja {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .gallery-slide {
+    margin-top: 20px;
+    margin-left: 5px;
+
+    &:nth-of-type(3n+1) {
+      background-size: 310px 435px;
+
+      width: 310px;
+      height: 435px;
+    }
+
+    &:nth-of-type(3n+2) {
+      background-size: 310px 435px;
+
+      width: 310px;
+      height: 435px;
+    }
+
+    &:nth-of-type(3n+3) {
+      background-size: 310px 435px;
+
+      width: 310px;
+      height: 435px;
+    }
+
+    &:nth-of-type(3n+4) {
+      background-size: 310px 435px;
+
+      width: 310px;
+      height: 435px;
+    }
+
+    &__title {
+      font: {
+        size: 21px;
+      }
+
+      background-size: 277px 38px;
+
+      width: 277px;
+      height: 38px;
+
+      text-align: left;
+      padding-top: 5px;
+      padding-left: 20px;
+
+      margin: 0;
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+
+    &__head {
+      max-height: 143px;
+      margin: 0 auto;
+
+      z-index: 100;
+    }
+
+    &__head--ninja {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .gallery-slide {
+    margin-top: 20px;
+    margin-left: 5px;
+
+    &:nth-of-type(3n+1) {
+      background-size: 310px 435px;
+
+      width: 310px;
+      height: 435px;
+    }
+
+    &:nth-of-type(3n+2) {
+      background-size: 310px 435px;
+
+      width: 310px;
+      height: 435px;
+    }
+
+    &:nth-of-type(3n+3) {
+      background-size: 310px 435px;
+
+      width: 310px;
+      height: 435px;
+    }
+
+    &:nth-of-type(3n+4) {
+      background-size: 310px 435px;
+
+      width: 310px;
+      height: 435px;
+    }
+
+    &__title {
+      font: {
+        size: 21px;
+      }
+
+      background-size: 277px 38px;
+
+      width: 277px;
+      height: 38px;
+
+      text-align: left;
+      padding-top: 5px;
+      padding-left: 20px;
+
+      margin: 0;
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+
+    &__head {
+      max-height: 143px;
+      margin: 0 auto;
+
+      z-index: 100;
+    }
+
+    &__head--ninja {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (min-width: $fhd) {
+  .gallery-slide {
+    margin-top: 20px;
+    margin-left: 5px;
+
+    &:nth-of-type(3n+1) {
+      background-size: 496px 696px;
+
+      width: 496px;
+      height: 696px;
+    }
+
+    &:nth-of-type(3n+2) {
+      background-size: 496px 696px;
+
+      width: 496px;
+      height: 696px;
+    }
+
+    &:nth-of-type(3n+3) {
+      background-size: 496px 696px;
+
+      width: 496px;
+      height: 696px;
+    }
+
+    &:nth-of-type(3n+4) {
+      background-size: 496px 696px;
+
+      width: 496px;
+      height: 696px;
+    }
+
+    &__title {
+      font: {
+        size: 34px;
+      }
+
+      background-size: 444px 62px;
+
+      width: 444px;
+      height: 62px;
+
+      text-align: left;
+      padding-top: 5px;
+      padding-left: 20px;
+
+      margin: 0;
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+
+    &__head {
+      max-height: 230px;
+      margin: 0 auto;
+
+      z-index: 100;
+    }
+
+    &__head--ninja {
+      padding-right: 20px;
+    }
+  }
+}

@@ -11,6 +11,10 @@
   margin-left: 10px;
 
   &__like {
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+
     padding-right: 24px;
     position: relative;
 
@@ -89,5 +93,12 @@
       padding: 0;
       margin-left: 10px;
     }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .gallery-actions {
+    margin-bottom: 15px;
+    margin-left: 20px;
   }
 }

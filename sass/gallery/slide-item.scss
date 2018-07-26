@@ -130,3 +130,547 @@
     }
   }
 }
+
+@media (min-width: $netbooks) {
+  .slide-item {
+    position: absolute;
+    /*Для 5ти частей тела*/
+    &--leftarm {
+      top: -10px;
+      left: 60px;
+
+      .slide-item__pic--leftarm {
+        width: 27px;
+        height: 110px;
+      }
+    }
+    &--chest {
+      top: -20px;
+      left: 85px;
+
+      .slide-item__pic--chest {
+        width: 80px;
+        height: 110px;
+      }
+    }
+    &--rightarm {
+      top: -10px;
+      right: 57px;
+
+      .slide-item__pic--rightarm {
+        width: 27px;
+        height: 110px;
+      }
+    }
+    &--leftleg {
+      top: 88px;
+      left: 85px;
+
+      .slide-item__pic--leftleg {
+        width: 36px;
+        height: 80px;
+      }
+    }
+    &--rightleg {
+      top: 88px;
+      right: 83px;
+
+      .slide-item__pic--rightleg {
+        width: 36px;
+        height: 80px;
+      }
+    }
+    /*Для 4х частей тела*/
+    &--lefttop {
+      top: -15px;
+      left: 57px;
+
+      .slide-list__pic--lefttop {
+        width: 68px;
+        height: 114px;
+      }
+    }
+    &--righttop {
+      top: -15px;
+      right: 56px;
+
+      .slide-list__pic--righttop {
+        width: 68px;
+        height: 114px;
+      }
+    }
+    &--leftbottom {
+      top: 72px;
+      left: 84px;
+
+      .slide-list__pic--leftbottom {
+        width: 40px;
+        height: 94px;
+      }
+    }
+    &--rightbottom {
+      top: 72px;
+      right: 84px;
+
+      .slide-list__pic--rightbottom {
+        width: 40px;
+        height: 94px;
+      }
+    }
+    /*Для 3х частей тела*/
+    &--lefthalf {
+      top: -15px;
+      left: 57px;
+
+      .slide-list__pic--lefthalf {
+        width: 68px;
+        height: 114px;
+      }
+    }
+    &--righthalf {
+      top: -15px;
+      right: 56px;
+
+      .slide-list__pic--righthalf {
+        width: 68px;
+        height: 114px;
+      }
+    }
+    &--doubleleg {
+      top: 72px;
+      left: 84px;
+
+      .slide-list__pic--doubleleg {
+        width: 80px;
+        height: 94px;
+      }
+    }
+    /*Для 2х частей тела*/
+    &--tophalf {
+      top: -15px;
+      left: 57px;
+      .slide-list__pic--tophalf {
+        width: 134px;
+        height: 114px;
+      }
+    }
+    &--bottomhalf {
+      top: 72px;
+      left: 84px;
+
+      .slide-list__pic--bottomhalf {
+        width: 80px;
+        height: 94px;
+      }
+    }
+  }
+}
+@media (min-width: $wide-netbooks) {
+  .slide-item {
+    position: absolute;
+    /*Для 5ти частей тела*/
+    &--leftarm {
+      top: -10px;
+      left: 40px;
+
+      .slide-item__pic--leftarm {
+        width: 21px;
+        height: 88px;
+      }
+    }
+    &--chest {
+      top: -20px;
+      left: 60px;
+
+      .slide-item__pic--chest {
+        width: 64px;
+        height: 88px;
+      }
+    }
+    &--rightarm {
+      top: -10px;
+      right: 43px;
+
+      .slide-item__pic--rightarm {
+        width: 21px;
+        height: 88px;
+      }
+    }
+    &--leftleg {
+      top: 66px;
+      left: 60px;
+
+      .slide-item__pic--leftleg {
+        width: 28px;
+        height: 70px;
+      }
+    }
+    &--rightleg {
+      top: 66px;
+      right: 63px;
+
+      .slide-item__pic--rightleg {
+        width: 28px;
+        height: 70px;
+      }
+    }
+    /*Для 4х частей тела*/
+    &--lefttop {
+      top: -15px;
+      left: 40px;
+
+      .slide-list__pic--lefttop {
+        width: 54px;
+        height: 91px;
+      }
+    }
+    &--righttop {
+      top: -15px;
+      right: 40px;
+
+      .slide-list__pic--righttop {
+        width: 54px;
+        height: 91px;
+      }
+    }
+    &--leftbottom {
+      top: 54px;
+      left: 62px;
+
+      .slide-list__pic--leftbottom {
+        width: 32px;
+        height: 83px;
+      }
+    }
+    &--rightbottom {
+      top: 54px;
+      right: 62px;
+
+      .slide-list__pic--rightbottom {
+        width: 32px;
+        height: 83px;
+      }
+    }
+    /*Для 3х частей тела*/
+    &--lefthalf {
+      top: -15px;
+      left: 40px;
+
+      .slide-list__pic--lefthalf {
+        width: 54px;
+        height: 91px;
+      }
+    }
+    &--righthalf {
+      top: -15px;
+      right: 40px;
+
+      .slide-list__pic--righthalf {
+        width: 54px;
+        height: 91px;
+      }
+    }
+    &--doubleleg {
+      top: 54px;
+      left: 61px;
+
+      .slide-list__pic--doubleleg {
+        width: 64px;
+        height: 83px;
+      }
+    }
+    /*Для 2х частей тела*/
+    &--tophalf {
+      top: -15px;
+      left: 40px;
+      .slide-list__pic--tophalf {
+        width: 107px;
+        height: 91px;
+      }
+    }
+    &--bottomhalf {
+      top: 54px;
+      left: 61.5px;
+
+      .slide-list__pic--bottomhalf {
+        width: 64px;
+        height: 83px;
+      }
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .slide-item {
+    position: absolute;
+    /*Для 5ти частей тела*/
+    &--leftarm {
+      top: -10px;
+      left: 67px;
+
+      .slide-item__pic--leftarm {
+        width: 30px;
+        height: 123px;
+      }
+    }
+    &--chest {
+      top: -20px;
+      left: 95px;
+
+      .slide-item__pic--chest {
+        width: 90px;
+        height: 123px;
+      }
+    }
+    &--rightarm {
+      top: -10px;
+      right: 66px;
+
+      .slide-item__pic--rightarm {
+        width: 30px;
+        height: 123px;
+      }
+    }
+    &--leftleg {
+      top: 100px;
+      left: 95px;
+
+      .slide-item__pic--leftleg {
+        width: 40px;
+        height: 95px;
+      }
+    }
+    &--rightleg {
+      top: 100px;
+      right: 94px;
+
+      .slide-item__pic--rightleg {
+        width: 40px;
+        height: 95px;
+      }
+    }
+    /*Для 4х частей тела*/
+    &--lefttop {
+      top: -15px;
+      left: 57px;
+
+      .slide-list__pic--lefttop {
+        width: 85px;
+        height: 128px;
+      }
+    }
+    &--righttop {
+      top: -15px;
+      right: 56px;
+
+      .slide-list__pic--righttop {
+        width: 85px;
+        height: 128px;
+      }
+    }
+    &--leftbottom {
+      top: 83px;
+      left: 92px;
+
+      .slide-list__pic--leftbottom {
+        width: 48px;
+        height: 95px;
+      }
+    }
+    &--rightbottom {
+      top: 83px;
+      right: 92px;
+
+      .slide-list__pic--rightbottom {
+        width: 48px;
+        height: 95px;
+      }
+    }
+    /*Для 3х частей тела*/
+    &--lefthalf {
+      top: -15px;
+      left: 57px;
+
+      .slide-list__pic--lefthalf {
+        width: 85px;
+        height: 128px;
+      }
+    }
+    &--righthalf {
+      top: -15px;
+      right: 56px;
+
+      .slide-list__pic--righthalf {
+        width: 85px;
+        height: 128px;
+      }
+    }
+    &--doubleleg {
+      top: 83px;
+      left: 92px;
+
+      .slide-list__pic--doubleleg {
+        width: 96px;
+        height: 100px;
+      }
+    }
+    /*Для 2х частей тела*/
+    &--tophalf {
+      top: -15px;
+      left: 57px;
+      .slide-list__pic--tophalf {
+        width: 170px;
+        height: 128px;
+      }
+    }
+    &--bottomhalf {
+      top: 83px;
+      left: 92px;
+
+      .slide-list__pic--bottomhalf {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .slide-item {
+    position: absolute;
+    /*Для 5ти частей тела*/
+    &--leftarm {
+      top: -10px;
+      left: 74px;
+
+      .slide-item__pic--leftarm {
+        width: 33px;
+        height: 137px;
+      }
+    }
+    &--chest {
+      top: -20px;
+      left: 105px;
+
+      .slide-item__pic--chest {
+        width: 100px;
+        height: 137px;
+      }
+    }
+    &--rightarm {
+      top: -10px;
+      right: 74px;
+
+      .slide-item__pic--rightarm {
+        width: 33px;
+        height: 137px;
+      }
+    }
+    &--leftleg {
+      top: 114px;
+      left: 105px;
+
+      .slide-item__pic--leftleg {
+        width: 45px;
+        height: 100px;
+      }
+    }
+    &--rightleg {
+      top: 114px;
+      right: 105px;
+
+      .slide-item__pic--rightleg {
+        width: 45px;
+        height: 100px;
+      }
+    }
+    /*Для 4х частей тела*/
+    &--lefttop {
+      top: -15px;
+      left: 72px;
+
+      .slide-list__pic--lefttop {
+        width: 85px;
+        height: 142px;
+      }
+    }
+    &--righttop {
+      top: -15px;
+      right: 72px;
+
+      .slide-list__pic--righttop {
+        width: 85px;
+        height: 142px;
+      }
+    }
+    &--leftbottom {
+      top: 93px;
+      left: 106px;
+
+      .slide-list__pic--leftbottom {
+        width: 50px;
+        height: 100px;
+      }
+    }
+    &--rightbottom {
+      top: 93px;
+      right: 106px;
+
+      .slide-list__pic--rightbottom {
+        width: 50px;
+        height: 100px;
+      }
+    }
+    /*Для 3х частей тела*/
+    &--lefthalf {
+      top: -20px;
+      left: 71px;
+
+      .slide-list__pic--lefthalf {
+        width: 85px;
+        height: 142px;
+      }
+    }
+    &--righthalf {
+      top: -20px;
+      right: 71px;
+
+      .slide-list__pic--righthalf {
+        width: 85px;
+        height: 142px;
+      }
+    }
+    &--doubleleg {
+      top: 88px;
+      left: 105px;
+
+      .slide-list__pic--doubleleg {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    /*Для 2х частей тела*/
+    &--tophalf {
+      top: -20px;
+      left: 72px;
+
+      .slide-list__pic--tophalf {
+        width: 170px;
+        height: 142px;
+      }
+    }
+    &--bottomhalf {
+      top: 88px;
+      left: 107px;
+
+      .slide-list__pic--bottomhalf {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: $fhd) {
+
+}

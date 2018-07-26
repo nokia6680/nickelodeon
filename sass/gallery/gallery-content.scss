@@ -1,3 +1,15 @@
 .gallery-content {
   width: 65%;
 }
+
+@media (min-width: $netbooks) {
+  .gallery-content {
+    width: 67%;
+  }
+}
+
+@media (min-width: $hd) {
+  .gallery-content {
+    width: 73%;
+  }
+}

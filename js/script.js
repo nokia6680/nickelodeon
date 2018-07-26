@@ -21,6 +21,29 @@ var swiper = new Swiper('.swiper-container-1', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  breakpoints: {
+    1280: {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+    },
+    1366: {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      spaceBetween: 10,
+    }
+
+    1440: {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      spaceBetween: 10,
+    }
+
+    1600: {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      spaceBetween: 10,
+    },
+  },
 });
 
 $(document).ready(function(){
