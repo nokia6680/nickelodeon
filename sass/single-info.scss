@@ -1,3 +1,124 @@
+.single-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: $team-bg;
+  box-shadow: -4px 4px 0 0 rgba(28,131,9,1);
+  -webkit-box-shadow: -4px 4px 0 0 rgba(28,131,9,1);
+  -moz-box-shadow: -4px 4px 0 0 rgba(28,131,9,1);
+
+  position: relative;
+
+  &--send {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 10px;
+    box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
+    -webkit-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
+    -moz-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
+
+    .single-info__copy {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: -5px;
+      right: -27px;
+    }
+  }
+
+  &--captain {
+    position: relative;
+    padding-top: 20px;
+
+    .single-info__rank {
+      background-image: url('../img/register-done.svg');
+      background-repeat: no-repeat;
+      background-size: 120px 29px;
+      width: 120px;
+      height: 29px;
+      display: block;
+      padding-left: 20px;
+      padding-top: 6px;
+      position: absolute;
+      top: 2px;
+      right: -4px;
+
+      font: {
+        size: 14px;
+        family: $main-font;
+        weight: 900;
+      }
+
+      color: $text-white;
+      line-height: normal;
+
+      text-transform: uppercase;
+    }
+  }
+
+  &__image {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+  }
+
+  &__description {
+    font: {
+      family: $main-font;
+      size: 12px;
+      weight: 900;
+    }
+    color: $text-invite;
+    line-height: 14px;
+    text-transform: uppercase;
+    width: 225px;
+    margin-left: 15px;
+  }
+
+  &__description--send {
+    color: $text-send;
+    margin-left: 15px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  &__link {
+    font: {
+      family: $main-font;
+      size: 10px;
+      weight: 900;
+    }
+    color: $text-invite;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 3px solid $text-send;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+
+  &__success {
+    font: {
+      family: $main-font;
+      size: 12px;
+      weight: 900;
+    }
+    color: $text-send;
+    margin-left: 15px;
+  }
+
+  &__status {
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+    margin-left: auto;
+  }
+}
+
 @media (min-width: $laptop) {
   .single-info {
     display: flex;

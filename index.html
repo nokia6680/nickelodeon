@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Nickelodeon</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="css/style.css"  type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!--[if lt IE 9]>
@@ -16,6 +17,7 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
+
 <body>
 	<!--Все содержимое страницы-->
 	<main class="main">
@@ -62,7 +64,8 @@
 					<div class="register-team__wrapper register-wrapper">
 						<div class="register-wrapper__upper">
 							<div class="register-wrapper__image">
-								<img class="register-wrapper__pic" src="img/team-avatar-big.svg"/>
+								<img class="register-wrapper__photo" src="img/photo.jpg" />
+								<img class="register-wrapper__pic" src="img/team-avatar-big.png" />
 							</div>
 							<form class="register-wrapper__form register-form" method="post" action="#">
 								<ul class="register-form__list form-list">
@@ -90,7 +93,8 @@
 					<div class="register-team__wrapper register-wrapper--done">
 						<button class="register-wrapper__close" type="button"></button>
 						<div class="register-wrapper__image">
-							<img class="register-wrapper__pic" src="img/team-avatar-big.svg"/>
+							<img class="register-wrapper__photo" src="img/photo.jpg" />
+							<img class="register-wrapper__pic" src="img/team-avatar-big.png" />
 						</div>
 						<h2 class="register-wrapper__name">Иван<br />Петров</h2>
 						<b class="register-wrapper__rank visually-hidden">Капитан</b>
@@ -105,15 +109,15 @@
 						<!--Single item-->
 						<li class="invite-list__item invite-item visually-hidden">
 							<header class="invite-item__header single-header single-header--sent">
-									<b class="single-header__nr single-header__nr--sent">1</b>
-									<h3 class="single-header__name">Алексей Иванов</h3>
-									<button class="single-header__delete" type="button">-</button>
-								</header>
+								<b class="single-header__nr single-header__nr--sent">1</b>
+								<h3 class="single-header__name">Алексей Иванов</h3>
+								<button class="single-header__delete" type="button">-</button>
+							</header>
 							<div class="invite-item__info single-info">
-									<img class="single-info__image" src="img/team-avatar-small.svg" />
-									<p class="single-info__description">Алексей Иванов зарегистрирован!</p>
-									<img class="single-info__status" src="img/invite-checkbox.svg" />
-								</div>
+								<img class="single-info__image" src="img/team-avatar-small.svg" />
+								<p class="single-info__description">Алексей Иванов зарегистрирован!</p>
+								<img class="single-info__status" src="img/invite-checkbox.svg" />
+							</div>
 						</li>
 						<!--Single item-->
 						<li class="invite-list__item invite-item">
@@ -200,43 +204,55 @@
 			<!--Блок информации по созданным командам-->
 			<div class="content__side side">
 				<div class="side__slider side-slider">
-						<h2 class="side-slider__title">Твои команды</h2>
-						<!-- Swiper slider-->
-					  <div class="swiper-container">
-					    <div class="swiper-wrapper side-slider__wrapper">
-								<a class="swiper-slide side-slider__item side-slider__item--create" href="#">
-									<h3 class="side-slider__create">Создать<br />команду!</h3>
-								</a>
-					      <a class="swiper-slide side-slider__item" href="#">
-									<img class="side-slider__image" src="img/other-avatar.svg" />
-									<b class="side-slider__nr">5</b>
-									<span class="side-slider__captain">Капитан команды:</span>
-									<b class="side-slider__name">Иван Петров</b>
-								</a>
-								<a class="swiper-slide side-slider__item" href="#">
-									<img class="side-slider__image" src="img/other-avatar.svg" />
-									<b class="side-slider__nr">5</b>
-									<span class="side-slider__captain">Капитан команды:</span>
-									<b class="side-slider__name">Иван Петров</b>
-								</a>
-								<a class="swiper-slide side-slider__item" href="#">
-									<img class="side-slider__image" src="img/other-avatar.svg" />
-									<b class="side-slider__nr">5</b>
-									<span class="side-slider__captain">Капитан команды:</span>
-									<b class="side-slider__name">Иван Петров</b>
-								</a>
-								<a class="swiper-slide side-slider__item" href="#">
-									<img class="side-slider__image" src="img/other-avatar.svg" />
-									<b class="side-slider__nr">5</b>
-									<span class="side-slider__captain">Капитан команды:</span>
-									<b class="side-slider__name">Иван Петров</b>
-								</a>
-					    </div>
-					    <!-- Add Arrows -->
-					    <div class="swiper-button-next"></div>
-					    <div class="swiper-button-prev"></div>
-					  </div>
+					<h2 class="side-slider__title">Твои команды</h2>
+					<!-- Swiper slider-->
+					<div class="swiper-container">
+						<div class="swiper-wrapper side-slider__wrapper">
+							<a class="swiper-slide side-slider__item side-slider__item--create" href="#">
+								<h3 class="side-slider__create">Создать<br />команду!</h3>
+							</a>
+							<a class="swiper-slide side-slider__item" href="#">
+								<div class="side-slider__image">
+									<img class="side-slider__photo" src="img/photo-1.jpg" />
+									<img class="side-slider__pic" src="img/other-avatar.png" />
+								</div>
+								<b class="side-slider__nr">5</b>
+								<span class="side-slider__captain">Капитан команды:</span>
+								<b class="side-slider__name">Иван Петров</b>
+							</a>
+							<a class="swiper-slide side-slider__item" href="#">
+								<div class="side-slider__image">
+									<img class="side-slider__photo" src="img/photo-1.jpg" />
+									<img class="side-slider__pic" src="img/other-avatar.png" />
+								</div>
+								<b class="side-slider__nr">5</b>
+								<span class="side-slider__captain">Капитан команды:</span>
+								<b class="side-slider__name">Иван Петров</b>
+							</a>
+							<a class="swiper-slide side-slider__item" href="#">
+								<div class="side-slider__image">
+									<img class="side-slider__photo" src="img/photo-1.jpg" />
+									<img class="side-slider__pic" src="img/other-avatar.png" />
+								</div>
+								<b class="side-slider__nr">5</b>
+								<span class="side-slider__captain">Капитан команды:</span>
+								<b class="side-slider__name">Иван Петров</b>
+							</a>
+							<a class="swiper-slide side-slider__item" href="#">
+								<div class="side-slider__image">
+									<img class="side-slider__photo" src="img/photo-1.jpg" />
+									<img class="side-slider__pic" src="img/other-avatar.png" />
+								</div>
+								<b class="side-slider__nr">5</b>
+								<span class="side-slider__captain">Капитан команды:</span>
+								<b class="side-slider__name">Иван Петров</b>
+							</a>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
+				</div>
 				<!--Рекламный блок-->
 				<div class="side__promo side-promo">
 					<p class="side-promo__description">Смотри&nbsp;любимые мультсериалы на&nbsp;Nickelodeon в&nbsp;Интерактивном ТВ&nbsp;от&nbsp;«Ростелеком» на&nbsp;кнопке&nbsp;номер&nbsp;301</p>
@@ -330,9 +346,10 @@
 	</div>
 	<!-- video блок -->
 	<div class="overlay-player" id="youtube">
-	  <iframe class="player" src="http://www.youtube.com/embed/HDm94zrbXJA" frameborder="0" allowfullscreen></iframe>
+		<iframe class="player" src="http://www.youtube.com/embed/HDm94zrbXJA" frameborder="0" allowfullscreen></iframe>
 		<a href="" onclick="void(0)" class="close"></a>
 	</div>
 	<script src="../js/script.js"></script>
 </body>
+
 </html>
