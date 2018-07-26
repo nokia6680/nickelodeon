@@ -24,24 +24,24 @@ var swiper = new Swiper('.swiper-container-1', {
   breakpoints: {
     1280: {
       slidesPerView: 3,
-      slidesPerColumn: 2,
+      slidesPerColumn: 2
     },
     1366: {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 10,
-    }
+      spaceBetween: 10
+    },
 
     1440: {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 10,
-    }
+      spaceBetween: 10
+    },
 
     1600: {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 10,
+      spaceBetween: 10
     },
   },
 });

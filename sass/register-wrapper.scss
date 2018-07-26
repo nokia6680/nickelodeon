@@ -1,3 +1,122 @@
+.register-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 21px;
+  width: 83.3%;
+  background-color: $team-bg;
+  padding-left: 27px;
+  padding-top: 12px;
+  padding-bottom: 18px;
+  padding-right: 10px;
+  box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+  -webkit-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+  -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+
+  &--done {
+    display: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: $team-bg;
+    padding-left: 27px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+    -webkit-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+    -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+
+    margin-left: 21px;
+    width: 83.3%;
+
+    position: relative;
+
+    .register-wrapper__rank {
+      background-image: url('../img/register-done.svg');
+      background-repeat: no-repeat;
+      background-size: 146px 29px;
+
+      width: 146px;
+      height: 29px;
+
+      display: block;
+
+      padding-left: 20px;
+      padding-top: 2px;
+
+      position: absolute;
+      top: 10px;
+      right: -4px;
+
+      font: {
+        size: 21px;
+        family: $main-font;
+        weight: 900;
+      }
+
+      color: $text-white;
+      line-height: normal;
+
+      text-transform: uppercase;
+    }
+
+    .single-info__status {
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+      margin-left: auto;
+
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+    }
+
+    .register-wrapper__name {
+      font: {
+        size: 16px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: #073f72;
+      line-height: normal;
+
+      text-transform: uppercase;
+
+      margin-left: 10px;
+      margin-top: 0;
+    }
+
+    &__image {
+      min-width: 70px;
+      max-width: 80px;
+      min-height: 75px;
+      max-height: 85px;
+    }
+  }
+
+  &__upper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__image {
+    min-width: 70px;
+    max-width: 80px;
+    min-height: 75px;
+    max-height: 85px;
+  }
+
+  &__submit {
+    width: 100%;
+  }
+}
+
 @media (min-width: $laptop) {
   .register-wrapper {
     display: flex;
@@ -63,9 +182,20 @@
         text-transform: uppercase;
       }
 
+      .single-info__status {
+        width: 36px;
+        height: 36px;
+        margin-right: 10px;
+        margin-left: auto;
+
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+      }
+
       .register-wrapper__name {
         font: {
-          size: 24px;
+          size: 16px;
           weight: 900;
           family: $main-font;
         }
@@ -75,8 +205,8 @@
 
         text-transform: uppercase;
 
-        margin-left: 24px;
-        margin-top: 10px;
+        margin-left: 10px;
+        margin-top: 0;
       }
 
       &__image {
@@ -136,8 +266,9 @@
 
       .register-wrapper__name {
         font: {
-          size: 30px;
+          size: 18px;
         }
+        margin-left: 15px;
       }
 
       &__image {
@@ -182,8 +313,13 @@
 
       .register-wrapper__name {
         font: {
-          size: 30px;
+          size: 20px;
         }
+      }
+
+      .single-info__status {
+        width: 48px;
+        height: 48px;
       }
     }
   }
@@ -213,10 +349,12 @@
 
       .register-wrapper__name {
         font: {
-          size: 32px;
-          weight: 900;
-          family: $main-font;
+          size: 22px;
         }
+      }
+
+      .single-info__status {
+        margin-right: 20px;
       }
 
       &__image {
@@ -301,9 +439,7 @@
 
       .register-wrapper__name {
         font: {
-          size: 45px;
-          weight: 900;
-          family: $main-font;
+          size: 24px;
         }
 
         color: #073f72;
@@ -311,7 +447,7 @@
 
         text-transform: uppercase;
 
-        margin-left: 30px;
+        margin-left: 20px;
       }
     }
 
@@ -394,7 +530,7 @@
 
       .register-wrapper__name {
         font: {
-          size: 45px;
+          size: 26px;
           weight: 900;
           family: $main-font;
         }
@@ -435,6 +571,7 @@
     }
 
     &--done {
+      display: none;
       background-color: $team-bg;
       padding-left: 27px;
       padding-top: 12px;
@@ -479,7 +616,7 @@
 
       .register-wrapper__name {
         font: {
-          size: 54px;
+          size: 30px;
           weight: 900;
           family: $main-font;
         }
@@ -490,6 +627,13 @@
         text-transform: uppercase;
 
         margin-left: 30px;
+      }
+
+      .single-info__status {
+        width: 64px;
+        height: 61px;
+
+        margin-right: 40px;
       }
     }
   }
