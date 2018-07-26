@@ -83,6 +83,7 @@
 						<div class="register-wrapper__submit submit-team">
 							<button class="submit-team__enter" type="button"><i class="fa fa-vk"></i>авторизация</button>
 							<button class="submit-team__submit" type="submit">Отправить!</button>
+							<button class="submit-team__submit visually-hidden" type="submit">Регистрация!</button>
 						</div>
 					</div>
 					<!---done-->
@@ -278,24 +279,24 @@
 		<div class="popup popup-delete popup-delete__hidden">
 			<p class="popup-delete__title">Вы точно хотите удалить участника из команды?</p>
 			<div class="popup-delete__controls">
-				<button class="popup-delete__no" type="button">Нет</button>
 				<button class="popup-delete__yes" type="button">Да</button>
+				<button class="popup-delete__no" type="button">Нет</button>
 			</div>
 		</div>
 		<!--Попап вопроса про Ростелеком-->
 		<div class="popup popup-rt popup-rt__hidden">
 			<p class="popup-rt__title">Являешься&nbsp;ли&nbsp;ты&nbsp;абонентом интерактивного&nbsp;ТВ &laquo;Ростелеком&raquo;&nbsp;(Онлайм)?</p>
 			<div class="popup-rt__controls">
-				<button class="popup-rt__no" type="button">Нет</button>
 				<button class="popup-rt__yes" type="button">Да</button>
+				<button class="popup-rt__no" type="button">Нет</button>
 			</div>
 		</div>
 		<!--Попап вопроса про Николодеон-->
 		<div class="popup popup-nl popup-nl__hidden">
 			<p class="popup-nl__title">У тебя есть канал NICKELODEON?</p>
 			<div class="popup-nl__controls">
-				<button class="popup-nl__no" type="button">Нет</button>
 				<button class="popup-nl__yes" type="button">Да</button>
+				<button class="popup-nl__no" type="button">Нет</button>
 			</div>
 		</div>
 	</div>
@@ -324,8 +325,13 @@
 	<div class="overlay-video overlay-video--on">
 		<div class="popup-video">
 			<h1 class="popup-video__title">Нажми сюда</h1>
-			<a class="popup-video__link" href="#" target="_self"></a>
+			<a class="popup-video__link" href="#youtube" target="_self"></a>
 		</div>
+	</div>
+	<!-- video блок -->
+	<div class="overlay-player" id="youtube">
+	  <iframe class="player" src="http://www.youtube.com/embed/HDm94zrbXJA" frameborder="0" allowfullscreen></iframe>
+		<a href="" onclick="void(0)" class="close"></a>
 	</div>
 	<script src="../js/script.js"></script>
 </body>
