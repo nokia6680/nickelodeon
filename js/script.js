@@ -29,19 +29,19 @@ var swiper = new Swiper('.swiper-container-1', {
     1366: {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 10
+      spaceBetween: 30
     },
 
     1440: {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 10
+      spaceBetween: 30
     },
 
     1600: {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 10
+      spaceBetween: 30
     },
   },
 });
