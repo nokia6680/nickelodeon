@@ -3,3 +3,45 @@
   width: 50px;
   height: 50px;
 }
+
+.filter-item__checkbox--people + label {
+  @include checkbox-default-people;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-item__checkbox--like + label {
+  @include checkbox-default-like;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-item__checkbox--share + label {
+  @include checkbox-default-share;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-item__checkbox--people:checked + label::after {
+  @include checkbox-checked-people;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-item__checkbox--like:checked + label::after {
+  @include checkbox-checked-like;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-item__checkbox--share:checked + label::after {
+  @include checkbox-checked-share;
+
+  outline: none;
+  cursor: pointer;
+}
