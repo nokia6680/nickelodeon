@@ -52,6 +52,17 @@
     height: 515px;
     z-index: 1001;
   }
+
+  .popup-video__link {
+    width: 200px;
+    height: 200px;
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    bottom: 165px;
+    left: 80px;
+    z-index: 9999;
+  }
 }
 
 @media (min-width: $laptop) {
@@ -108,6 +119,17 @@
       width: 430px;
       height: 515px;
       z-index: 1001;
+    }
+
+    .popup-video__link {
+      width: 200px;
+      height: 200px;
+      display: block;
+      text-decoration: none;
+      position: absolute;
+      bottom: 165px;
+      left: 80px;
+      z-index: 9999;
     }
   }
 }
@@ -368,6 +390,17 @@
       left: -95px;
       width: 792px;
       height: 788px;
+    }
+
+    .popup-video__link {
+      width: 280px;
+      height: 280px;
+      display: block;
+      text-decoration: none;
+      position: absolute;
+      bottom: 250px;
+      left: 130px;
+      z-index: 9999;
     }
   }
 }

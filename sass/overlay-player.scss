@@ -1,26 +1,38 @@
 .overlay-player {
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 1000;
-   visibility: visible;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  visibility: visible;
   display: none;
-   background-color: rgba(0, 0, 0, 0.8);
-   opacity: 0.5;
-   position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  position: fixed;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 
-   -webkit-transition: opacity .5s;
-   -moz-transition: opacity .5s;
-   -ms-transition: opacity .5s;
-   -o-transition: opacity .5s;
-   transition: opacity .5s;
+  .player {
+    margin: 20% auto 0;
+    width: 640px;
+    height: 480px;
+    display: block;
 
-   .player {
-     margin: 0 auto;
-     margin-top: 20%;
+    @media (min-width: $netbooks) {
+      margin: 10% auto 0;
+      width: 854px;
+      height: 480px;
+      display: block;
+    }
 
-     width: 640px;
-     height: 480px;
-   }
+    @media (min-width: $widebooks) {
+      margin: 10% auto 0;
+      width: 854px;
+      height: 480px;
+      display: block;
+    }
+  }
 }
