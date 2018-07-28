@@ -223,3 +223,116 @@
     height: 90px;
   }
 }
+
+
+@mixin checkbox-default-share1 {
+  display: block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  position: relative;
+
+  width: 57px;
+  height: 54px;
+}
+
+@mixin checkbox-default-share2 {
+  display: block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  position: relative;
+
+  width: 57px;
+  height: 54px;
+
+}
+
+@mixin checkbox-default-share3 {
+  display: block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  position: relative;
+
+  width: 57px;
+  height: 54px;
+}
+
+@mixin checkbox-default-share4 {
+  display: block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  position: relative;
+
+  width: 57px;
+  height: 54px;
+}
+
+@mixin checkbox-custom-share1 {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 57px;
+  height: 54px;
+  top: 8px;
+  right: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg id='Слой_1' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 57.37 54'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23fcd726;stroke-width:5px;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Echeckbox-1%3C/title%3E%3Cpath class='cls-1' d='M6.5,2.5h48l-3,49H2.5Z' transform='translate%280.21 0%29'/%3E%3C/svg%3E");
+  background-size: 57px 54px;
+  background-repeat: no-repeat;
+}
+
+@mixin checkbox-custom-share2 {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 57px;
+  height: 54px;
+  top: 8px;
+  right: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg id='Слой_1' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 57.21 54'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23fcd726;stroke-width:5px;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Echeckbox-2%3C/title%3E%3Cpath id='Rectangle_1550_copy' data-name='Rectangle 1550 copy' class='cls-1' d='M50.5,51.5H2.5V2.5h52Z' transform='translate%280 0%29'/%3E%3C/svg%3E");
+  background-size: 57px 54px;
+  background-repeat: no-repeat;
+}
+
+@mixin checkbox-custom-share3 {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 57px;
+  height: 54px;
+  top: 8px;
+  right: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg id='Слой_1' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 57.37 54'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23fcd726;stroke-width:5px;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Echeckbox-3%3C/title%3E%3Cpath id='Rectangle_1550_copy_2' data-name='Rectangle 1550 copy 2' class='cls-1' d='M50.5,2.5H2.5l3,49h49Z' transform='translate%280.16 0%29'/%3E%3C/svg%3E");
+  background-size: 57px 54px;
+  background-repeat: no-repeat;
+}
+
+@mixin checkbox-custom-share4 {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 57px;
+  height: 54px;
+  top: 8px;
+  right: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg id='Слой_1' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 57.21 54'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23fcd726;stroke-width:5px;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Echeckbox-4%3C/title%3E%3Cpath id='Rectangle_1550_copy_3' data-name='Rectangle 1550 copy 3' class='cls-1' d='M50.5,2.5H2.5v49h52Z' transform='translate%280 0%29'/%3E%3C/svg%3E");
+  background-size: 57px 54px;
+  background-repeat: no-repeat;
+}
+
+@mixin checkbox-checked-share1 {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  display: block;
+  width: 60px;
+  height: 52px;
+
+  background-image: url("data:image/svg+xml,%3Csvg id='Слой_1' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 60 52'%3E%3Ctitle%3Echeckbox-checked%3C/title%3E%3Cimage width='60' height='52' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA1CAYAAAAd84i6AAAACXBIWXMAAAsSAAALEgHS3X78AAADvUlEQVRoQ+XaTYhNYRgH8Gd8Mz5KNIQmmoWSsJBokmlQY2HKUpSaxROFZCELpWSjZFaTRNmYkqTIxsKEomgkCbFAhBKifH+8nmfee3PnzDnv/zlzz7n3yOK3mLnveZ73P50557zvPeSco/8JHFB4TOtFtxgDx7p/PTDTYvFZOHFTNKNjcNGiYpomnpbClr0T60LH4cJFxDRK9EXCVjooRsYdi4sXkf+fTQpbdlnMiB6LixcN02ZD2LKXYmXl8bhBkTAtFV8NQSv9FHtEg9bATYqCqUk8NwRMcl6Mw42KgGm0uGIIhSzCzYqAqccQBjmgtXCzemPqMoRBLogRWg83rCemZeKbIVDIQzG5XBM3rRemmc7fVlCgkI9ifmVd3LgedCHAdMMQKOS304VFpDZuXg9MxwyBkH1xtXHzWmPaagiDnHOlB40oPIFaYmoV3w2BQu6LSUk98CRqhWmWeG0IFPJetIT64InUgjzyOb+AR4FCfokO1AtPphaYThoCIXthH1eEwEzbDWGQ0y7hIhUFB+SKaZX4YQgUclc0wl4lcEBudMON6Y0hUIjuYc2DvSrAAVKwU0yF49JgGi/6DYFC9CLVDntFhAcwtTm/Y/DE6W6DoaAJ0ylDIGQ37BMj+cOhp5yuWrahgpBOFIdBemGfBPEfME0QtxObMU1EhRPqtjt/KqJAIf0D80O9UgbuBU0fiAWoeKTmXPHWEChEz7hm2CtVYPsp90lsQg1KNRudv32gmiF6LWmDvVIFZlrt0p9yR8XYQNgG5x8MUB1kBwpj8fcHvZ/5+xpqHKffJd0P/Z4wOh45iYJYUWlSWZxyulLpjITtcOnPmKhbThcXhjAWWZ5yZYec/7Krxfk/AhofosvFOShEGhp4jaFxWlfFPcO4EN0IaEUB0tLAuqufxfIsa9U/5MQGLv/gN7y/GCZSC8fRxIdr8C/8KwSPDRPKk27Pmt7XGI6hv2SaIs4aJpaHV0434A0TH674D/yVe5erfnGehl6klqMJVys8gGmFeGGYbBa60GSzAAfIRKaLS4YJV6MHziMjcMAA/aqRab+r/qkpzjWX40UqCg4YhGmtq34fqpK+wtAE+2YIDhiCaba4bgiD6Msp2W0bGcEBsfzT2RFDqJAtsE8O4IAgpg3igyFcVDesnRM4APKrojuGkGV9TldTqG5O4AATv898whD2mdPbHKqXIzggFf2/TF6A6Gu+S2CNnMEBqTEtFI9iAm+Ex9YAHDAs+g0805mKsIfhMTUCB1SFaae46BLeXa6HP8JXLAEtMhQ4AAAAAElFTkSuQmCC'/%3E%3C/svg%3E");
+
+  background-size: 60px 52px;
+  background-repeat: no-repeat;
+}

@@ -169,7 +169,12 @@
 							</header>
 							<div class="invite-item__info single-info single-info--send">
 								<p class="single-info__description single-info__description--send">Отправь ссылку:</p>
-								<a class="single-info__link" href="#">IGRAEM.NICKELODEON.RU/T/01D7B00010<img class="single-info__copy" src="img/copy.svg" /></a>
+								<a class="single-info__link" href="#">IGRAEM.NICKELODEON.RU/T/01D7B00010</a>
+								<div class="single-info__controls">
+									<button class="single-info__double" type="button"><img class="single-info__copy" src="img/copy.svg" /></button>
+									<button class="single-info__sms" type="button">SMS</button>
+									<button class="single-info__vk" type="button"><i class="fa fa-vk"></i></button>
+								</div>
 								<span class="single-info__success">ссылка скопирована в буфер обмена!</span>
 							</div>
 						</li>
@@ -349,6 +354,87 @@
 	<div class="overlay-player" id="youtube">
 		<iframe class="player" src="http://www.youtube.com/embed/HDm94zrbXJA" frameborder="0" allowfullscreen></iframe>
 		<a href="" onclick="void(0)" class="close"></a>
+	</div>
+	<!--Попап приглашения в вк-->
+	<div class="overlay-share overlay-invite--on">
+		<div class="overlay-share__wrapper share-wrapper">
+			<button class="message__close" type="button"></button>
+			<ul class="share-wrapper__list share-list">
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-1" id="name-1" />
+						<label class="share-item__label" for="name-1"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-2" id="name-2" />
+						<label class="share-item__label" for="name-2"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-3" id="name-3" />
+						<label class="share-item__label" for="name-3"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-4" id="name-4" />
+						<label class="share-item__label" for="name-4"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-5" id="name-5" />
+						<label class="share-item__label" for="name-5"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-6" id="name-6" />
+						<label class="share-item__label" for="name-6"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-7" id="name-7" />
+						<label class="share-item__label" for="name-7"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-8" id="name-8" />
+						<label class="share-item__label" for="name-8"></label>
+					</div>
+				</li>
+			</ul>
+			<button class="share-wrapper__submit" type="submit">Пригласить!</button>
+		</div>
 	</div>
 	<script src="../js/script.js"></script>
 </body>

@@ -102,6 +102,7 @@
   }
 
   &__success {
+    display: none;
     font: {
       family: $main-font;
       size: 12px;
