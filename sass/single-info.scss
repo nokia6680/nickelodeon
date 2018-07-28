@@ -20,12 +20,85 @@
     -webkit-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
     -moz-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
 
-    .single-info__copy {
-      width: 24px;
-      height: 24px;
-      position: absolute;
-      top: -5px;
-      right: -27px;
+    .single-info__controls {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      width: 100%;
+      margin-top: 10px;
+
+      .single-info__double {
+        position: relative;
+        background-color: #34bfb7;
+        border: none;
+        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+
+        cursor: pointer;
+        outline: none;
+
+        .fa-share::before {
+          position: absolute;
+          content: '\f064';
+
+          font-size: 22px;
+          color: $text-white;
+
+          top: 4px;
+          left: 4px;
+        }
+      }
+
+      .single-info__sms {
+        position: relative;
+        background-color: #34bfb7;
+        border: none;
+        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+
+        cursor: pointer;
+        outline: none;
+
+        font: {
+          size: 9px;
+          weight: 600;
+          family: $main-font;
+        }
+
+        color: $text-white;
+        line-height: 9px;
+        text-transform: uppercase;
+
+        padding-top: 2px;
+        padding-left: 5px;
+      }
+
+      .single-info__vk {
+        position: relative;
+        background-color: $btn-enter;
+        border: none;
+        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+
+        cursor: pointer;
+        outline: none;
+
+        .fa-vk::before {
+          position: absolute;
+          content: '\f189';
+
+          font-size: 20px;
+          color: $text-white;
+
+          top: 4px;
+          left: 4px;
+        }
+      }
     }
   }
 
@@ -141,12 +214,85 @@
       -webkit-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
       -moz-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
 
-      .single-info__copy {
-        width: 24px;
-        height: 24px;
-        position: absolute;
-        top: -5px;
-        right: -27px;
+      .single-info__controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 100%;
+        margin-top: 10px;
+
+        .single-info__double {
+          position: relative;
+          background-color: #34bfb7;
+          border: none;
+          border-radius: 20px;
+          width: 30px;
+          height: 30px;
+
+          cursor: pointer;
+          outline: none;
+
+          .fa-share::before {
+            position: absolute;
+            content: '\f064';
+
+            font-size: 22px;
+            color: $text-white;
+
+            top: 4px;
+            left: 4px;
+          }
+        }
+
+        .single-info__sms {
+          position: relative;
+          background-color: #34bfb7;
+          border: none;
+          border-radius: 20px;
+          width: 30px;
+          height: 30px;
+
+          cursor: pointer;
+          outline: none;
+
+          font: {
+            size: 9px;
+            weight: 600;
+            family: $main-font;
+          }
+
+          color: $text-white;
+          line-height: 9px;
+          text-transform: uppercase;
+
+          padding-top: 2px;
+          padding-left: 5px;
+        }
+
+        .single-info__vk {
+          position: relative;
+          background-color: $btn-enter;
+          border: none;
+          border-radius: 20px;
+          width: 30px;
+          height: 30px;
+
+          cursor: pointer;
+          outline: none;
+
+          .fa-vk::before {
+            position: absolute;
+            content: '\f189';
+
+            font-size: 20px;
+            color: $text-white;
+
+            top: 4px;
+            left: 4px;
+          }
+        }
       }
     }
 
@@ -261,14 +407,57 @@
       -webkit-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
       -moz-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
 
-      .single-info__copy {
-        width: 36px;
-        height: 36px;
-        position: absolute;
-        top: -15px;
-        right: -63px;
+      .single-info__controls {
+        width: 100%;
+        margin-top: 10px;
 
-        display: block;
+        .single-info__double {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          .fa-share::before {
+            font-size: 26px;
+            top: 6px;
+            left: 6px;
+          }
+        }
+
+        .single-info__sms {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          font: {
+            size: 12px;
+            weight: 600;
+            family: $main-font;
+          }
+
+          color: $text-white;
+          line-height: 12px;
+          text-transform: uppercase;
+
+          padding-top: 2px;
+          padding-left: 5px;
+        }
+
+        .single-info__vk {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          .fa-vk::before {
+            position: absolute;
+            content: '\f189';
+
+            font-size: 24px;
+            color: $text-white;
+
+            top: 7px;
+            left: 6px;
+          }
+        }
       }
     }
 
@@ -387,12 +576,58 @@
       -webkit-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
       -moz-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
 
-      .single-info__copy {
-        width: 36px;
-        height: 36px;
-        position: absolute;
-        top: -15px;
-        right: -70px;
+      .single-info__controls {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 10px;
+
+        .single-info__double {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          .fa-share::before {
+            font-size: 26px;
+            top: 6px;
+            left: 6px;
+          }
+        }
+
+        .single-info__sms {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          font: {
+            size: 12px;
+            weight: 600;
+            family: $main-font;
+          }
+
+          color: $text-white;
+          line-height: 12px;
+          text-transform: uppercase;
+
+          padding-top: 2px;
+          padding-left: 5px;
+        }
+
+        .single-info__vk {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          .fa-vk::before {
+            position: absolute;
+            content: '\f189';
+
+            font-size: 24px;
+            color: $text-white;
+
+            top: 7px;
+            left: 6px;
+          }
+        }
       }
     }
 
@@ -510,12 +745,58 @@
       -webkit-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
       -moz-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
 
-      .single-info__copy {
-        width: 36px;
-        height: 36px;
-        position: absolute;
-        top: -15px;
-        right: -70px;
+      .single-info__controls {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10px;
+
+        .single-info__double {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          .fa-share::before {
+            font-size: 26px;
+            top: 6px;
+            left: 6px;
+          }
+        }
+
+        .single-info__sms {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          font: {
+            size: 12px;
+            weight: 600;
+            family: $main-font;
+          }
+
+          color: $text-white;
+          line-height: 12px;
+          text-transform: uppercase;
+
+          padding-top: 2px;
+          padding-left: 5px;
+        }
+
+        .single-info__vk {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          .fa-vk::before {
+            position: absolute;
+            content: '\f189';
+
+            font-size: 24px;
+            color: $text-white;
+
+            top: 7px;
+            left: 6px;
+          }
+        }
       }
     }
 
@@ -632,14 +913,6 @@
       box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
       -webkit-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
       -moz-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
-
-      .single-info__copy {
-        width: 36px;
-        height: 36px;
-        position: absolute;
-        top: -15px;
-        right: -70px;
-      }
     }
 
     &--captain {
@@ -756,12 +1029,61 @@
       -webkit-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
       -moz-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
 
-      .single-info__copy {
-        width: 36px;
-        height: 36px;
+      .single-info__controls {
+        width: 25%;
+        margin: 0 auto;
+        margin-top: 10px;
         position: absolute;
-        top: -15px;
-        right: -70px;
+        right: 0;
+        top: 5px;
+
+        .single-info__double {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          .fa-share::before {
+            font-size: 26px;
+            top: 6px;
+            left: 8px;
+          }
+        }
+
+        .single-info__sms {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          font: {
+            size: 12px;
+            weight: 600;
+            family: $main-font;
+          }
+
+          color: $text-white;
+          line-height: 12px;
+          text-transform: uppercase;
+
+          padding-top: 2px;
+          padding-left: 5px;
+        }
+
+        .single-info__vk {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          .fa-vk::before {
+            position: absolute;
+            content: '\f189';
+
+            font-size: 24px;
+            color: $text-white;
+
+            top: 7px;
+            left: 6px;
+          }
+        }
       }
     }
 
@@ -875,12 +1197,13 @@
       -webkit-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
       -moz-box-shadow: -4px 4px 0 0 rgba(255,209,0,1);
 
-      .single-info__copy {
-        width: 48px;
-        height: 46px;
+      .single-info__controls {
+        width: 20%;
+        margin: 0 auto;
+        margin-top: 10px;
         position: absolute;
-        top: -15px;
-        right: -70px;
+        right: 0;
+        top: 20px;
       }
     }
 
