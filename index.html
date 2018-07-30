@@ -298,6 +298,15 @@
 
 	<!--Popup-->
 	<div class="overlay overlay--on">
+		<!--Попап смс-->
+		<div class="popup popup-sms popup-sms__hidden">
+			<button class="popup-sms__close" type="button"></button>
+			<p class="popup-sms__title">Отправить ссылку по sms</p>
+			<div class="popup-sms__controls">
+				<input class="popup-sms__input" type="text" name="phone" value="" />
+				<button class="send_sms" type="button">Отправить</button>
+			</div>
+		</div>
 		<!--Попап удаления участника-->
 		<div class="popup popup-delete popup-delete__hidden">
 			<p class="popup-delete__title">Вы точно хотите удалить участника из команды?</p>
