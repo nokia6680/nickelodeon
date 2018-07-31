@@ -4,6 +4,13 @@
   justify-content: flex-end;
   align-items: center;
 
+  &--code {
+    .submit-team__submit--code {
+      width: 130px;
+      margin-right: -13px;
+    }
+  }
+
   &__enter {
     background-color: $btn-enter;
     border: none;
@@ -47,12 +54,16 @@
     padding-bottom: 5px;
     padding-left: 10px;
     text-align: center;
-    margin-right: -11px;
+    margin-right: -15px;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
     outline: none;
     position: relative;
+
+    &--register {
+      display: none;
+    }
   }
 }
 
@@ -62,6 +73,13 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    &--code {
+      .submit-team__submit--code {
+        width: 130px;
+        margin-right: -15px;
+      }
+    }
 
     &__enter {
       background-color: $btn-enter;
@@ -106,7 +124,7 @@
       padding-bottom: 5px;
       padding-left: 10px;
       text-align: center;
-      margin-right: -11px;
+      margin-right: -15px;
       text-transform: uppercase;
       border: none;
       cursor: pointer;
@@ -121,6 +139,13 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    &--code {
+      .submit-team__submit--code {
+        width: 170px;
+        margin-right: -15px;
+      }
+    }
 
     &__enter {
       background-color: $btn-enter;
@@ -167,7 +192,7 @@
       padding-bottom: 5px;
       padding-left: 10px;
       text-align: center;
-      margin-right: -14px;
+      margin-right: -15px;
       text-transform: uppercase;
       border: none;
       cursor: pointer;
@@ -229,7 +254,7 @@
       padding-bottom: 5px;
       padding-left: 10px;
       text-align: center;
-      margin-right: -14px;
+      margin-right: -15px;
       text-transform: uppercase;
       border: none;
       cursor: pointer;
@@ -258,6 +283,13 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    &--code {
+      .submit-team__submit--code {
+        width: 237px;
+        margin-right: -16px;
+      }
+    }
 
     &__enter {
       background-color: $btn-enter;
@@ -304,7 +336,7 @@
       padding-top: 5px;
       padding-bottom: 5px;
       text-align: center;
-      margin-right: -10px;
+      margin-right: -15px;
       text-transform: uppercase;
       border: none;
       cursor: pointer;
@@ -377,6 +409,13 @@
 @media (min-width: $fhd) {
   .submit-team {
     display: flex;
+
+    &--code {
+      .submit-team__submit--code {
+        width: 315px;
+        margin-right: -16px;
+      }
+    }
 
     &__enter {
       font: {

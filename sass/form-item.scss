@@ -43,12 +43,21 @@
     display: none;
   }
 
+  &__success {
+    @extend .form-item__error;
+    color: $text-label !important;
+  }
+
   &__input--name {
     width: 145px;
   }
 
   &__input--phone {
     width: 125px;
+  }
+
+  &__input--code {
+    width: 150px;
   }
 }
 
@@ -160,6 +169,10 @@
     &__input--phone {
       width: 157px;
     }
+
+    &__input--code {
+      width: 200px;
+    }
   }
 }
 @media (min-width: $wide-netbooks) {
@@ -214,6 +227,10 @@
 
     &__input--phone {
       width: 168px;
+    }
+
+    &__input--code {
+      width: 213px;
     }
   }
 }
@@ -270,6 +287,10 @@
     &__input--phone {
       width: 180px;
     }
+
+    &__input--code {
+      width: 220px;
+    }
   }
 }
 @media (min-width: $widebooks) {
@@ -324,6 +345,10 @@
 
     &__input--phone {
       width: 235px;
+    }
+
+    &__input--code {
+      width: 250px;
     }
   }
 }
@@ -380,6 +405,10 @@
     &__input--phone {
       width: 235px;
     }
+
+    &__input--code {
+      width: 250px;
+    }
   }
 }
 @media (min-width: $fhd) {
@@ -410,6 +439,10 @@
 
     &__input--phone {
       width: 315px;
+    }
+
+    &__input--code {
+      width: 300px;
     }
   }
 }

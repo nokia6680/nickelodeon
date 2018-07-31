@@ -15,6 +15,47 @@
   -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
 
+  &__title {
+    font: {
+      size: 20px;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-white;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 16%;
+    top: 14%;
+
+    @media (min-width: $netbooks) {
+      left: 24%;
+      top: 9%;
+    }
+
+    @media (min-width: $notebooks) {
+      left: 26%;
+    }
+
+    @media (min-width: $widebooks) {
+      left: 29%;
+    }
+
+    @media (min-width: $hd) {
+      left: 32%;
+      top: 13%;
+    }
+
+    @media (min-width: $fhd) {
+      left: 37%;
+      top: 20%;
+    }
+  }
+
   .player {
     margin: 20% auto 0;
     width: 640px;

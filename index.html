@@ -99,6 +99,29 @@
 						<b class="register-wrapper__rank visually-hidden">Капитан</b>
 						<img class="single-info__status" src="img/invite-checkbox.svg" />
 					</div>
+					<!--Введите код смс-->
+					<div class="register-team__wrapper register-wrapper--sms">
+						<button class="register-wrapper__close" type="button"></button>
+						<div class="register-wrapper__upper">
+							<div class="register-wrapper__image">
+								<img class="register-wrapper__photo" src="img/photo.jpg" />
+								<img class="register-wrapper__pic" src="img/team-avatar-big.png" />
+							</div>
+							<form class="register-wrapper__form register-form" method="post" action="#">
+								<ul class="register-form__list form-list">
+									<li class="form-list__item form-item">
+										<label class="form-item__label" for="code">Введи код,<br />полученный по SMS:</label>
+										<input class="form-item__input form-item__input--code" type="number" id="code" name="code" />
+										<span class="form-item__error">Введён неверный код!</span>
+										<span class="form-item__success">Код верный!</span>
+									</li>
+								</ul>
+							</form>
+						</div>
+						<div class="register-wrapper__submit submit-team submit-team--code">
+							<button class="submit-team__submit submit-team__submit--code" type="submit">Отправить!</button>
+						</div>
+					</div>
 				</div>
 				<!--Блок приглашенных в команду-->
 				<div class="team__invite invite-team">
@@ -332,6 +355,7 @@
 		</div>
 	</div>
 	<div class="overlay-1 overlay-1--on">
+		<!--Попап правил, для капитана переносится в футер-->
 		<div class="popup-rules">
 			<ol class="popup-rules__list">
 				<li class="popup-rules__item">
@@ -352,6 +376,36 @@
 			</ol>
 			<p class="popup-rules__disclaimer">Не забывай, что твои друзья тоже могут создать свои собственные команды и пригласить тебя, увеличив ваши шансы на победу!</p>
 		</div>
+		<!--Попап, аналогийчный первому, для участника-->
+		<div class="popup-steps">
+			<ol class="popup-steps__list">
+				<li class="popup-steps__item">
+					<p class="popup-steps__description">Зарегистрируйся на сайте с<br />помощью своего профиля во<br />ВКонтакте</p>
+				</li>
+				<li class="popup-steps__item">
+					<p class="popup-steps__description">Капитан пригласит других<br />участников и начнёт задание! </p>
+				</li>
+				<li class="popup-steps__item">
+					<p class="popup-steps__description">После того, как задание будет начато, ты сможешь перейти к нему и поучаствовать в составлении<br />коллажа с другими участниками<br />команды</p>
+				</li>
+				<li class="popup-steps__item">
+					<p class="popup-steps__description">Выиграй приставки Sony Playstation 4<br />на всю команду!</p>
+				</li>
+			</ol>
+			<p class="popup-steps__disclaimer">Ты также можешь создать свою собственную команду и вступать в другие команды, увеличив свои шансы на победу!</p>
+		</div>
+		<!--Попап правил для участника-->
+		<div class="popup-member">
+			<button class="popup-member__close" type="button"></button>
+			<p class="popup-member__description">Помни - начать задание может только капитан команды, именно он собирает участников.</p>
+			<p class="popup-member__description">Как только задание начато - поменять состав команды будет нельзя.</p>
+		</div>
+		<!--Попап правил для капитана-->
+		<div class="popup-captain">
+			<button class="popup-captain__close" type="button"></button>
+			<p class="popup-captain__description">Ты можешь начать задание, как только в твоей команде будет от 2 до 5 участников.</p>
+			<p class="popup-captain__description">Как только ты начнёшь задание, менять состав команды нельзя!</p>
+		</div>
 	</div>
 	<div class="overlay-video overlay-video--on">
 		<div class="popup-video">
@@ -360,6 +414,7 @@
 	</div>
 	<!-- video блок -->
 	<div class="overlay-player" id="youtube">
+		<h2 class="overlay-player__title">Досмотри видео до конца, чтобы участвовать в акции!</h2>
 		<iframe class="player" src="http://www.youtube.com/embed/HDm94zrbXJA" frameborder="0" allowfullscreen></iframe>
 		<a href="" onclick="void(0)" class="close"></a>
 	</div>

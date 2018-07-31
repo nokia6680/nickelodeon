@@ -14,8 +14,48 @@
   -webkit-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
   -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
 
-  &--done {
+  &--sms {
     display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 21px;
+    width: 83.3%;
+    background-color: $team-bg;
+    padding-left: 27px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    padding-right: 10px;
+    box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+    -webkit-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+    -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
+
+    position: relative;
+
+    .register-wrapper__close {
+      border: none;
+      border-radius: 20px;
+      background-color: #fc5500;
+      position: absolute;
+
+      top: -15px;
+      right: -15px;
+
+      width: 30px;
+      height: 30px;
+
+      background-image: url('../img/close.png');
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      background-position: center center;
+
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+  &--done {
+    display: none !important;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -545,7 +585,7 @@
     -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
 
     &--done {
-      display: none;
+      display: none !important;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
@@ -632,6 +672,10 @@
     &__image {
       min-width: 189px;
       min-height: 192px;
+    }
+
+    &--sms {
+      margin-left: 28px;
     }
 
     &--done {

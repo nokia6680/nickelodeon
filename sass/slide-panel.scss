@@ -31,9 +31,12 @@
   padding-top: 30px;
   padding-left: 20px;
 
+  transition: 0.5s ease-in-out;
+
   &--on {
     display: flex;
     left: 0;
+    transition: 0.5s ease-in-out;
   }
 
   &__title {
