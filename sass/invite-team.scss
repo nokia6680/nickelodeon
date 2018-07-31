@@ -1,3 +1,23 @@
+.invite-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 14px;
+
+  &__title {
+    background-image: url("../img/team-header-bg.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 307px;
+    height: 50px;
+    padding-left: 30px;
+    padding-top: 10px;
+    margin-bottom: 12px;
+  }
+}
+
 @media (min-width: $laptop) {
   .invite-team {
     display: flex;

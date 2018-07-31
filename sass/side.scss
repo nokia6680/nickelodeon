@@ -1,3 +1,43 @@
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 48%;
+  height: 100vh;
+
+  position: relative;
+
+  &__gallery {
+    display: block;
+
+    background-image: url('../img/side-link.png');
+    background-repeat: no-repeat;
+    background-size: 207px 47px;
+
+    width: 207px;
+    height: 47px;
+
+    font: {
+      size: 21px;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-gallery;
+    line-height: normal;
+
+    text-align: center;
+
+    margin-top: 60px;
+    margin-left: 70px;
+    padding-top: 10px;
+
+    text-decoration: none;
+  }
+}
+
 @media (min-width: $laptop) {
   .side {
     display: flex;
@@ -9,20 +49,6 @@
     height: 100vh;
 
     position: relative;
-
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 54px 52px;
-
-      width: 54px;
-      height: 52px;
-
-      bottom: 115px;
-      right: 130px;
-      z-index: 10;
-    }
 
     &__gallery {
       display: block;
@@ -65,20 +91,6 @@
 
     position: relative;
 
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 67px 66px;
-
-      width: 66px;
-      height: 67px;
-
-      bottom: 115px;
-      right: 130px;
-      z-index: 10;
-    }
-
     &__gallery {
       background-size: 259px 59px;
       width: 259px;
@@ -102,20 +114,6 @@
     height: 100vh;
 
     position: relative;
-
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 70px 68px;
-
-      width: 70px;
-      height: 68px;
-
-      bottom: 0;
-      right: 130px;
-      z-index: 10;
-    }
 
     &__gallery {
       background-size: 273px 62px;
@@ -141,19 +139,6 @@
 
     position: relative;
 
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 101px 99px;
-
-      width: 101px;
-      height: 99px;
-
-      bottom: 0px;
-      right: 130px;
-      z-index: 10;
-    }
 
     &__gallery {
       background-size: 273px 62px;
@@ -179,19 +164,6 @@
 
     position: relative;
 
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 101px 99px;
-
-      width: 101px;
-      height: 99px;
-
-      bottom: 0px;
-      right: 130px;
-      z-index: 10;
-    }
 
     &__gallery {
       background-size: 324px 73px;
@@ -217,20 +189,6 @@
 
     position: relative;
 
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 101px 99px;
-
-      width: 101px;
-      height: 99px;
-
-      bottom: -110px;
-      right: 130px;
-      z-index: 10;
-    }
-
     &__gallery {
       background-size: 389px 88px;
       width: 389px;
@@ -254,20 +212,6 @@
     height: 100vh;
 
     position: relative;
-
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 135px 132px;
-
-      width: 135px;
-      height: 132px;
-
-      bottom: 155px;
-      right: 180px;
-      z-index: 10;
-    }
 
     &__gallery {
       background-size: 519px 118px;

@@ -36,20 +36,17 @@
 			</div>
 			<!--Выдвигающаяся реклама-->
 			<div class="sidebar__slide slide-panel">
-				<input class="open" id="top-box" type="checkbox" hidden>
-				<label class="btn" for="top-box"><span class="btn-span">Призы</span></label>
+				<button class="open-btn" type="button"><span class="btn-span">Призы</span></button>
 				<div class="top-panel">
-					<div class="message">
-						<button class="message__close" type="button"></button>
-						<h3 class="message__title">Главный приз</h3>
-						<div class="slide-panel__upper">
-							<p class="slide-panel__description slide-panel__description--blue">Sony&nbsp;Playstation&nbsp;4&nbsp;500Gb Slim&nbsp;Black&nbsp;+&nbsp;Подписка Playstation&nbsp;на&nbsp;3&nbsp;месяца каждому&nbsp;члену&nbsp;команды!</p>
-						</div>
-						<div class="slide-panel__lower">
-							<p class="slide-panel__description slide-panel__description--white">А&nbsp;еще&nbsp;каждый&nbsp;день мы&nbsp;разыгрываем&nbsp;одну коробку&nbsp;дня,&nbsp;когда пора&nbsp;играть!</p>
-							<p class="slide-panel__notification">Внешний&nbsp;вид,&nbsp;цвета&nbsp;и&nbsp;модели&nbsp;приза&nbsp;могут&nbsp;отличаться от&nbsp;изображений&nbsp;на&nbsp;баннере/сайте.</p>
-							<p class="slide-panel__notification">Информация об организаторе, о правилах проведения, количестве призов, сроках,&nbsp;месте&nbsp;и&nbsp;порядке&nbsp;их&nbsp;получения&nbsp;доступна&nbsp;на&nbsp;сайте&nbsp;igraem.NICKELODEON.ru.</p>
-						</div>
+					<button class="top-panel__close" type="button"></button>
+					<h3 class="top-panel__title">Главный приз</h3>
+					<div class="top-panel__upper">
+						<p class="top-panel__description top-panel__description--blue">Sony&nbsp;Playstation&nbsp;4&nbsp;500Gb Slim&nbsp;Black&nbsp;+&nbsp;Подписка Playstation&nbsp;на&nbsp;3&nbsp;месяца каждому&nbsp;члену&nbsp;команды!</p>
+					</div>
+					<div class="top-panel__lower">
+						<p class="top-panel__description top-panel__description--white">А&nbsp;еще&nbsp;каждый&nbsp;день мы&nbsp;разыгрываем&nbsp;одну коробку&nbsp;дня,&nbsp;когда пора&nbsp;играть!</p>
+						<p class="top-panel__notification">Внешний&nbsp;вид,&nbsp;цвета&nbsp;и&nbsp;модели&nbsp;приза&nbsp;могут&nbsp;отличаться от&nbsp;изображений&nbsp;на&nbsp;баннере/сайте.</p>
+						<p class="top-panel__notification">Информация об организаторе, о правилах проведения, количестве призов, сроках,&nbsp;месте&nbsp;и&nbsp;порядке&nbsp;их&nbsp;получения&nbsp;доступна&nbsp;на&nbsp;сайте&nbsp;igraem.NICKELODEON.ru.</p>
 					</div>
 				</div>
 			</div>
@@ -86,9 +83,9 @@
 						</div>
 						<!--Блок авторизации и отправки данных формы-->
 						<div class="register-wrapper__submit submit-team">
-							<button class="submit-team__enter" type="button"><i class="fa fa-vk"></i>авторизация</button>
-							<button class="submit-team__submit" type="submit">Отправить!</button>
-							<button class="submit-team__submit visually-hidden" type="submit">Регистрация!</button>
+							<button class="submit-team__enter" type="button"><i class="fa fa-vk"></i>Авторизация</button>
+							<button class="submit-team__submit submit-team__submit--send" type="submit">Отправить!</button>
+							<button class="submit-team__submit submit-team__submit--register visually-hidden" type="submit">Регистрация!</button>
 						</div>
 					</div>
 					<!---done-->
@@ -273,25 +270,26 @@
 		</section>
 	</main>
 	<footer class="footer">
-		<button class="footer__rules" type="button">Правила участия</button>
+		<button class="footer__rules" type="button">Правила акции</button>
+		<button class="footer__howto" type="button">Как участвовать</button>
 		<ul class="footer__social footer-social">
 			<li class="footer-social__item social-item social-item--yt">
-				<a class="social-item__link" href="#"><i class="fa fa-youtube-play"></i></a>
+				<a class="social-item__link" href="https://www.youtube.com/channel/UCw3vK8lNe5SZzL--rMgq-CQ"><i class="fa fa-youtube-play"></i></a>
 			</li>
 			<li class="footer-social__item social-item social-item--fb">
-				<a class="social-item__link" href="#"><i class="fa fa-facebook"></i></a>
+				<a class="social-item__link" href="https://www.facebook.com/NickelodeonRussia"><i class="fa fa-facebook"></i></a>
 			</li>
 			<li class="footer-social__item social-item social-item--vk">
-				<a class="social-item__link" href="#"><i class="fa fa-vk"></i></a>
+				<a class="social-item__link" href="https://vk.com/nickelodeonru"><i class="fa fa-vk"></i></a>
 			</li>
 			<li class="footer-social__item social-item social-item--tw">
-				<a class="social-item__link" href="#"><i class="fa fa-twitter"></i></a>
+				<a class="social-item__link" href="https://twitter.com/NickTVru"><i class="fa fa-twitter"></i></a>
 			</li>
 			<li class="footer-social__item social-item social-item--in">
-				<a class="social-item__link" href="#"><i class="fa fa-instagram"></i></a>
+				<a class="social-item__link" href="https://www.instagram.com/nickelodeon_ru/"><i class="fa fa-instagram"></i></a>
 			</li>
 			<li class="footer-social__item social-item social-item--ok">
-				<a class="social-item__link" href="#"><i class="fa fa-odnoklassniki"></i></a>
+				<a class="social-item__link" href="https://ok.ru/group/53695281103021"><i class="fa fa-odnoklassniki"></i></a>
 			</li>
 		</ul>
 	</footer>
@@ -304,6 +302,7 @@
 			<p class="popup-sms__title">Отправить ссылку по sms</p>
 			<div class="popup-sms__controls">
 				<input class="popup-sms__input" type="text" name="phone" value="" />
+				<span class="popup-sms__success">ссылка отправлена!</span>
 				<button class="send_sms" type="button">Отправить</button>
 			</div>
 		</div>

@@ -22,6 +22,10 @@ var swiper = new Swiper('.swiper-container-1', {
     clickable: true,
   },
   breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      slidesPerColumn: 2
+    },
     1280: {
       slidesPerView: 3,
       slidesPerColumn: 2
@@ -46,16 +50,31 @@ var swiper = new Swiper('.swiper-container-1', {
   },
 });
 
-$(document).ready(function(){
-	$("div.slide-panel p.open").click(function(){
-    event.preventDefault();
-		$("div.top-panel").animate({left:'0'},500);
-	});
-});
+var modalSearch = document.querySelector(".top-panel");
+var closeButton = document.querySelector(".top-panel__close");
+var openButton = document.querySelectorAll(".open-btn");
 
-$(document).ready(function(){
-  $(".message__close" ).click(function() {
+if (modalSearch) {
+  for (var i = 0; i < openButton.length; i++) openButton[i].addEventListener("click", function(event) {
     event.preventDefault();
-    $("div.top-panel").animate({left:'-200%'},500);
+    modalSearch.classList.add("top-panel--on");
   });
-});
+
+  modalSearch.addEventListener("click", function() {
+    modalSearch.classList.remove("top-panel--on");
+  });
+
+  modalSearch.addEventListener("click", function(event) {
+    event.stopPropagation();
+  });
+
+  closeButton.addEventListener("click", function() {
+    modalSearch.classList.remove("top-panel--on");
+  });
+
+  window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+      modalSearch.classList.remove("top-panel--on");
+    }
+  });
+}

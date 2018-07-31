@@ -21,7 +21,7 @@
     border: 2px solid #fff;
 
     font: {
-      size: 30px;
+      size: 20px;
       weight: 900;
       family: $main-font;
     }
@@ -39,5 +39,25 @@
 
     cursor: pointer;
     outline: none;
+  }
+
+  &__howto {
+    @extend .footer__rules;
+  }
+}
+
+@media (min-width: $notebooks) {
+  .footer {
+    &__rules {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .footer {
+    &__rules {
+      font-size: 30px;
+    }
   }
 }

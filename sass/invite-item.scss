@@ -1,3 +1,15 @@
+.invite-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-left: 29px;
+  margin-bottom: 11.25px;
+
+  width: 83%;
+}
+
 @media (min-width: $laptop) {
   .invite-item {
     display: flex;

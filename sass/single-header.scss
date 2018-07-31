@@ -1,3 +1,91 @@
+.single-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-left: 30px;
+  position: relative;
+  background-color: $single-header;
+
+  &--sent {
+    background-color: $single-header-sent;
+  }
+
+  &--send {
+    background-color: $single-header-sent;
+  }
+
+  &__nr {
+    font: {
+      family: $main-font;
+      size: 23px;
+      weight: 900;
+    }
+    color: $text-white;
+    line-height: normal;
+    border-radius: 18px;
+    padding-top: 5px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: -5px;
+    left: -15px;
+    background-color: $single-header;
+    z-index: 10;
+  }
+
+  &__nr--sent {
+    background-color: $single-header-sent;
+  }
+
+  &__nr--send {
+    background-color: $single-header-sent;
+  }
+
+  &__name {
+    font: {
+      family: $main-font;
+      size: 12px;
+      weight: 900;
+    }
+    color: $text-white;
+    line-height: normal;
+    margin: 0;
+  }
+
+  &__delete {
+    background-color: $single-delete;
+    position: relative;
+    border: none;
+    height: 100%;
+    font: {
+      size: 21px;
+      weight: 900;
+      family: $main-font;
+    }
+    color: $text-white;
+    margin-right: 0;
+    margin-left: auto;
+    cursor: pointer;
+    outline: none;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      top: 0;
+      left: -9px;
+      border-right: 10px solid $single-delete;
+      border-top: 13px solid transparent;
+      border-bottom: 13px solid transparent;
+    }
+  }
+}
+
 @media (min-width: $laptop) {
   .single-header {
     display: flex;

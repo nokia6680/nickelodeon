@@ -79,6 +79,17 @@
 
     cursor: text;
     outline: none;
+
+    position: relative;
+  }
+
+  &__success {
+    @extend .single-info__success;
+    display: block;
+
+    position: absolute;
+    bottom: 5px;
+    left: 20%;
   }
 
   .send_sms {

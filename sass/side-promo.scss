@@ -1,3 +1,103 @@
+.side-promo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-image: url("../img/promo-bg-new.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-left: 60px;
+  padding-top: 40px;
+  padding-bottom: 97px;
+  margin-top: 45px;
+  margin-left: 20px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url("../img/cloud-2.svg");
+    background-repeat: no-repeat;
+    background-size: 98px 38px;
+    width: 98px;
+    height: 38px;
+    bottom: 30px;
+    left: -5px;
+    z-index: 10;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    background-image: url("../img/cloud-1.svg");
+    background-repeat: no-repeat;
+    background-size: 122px 39px;
+    width: 122px;
+    height: 39px;
+    top: -20px;
+    right: -5px;
+    z-index: 10;
+  }
+
+  &__description {
+    font: {
+      size: 16px;
+      weight: 900;
+      family: $main-font;
+    }
+    color: $text-white;
+    width: 200px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url("../img/toy-1.svg");
+      background-repeat: no-repeat;
+      background-size: 40px 39px;
+      width: 40px;
+      height: 38px;
+      top: -70px;
+      left: 0;
+      z-index: 10;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url("../img/slime-small-2.svg");
+      background-repeat: no-repeat;
+      background-size: 120px 101px;
+      width: 39px;
+      height: 101px;
+      top: -10px;
+      right: -45px;
+      z-index: 10;
+    }
+  }
+
+  &__logo {
+    width: 170px;
+    height: 73px;
+    position: absolute;
+    right: 15px;
+    bottom: 25px;
+    padding-left: 30px;
+    padding-top: 10px;
+    background-color: $promo-rt-bg;
+    box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+    -webkit-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+    -moz-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+  }
+
+  &__image {
+    width: 123px;
+    height: auto;
+  }
+}
+
 @media (min-width: $laptop) {
   .side-promo {
     width: 100%;

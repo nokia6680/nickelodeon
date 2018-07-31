@@ -1,3 +1,159 @@
+.start-body {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  flex-wrap: nowrap;
+
+  width: 466px;
+
+  position: relative;
+
+  /*5 person team*/
+  &__item--chest {
+    position: absolute;
+    top: -130px;
+    left: 100px;
+  }
+
+  &__item--leftarm {
+    position: absolute;
+    top: -110px;
+    right: -25px;
+  }
+
+  &__item--rightarm {
+    position: absolute;
+    top: -110px;
+    left: -2px;
+  }
+
+  &__item--leftleg {
+    position: absolute;
+    top: 237px;
+    left: 100px;
+  }
+
+  &__item--rightleg {
+    position: absolute;
+    top: 237px;
+    right: 72px;
+  }
+
+  /*4 person team*/
+
+  &__item--leftup {
+    position: absolute;
+    top: -130px;
+    left: 0px;
+  }
+
+  &__item--rightup {
+    position: absolute;
+    top: -130px;
+    right: -6px;
+    transform: rotateY(180deg);
+  }
+
+  &__item--leftdown {
+    position: absolute;
+    top: 177px;
+    left: 96px;
+  }
+
+  &__item--rightdown {
+    position: absolute;
+    top: 177px;
+    left: 226px;
+    transform: rotateY(180deg);
+  }
+
+  /*3 person team*/
+
+  &__item--lefthalf {
+    position: absolute;
+    top: -130px;
+    left: 0px;
+  }
+
+  &__item--righthalf {
+    position: absolute;
+    top: -130px;
+    right: -6px;
+    transform: rotateY(180deg);
+  }
+
+  &__item--legs {
+    position: absolute;
+    top: 177px;
+    left: 95px;
+  }
+
+  /*2 person team*/
+
+  &__item--upperpart {
+    position: absolute;
+    top: -130px;
+    left: 0;
+  }
+
+  &__item--lowerpart {
+    position: absolute;
+    top: 157px;
+    left: 95px;
+  }
+
+  /*Active state*/
+  &__item:active {
+    z-index: 100;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/photo.svg');
+      background-repeat: no-repeat;
+      background-size: 82px 83px;
+
+      width: 82px;
+      height: 83px;
+      z-index: 1200;
+
+      bottom: -20px;
+      left: -20px;
+    }
+  }
+
+  &--two {
+    .start-body__item:active {
+      &::after {
+        right: -20px;
+        left: auto;
+        position: absolute;
+      }
+    }
+  }
+
+  &--five {
+    .start-body__item:active {
+      &::after {
+        right: -20px;
+        left: auto;
+        position: absolute;
+      }
+    }
+  }
+
+  .body-part:active {
+    stroke: #00c5df;
+  }
+}
+
 @media (min-width: $laptop) {
   .start-body {
     list-style: none;

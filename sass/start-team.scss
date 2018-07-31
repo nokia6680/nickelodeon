@@ -1,3 +1,54 @@
+.start-team {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+
+  &__btn {
+    display: block;
+    text-decoration: none;
+
+    font: {
+      size: 20px;
+      weight: 900;
+      family: $main-font;
+    }
+    color: $text-white;
+    line-height: 36px;
+    text-transform: uppercase;
+    background-color: $start-btn;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 22px;
+    box-shadow: 1px 3px 1px 1px rgba(255,255,255,1);
+    -webkit-box-shadow: 1px 3px 1px 1px rgba(255,255,255,1);
+    -moz-box-shadow: 1px 3px 1px 1px rgba(255,255,255,1);
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__info {
+    font: {
+      size: 30px;
+      weight: 900;
+      family: $main-font;
+    }
+    color: $text-white;
+    line-height: 36px;
+    text-transform: uppercase;
+    background-color: $start-info;
+    border: none;
+    border-radius: 30px;
+    width: 40.5px;
+    height: 40.5px;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none;
+  }
+}
+
 @media (min-width: $laptop) {
   .start-team {
     width: 100%;
@@ -10,7 +61,7 @@
     &__btn {
       display: block;
       text-decoration: none;
-      
+
       font: {
         size: 20px;
         weight: 900;
