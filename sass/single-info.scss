@@ -23,7 +23,7 @@
     .single-info__controls {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
 
       width: 100%;
@@ -190,6 +190,159 @@
     height: 36px;
     margin-right: 20px;
     margin-left: auto;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .single-info {
+
+    &--send {
+      justify-content: space-evenly;
+      position: relative;
+
+      .single-info__controls {
+        width: 25%;
+        margin: 0 auto;
+        margin-top: 10px;
+        position: absolute;
+        right: 0;
+        top: 5px;
+      }
+    }
+    &--captain {
+      padding-top: 0;
+
+      .single-info__rank {
+        font-size: 17px;
+        padding-top: 4px;
+      }
+    }
+
+    &__description {
+      font-size: 15px;
+    }
+
+    &__description--send {
+      font-size: 15px;
+    }
+
+    &__link {
+      font-size: 12px;
+    }
+
+    &__image {
+      width: 45px;
+      height: 47px;
+    }
+
+    &__status {
+      width: 40px;
+      height: 39px;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .single-info {
+
+    &--send {
+      justify-content: space-evenly;
+      position: relative;
+
+      .single-info__controls {
+        width: 25%;
+        margin: 0 auto;
+        margin-top: 10px;
+        position: absolute;
+        right: 0;
+        top: 10px;
+
+        .single-info__double {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          .fa-share::before {
+            font-size: 26px;
+            top: 6px;
+            left: 8px;
+          }
+        }
+
+        .single-info__sms {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          font: {
+            size: 12px;
+            weight: 600;
+            family: $main-font;
+          }
+
+          color: $text-white;
+          line-height: 12px;
+          text-transform: uppercase;
+
+          padding-top: 2px;
+          padding-left: 5px;
+        }
+
+        .single-info__vk {
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+
+          .fa-vk::before {
+            position: absolute;
+            content: '\f189';
+
+            font-size: 24px;
+            color: $text-white;
+
+            top: 7px;
+            left: 6px;
+          }
+        }
+      }
+    }
+    &--captain {
+      padding-top: 0;
+
+      .single-info__rank {
+        background-size: 194px 38px;
+        width: 194px;
+        height: 38px;
+        font-size: 29px;
+        padding-top: 2px;
+
+        top: 10px;
+      }
+    }
+
+    &__description {
+      font-size: 24px;
+      width: 350px;
+      line-height: 26px;
+    }
+
+    &__description--send {
+      font-size: 24px;
+    }
+
+    &__link {
+      font-size: 20px;
+    }
+
+    &__image {
+      width: 73px;
+      height: 76px;
+    }
+
+    &__status {
+      width: 64px;
+      height: 61px;
+    }
   }
 }
 

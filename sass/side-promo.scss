@@ -1,89 +1,38 @@
 .side-promo {
-  width: 100%;
+  width: 286px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  background-image: url("../img/promo-bg-new.svg");
+  align-items: center;
+  background-image: url("../img/promo-bg-mobile.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding-left: 60px;
-  padding-top: 40px;
-  padding-bottom: 97px;
-  margin-top: 45px;
-  margin-left: 20px;
+  background-size: 286px 70px;
+  padding-left: 5px;
+  padding-top: 0;
+  padding-bottom: 30px;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-bottom: 80px;
   position: relative;
-
-  &::before {
-    position: absolute;
-    content: '';
-    background-image: url("../img/cloud-2.svg");
-    background-repeat: no-repeat;
-    background-size: 98px 38px;
-    width: 98px;
-    height: 38px;
-    bottom: 30px;
-    left: -5px;
-    z-index: 10;
-  }
-
-  &::after {
-    position: absolute;
-    content: '';
-    background-image: url("../img/cloud-1.svg");
-    background-repeat: no-repeat;
-    background-size: 122px 39px;
-    width: 122px;
-    height: 39px;
-    top: -20px;
-    right: -5px;
-    z-index: 10;
-  }
 
   &__description {
     font: {
-      size: 16px;
+      size: 11px;
       weight: 900;
       family: $main-font;
     }
     color: $text-white;
-    width: 200px;
+    width: 275px;
     position: relative;
-
-    &::before {
-      position: absolute;
-      content: '';
-      background-image: url("../img/toy-1.svg");
-      background-repeat: no-repeat;
-      background-size: 40px 39px;
-      width: 40px;
-      height: 38px;
-      top: -70px;
-      left: 0;
-      z-index: 10;
-    }
-
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url("../img/slime-small-2.svg");
-      background-repeat: no-repeat;
-      background-size: 120px 101px;
-      width: 39px;
-      height: 101px;
-      top: -10px;
-      right: -45px;
-      z-index: 10;
-    }
   }
 
   &__logo {
-    width: 170px;
-    height: 73px;
+    width: 130px;
+    height: 56px;
     position: absolute;
-    right: 15px;
-    bottom: 25px;
+    right: 50px;
+    bottom: -20px;
     padding-left: 30px;
     padding-top: 10px;
     background-color: $promo-rt-bg;
@@ -93,8 +42,74 @@
   }
 
   &__image {
-    width: 123px;
+    width: 86px;
     height: auto;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .side-promo {
+    width: 430px;
+    background-size: 430px 106px;
+
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 120px;
+
+    &__description {
+      font: {
+        size: 16px;
+      }
+      width: 410px;
+    }
+
+    &__logo {
+      width: 177px;
+      height: 76px;
+      position: absolute;
+      right: 50px;
+      bottom: -40px;
+      padding-left: 30px;
+      padding-top: 10px;
+    }
+
+    &__image {
+      width: 129px;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .side-promo {
+    width: 688px;
+    background-size: 688px 170px;
+
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 180px;
+
+    &__description {
+      font: {
+        size: 26px;
+      }
+      width: 670px;
+    }
+
+    &__logo {
+      width: 284px;
+      height: 123px;
+      position: absolute;
+      right: 50px;
+      bottom: -80px;
+      padding-left: 30px;
+      padding-top: 10px;
+    }
+
+    &__image {
+      width: 206px;
+      height: auto;
+    }
   }
 }
 

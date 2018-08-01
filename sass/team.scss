@@ -2,7 +2,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 
-  width: 52%;
+  width: 100%;
+}
+
+@media (min-width: $laptop) {
+  .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 52%;
+  }
 }

@@ -5,6 +5,8 @@
   align-items: flex-start;
   margin-bottom: 12px;
 
+  width: 100%;
+
   &__label {
     font: {
       family: $main-font;
@@ -49,15 +51,55 @@
   }
 
   &__input--name {
-    width: 145px;
+    width: 90%;
   }
 
   &__input--phone {
-    width: 125px;
+    width: 90%;
   }
 
   &__input--code {
-    width: 150px;
+    width: 90%;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .form-item {
+    &__label {
+      font: {
+        size: 12px;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 20px;
+      }
+    }
+
+    &__error {
+      font-size: 8px;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .form-item {
+    &__label {
+      font: {
+        size: 18px;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 32px;
+      }
+    }
+
+    &__error {
+      font-size: 14px;
+    }
   }
 }
 

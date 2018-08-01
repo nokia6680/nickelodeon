@@ -34,7 +34,7 @@
     content: '\f189';
     font-size: 18px;
     color: $text-white;
-    top: 5px;
+    top: 3px;
     left: 8px;
   }
 
@@ -42,7 +42,7 @@
     font-size: 14px;
     font-family: "Gotham", sans-serif;
     font-weight: 900;
-    width: 165px;
+    width: 130px;
     color: #fff;
     line-height: normal;
     background-color: transparent;
@@ -67,6 +67,64 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .submit-team {
+    &--code {
+      .submit-team__submit--code {
+        width: 180px;
+        margin-right: -14px;
+      }
+    }
+
+    &__submit {
+      font-size: 22px;
+      width: 180px;
+      height: 36px;
+
+      background-size: 180px 36px;
+
+      &--register {
+        display: none;
+      }
+    }
+  }
+}
+@media (min-width: $tablets) {
+  .submit-team {
+    &--code {
+      .submit-team__submit--code {
+        width: 288px;
+        margin-right: -14px;
+      }
+    }
+
+    &__submit {
+      font-size: 35px;
+      width: 288px;
+      height: 58px;
+
+      background-size: 288px 58px;
+
+      &--register {
+        display: none;
+      }
+    }
+
+    &__enter {
+      font-size: 17px;
+      padding: 12px 19px 12px 35px;
+
+      .fa-vk::before {
+        position: absolute;
+        content: '\f189';
+        font-size: 22px;
+        color: $text-white;
+        top: 10px;
+        left: 4px;
+      }
+    }
+  }
+}
 @media (min-width: $laptop) {
   .submit-team {
     display: flex;

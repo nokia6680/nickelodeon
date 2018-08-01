@@ -6,9 +6,9 @@
 
   background-image: url('../img/rules-bg.png');
   background-repeat: no-repeat;
-  background-size: 383px 424px;
+  background-size: 250px 330px;
 
-  width: 383px;
+  width: 250px;
 
   margin: 0 auto;
   margin-top: 10%;
@@ -16,15 +16,41 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
+  position: relative;
+
+  &__close {
+    border: none;
+    border-radius: 20px;
+    background-color: #fc5500;
+    position: absolute;
+
+    top: -17px;
+    right: 0px;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url('../img/close.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center center;
+
+    cursor: pointer;
+    outline: none;
+  }
+
   &__list {
     counter-reset: li;
     padding: 0;
     list-style: none;
+
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   &__item {
     position: relative;
-    margin: 0 0 6px 2em;
+    margin: 0 0 6px 1.5em;
     padding: 4px 8px;
 
     &::before {
@@ -47,7 +73,7 @@
 
   &__description {
     font: {
-      size: 13px;
+      size: 9px;
       weight: 900;
       family: $main-font;
     }
@@ -61,11 +87,11 @@
   }
 
   &__disclaimer {
-    width: 340px;
+    width: 220px;
     padding-left: 10px;
 
     font: {
-      size: 13px;
+      size: 9px;
       weight: 900;
       family: $main-font;
     }
@@ -74,9 +100,141 @@
     line-height: normal;
     text-transform: uppercase;
 
-    margin-top:0;
+    margin-top: 0;
     padding-left: 2em;
     margin-left: 12px;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .popup-steps {
+    background-size: 350px 530px;
+
+    width: 350px;
+    padding-left: 20px;
+    padding-top: 40px;
+
+    &__description {
+      font: {
+        size: 13px;
+      }
+    }
+
+    &__disclaimer {
+      width: 300px;
+      font: {
+        size: 13px;
+      }
+      padding-left: 1.5em;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .popup-steps {
+    background-size: 574px 682px;
+
+    width: 574px;
+    padding-left: 20px;
+    padding-top: 40px;
+
+    &__description {
+      font: {
+        size: 21px;
+      }
+    }
+
+    &__disclaimer {
+      width: 500px;
+      font: {
+        size: 21px;
+      }
+      padding-left: 1em;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .popup-steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-image: url('../img/rules-bg.png');
+    background-repeat: no-repeat;
+    background-size: 383px 424px;
+
+    width: 383px;
+
+    margin: 0 auto;
+    margin-top: 10%;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__list {
+      counter-reset: li;
+      padding: 0;
+      list-style: none;
+    }
+
+    &__item {
+      position: relative;
+      margin: 0 0 6px 2em;
+      padding: 4px 8px;
+
+      &::before {
+        content:counter(li);
+        counter-increment: li;
+        position:absolute;
+        top: 2px;
+        left: -2em;
+        width: 2em;
+        padding: 5px 0;
+        border-radius: 25px;
+        color: #fff;
+        background-color: #ff6700;
+        font-weight: 900;
+        font-family: $main-font;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+
+    &__description {
+      font: {
+        size: 13px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $overlay-1-text;
+      line-height: normal;
+      text-transform: uppercase;
+
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &__disclaimer {
+      width: 340px;
+      padding-left: 10px;
+
+      font: {
+        size: 13px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $overlay-1-text;
+      line-height: normal;
+      text-transform: uppercase;
+
+      margin-top:0;
+      padding-left: 2em;
+      margin-left: 12px;
+    }
   }
 }
 

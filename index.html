@@ -29,6 +29,13 @@
 					<img class="sidebar__image" src="img/logo-1.svg" />
 				</a>
 			</div>
+			<!--Мобильная кнопка "твоя команда"-->
+			<div class="sidebar__slider sidebar-slider">
+				<a class="sidebar-slider__link" href="#">
+					<b class="sidebar-slider__first">Твои</b>
+					<span class="sidebar-slider__second">команды</span>
+				</a>
+			</div>
 			<div class="sidebar__info sidebar-info">
 				<h1 class="sidebar-info__title">Стань</h1>
 				<img class="sidebar-info__captain" src="img/captain.svg" />
@@ -125,7 +132,7 @@
 				</div>
 				<!--Блок приглашенных в команду-->
 				<div class="team__invite invite-team">
-					<h2 class="invite-team__title">Пригласи друзей</h2>
+					<h2 class="invite-team__title">Твоя команда</h2>
 					<ul class="invite-team__list invite-list">
 						<!--Скрыл блок, что приглашение отправлено, стилизован-->
 						<!--Single item-->
@@ -293,8 +300,10 @@
 		</section>
 	</main>
 	<footer class="footer">
-		<button class="footer__rules" type="button">Правила акции</button>
+		<button class="footer__rules footer__rules--big" type="button">Правила акции</button>
+		<button class="footer__rules footer__rules--small" type="button">Правила</button>
 		<button class="footer__howto" type="button">Как участвовать</button>
+		<button class="footer__prize" type="button">Призы</button>
 		<ul class="footer__social footer-social">
 			<li class="footer-social__item social-item social-item--yt">
 				<a class="social-item__link" href="https://www.youtube.com/channel/UCw3vK8lNe5SZzL--rMgq-CQ"><i class="fa fa-youtube-play"></i></a>
@@ -317,7 +326,7 @@
 		</ul>
 	</footer>
 
-	<!--Popup-->
+	<!--Popup`ы-->
 	<div class="overlay overlay--on">
 		<!--Попап смс-->
 		<div class="popup popup-sms popup-sms__hidden">
@@ -357,6 +366,7 @@
 	<div class="overlay-1 overlay-1--on">
 		<!--Попап правил, для капитана переносится в футер-->
 		<div class="popup-rules">
+			<button class="popup-rules__close" type="button"></button>
 			<ol class="popup-rules__list">
 				<li class="popup-rules__item">
 					<p class="popup-rules__description">Зарегистрируйся на сайте с<br />помощью своего профиля во<br />ВКонтакте</p>
@@ -378,6 +388,7 @@
 		</div>
 		<!--Попап, аналогийчный первому, для участника-->
 		<div class="popup-steps">
+			<button class="popup-steps__close" type="button"></button>
 			<ol class="popup-steps__list">
 				<li class="popup-steps__item">
 					<p class="popup-steps__description">Зарегистрируйся на сайте с<br />помощью своего профиля во<br />ВКонтакте</p>

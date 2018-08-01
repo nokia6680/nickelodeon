@@ -2,25 +2,26 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 
-  width: 48%;
-  height: 100vh;
+  width: 100%;
+
+  &__promo {
+    order: 2;
+  }
 
   &__gallery {
     display: block;
 
-    background-image: url('../img/side-link.png');
+    background-image: url('../img/side-link-mobile.png');
     background-repeat: no-repeat;
-    background-size: 207px 47px;
+    background-size: 220px 48px;
 
-    width: 207px;
-    height: 47px;
-
-    position: relative;
+    width: 220px;
+    height: 48px;
 
     font: {
-      size: 21px;
+      size: 22px;
       weight: 900;
       family: $main-font;
     }
@@ -30,24 +31,89 @@
 
     text-align: center;
 
-    margin-top: 60px;
-    margin-left: 70px;
+    margin-top: 30px;
     padding-top: 10px;
 
     text-decoration: none;
 
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 54px 52px;
+    order: 1;
+  }
+}
 
-      width: 54px;
-      height: 52px;
+@media (min-width: $smartphones) {
+  .side {
+    width: 100%;
 
-      bottom: -115px;
-      right: 130px;
-      z-index: 10;
+    &__promo {
+      order: 2;
+    }
+
+    &__gallery {
+      display: block;
+
+      background-image: url('../img/side-link-mobile.png');
+      background-repeat: no-repeat;
+      background-size: 331px 72px;
+
+      width: 331px;
+      height: 72px;
+
+      font: {
+        size: 30px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $text-gallery;
+      line-height: normal;
+
+      text-align: center;
+
+      margin-top: 30px;
+      padding-top: 17px;
+
+      text-decoration: none;
+
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .side {
+    width: 100%;
+
+    &__promo {
+      order: 2;
+    }
+
+    &__gallery {
+      display: block;
+
+      background-image: url('../img/side-link-mobile.png');
+      background-repeat: no-repeat;
+      background-size: 531px 116px;
+
+      width: 531px;
+      height: 116px;
+
+      font: {
+        size: 50px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $text-gallery;
+      line-height: normal;
+
+      text-align: center;
+
+      margin-top: 30px;
+      padding-top: 25px;
+
+      text-decoration: none;
+
+      order: 1;
     }
   }
 }
@@ -88,6 +154,20 @@
       padding-top: 10px;
 
       text-decoration: none;
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../img/toy-2.svg');
+        background-size: 67px 66px;
+
+        width: 66px;
+        height: 67px;
+
+        bottom: 90px;
+        right: 130px;
+        z-index: 10;
+      }
     }
   }
 }
@@ -122,7 +202,7 @@
         width: 66px;
         height: 67px;
 
-        bottom: -115px;
+        bottom: 115px;
         right: 130px;
         z-index: 10;
       }
@@ -158,7 +238,7 @@
         width: 70px;
         height: 68px;
 
-        bottom: -115px;
+        bottom: 95px;
         right: 130px;
         z-index: 10;
       }
@@ -194,7 +274,7 @@
         width: 101px;
         height: 99px;
 
-        bottom: -115px;
+        bottom: 0px;
         right: 130px;
         z-index: 10;
       }
@@ -230,7 +310,7 @@
         width: 101px;
         height: 99px;
 
-        bottom: -115px;
+        bottom: 0px;
         right: 130px;
         z-index: 10;
       }
@@ -266,7 +346,7 @@
         width: 101px;
         height: 99px;
 
-        bottom: -90px;
+        bottom: 0px;
         right: 130px;
         z-index: 10;
       }
@@ -302,7 +382,7 @@
         width: 135px;
         height: 132px;
 
-        bottom: -90px;
+        bottom: 0px;
         right: 180px;
         z-index: 10;
       }

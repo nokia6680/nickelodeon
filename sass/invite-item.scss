@@ -4,10 +4,15 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  margin-left: 29px;
   margin-bottom: 11.25px;
 
   width: 83%;
+}
+
+@media (min-width: $tablets) {
+  .invite-item {
+    width: 675px;
+  }
 }
 
 @media (min-width: $laptop) {

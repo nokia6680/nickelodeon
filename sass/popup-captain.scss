@@ -6,24 +6,23 @@
 
   background-image: url('../img/rules-bg.png');
   background-repeat: no-repeat;
-  background-size: 383px 170px;
+  background-size: 250px 170px;
 
-  width: 383px;
+  width: 250px;
 
   margin: 0 auto;
   margin-top: 25%;
   padding-left: 10px;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
 
   position: relative;
 
   &__description {
-    width: 340px;
-    padding-left: 10px;
+    width: 220px;
 
     font: {
-      size: 13px;
+      size: 9px;
       weight: 900;
       family: $main-font;
     }
@@ -33,8 +32,7 @@
     text-transform: uppercase;
 
     margin-top:0;
-    padding-left: 2em;
-    margin-left: 12px;
+    margin-left: 10px;
   }
 
   &__close {
@@ -56,6 +54,101 @@
 
     cursor: pointer;
     outline: none;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .popup-captain {
+    background-size: 350px 270px;
+
+    width: 350px;
+
+    &__description {
+      width: 310px;
+
+      font: {
+        size: 13px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .popup-captain {
+    background-size: 574px 270px;
+
+    width: 574px;
+
+    &__description {
+      width: 550px;
+
+      font: {
+        size: 21px;
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .popup-captain {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-image: url('../img/rules-bg.png');
+    background-repeat: no-repeat;
+    background-size: 383px 170px;
+
+    width: 383px;
+
+    margin: 0 auto;
+    margin-top: 25%;
+    padding-left: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    position: relative;
+
+    &__description {
+      width: 340px;
+      padding-left: 10px;
+
+      font: {
+        size: 13px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $overlay-1-text;
+      line-height: normal;
+      text-transform: uppercase;
+
+      margin-top:0;
+      padding-left: 2em;
+      margin-left: 12px;
+    }
+
+    &__close {
+      border: none;
+      border-radius: 20px;
+      background-color: #fc5500;
+      position: absolute;
+
+      top: -17px;
+      right: 0px;
+
+      width: 30px;
+      height: 30px;
+
+      background-image: url('../img/close.png');
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      background-position: center center;
+
+      cursor: pointer;
+      outline: none;
+    }
   }
 }
 

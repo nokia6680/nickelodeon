@@ -1,14 +1,12 @@
 .content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
   overflow: visible;
 
-  width: 60%;
+  width: 100%;
   padding-top: 15px;
 }
 

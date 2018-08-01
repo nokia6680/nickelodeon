@@ -2,15 +2,15 @@
   @include container;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
   background-color: $body-bg;
-  background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom -55px right -65px, top center;
-  background-size: 449px 520px, auto;
+  background-image: url('../img/body-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
 
   margin: 0 auto;
   padding: 0;
@@ -20,6 +20,8 @@
   position: relative;
 
   @media (min-width: $laptop) {
+    flex-direction: row;
+
     background-color: $body-bg;
     background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
     background-repeat: no-repeat, no-repeat;

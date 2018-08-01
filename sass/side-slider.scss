@@ -1,18 +1,12 @@
 .side-slider {
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
   &__title {
-    background-image: url("../img/other-team-bg.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 350px;
-    height: 50px;
-    text-align: center;
-    padding-top: 10px;
+    display: none;
   }
 
   &__item {

@@ -13,7 +13,7 @@
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   &__rules {
@@ -21,7 +21,7 @@
     border: 2px solid #fff;
 
     font: {
-      size: 20px;
+      size: 12px;
       weight: 900;
       family: $main-font;
     }
@@ -35,14 +35,66 @@
 
     text-transform: uppercase;
 
-    margin-left: 55px;
-
     cursor: pointer;
     outline: none;
+
+    &--big {
+      display: none;
+    }
   }
 
   &__howto {
     @extend .footer__rules;
+  }
+
+  &__prize {
+    @extend .footer__rules;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .footer {
+    justify-content: flex-start;
+
+    &__rules {
+      font-size: 14px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .footer {
+    justify-content: flex-start;
+    &__rules {
+      font-size: 18px;
+      margin-right: 10px;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .footer {
+    justify-content: space-between;
+
+    &__rules {
+      font-size: 20px;
+      margin-right: 0px;
+
+      &--big {
+        display: block;
+      }
+
+      &--small {
+        display: none;
+      }
+    }
+
+    &__prize {
+      display: none;
+    }
   }
 }
 
