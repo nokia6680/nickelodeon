@@ -376,8 +376,8 @@
         position: relative;
 
         width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
 
         .single-info__double {
           position: relative;
@@ -565,13 +565,13 @@
 
       .single-info__controls {
         width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: -5px;
+        margin-bottom: 5px;
 
         .single-info__double {
           border-radius: 30px;
-          width: 40px;
-          height: 40px;
+          width: 30px;
+          height: 30px;
 
           .fa-share::before {
             font-size: 26px;
@@ -582,8 +582,8 @@
 
         .single-info__sms {
           border-radius: 30px;
-          width: 40px;
-          height: 40px;
+          width: 30px;
+          height: 30px;
 
           font: {
             size: 12px;
@@ -601,8 +601,8 @@
 
         .single-info__vk {
           border-radius: 30px;
-          width: 40px;
-          height: 40px;
+          width: 30px;
+          height: 30px;
 
           .fa-vk::before {
             position: absolute;
@@ -736,8 +736,8 @@
       .single-info__controls {
         width: 70%;
         margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: -5px;
+        margin-bottom: 5px;
 
         .single-info__double {
           border-radius: 30px;
@@ -906,8 +906,8 @@
       .single-info__controls {
         width: 50%;
         margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: -5px;
+        margin-bottom: 5px;
 
         .single-info__double {
           border-radius: 30px;

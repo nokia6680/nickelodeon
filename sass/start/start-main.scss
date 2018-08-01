@@ -9,31 +9,7 @@
   background-position: top center;
   background-size: cover;
   width: 100%;
-  min-height: 1024px;
-
   position: relative;
-
-  &::after {
-    position: absolute;
-    content: '';
-    background-image: url('../img/spunchbob.svg');
-    background-repeat: no-repeat;
-    background-size: 324px 359px;
-
-    width: 324px;
-    height: 359px;
-
-    bottom: 0;
-    left: 0;
-  }
-}
-
-@media (min-width: $smartphones) {
-
-}
-
-@media (min-width: $tablets) {
-
 }
 
 @media (min-width: $laptop) {

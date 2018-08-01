@@ -1,10 +1,10 @@
 .start-content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  height: 100%;
-  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100vw;
   position: relative;
   padding-bottom: 20%;
 
@@ -12,28 +12,31 @@
 
   &__customize {
     order: 2;
+    margin-top: 0;
+    margin-bottom: auto;
   }
 
   &__info {
     order: 1;
+    margin-bottom: 20px;
   }
 
   &__submit {
     display: block;
     align-self: flex-start;
-    position: absolute;
-    bottom: 10%;
-    left: 40%;
-    width: 505px;
-    height: 65px;
+    order: 3;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 212px;
+    height: 28px;
     background-image: url("../img/start-submit.svg");
     background-repeat: no-repeat;
-    background-size: 505px 65px;
+    background-size: 212px 28px;
     background-color: transparent;
     border: none;
     font: {
       family: $main-font;
-      size: 36px;
+      size: 14px;
       weight: 900;
     }
     color: $text-white;
@@ -45,16 +48,44 @@
 
     text-decoration: none;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 7px;
   }
 }
 
 @media (min-width: $smartphones) {
+  .start-content {
+    z-index: 20;
 
+    &__submit {
+      bottom: 10%;
+      left: 18%;
+      width: 320px;
+      height: 42px;
+      background-size: 320px 42px;
+
+      font: {
+        size: 22px;
+      }
+    }
+  }
 }
 
 @media (min-width: $tablets) {
+  .start-content {
+    z-index: 20;
 
+    &__submit {
+      bottom: 10%;
+      left: 20%;
+      width: 512px;
+      height: 68px;
+      background-size: 512px 68px;
+
+      font: {
+        size: 36px;
+      }
+    }
+  }
 }
 
 @media (min-width: $laptop) {
@@ -189,7 +220,6 @@
       align-self: flex-start;
       position: absolute;
       bottom: 100px;
-      right: 0;
       width: 505px;
       height: 65px;
       background-image: url("../img/start-submit.svg");

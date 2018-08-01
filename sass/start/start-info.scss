@@ -4,66 +4,85 @@
   justify-content: flex-start;
   align-items: center;
 
-  width: 280px;
+  width: 100%;
   margin-top: 30px;
 
   align-self: flex-start;
 
   &__wrapper {
-    background-image: url('../img/start-description.svg');
+    background-image: url('../img/start-description-mobile.png');
     background-repeat: no-repeat;
-    background-size: 276px 208px;
-    padding-bottom: 40px;
-    width: 100%;
+    background-size: 300px 50px;
+    padding-bottom: 0;
+    width: 300px;
+    margin: 0 auto;
   }
 
   &__description {
     font: {
       family: $main-font;
-      size: 15.2px;
+      size: 7.5px;
       weight: 900;
     }
 
-    width: 200px;
-    color: $text-white;
+    width: 300px;
+    color: #fff;
     line-height: normal;
     text-transform: uppercase;
-
-    padding-left: 30px;
-    padding-top: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-top: 0;
+    text-align: center;
   }
 
   &__home {
-    font: {
-      family: $main-font;
-      size: 24px;
-      weight: 900;
-    }
-
-    width: 220px;
-    height: 47px;
-    color: $text-white;
-    line-height: normal;
-    text-transform: uppercase;
-
-    background-image: url('../img/start-home.svg');
-    background-repeat: no-repeat;
-    background-size: 220px;
-
-    text-decoration: none;
-    text-transform: uppercase;
-
-    text-align: center;
-    padding-top: 9px;
+    display: none;
   }
 }
 
 @media (min-width: $smartphones) {
+  .start-info {
+    display: flex;
 
+    &__wrapper {
+      background-size: 420px 74px;
+      width: 420px;
+    }
+
+    &__description {
+      font: {
+        size: 11.7px;
+      }
+      width: 420px;
+    }
+
+    &__home {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $tablets) {
+  .start-info {
+    display: flex;
 
+    &__wrapper {
+      background-size: 673px 119px;
+      width: 673px;
+    }
+
+    &__description {
+      font: {
+        size: 18px;
+      }
+      width: 673px;
+      padding-top: 10px;
+    }
+
+    &__home {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $laptop) {
@@ -126,6 +145,9 @@
 
       text-align: center;
       padding-top: 9px;
+
+      display: block;
+      margin-top: 30px;
     }
   }
 }
