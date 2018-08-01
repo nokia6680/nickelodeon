@@ -5,6 +5,7 @@
   align-items: center;
 
   &--code {
+    justify-content: flex-end;
     .submit-team__submit--code {
       width: 130px;
       margin-right: -13px;
@@ -66,6 +67,8 @@
 @media (min-width: $smartphones) {
   .submit-team {
     &--code {
+      justify-content: flex-end;
+
       .submit-team__submit--code {
         width: 180px;
         margin-right: -14px;
@@ -91,6 +94,7 @@
 @media (min-width: $tablets) {
   .submit-team {
     &--code {
+      justify-content: flex-end;
       .submit-team__submit--code {
         width: 288px;
         margin-right: -14px;
@@ -120,6 +124,7 @@
     align-items: center;
 
     &--code {
+      justify-content: flex-end;
       .submit-team__submit--code {
         width: 130px;
         margin-right: -15px;
@@ -186,6 +191,7 @@
     align-items: center;
 
     &--code {
+      justify-content: flex-end;
       .submit-team__submit--code {
         width: 170px;
         margin-right: -15px;
@@ -245,6 +251,10 @@
     justify-content: space-between;
     align-items: center;
 
+    &--code {
+      justify-content: flex-end;
+    }
+
     &__enter {
       background-color: $btn-enter;
       border: none;
@@ -298,6 +308,10 @@
     justify-content: space-between;
     align-items: center;
 
+    &--code {
+      justify-content: flex-end;
+    }
+
     &__enter {
       font-size: 13px;
     }
@@ -317,6 +331,7 @@
     align-items: center;
 
     &--code {
+      justify-content: flex-end;
       .submit-team__submit--code {
         width: 237px;
         margin-right: -16px;
@@ -374,6 +389,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    &--code {
+      justify-content: flex-end;
+    }
 
     &__enter {
       background-color: $btn-enter;
