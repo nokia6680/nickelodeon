@@ -27,6 +27,15 @@
     left: 0;
   }
 }
+
+@media (min-width: $smartphones) {
+
+}
+
+@media (min-width: $tablets) {
+
+}
+
 @media (min-width: $laptop) {
   .start-main {
     display: flex;

@@ -49,6 +49,14 @@
   }
 }
 
+@media (min-width: $smartphones) {
+
+}
+
+@media (min-width: $tablets) {
+
+}
+
 @media (min-width: $laptop) {
   .start-content {
     display: flex;

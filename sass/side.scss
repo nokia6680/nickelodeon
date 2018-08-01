@@ -128,7 +128,12 @@
     width: 48%;
     height: 100vh;
 
+    &__promo {
+      order: 1;
+    }
+
     &__gallery {
+      order: 2;
       display: block;
 
       background-image: url('../img/side-link.png');
@@ -274,7 +279,7 @@
         width: 101px;
         height: 99px;
 
-        bottom: 0px;
+        bottom: -20px;
         right: 130px;
         z-index: 10;
       }
@@ -310,7 +315,7 @@
         width: 101px;
         height: 99px;
 
-        bottom: 0px;
+        bottom: -50px;
         right: 130px;
         z-index: 10;
       }
@@ -346,7 +351,7 @@
         width: 101px;
         height: 99px;
 
-        bottom: 0px;
+        bottom: -100px;
         right: 130px;
         z-index: 10;
       }

@@ -1,7 +1,7 @@
 .submit-team {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 
   &--code {
@@ -18,24 +18,15 @@
     position: relative;
     font: {
       family: $main-font;
-      size: 12px;
+      size: 8px;
       weight: 900;
     }
     color: $text-white;
     line-height: normal;
     text-transform: uppercase;
-    padding: 7px 10px 7px 30px;
+    padding: 7px 10px 7px 10px;
     cursor: pointer;
     outline: none;
-  }
-
-  .fa-vk::before {
-    position: absolute;
-    content: '\f189';
-    font-size: 18px;
-    color: $text-white;
-    top: 3px;
-    left: 8px;
   }
 
   &__submit {
@@ -61,8 +52,13 @@
     outline: none;
     position: relative;
 
-    &--register {
+    &--send {
       display: none;
+    }
+
+    &--register {
+      display: block;
+      padding-top: 7px;
     }
   }
 }
@@ -77,15 +73,18 @@
     }
 
     &__submit {
-      font-size: 22px;
-      width: 180px;
+      font-size: 19px;
+      width: 205px;
       height: 36px;
 
-      background-size: 180px 36px;
+      background-size: 200px 36px;
+      padding-left: 20px;
 
-      &--register {
-        display: none;
-      }
+      margin-right: -30px;
+    }
+
+    &__enter {
+      font-size: 10px;
     }
   }
 }
@@ -99,29 +98,17 @@
     }
 
     &__submit {
-      font-size: 35px;
+      font-size: 30px;
       width: 288px;
       height: 58px;
 
       background-size: 288px 58px;
-
-      &--register {
-        display: none;
-      }
+      margin-right: -18px;
     }
 
     &__enter {
-      font-size: 17px;
-      padding: 12px 19px 12px 35px;
-
-      .fa-vk::before {
-        position: absolute;
-        content: '\f189';
-        font-size: 22px;
-        color: $text-white;
-        top: 10px;
-        left: 4px;
-      }
+      font-size: 13px;
+      padding: 10px 10px 10px 10px;
     }
   }
 }
@@ -129,7 +116,7 @@
   .submit-team {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 
     &--code {
@@ -146,31 +133,23 @@
       position: relative;
       font: {
         family: $main-font;
-        size: 12px;
+        size: 8px;
         weight: 900;
       }
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
-      padding: 7px 10px 7px 30px;
+      padding: 7px 10px 7px 10px;
       cursor: pointer;
       outline: none;
-    }
-
-    .fa-vk::before {
-      position: absolute;
-      content: '\f189';
-      font-size: 18px;
-      color: $text-white;
-      top: 5px;
-      left: 8px;
     }
 
     &__submit {
       font-size: 14px;
       font-family: "Gotham", sans-serif;
       font-weight: 900;
-      width: 165px;
+      width: 135px;
+      height: 30px;
       color: #fff;
       line-height: normal;
       background-color: transparent;
@@ -182,12 +161,20 @@
       padding-bottom: 5px;
       padding-left: 10px;
       text-align: center;
-      margin-right: -15px;
+      margin-right: -20px;
       text-transform: uppercase;
       border: none;
       cursor: pointer;
       outline: none;
       position: relative;
+    }
+
+    &__submit--send {
+      display: none;
+    }
+
+    &__submit--register {
+      display: block;
     }
   }
 }
@@ -195,7 +182,7 @@
   .submit-team {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 
     &--code {
@@ -212,24 +199,15 @@
       position: relative;
       font: {
         family: $main-font;
-        size: 14px;
+        size: 10px;
         weight: 900;
       }
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
-      padding: 10px 15px 10px 40px;
+      padding: 10px 10px 10px 10px;
       cursor: pointer;
       outline: none;
-    }
-
-    .fa-vk::before {
-      position: absolute;
-      content: '\f189';
-      font-size: 23px;
-      color: $text-white;
-      top: 5px;
-      left: 8px;
     }
 
     &__submit {
@@ -239,6 +217,7 @@
         weight: 900;
       }
       width: 170px;
+      height: 33px;
       color: $text-white;
       line-height: normal;
       background-color: transparent;
@@ -263,7 +242,7 @@
   .submit-team {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 
     &__enter {
@@ -273,24 +252,15 @@
       position: relative;
       font: {
         family: $main-font;
-        size: 14px;
+        size: 10px;
         weight: 900;
       }
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
-      padding: 10px 15px 10px 40px;
+      padding: 10px 10px 10px 10px;
       cursor: pointer;
       outline: none;
-    }
-
-    .fa-vk::before {
-      position: absolute;
-      content: '\f189';
-      font-size: 23px;
-      color: $text-white;
-      top: 5px;
-      left: 8px;
     }
 
     &__submit {
@@ -325,8 +295,12 @@
   .submit-team {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+
+    &__enter {
+      font-size: 13px;
+    }
 
     &__submit {
       margin-right: -14px;
@@ -339,7 +313,7 @@
   .submit-team {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 
     &--code {
@@ -362,18 +336,9 @@
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
-      padding: 10px 15px 10px 40px;
+      padding: 10px 10px 10px 10px;
       cursor: pointer;
       outline: none;
-    }
-
-    .fa-vk::before {
-      position: absolute;
-      content: '\f189';
-      font-size: 23px;
-      color: $text-white;
-      top: 5px;
-      left: 8px;
     }
 
     &__submit {
@@ -407,7 +372,7 @@
   .submit-team {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 
     &__enter {
@@ -423,18 +388,9 @@
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
-      padding: 10px 15px 10px 40px;
+      padding: 10px 10px 10px 10px;
       cursor: pointer;
       outline: none;
-    }
-
-    .fa-vk::before {
-      position: absolute;
-      content: '\f189';
-      font-size: 23px;
-      color: $text-white;
-      top: 5px;
-      left: 8px;
     }
 
     &__submit {
@@ -457,10 +413,19 @@
       text-align: center;
       margin-right: -15px;
       text-transform: uppercase;
+
       border: none;
       cursor: pointer;
       outline: none;
       position: relative;
+
+      &--send {
+        display: none;
+      }
+
+      &--register {
+        display: block;
+      }
     }
   }
 }

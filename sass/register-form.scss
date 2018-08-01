@@ -3,6 +3,18 @@
   width: 100%;
 }
 
+@media (min-width: $smartphones) {
+  .register-form {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $tablets) {
+  .register-form {
+    margin-left: 20px;
+  }
+}
+
 @media (min-width: $laptop) {
   .register-form {
     margin-left: 12px;
@@ -10,7 +22,7 @@
 }
 @media (min-width: $netbooks) {
   .register-form {
-    margin-left: 14px;
+    margin-left: 20px;
   }
 }
 @media (min-width: $wide-netbooks) {

@@ -15,6 +15,14 @@
   margin-top: -10%;
 }
 
+@media (min-width: $smartphones) {
+
+}
+
+@media (min-width: $tablets) {
+
+}
+
 @media (min-width: $laptop) {
   .start-custom {
     background-image: url('../img/custom-bg.svg');

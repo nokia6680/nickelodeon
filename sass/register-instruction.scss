@@ -1,0 +1,144 @@
+.register-instruction {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-image: url('../img/rules-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 85.3%;
+
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  position: relative;
+
+  &__list {
+    counter-reset: li;
+    padding: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 90%;
+  }
+
+  &__item {
+    position: relative;
+    margin: 0 0 6px 1.5em;
+    padding: 4px 8px;
+
+    width: 100%;
+
+    &::before {
+      content:counter(li);
+      counter-increment: li;
+      position:absolute;
+      top: 2px;
+      left: -2em;
+      width: 2em;
+      padding: 5px 0;
+      border-radius: 25px;
+      color: #fff;
+      background-color: #ff6700;
+      font-weight: 900;
+      font-family: $main-font;
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    font: {
+      size: 14px;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $overlay-1-text;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    width: 90%;
+  }
+}
+
+@media (min-width: $tablets) {
+  .register-instruction {
+    margin-left: 21px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .register-instruction {
+    position: relative;
+
+    &__description {
+      font: {
+        size: 12px;
+      }
+    }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .register-instruction {
+    position: relative;
+
+    &__description {
+      font: {
+        size: 12px;
+      }
+    }
+  }
+}
+@media (min-width: $wide-netbooks) {
+  .register-instruction {
+    position: relative;
+
+    &__list {
+      width: 100%;
+    }
+
+    &__description {
+      font: {
+        size: 13px;
+      }
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .register-instruction {
+    position: relative;
+
+    &__description {
+      font: {
+        size: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: $fhd) {
+  .register-instruction {
+    margin-top: 50px;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+    &__description {
+      font: {
+        size: 18px;
+      }
+    }
+  }
+}

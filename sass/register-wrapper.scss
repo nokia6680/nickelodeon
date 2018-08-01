@@ -553,7 +553,7 @@
     -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
 
     &--done {
-      display: none;
+      display: none !important;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
