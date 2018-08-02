@@ -1,32 +1,90 @@
 .gallery-sidebar {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
 
-  background-image: url("../img/sidebar-bg.svg");
-  background-repeat: repeat-y;
-  background-position: top -5px right;
-  background-size: cover;
+  background-image: url("../img/sidebar-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom left -10px;
+  background-size: 106%;
 
-  min-height: 768px;
-  max-height: 100vh;
+  width: 100vw;
+  height: 95px;
 
   position: relative;
 
-  margin-left: -55px;
-  padding-left: 55px;
+  margin-bottom: 95px;
 
   &__logo {
-    width: 75%;
-    padding-left: 30px;
-    padding-top: 30px;
+    width: 147px;
+    height: 69px;
+    padding-left: 20px;
+    padding-top: 10px;
   }
   &__link {
-    display: block;
     width: 100%;
     height: 100%;
     text-decoration: none;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .gallery-sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background-image: url("../img/sidebar-bg-mobile.png");
+    background-position: bottom left -10px;
+
+    height: 150px;
+
+    position: relative;
+
+    &__logo {
+      width: 221px;
+      height: 103px;
+      padding-left: 20px;
+      padding-top: 10px;
+    }
+
+    &__link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .gallery-sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background-image: url("../img/sidebar-bg-mobile.png");
+    background-position: bottom left -10px;
+
+    height: 230px;
+
+    position: relative;
+
+    &__logo {
+      width: 355px;
+      height: 166px;
+      padding-left: 20px;
+      padding-top: 10px;
+    }
+    &__link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
   }
 }
 

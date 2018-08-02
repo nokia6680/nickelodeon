@@ -1,24 +1,45 @@
 .gallery {
-  @include container;
-
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 
   background-color: $body-bg;
   background-image: url('../img/gallery-main-bg.jpg');
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left -100px top;
   background-size: auto;
+
+  width: 100%;
 
   margin: 0 auto;
   padding: 0;
 
   text-transform: uppercase;
   position: relative;
+}
 
-  @media (min-width: $laptop) {
+@media (min-width: $smartphones) {
+  .gallery {
+    background-color: $body-bg;
+    background-image: url('../img/gallery-main-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto;
+
+    margin: 0 auto;
+    padding: 0;
+
+    text-transform: uppercase;
+    position: relative;
+  }
+}
+
+@media (min-width: $laptop) {
+  .gallery {
+    flex-direction: row;
+    justify-content: flex-start;
+
     background-color: $body-bg;
     background-image: url('../img/gallery-main-bg.jpg');
     background-repeat: no-repeat;

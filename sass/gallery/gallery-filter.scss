@@ -7,6 +7,8 @@
   margin-left: 50px;
   margin-top: 24px;
 
+  position: absolute;
+
   &__title {
     font: {
       family: $main-font;
@@ -52,6 +54,73 @@
 
     text-align: center;
     padding-top: 8px;
+  }
+}
+
+@media (min-width: $smartphones) {
+
+}
+
+@media (min-width: $tablets) {
+
+}
+
+@media (min-width: $laptop) {
+  .gallery-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-left: 50px;
+    margin-top: 24px;
+
+    &__title {
+      font: {
+        family: $main-font;
+        size: 16px;
+        weight: 900;
+      }
+
+      color: $text-white;
+      line-height: 16px;
+
+      text-transform: uppercase;
+
+      background-image: url('../img/gallery-sort.png');
+      background-repeat: no-repeat;
+      background-size: 182px 27px;
+
+      padding-top: 5px;
+      text-align: center;
+
+      width: 182px;
+      height: 27px;
+    }
+
+    &__home {
+      display: block;
+      text-decoration: none;
+
+      font: {
+        family: $main-font;
+        size: 20px;
+        weight: 900;
+      }
+
+      color: $text-white;
+      line-height: 20px;
+
+      background-image: url('../img/gallery-home.png');
+      background-repeat: no-repeat;
+      background-size: 180px 38px;
+
+      width: 180px;
+      height: 38px;
+
+      text-align: center;
+      padding-top: 8px;
+    }
   }
 }
 
