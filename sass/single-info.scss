@@ -376,7 +376,7 @@
         position: relative;
 
         width: 100%;
-        margin-top: 5px;
+        margin-top: -10px;
         margin-bottom: 5px;
 
         .single-info__double {
@@ -565,7 +565,7 @@
 
       .single-info__controls {
         width: 100%;
-        margin-top: -5px;
+        margin-top: -10px;
         margin-bottom: 5px;
 
         .single-info__double {
@@ -574,9 +574,9 @@
           height: 30px;
 
           .fa-share::before {
-            font-size: 26px;
-            top: 6px;
-            left: 6px;
+            font-size: 22px;
+            top: 5px;
+            left: 5px;
           }
         }
 
@@ -586,7 +586,7 @@
           height: 30px;
 
           font: {
-            size: 12px;
+            size: 10px;
             weight: 600;
             family: $main-font;
           }
@@ -608,11 +608,11 @@
             position: absolute;
             content: '\f189';
 
-            font-size: 24px;
+            font-size: 20px;
             color: $text-white;
 
-            top: 7px;
-            left: 6px;
+            top: 5px;
+            left: 4px;
           }
         }
       }

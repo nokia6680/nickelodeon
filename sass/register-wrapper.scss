@@ -54,7 +54,7 @@
   }
 
   &--done {
-    display: none !important;
+    display: none;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -269,7 +269,6 @@
 
 @media (min-width: $laptop) {
   .register-wrapper {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -285,7 +284,6 @@
     -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
 
     &--done {
-      display: none;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
@@ -407,10 +405,7 @@
 }
 @media (min-width: $netbooks) {
   .register-wrapper {
-    display: flex;
-
     &--done {
-      display: none;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
@@ -471,10 +466,7 @@
 }
 @media (min-width: $wide-netbooks) {
   .register-wrapper {
-    display: flex;
-
     &--done {
-      display: none;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
@@ -494,10 +486,7 @@
 }
 @media (min-width: $notebooks) {
   .register-wrapper {
-    display: flex;
-
     &--done {
-      display: none;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
@@ -543,7 +532,6 @@
 }
 @media (min-width: $widebooks) {
   .register-wrapper {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -558,7 +546,6 @@
     -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
 
     &--done {
-      display: none !important;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
@@ -634,7 +621,6 @@
 }
 @media (min-width: $hd) {
   .register-wrapper {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -649,7 +635,6 @@
     -moz-box-shadow: 4px 4px 0 0 rgba(255,209,0,1);
 
     &--done {
-      display: none !important;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
@@ -743,7 +728,6 @@
     }
 
     &--done {
-      display: none;
       background-color: $team-bg;
       padding-left: 27px;
       padding-top: 12px;
