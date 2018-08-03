@@ -5,42 +5,41 @@
   align-items: flex-start;
 
   margin-top: 20px;
-  margin-left: 5px;
 
   &:nth-of-type(3n+1) {
     background-image: url('../img/slide-bg-1.png');
-    background-size: 187px 278px;
+    background-size: 213px 299px;
     background-repeat: no-repeat;
 
-    width: 187px;
-    height: 278px;
+    width: 213px;
+    height: 299px;
   }
 
   &:nth-of-type(3n+2) {
     background-image: url('../img/slide-bg-3.png');
-    background-size: 187px 278px;
+    background-size: 213px 299px;
     background-repeat: no-repeat;
 
-    width: 187px;
-    height: 278px;
+    width: 213px;
+    height: 299px;
   }
 
   &:nth-of-type(3n+3) {
     background-image: url('../img/slide-bg-4.png');
-    background-size: 187px 278px;
+    background-size: 213px 299px;
     background-repeat: no-repeat;
 
-    width: 187px;
-    height: 278px;
+    width: 213px;
+    height: 299px;
   }
 
   &:nth-of-type(3n+4) {
     background-image: url('../img/slide-bg-2.png');
-    background-size: 187px 278px;
+    background-size: 213px 299px;
     background-repeat: no-repeat;
 
-    width: 187px;
-    height: 278px;
+    width: 213px;
+    height: 299px;
   }
 
   &__title {
@@ -55,11 +54,11 @@
 
     background-image: url('../img/gallery-item-bg.png');
     background-repeat: no-repeat;
-    background-size: 177px 24px;
+    background-size: 190px 27px;
 
     display: block;
-    width: 177px;
-    height: 24px;
+    width: 190px;
+    height: 27px;
 
     text-align: left;
     padding-top: 5px;
@@ -82,6 +81,253 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .gallery-slide {
+    margin-top: 20px;
+    margin-left: 5px;
+
+    &:nth-of-type(3n+1) {
+      background-image: url('../img/slide-bg-1.png');
+      background-size: 320px 449px;
+      background-repeat: no-repeat;
+
+      width: 320px;
+      height: 449px;
+    }
+
+    &:nth-of-type(3n+2) {
+      background-image: url('../img/slide-bg-3.png');
+      background-size: 320px 449px;
+      background-repeat: no-repeat;
+
+      width: 320px;
+      height: 449px;
+    }
+
+    &:nth-of-type(3n+3) {
+      background-image: url('../img/slide-bg-4.png');
+      background-size: 320px 449px;
+      background-repeat: no-repeat;
+
+      width: 320px;
+      height: 449px;
+    }
+
+    &:nth-of-type(3n+4) {
+      background-image: url('../img/slide-bg-2.png');
+      background-size: 320px 449px;
+      background-repeat: no-repeat;
+
+      width: 320px;
+      height: 449px;
+    }
+
+    &__title {
+      font: {
+        size: 20px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $text-white;
+      line-height: normal;
+
+      background-image: url('../img/gallery-item-bg.png');
+      background-repeat: no-repeat;
+      background-size: 286px 40px;
+
+      display: block;
+      width: 286px;
+      height: 40px;
+
+      text-align: left;
+      padding-top: 10px;
+      padding-left: 20px;
+
+      margin: 0;
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+
+    &__head {
+      max-height: 100px;
+      margin: 0 auto;
+
+      z-index: 100;
+    }
+
+    &__head--ninja {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .gallery-slide {
+    margin-top: 20px;
+    margin-left: 5px;
+
+    &:nth-of-type(3n+1) {
+      background-image: url('../img/slide-bg-1.png');
+      background-size: 512px 718px;
+      background-repeat: no-repeat;
+
+      width: 512px;
+      height: 718px;
+    }
+
+    &:nth-of-type(3n+2) {
+      background-image: url('../img/slide-bg-3.png');
+      background-size: 512px 718px;
+      background-repeat: no-repeat;
+
+      width: 512px;
+      height: 718px;
+    }
+
+    &:nth-of-type(3n+3) {
+      background-image: url('../img/slide-bg-4.png');
+      background-size: 512px 718px;
+      background-repeat: no-repeat;
+
+      width: 512px;
+      height: 718px;
+    }
+
+    &:nth-of-type(3n+4) {
+      background-image: url('../img/slide-bg-2.png');
+      background-size: 512px 718px;
+      background-repeat: no-repeat;
+
+      width: 512px;
+      height: 718px;
+    }
+
+    &__title {
+      font: {
+        size: 26px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $text-white;
+      line-height: normal;
+
+      background-image: url('../img/gallery-item-bg.png');
+      background-repeat: no-repeat;
+      background-size: 457px 64px;
+
+      display: block;
+      width: 457px;
+      height: 64px;
+
+      text-align: left;
+      padding-top: 15px;
+      padding-left: 20px;
+
+      margin: 0;
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+
+    &__head {
+      max-height: 180px;
+      margin: 0 auto;
+
+      z-index: 100;
+    }
+
+    &__head--ninja {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .gallery-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-top: 20px;
+    margin-left: 5px;
+
+    &:nth-of-type(3n+1) {
+      background-image: url('../img/slide-bg-1.png');
+      background-size: 187px 278px;
+      background-repeat: no-repeat;
+
+      width: 187px;
+      height: 278px;
+    }
+
+    &:nth-of-type(3n+2) {
+      background-image: url('../img/slide-bg-3.png');
+      background-size: 187px 278px;
+      background-repeat: no-repeat;
+
+      width: 187px;
+      height: 278px;
+    }
+
+    &:nth-of-type(3n+3) {
+      background-image: url('../img/slide-bg-4.png');
+      background-size: 187px 278px;
+      background-repeat: no-repeat;
+
+      width: 187px;
+      height: 278px;
+    }
+
+    &:nth-of-type(3n+4) {
+      background-image: url('../img/slide-bg-2.png');
+      background-size: 187px 278px;
+      background-repeat: no-repeat;
+
+      width: 187px;
+      height: 278px;
+    }
+
+    &__title {
+      font: {
+        size: 13px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $text-white;
+      line-height: normal;
+
+      background-image: url('../img/gallery-item-bg.png');
+      background-repeat: no-repeat;
+      background-size: 177px 24px;
+
+      display: block;
+      width: 177px;
+      height: 24px;
+
+      text-align: left;
+      padding-top: 5px;
+      padding-left: 20px;
+
+      margin: 0;
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+
+    &__head {
+      max-height: 80px;
+      margin: 0 auto;
+
+      z-index: 100;
+    }
+
+    &__head--ninja {
+      padding-right: 20px;
+    }
+  }
+}
 @media (min-width: $netbooks) {
   .gallery-slide {
     margin-top: 20px;

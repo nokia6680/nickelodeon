@@ -96,6 +96,135 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .gallery-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $tablets) {
+  .gallery-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .gallery-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    &__like {
+      background-color: transparent;
+      border: 0;
+      text-align: center;
+
+      padding-right: 24px;
+      position: relative;
+
+      outline: none;
+      cursor: pointer;
+
+      .fa-heart::before {
+        content: '\f08a';
+        position: absolute;
+        color: $gallery-like;
+        font-size: 22px;
+
+        top: -2px;
+        left: 0;
+      }
+    }
+
+    &__like:hover {
+      .fa-heart::before {
+        content: '\f004';
+        color: $gallery-like;
+      }
+    }
+
+    &__like:active {
+      .fa-heart::before {
+        content: '\f004';
+        color: $gallery-like;
+      }
+    }
+
+    &__count {
+      font: {
+        family: $main-font;
+        size: 13px;
+        weight: 900;
+      }
+
+      color: $gallery-like;
+    }
+
+    &__share {
+      background-color: transparent;
+      border: none;
+
+      background-image: url("data:image/svg+xml,%3Csvg id='Слой_1' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 52 46'%3E%3Ctitle%3Eshare-still%3C/title%3E%3Cimage width='48' height='42' transform='scale%281.08 1.1%29' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAsCAYAAADM1FBZAAAACXBIWXMAAAomAAAKJgFRqakzAAADx0lEQVRoQ9WYPWsUURSGoyhioVGJiuDumMLK1iJgLUkEBQuV/AQLK0mwVAyComgh2mlhwEIUrKJYBAw2YqNVEPwiCYpE18Rkd83X+L7Zc5ObcXbP3OwZMMXDTnbPPec8c+/cmUlLHMct6x01wIroWN92cIGfWmwoaoAVaP53sbtvDp/fQJsWH4IaYAGabqfE/q7eGCKL1iJqgAW+RB4iaoAFiZn45Yl8BDu18RpqgAW+BD4ngJuRBRx/aFZEDbAgRWIPmLMSUQMsSErId2YiaoAFaRLyvYmIGmBBPQn5rWkRNcCCRhLye1MiaoAFmoTErFlEDbAgi4TErUlEbSAUaaQH3AbD4CuYcTe5RhLe+CARtaksoMhecA18AmUUnyp098bEPWo48PtYhnxJkfdgWy4SSHwIPJPGqwVplM3j71meffw2Bf4ACkyCq1reFBE+/b6rJ6Imq1NgF3jOplDAb5xNz4NXoB+cAAdBK9ig5U2pwxkuayJqopTEtwDP8oKXvCxSx7XxoSDnJU1ETeIl49kc4nqXhLE0/4BnTBvfDJqImkCScH1OIMG8JOKyGc67+UQPaSJb+FuWwRRY9HaXGXBdG5cHIuJWAjeLM/xeG0QBt/b5EsMZ2KcVywPU3QheoI/KUj+1na6dvzUatNubPu7VXyKj18lQUgR4Mpe36kaDRtz2iePvUYbbfx5oAqTewAE3iMuJy0orlgdZBEjawA4El2RQiReTVkzGtYFucB7cBYNgyOMhGwCtWq4QgXoSnwu166CK4/tKoQ5wB4yCCsaUuGu456Yk3KIRN2wp8I8EAzFwWpYRr/7NdYrwjI5zpnjR+89M0iyFJkWqJMezkld7ig0SSJMoeTezyykFboCqE3U7lyw73oDeRLWldA6cBp3gKDgVZXifkBqDIQKrJNh0UR4peJYTiQ+DMdd8YUWUs8XldERpLOtL0VNXI6tAUuKtNDflzwKO7zGhd+aZfASc1JKHSCQEOLM3tbyrJDDggFcklu92gNdIPCPNV/D3jyjjbhUi0YyAL8GlVOVFieMnUW27HC+6B75a4gGwSUsYKtGsgC/xUnYVLiW+H//E8aIU5YNWv5ZoLRIWAr5EVQrw/WDUE5iNDO7WaRJWAksS0erroeKWkMxA0wJpEpYCTqKTNyS5eN0MVKwESEJiwVKAsMBZJC17WygTX9EGhuBLLNcxEiAs0OseCYq1t6VH2qBQkhKWAoQFLhZX3humwVZtUCiR/68XYwHCAj3cWvNYRj7I/RhUrQWIK8B7Q5cW/L+iBqwH/gIhaxX7OLZUtAAAAABJRU5ErkJggg=='/%3E%3C/svg%3E");
+      background-size: 24px 21px;
+      background-repeat: no-repeat;
+
+      width: 24px;
+      height: 21px;
+      padding: 0;
+      margin-left: 10px;
+
+      outline: none;
+      cursor: pointer;
+
+      &:hover {
+        background-image: url("data:image/svg+xml,%3Csvg id='Слой_1' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 45 38'%3E%3Ctitle%3Eshare-active%3C/title%3E%3Cimage width='45' height='38' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAnCAYAAACbgcH8AAAACXBIWXMAAAsSAAALEgHS3X78AAACWUlEQVRYR9XYP0hVYRzG8WuSaFFO4eBbBNUo6OQi4iRN0dagizRJEIGUIg5t6SYoJi6GWENTNDQ4KAghUdiQOPUHpAjBHARB+3d9ft575fjynvf5nfOee7LhM933POeL9x7uxUKxWCz8b+iBUOb6/XPwA17BGXZegx4IhdDLUCxbzCKcHghlRYslaGTX+dADoRzR4k1IOD0QKiY6KJweCOWJFu/hAtuw0QOhSLT4kDScHgiliBZr0MS2KuiBUMpo8REM2xP0QKgE0epwetNQCaPFJ7jyz6Jx83poVYTavsHVqkfL2wq9MAOvYUsRlyqcxpDQJrgHbxURaWxCSybRpvQ5nYI9xY1DbdnhNNCKPQuP4KfiZlmS8NbE0bioAzYUN6iWHWhXReNgDQzDH8VwtR2Gs+DTMKsYy9M2C36pGMnbnO8jMa8YyNtTqI2LfqgYyJv8EWudDyJe6DYn46GLegw1lUY7+Dx8V4zk6ViwK3pSMZKncWMFH4vGi9fgr2LIZR9WTelzNwYDpvSb5AFMKK53GXU9b3b0E8VQ1GcZhk6oj7uBSf572ht8FI1DzfBbMSbvxAvoMo63LaPoEbZZGR5SjC1AGxsMjB5ie9Hodc/QNtxiQxlED7Kto2gcvuQZWoFmNpJBdD/bsaP7YoaeQR0bYBTRiYIr0VOOoWmjfNAYT7R8695m18dFL1ljz035Oz4LMdES3MOu9UV/jYy9gwZ2URKO6KBgIaM75bFd4/lfQ1pW9C+4ya5hCpHBO+xwGti9GAm+wc5ryOgXWIZT7HBa2L4Lneyc1gEUOYtSTXIAZAAAAABJRU5ErkJggg=='/%3E%3C/svg%3E");
+        background-size: 24px 21px;
+        background-repeat: no-repeat;
+
+        width: 24px;
+        height: 21px;
+        padding: 0;
+        margin-left: 10px;
+      }
+
+      &:active {
+        background-image: url("data:image/svg+xml,%3Csvg id='Слой_1' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 45 38'%3E%3Ctitle%3Eshare-active%3C/title%3E%3Cimage width='45' height='38' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAnCAYAAACbgcH8AAAACXBIWXMAAAsSAAALEgHS3X78AAACWUlEQVRYR9XYP0hVYRzG8WuSaFFO4eBbBNUo6OQi4iRN0dagizRJEIGUIg5t6SYoJi6GWENTNDQ4KAghUdiQOPUHpAjBHARB+3d9ft575fjynvf5nfOee7LhM933POeL9x7uxUKxWCz8b+iBUOb6/XPwA17BGXZegx4IhdDLUCxbzCKcHghlRYslaGTX+dADoRzR4k1IOD0QKiY6KJweCOWJFu/hAtuw0QOhSLT4kDScHgiliBZr0MS2KuiBUMpo8REM2xP0QKgE0epwetNQCaPFJ7jyz6Jx83poVYTavsHVqkfL2wq9MAOvYUsRlyqcxpDQJrgHbxURaWxCSybRpvQ5nYI9xY1DbdnhNNCKPQuP4KfiZlmS8NbE0bioAzYUN6iWHWhXReNgDQzDH8VwtR2Gs+DTMKsYy9M2C36pGMnbnO8jMa8YyNtTqI2LfqgYyJv8EWudDyJe6DYn46GLegw1lUY7+Dx8V4zk6ViwK3pSMZKncWMFH4vGi9fgr2LIZR9WTelzNwYDpvSb5AFMKK53GXU9b3b0E8VQ1GcZhk6oj7uBSf572ht8FI1DzfBbMSbvxAvoMo63LaPoEbZZGR5SjC1AGxsMjB5ie9Hodc/QNtxiQxlED7Kto2gcvuQZWoFmNpJBdD/bsaP7YoaeQR0bYBTRiYIr0VOOoWmjfNAYT7R8695m18dFL1ljz035Oz4LMdES3MOu9UV/jYy9gwZ2URKO6KBgIaM75bFd4/lfQ1pW9C+4ya5hCpHBO+xwGti9GAm+wc5ryOgXWIZT7HBa2L4Lneyc1gEUOYtSTXIAZAAAAABJRU5ErkJggg=='/%3E%3C/svg%3E");
+        background-size: 24px 21px;
+        background-repeat: no-repeat;
+
+        width: 24px;
+        height: 21px;
+        padding: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+}
 @media (min-width: $notebooks) {
   .gallery-actions {
     margin-bottom: 10px;

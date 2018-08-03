@@ -1,0 +1,31 @@
+.content-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 100%;
+
+  margin: 0 auto;
+
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: $smartphones) {
+  .content-filter {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: $tablets) {
+  .content-filter {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .content-filter {
+    display: none;
+  }
+}

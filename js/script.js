@@ -22,6 +22,26 @@ var swiper = new Swiper('.swiper-container-1', {
     clickable: true,
   },
   breakpoints: {
+    480: {
+      slidesPerView: 1,
+      slidesPerColumn: 1,
+      initialSlide: 1,
+      spaceBetween: 0,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    },
+    768: {
+      slidesPerView: 1,
+      slidesPerColumn: 1,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    },
     1024: {
       slidesPerView: 2,
       slidesPerColumn: 2
@@ -47,6 +67,34 @@ var swiper = new Swiper('.swiper-container-1', {
       slidesPerColumn: 2,
       spaceBetween: 30
     },
+  },
+});
+
+var swiper = new Swiper('.swiper-container-1--tiles', {
+  centeredSlides: false,
+  slidesPerView: 3,
+  slidesPerColumn: 2,
+  slidesPerColumnFill: 'row',
+  spaceBetween: 10,
+  direction: 'vertical',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
+  },
+
+  breakpoints: {
+    480: {
+      slidesPerView: 2
+    },
+
+    768: {
+      slidePerView: 2
+    }
   },
 });
 

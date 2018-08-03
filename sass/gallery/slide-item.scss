@@ -16,7 +16,7 @@
   }
   &--rightarm {
     top: -155px;
-    right: -11px;
+    right: -6px;
 
     transform: scale(0.25);
   }
@@ -28,7 +28,7 @@
   }
   &--rightleg {
     top: -45px;
-    right: 2px;
+    right: 7px;
 
     transform: scale(0.25);
   }
@@ -41,7 +41,7 @@
   }
   &--righttop {
     top: -170px;
-    right: -54px;
+    right: -49px;
 
     transform: scale(0.25);
 
@@ -57,7 +57,7 @@
   }
   &--rightbottom {
     top: -60px;
-    right: 3px;
+    right: 8px;
 
     transform: scale(0.25);
 
@@ -74,7 +74,7 @@
   }
   &--righthalf {
     top: -175px;
-    right: -52px;
+    right: -47px;
 
     transform: scale(0.23);
 
@@ -103,6 +103,326 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .slide-item {
+    position: absolute;
+
+    /*Для 5ти частей тела*/
+    &--leftarm {
+      top: -130px;
+      left: 33px;
+
+      transform: scale(0.4);
+    }
+    &--chest {
+      top: -130px;
+      left: 20px;
+
+      transform: scale(0.4);
+    }
+    &--rightarm {
+      top: -130px;
+      right: 39px;
+
+      transform: scale(0.4);
+    }
+    &--leftleg {
+      top: 31.5px;
+      left: 65px;
+
+      transform: scale(0.4);
+    }
+    &--rightleg {
+      top: 31.5px;
+      right: 69px;
+
+      transform: scale(0.4);
+    }
+    /*Для 4х частей тела*/
+    &--lefttop {
+      top: -150px;
+      left: 3px;
+
+      transform: scale(0.4);
+    }
+    &--righttop {
+      top: -150px;
+      right: 3px;
+
+      transform: scale(0.4);
+
+      svg {
+        transform: rotateY(180deg);
+      }
+    }
+    &--leftbottom {
+      top: -0.5px;
+      left: 68px;
+
+      transform: scale(0.4);
+    }
+    &--rightbottom {
+      top: -0.5px;
+      right: 68px;
+
+      transform: scale(0.4);
+
+      svg {
+        transform: rotateY(180deg);
+      }
+    }
+    /*Для 3х частей тела*/
+    &--lefthalf {
+      top: -150px;
+      left: 3px;
+
+      transform: scale(0.4);
+    }
+    &--righthalf {
+      top: -150px;
+      right: 3px;
+
+      transform: scale(0.4);
+
+      svg {
+        transform: rotateY(180deg);
+      }
+    }
+    &--doubleleg {
+      top: -18px;
+      left: 25px;
+
+      transform: scale(0.4);
+    }
+    /*Для 2х частей тела*/
+    &--tophalf {
+      top: -150px;
+      left: -65px;
+
+      transform: scale(0.4);
+    }
+    &--bottomhalf {
+      top: -28px;
+      left: 29.5px;
+
+      transform: scale(0.4);
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .slide-item {
+    position: absolute;
+
+    /*Для 5ти частей тела*/
+    &--leftarm {
+      top: -50px;
+      left: 76px;
+
+      transform: scale(0.7);
+    }
+    &--chest {
+      top: -80px;
+      left: 120px;
+
+      transform: scale(0.7);
+    }
+    &--rightarm {
+      top: -50px;
+      right: 84px;
+
+      transform: scale(0.7);
+    }
+    &--leftleg {
+      top: 173.5px;
+      left: 143px;
+
+      transform: scale(0.7);
+    }
+    &--rightleg {
+      top: 173.5PX;
+      right: 147px;
+
+      transform: scale(0.7);
+    }
+    /*Для 4х частей тела*/
+    &--lefttop {
+      top: -120px;
+      left: 68px;
+
+      transform: scale(0.7);
+    }
+    &--righttop {
+      top: -120px;
+      right: 68px;
+
+      transform: scale(0.7);
+
+      svg {
+        transform: rotateY(180deg);
+      }
+    }
+    &--leftbottom {
+      top: 107.5px;
+      left: 148px;
+
+      transform: scale(0.7);
+    }
+    &--rightbottom {
+      top: 107.5px;
+      right: 148px;
+
+      transform: scale(0.7);
+
+      svg {
+        transform: rotateY(180deg);
+      }
+    }
+    /*Для 3х частей тела*/
+    &--lefthalf {
+      top: -150px;
+      left: 3px;
+
+      transform: scale(0.7);
+    }
+    &--righthalf {
+      top: -150px;
+      right: 3px;
+
+      transform: scale(0.7);
+
+      svg {
+        transform: rotateY(180deg);
+      }
+    }
+    &--doubleleg {
+      top: -18px;
+      left: 25px;
+
+      transform: scale(0.7);
+    }
+    /*Для 2х частей тела*/
+    &--tophalf {
+      top: -150px;
+      left: -65px;
+
+      transform: scale(0.7);
+    }
+    &--bottomhalf {
+      top: -28px;
+      left: 29.5px;
+
+      transform: scale(0.7);
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .slide-item {
+    position: absolute;
+
+    /*Для 5ти частей тела*/
+    &--leftarm {
+      top: -155px;
+      left: -8px;
+
+      transform: scale(0.25);
+    }
+    &--chest {
+      top: -160px;
+      left: -50px;
+
+      transform: scale(0.25);
+    }
+    &--rightarm {
+      top: -155px;
+      right: -11px;
+
+      transform: scale(0.25);
+    }
+    &--leftleg {
+      top: -45px;
+      left: 6px;
+
+      transform: scale(0.25);
+    }
+    &--rightleg {
+      top: -45px;
+      right: 2px;
+
+      transform: scale(0.25);
+    }
+    /*Для 4х частей тела*/
+    &--lefttop {
+      top: -170px;
+      left: -54px;
+
+      transform: scale(0.25);
+    }
+    &--righttop {
+      top: -170px;
+      right: -54px;
+
+      transform: scale(0.25);
+
+      svg {
+        transform: rotateY(180deg);
+      }
+    }
+    &--leftbottom {
+      top: -60px;
+      left: 3px;
+
+      transform: scale(0.25);
+    }
+    &--rightbottom {
+      top: -60px;
+      right: 3px;
+
+      transform: scale(0.25);
+
+      svg {
+        transform: rotateY(180deg);
+      }
+    }
+    /*Для 3х частей тела*/
+    &--lefthalf {
+      top: -175px;
+      left: -52px;
+
+      transform: scale(0.23);
+    }
+    &--righthalf {
+      top: -175px;
+      right: -52px;
+
+      transform: scale(0.23);
+
+      svg {
+        transform: rotateY(180deg);
+      }
+    }
+    &--doubleleg {
+      top: -93px;
+      left: -51px;
+
+      transform: scale(0.23);
+    }
+    /*Для 2х частей тела*/
+    &--tophalf {
+      top: -170px;
+      left: -145px;
+
+      transform: scale(0.23);
+    }
+    &--bottomhalf {
+      top: -95px;
+      left: -49.5px;
+
+      transform: scale(0.23);
+    }
+  }
+}
 @media (min-width: $netbooks) {
   .slide-item {
     position: absolute;

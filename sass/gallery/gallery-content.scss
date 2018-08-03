@@ -1,15 +1,52 @@
 .gallery-content {
   width: 100%;
+  padding-bottom: 43px;
+}
+
+@media (min-width: $smartphones) {
+  .gallery-content {
+    padding-bottom: 45px;
+  }
+}
+
+@media (min-width: $tablets) {
+  .gallery-content {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .gallery-content {
+    display: block;
+    padding-bottom: 0;
+
+    width: 65%;
+    margin-top: -10%;
+  }
 }
 
 @media (min-width: $netbooks) {
   .gallery-content {
     width: 67%;
+    margin-top: -13%;
+  }
+}
+
+@media (min-width: $notebooks) {
+  .gallery-content {
+    margin-top: -5%;
+  }
+}
+
+@media (min-width: $widebooks) {
+  .gallery-content {
+    margin-top: -10%;
   }
 }
 
 @media (min-width: $hd) {
   .gallery-content {
     width: 73%;
+    margin-top: -5%;
   }
 }

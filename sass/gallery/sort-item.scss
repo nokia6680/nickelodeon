@@ -1,0 +1,47 @@
+.sort-item {
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+
+.sort-item__checkbox--peoplemob + label {
+  @include checkbox-default-peoplemob;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.sort-item__checkbox--likemob + label {
+  @include checkbox-default-likemob;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.sort-item__checkbox--sharemob + label {
+  @include checkbox-default-sharemob;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.sort-item__checkbox--peoplemob:checked + label::after {
+  @include checkbox-checked-peoplemob;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.sort-item__checkbox--likemob:checked + label::after {
+  @include checkbox-checked-likemob;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.sort-item__checkbox--sharemob:checked + label::after {
+  @include checkbox-checked-sharemob;
+
+  outline: none;
+  cursor: pointer;
+}

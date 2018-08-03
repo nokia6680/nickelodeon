@@ -4,17 +4,16 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  background-image: url("../img/sidebar-bg-mobile.png");
+  background-color: transparent;
+  background-image: url('../img/start-header-bg.svg');
   background-repeat: no-repeat;
-  background-position: bottom left -10px;
-  background-size: 106%;
+  background-size: 100%;
+  background-position: bottom left;
 
   width: 100vw;
   height: 95px;
 
   position: relative;
-
-  margin-bottom: 95px;
 
   &__logo {
     width: 147px;
@@ -31,14 +30,6 @@
 
 @media (min-width: $smartphones) {
   .gallery-sidebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    background-image: url("../img/sidebar-bg-mobile.png");
-    background-position: bottom left -10px;
-
     height: 150px;
 
     position: relative;
@@ -61,14 +52,6 @@
 
 @media (min-width: $tablets) {
   .gallery-sidebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    background-image: url("../img/sidebar-bg-mobile.png");
-    background-position: bottom left -10px;
-
     height: 230px;
 
     position: relative;
@@ -99,6 +82,9 @@
     background-position: top -5px right;
     background-size: cover;
 
+    margin-bottom: 0;
+
+    height: auto;
     min-height: 768px;
     max-height: 100vh;
     width: 35%;

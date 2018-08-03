@@ -1,13 +1,11 @@
 .gallery-filter {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
   margin-left: 50px;
   margin-top: 24px;
-
-  position: absolute;
 
   &__title {
     font: {

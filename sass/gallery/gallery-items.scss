@@ -1,24 +1,724 @@
 .gallery-items {
-  margin-top: 10px;
-  margin-left: 20px;
-  padding-top: 20px;
   padding-bottom: 20px;
 
   .swiper-container-1 {
-    overflow-x: hidden;
-    overflow-y: visible;
-  }
+    display: none;
 
-  .swiper-slide {
-    width: 187px !important;
-    height: 278px !important;
+    &--mobile {
+      display: none;
+      overflow-x: hidden;
+      overflow-y: visible;
+
+      width: 320px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+
+      .swiper-slide {
+        width: 60% !important;
+        height: 299px !important;
+        margin-left: 20% !important;
+        margin-right: 20% !important;
+        text-align: center;
+      }
+
+      .swiper-button-prev {
+        background-image: url("data:image/svg+xml,%3Csvg id='Слой_1' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 73.01 90.98'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff7df;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Earrow-left-white%3C/title%3E%3Cpath id='Polygon_900_copy_3' data-name='Polygon 900 copy 3' class='cls-1' d='M0,45.77L73,91,72.7,0Z' transform='translate%28-0.01 -0.01%29'/%3E%3C/svg%3E");
+        background-size: 43px 54px;
+        width: 43px;
+        height: 54px;
+        top: 55%;
+        left: 2%;
+
+        cursor: pointer;
+        outline: none;
+      }
+
+      .swiper-button-next {
+        background-image: url("data:image/svg+xml,%3Csvg id='Слой_1' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 73.01 90.98'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff7df;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Earrow-right-white%3C/title%3E%3Cpath id='Polygon_900' data-name='Polygon 900' class='cls-1' d='M73,45.77L0,91,0.33,0Z' transform='translate%28-0.01 -0.01%29'/%3E%3C/svg%3E");
+        background-size: 43px 54px;
+        width: 43px;
+        height: 54px;
+        top: 55%;
+        right: 2%;
+
+        cursor: pointer;
+        outline: none;
+      }
+    }
+
+    &--tiles {
+      display: block;
+      overflow: hidden;
+
+      width: 96% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+
+      .swiper-wrapper {
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+
+        height: 375px !important;
+        position: relative;
+      }
+
+      .swiper-slide {
+        width: 127px !important;
+        height: 177px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        text-align: center;
+
+        margin-bottom: 10px !important;
+        margin-top: 5px;
+      }
+
+      .gallery-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        width: 127px;
+        height: 177px;
+
+        &__title {
+          font: {
+            size: 5px;
+            weight: 900;
+            family: $main-font;
+          }
+
+          color: $text-white;
+          line-height: 5px;
+
+          background-image: url('../img/gallery-item-bg.png');
+          background-repeat: no-repeat;
+          background-size: 76px 11px;
+
+          display: block;
+          width: 76px;
+          height: 11px;
+
+          text-align: left;
+          padding-top: 3px;
+          padding-left: 10px;
+
+          margin: 0;
+          margin-left: -5px;
+          margin-top: -2px;
+        }
+
+        &__head {
+          max-height: 40px;
+        }
+
+        .slide-item {
+          position: absolute;
+
+          /*Для 5ти частей тела*/
+          &--leftarm {
+            top: -170px;
+            left: -20px;
+
+            transform: scale(0.15);
+          }
+          &--chest {
+            top: -160px;
+            left: -82px;
+
+            transform: scale(0.15);
+          }
+          &--rightarm {
+            top: -170px;
+            right: -20px;
+
+            transform: scale(0.15);
+          }
+          &--leftleg {
+            top: -75px;
+            left: -18px;
+
+            transform: scale(0.15);
+          }
+          &--rightleg {
+            top: -75px;
+            right: -18px;
+
+            transform: scale(0.15);
+          }
+          /*Для 4х частей тела*/
+          &--lefttop {
+            top: -180px;
+            left: -73px;
+
+            transform: scale(0.15);
+          }
+          &--righttop {
+            top: -180px;
+            right: -73px;
+
+            transform: scale(0.15);
+
+            svg {
+              transform: rotateY(180deg);
+            }
+          }
+          &--leftbottom {
+            top: -96px;
+            left: -21px;
+
+            transform: scale(0.15);
+          }
+          &--rightbottom {
+            top: -96px;
+            right: -21px;
+
+            transform: scale(0.15);
+
+            svg {
+              transform: rotateY(180deg);
+            }
+          }
+          /*Для 3х частей тела*/
+          &--lefthalf {
+            top: -185px;
+            left: -73px;
+
+            transform: scale(0.15);
+          }
+          &--righthalf {
+            top: -185px;
+            right: -73px;
+
+            transform: scale(0.15);
+
+            svg {
+              transform: rotateY(180deg);
+            }
+          }
+          &--doubleleg {
+            top: -126px;
+            left: -81px;
+
+            transform: scale(0.15);
+          }
+          /*Для 2х частей тела*/
+          &--tophalf {
+            top: -180px;
+            left: -180px;
+
+            transform: scale(0.15);
+          }
+          &--bottomhalf {
+            top: -126px;
+            left: -85.5px;
+
+            transform: scale(0.15);
+          }
+        }
+      }
+
+      .swiper-button-prev {
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%);
+
+        background-image: url("data:image/svg+xml,%3Csvg id='Слой_1' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 67.98 54.98'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff7df;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Earrow-up%3C/title%3E%3Cpath id='Polygon_900_copy_5' data-name='Polygon 900 copy 5' class='cls-1' d='M34.2,0L68,55,0,54.75Z' transform='translate(-0.01 -0.01)'/%3E%3C/svg%3E") !important;
+        background-repeat: no-repeat;
+        background-size: 42px 34px;
+
+        width: 42px;
+        height: 34px;
+
+        cursor: pointer;
+        outline: none;
+      }
+
+      .swiper-button-next {
+        position: absolute;
+        top: 87%;
+        left: 50%;
+        transform: translate(-50%);
+
+        background-image: url("data:image/svg+xml,%3Csvg id='Слой_1' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 67.98 54.98'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff7df;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Earrow-down%3C/title%3E%3Cpath id='Polygon_900_copy_4' data-name='Polygon 900 copy 4' class='cls-1' d='M33.8,55L0,0,68,0.25Z' transform='translate(-0.01 -0.01)'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 42px 34px;
+
+        width: 42px;
+        height: 34px;
+
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $smartphones) {
+  .gallery-items {
+    padding-bottom: 20px;
+
+    .swiper-container-1 {
+      display: none;
+
+      &--mobile {
+        display: none;
+        overflow-x: hidden;
+        overflow-y: visible;
+
+        width: 480px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        .swiper-slide {
+          width: 70% !important;
+          height: 449px !important;
+          margin-left: 15% !important;
+          margin-right: 15% !important;
+        }
+      }
+
+      &--tiles {
+        display: block;
+        overflow: hidden;
+
+        width: 96% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        .swiper-wrapper {
+          flex-direction: row !important;
+          justify-content: flex-start !important;
+          align-items: flex-start !important;
+
+          height: 375px !important;
+          position: relative;
+        }
+
+        .swiper-slide {
+          width: 127px !important;
+          height: 177px !important;
+          margin-left: 10px !important;
+          margin-right: 10px !important;
+          text-align: center;
+
+          margin-bottom: 10px !important;
+          margin-top: 5px;
+        }
+
+        .gallery-slide {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          width: 127px;
+          height: 177px;
+
+          &__actions {
+            margin-bottom: 5px;
+          }
+
+          &__title {
+            font: {
+              size: 5px;
+              weight: 900;
+              family: $main-font;
+            }
+
+            color: $text-white;
+            line-height: 5px;
+
+            background-image: url('../img/gallery-item-bg.png');
+            background-repeat: no-repeat;
+            background-size: 76px 11px;
+
+            display: block;
+            width: 76px;
+            height: 11px;
+
+            text-align: left;
+            padding-top: 3px;
+            padding-left: 10px;
+
+            margin: 0;
+            margin-left: -5px;
+            margin-top: -2px;
+          }
+
+          &__head {
+            max-height: 40px;
+          }
+
+          .slide-item {
+            position: absolute;
+
+            /*Для 5ти частей тела*/
+            &--leftarm {
+              top: -170px;
+              left: -20px;
+
+              transform: scale(0.15);
+            }
+            &--chest {
+              top: -160px;
+              left: -82px;
+
+              transform: scale(0.15);
+            }
+            &--rightarm {
+              top: -170px;
+              right: -20px;
+
+              transform: scale(0.15);
+            }
+            &--leftleg {
+              top: -75px;
+              left: -18px;
+
+              transform: scale(0.15);
+            }
+            &--rightleg {
+              top: -75px;
+              right: -18px;
+
+              transform: scale(0.15);
+            }
+            /*Для 4х частей тела*/
+            &--lefttop {
+              top: -180px;
+              left: -73px;
+
+              transform: scale(0.15);
+            }
+            &--righttop {
+              top: -180px;
+              right: -73px;
+
+              transform: scale(0.15);
+
+              svg {
+                transform: rotateY(180deg);
+              }
+            }
+            &--leftbottom {
+              top: -96px;
+              left: -21px;
+
+              transform: scale(0.15);
+            }
+            &--rightbottom {
+              top: -96px;
+              right: -21px;
+
+              transform: scale(0.15);
+
+              svg {
+                transform: rotateY(180deg);
+              }
+            }
+            /*Для 3х частей тела*/
+            &--lefthalf {
+              top: -185px;
+              left: -73px;
+
+              transform: scale(0.15);
+            }
+            &--righthalf {
+              top: -185px;
+              right: -73px;
+
+              transform: scale(0.15);
+
+              svg {
+                transform: rotateY(180deg);
+              }
+            }
+            &--doubleleg {
+              top: -126px;
+              left: -81px;
+
+              transform: scale(0.15);
+            }
+            /*Для 2х частей тела*/
+            &--tophalf {
+              top: -180px;
+              left: -180px;
+
+              transform: scale(0.15);
+            }
+            &--bottomhalf {
+              top: -126px;
+              left: -85.5px;
+
+              transform: scale(0.15);
+            }
+          }
+        }
+
+        .swiper-button-prev {
+          top: 34%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .gallery-items {
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .swiper-container-1 {
+      display: none;
+
+      &--mobile {
+        display: none;
+        overflow-x: hidden;
+        overflow-y: visible;
+
+        width: 768px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        .swiper-slide {
+          width: 70% !important;
+          height: 718px !important;
+          margin-left: 15% !important;
+          margin-right: 15% !important;
+        }
+      }
+
+      &--tiles {
+        display: block;
+        overflow: hidden;
+
+        width: 96% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        .swiper-wrapper {
+          flex-direction: row !important;
+          justify-content: flex-start !important;
+          align-items: flex-start !important;
+
+          height: 600px !important;
+          position: relative;
+        }
+
+        .swiper-slide {
+          width: 204px !important;
+          height: 284px !important;
+          margin-left: 10px !important;
+          margin-right: 10px !important;
+          text-align: center;
+
+          margin-bottom: 10px !important;
+          margin-top: 5px;
+        }
+
+        .gallery-slide {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          width: 204px;
+          height: 284px;
+
+          &__actions {
+            margin-bottom: 5px;
+            margin-left: 10px;
+          }
+
+          &__title {
+            font: {
+              size: 13px;
+              weight: 900;
+              family: $main-font;
+            }
+
+            color: $text-white;
+            line-height: 5px;
+
+            background-image: url('../img/gallery-item-bg.png');
+            background-repeat: no-repeat;
+            background-size: 182px 26px;
+
+            display: block;
+            width: 182px;
+            height: 26px;
+
+            text-align: left;
+            padding-top: 10px;
+            padding-left: 10px;
+
+            margin: 0;
+            margin-left: -5px;
+            margin-top: -2px;
+          }
+
+          &__head {
+            max-height: 70px;
+          }
+
+          .slide-item {
+            position: absolute;
+
+            /*Для 5ти частей тела*/
+            &--leftarm {
+              top: -150px;
+              left: 2px;
+
+              transform: scale(0.25);
+            }
+            &--chest {
+              top: -150px;
+              left: -40px;
+
+              transform: scale(0.25);
+            }
+            &--rightarm {
+              top: -150px;
+              right: -4px;
+
+              transform: scale(0.25);
+            }
+            &--leftleg {
+              top: -34px;
+              left: 16px;
+
+              transform: scale(0.25);
+            }
+            &--rightleg {
+              top: -34px;
+              right: 9px;
+
+              transform: scale(0.25);
+            }
+            /*Для 4х частей тела*/
+            &--lefttop {
+              top: -170px;
+              left: -46px;
+
+              transform: scale(0.25);
+            }
+            &--righttop {
+              top: -170px;
+              right: -46px;
+
+              transform: scale(0.25);
+
+              svg {
+                transform: rotateY(180deg);
+              }
+            }
+            &--leftbottom {
+              top: -60px;
+              left: 11px;
+
+              transform: scale(0.25);
+            }
+            &--rightbottom {
+              top: -60px;
+              right: 11px;
+
+              transform: scale(0.25);
+
+              svg {
+                transform: rotateY(180deg);
+              }
+            }
+            /*Для 3х частей тела*/
+            &--lefthalf {
+              top: -175px;
+              left: -46px;
+
+              transform: scale(0.25);
+            }
+            &--righthalf {
+              top: -175px;
+              right: -46px;
+
+              transform: scale(0.25);
+
+              svg {
+                transform: rotateY(180deg);
+              }
+            }
+            &--doubleleg {
+              top: -87px;
+              left: -42px;
+
+              transform: scale(0.25);
+            }
+            /*Для 2х частей тела*/
+            &--tophalf {
+              top: -170px;
+              left: -137px;
+
+              transform: scale(0.25);
+            }
+            &--bottomhalf {
+              top: -89px;
+              left: -42.5px;
+
+              transform: scale(0.25);
+            }
+          }
+        }
+
+        .swiper-button-prev {
+          top: 34%;
+        }
+
+        .swiper-button-next {
+          bottom: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .gallery-items {
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .swiper-container-1 {
+      display: block;
+      overflow-x: hidden;
+      overflow-y: visible;
+
+      &--mobile {
+        display: none;
+      }
+
+      &--tiles {
+        display: none;
+      }
+    }
+
+    .swiper-slide {
+      width: 187px !important;
+      height: 278px !important;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none !important;
+    }
   }
 }
 
 @media (min-width: $netbooks) {
   .gallery-items {
     margin-left: 20px;
-    margin-top: 7%;
     .swiper-slide {
       width: 248px !important;
       height: 348px !important;
@@ -27,7 +727,7 @@
 }
 @media (min-width: $wide-netbooks) {
   .gallery-items {
-    margin-top: 5%;
+    margin-top: 13%;
     padding-top: 0;
     margin-left: 20px;
     .swiper-slide {
