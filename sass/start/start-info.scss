@@ -35,6 +35,10 @@
     text-align: center;
   }
 
+  &__description--user {
+    display: none;
+  }
+
   &__home {
     display: none;
   }
@@ -102,7 +106,7 @@
     &__wrapper {
       background-image: url('../img/start-description.svg');
       background-repeat: no-repeat;
-      background-size: 247px 208px;
+      background-size: 335px 255px;
       padding-bottom: 40px;
       width: 100%;
     }
@@ -110,17 +114,20 @@
     &__description {
       font: {
         family: $main-font;
-        size: 13.2px;
-        weight: 900;
+        size: 14px;
+        weight: 700;
       }
 
-      width: 189px;
+      width: 230px;
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
-
+      text-align: left;
       padding-left: 32px;
-      padding-top: 20px;
+      padding-top: 10px;
+      margin-right: 10px;
+      margin-top: 7px;
+
     }
 
     &__home {
@@ -168,7 +175,7 @@
     &__wrapper {
       background-image: url('../img/start-description.svg');
       background-repeat: no-repeat;
-      background-size: 345px 260px;
+      background-size: 440px 340px;
       padding-bottom: 40px;
       width: 100%;
     }
@@ -180,7 +187,7 @@
         weight: 900;
       }
 
-      width: 220px;
+      width: 325px;
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
@@ -243,7 +250,7 @@
     &__wrapper {
       background-image: url('../img/start-description.svg');
       background-repeat: no-repeat;
-      background-size: 517px 390px;
+      background-size: 700px 535px;
       padding-bottom: 40px;
       width: 100%;
     }
@@ -251,17 +258,17 @@
     &__description {
       font: {
         family: $main-font;
-        size: 28px;
-        weight: 900;
+        size: 27px;
+        weight: 700;
       }
 
-      width: 400px;
+      width: 480px;
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
 
-      padding-left: 30px;
-      padding-top: 20px;
+      padding-left: 45px;
+      padding-top: 30px;
     }
 
     &__home {
@@ -288,8 +295,4 @@
       padding-top: 9px;
     }
   }
-}
-
-@media (min-width: $fhd) {
-
 }

@@ -242,5 +242,9 @@
   .start-content {
     width: 70%;
     justify-content: space-evenly;
+
+    &__submit {
+      left: 17%;
+    }
   }
 }

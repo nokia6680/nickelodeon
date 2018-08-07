@@ -44,28 +44,62 @@ var swiper = new Swiper('.swiper-container-1', {
     },
     1024: {
       slidesPerView: 2,
-      slidesPerColumn: 2
+      slidesPerColumn: 2,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     },
     1280: {
       slidesPerView: 3,
-      slidesPerColumn: 2
+      slidesPerColumn: 2,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     },
     1366: {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 30
+      spaceBetween: 30,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     },
 
     1440: {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 30
+      spaceBetween: 30,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     },
 
     1600: {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 30
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    },
+
+    1920: {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     },
   },
 });
