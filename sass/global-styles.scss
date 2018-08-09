@@ -23,102 +23,11 @@ body {
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
+  height: 100%;
 
   text-transform: uppercase;
 
   position: relative;
-
-  @media (min-width: 1025px) {
-    background-color: $body-bg;
-    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom -55px right -65px, top center;
-    background-size: 449px 520px, auto;
-
-    margin: 0 auto;
-    padding: 0;
-
-    text-transform: uppercase;
-
-    position: relative;
-  }
-
-  @media (min-width: 1281px) {
-    background-color: $body-bg;
-    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom -55px right -65px, top center;
-    background-size: 479px 450px, auto;
-
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 0;
-
-    text-transform: uppercase;
-
-    position: relative;
-  }
-  @media (min-width: 1367px) {
-    background-color: $body-bg;
-    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom -55px right -65px, top center;
-    background-size: 505px 474px, auto;
-
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 0;
-
-    text-transform: uppercase;
-
-    position: relative;
-  }
-
-  @media (min-width: 1441px) {
-    background-color: $body-bg;
-    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom -55px right -65px, top center;
-    background-size: 561px 527px, auto;
-
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 0;
-
-    text-transform: uppercase;
-
-    position: relative;
-  }
-  @media (min-width: 1601px) {
-    background-color: $body-bg;
-    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom -55px right -65px, top center;
-    background-size: 674px 633px, auto;
-
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 0;
-
-    text-transform: uppercase;
-
-    position: relative;
-  }
-
-  @media (min-width: 1921px){
-    background-image: url('../img/slime-big-2.svg'), url('../img/body-bg.jpg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom -55px right -65px, top center;
-    background-size: 898px 844px, auto;
-
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 0;
-
-    text-transform: uppercase;
-
-    position: relative;
-  }
 }
 
 img {
@@ -127,7 +36,34 @@ img {
 }
 
 h2 {
-  @media (min-width: 1025px) {
+  font: {
+    family: $main-font;
+    size: 19.25px;
+    weight: 900;
+  }
+
+  color: $text-white;
+  margin: 0;
+  line-height: 1;
+
+  @media (min-width: $smartphones) {
+    font: {
+      size: 19.25px;
+    }
+  }
+
+  @media (min-width: $tablets) {
+    font: {
+      family: $main-font;
+      size: 31px;
+      weight: 900;
+    }
+
+    color: $text-white;
+    margin: 0;
+  }
+
+  @media (min-width: $laptop) {
     font: {
       family: $main-font;
       size: 20px;
@@ -138,30 +74,28 @@ h2 {
     margin: 0;
     line-height: 1;
   }
-
-  @media (min-width: 1281px) {
+  @media (min-width: $netbooks) {
     font: {
       family: $main-font;
       size: 21.34px;
       weight: 900;
     }
   }
-  @media (min-width: 1367px) {
+  @media (min-width: $wide-netbooks) {
     font: {
       family: $main-font;
       size: 22.5px;
       weight: 900;
     }
   }
-
-  @media (min-width: 1441px) {
+  @media (min-width: $notebooks) {
     font: {
       family: $main-font;
       size: 25px;
       weight: 900;
     }
   }
-  @media (min-width: 1601px) {
+  @media (min-width: $widebooks) {
     font: {
       family: $main-font;
       size: 27px;
@@ -172,7 +106,18 @@ h2 {
     margin: 0;
     line-height: 1;
   }
-  @media (min-width: 1921px) {
+  @media (min-width: $hd) {
+    font: {
+      family: $main-font;
+      size: 27px;
+      weight: 900;
+    }
+
+    color: $text-white;
+    margin: 0;
+    line-height: 1;
+  }
+  @media (min-width: $fhd) {
     font: {
       size: 40px;
     }

@@ -1,0 +1,258 @@
+.start-slider {
+  display: block;
+  position: relative;
+  z-index: 1001;
+
+  transform: scale(0.416);
+  margin-top: -100px;
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__item--bird {
+    .start-slider__image {
+      width: 85%;
+      padding-left: 27px;
+    }
+  }
+
+  &__item--cat {
+    .start-slider__image {
+      width: 85%;
+      padding-left: 27px;
+    }
+  }
+
+  &__item--squid {
+    .start-slider__image {
+      width: 80%;
+      height: 80%;
+
+      padding-left: 30px;
+    }
+  }
+
+  &__item--ninja {
+    .start-slider__image {
+      padding-right: 60px;
+    }
+  }
+
+  &__item--girl {
+    .start-slider__image {
+      padding-left: 100px;
+    }
+  }
+
+  &__item--bear {
+    .start-slider__image {
+      width: 85%;
+      padding-left: 15px;
+    }
+  }
+
+  &__item--sponge {
+    .start-slider__image {
+      width: 85%;
+      padding-left: 50px;
+    }
+  }
+
+  .swiper-container {
+    width: 460px !important;
+    height: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 20px !important;
+    margin-top: -60px;
+    z-index: 1001;
+  }
+
+  .swiper-slide {
+    width: 80% !important;
+    height: 410px !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+
+    text-align: center;
+
+    z-index: 1001;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-button-prev {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='69' height='86.03' viewBox='0 0 69 86.03'%3E%3Cmetadata%3E%3C%3Fxpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23073f72; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Polygon_900_copy_2' data-name='Polygon 900 copy 2' class='cls-1' d='M1959.99,1133.25l69.02,42.75-0.31-86.02Z' transform='translate%28-1960 -1089.97%29'/%3E%3C/svg%3E");
+    background-size: 43px 54px;
+    width: 43px;
+    height: 54px;
+    top: 45%;
+    left: 0;
+
+    cursor: pointer;
+    outline: none;
+  }
+
+  .swiper-button-next {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68.72' height='86.03' viewBox='0 0 68.72 86.03'%3E%3Cmetadata%3E%3C%3Fxpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23073f72; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Polygon_900' data-name='Polygon 900' class='cls-1' d='M2598.32,1132.92l-68.73,42.77,0.3-86.05Z' transform='translate%28-2529.59 -1089.66%29'/%3E%3C/svg%3E");
+    background-size: 43px 54px;
+    width: 43px;
+    height: 54px;
+    top: 45%;
+    right: 0;
+
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .start-slider {
+    transform: scale(0.625);
+  }
+}
+
+@media (min-width: $tablets) {
+  .start-slider {
+    margin-top: 0;
+    transform: scale(0.78);
+  }
+}
+
+@media (min-width: $laptop) {
+  .start-slider {
+    display: block;
+    position: relative;
+    z-index: 1001;
+
+    transform: scale(1);
+    margin-top: 0;
+
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+
+    &__item--bird {
+      .start-slider__image {
+        width: 85%;
+        padding-left: 27px;
+      }
+    }
+
+    &__item--cat {
+      .start-slider__image {
+        width: 85%;
+        padding-left: 27px;
+      }
+    }
+
+    &__item--squid {
+      .start-slider__image {
+        width: 80%;
+        height: 80%;
+
+        padding-left: 30px;
+      }
+    }
+
+    &__item--ninja {
+      .start-slider__image {
+        padding-right: 60px;
+      }
+    }
+
+    &__item--girl {
+      .start-slider__image {
+        padding-left: 100px;
+      }
+    }
+
+    &__item--bear {
+      .start-slider__image {
+        width: 85%;
+        padding-left: 15px;
+      }
+    }
+
+    &__item--sponge {
+      .start-slider__image {
+        width: 85%;
+        padding-left: 50px;
+      }
+    }
+
+    .swiper-container {
+      width: 460px !important;
+      height: 100% !important;
+      margin-left: 0;
+      margin-right: 0;
+      padding-bottom: 20px !important;
+      margin-top: -60px;
+      z-index: 1001;
+    }
+
+    .swiper-slide {
+      width: 80% !important;
+      height: 410px !important;
+      margin-left: 10% !important;
+      margin-right: 10% !important;
+
+      text-align: center;
+
+      z-index: 1001;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-button-prev {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='69' height='86.03' viewBox='0 0 69 86.03'%3E%3Cmetadata%3E%3C%3Fxpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23073f72; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Polygon_900_copy_2' data-name='Polygon 900 copy 2' class='cls-1' d='M1959.99,1133.25l69.02,42.75-0.31-86.02Z' transform='translate%28-1960 -1089.97%29'/%3E%3C/svg%3E");
+      background-size: 43px 54px;
+      width: 43px;
+      height: 54px;
+      top: 45%;
+      left: 0;
+
+      cursor: pointer;
+      outline: none;
+    }
+
+    .swiper-button-next {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68.72' height='86.03' viewBox='0 0 68.72 86.03'%3E%3Cmetadata%3E%3C%3Fxpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23073f72; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Polygon_900' data-name='Polygon 900' class='cls-1' d='M2598.32,1132.92l-68.73,42.77,0.3-86.05Z' transform='translate%28-2529.59 -1089.66%29'/%3E%3C/svg%3E");
+      background-size: 43px 54px;
+      width: 43px;
+      height: 54px;
+      top: 45%;
+      right: 0;
+
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}

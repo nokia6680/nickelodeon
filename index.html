@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Nickelodeon</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="css/style.css"  type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://druzhba.nickelodeon.ru/html/css/extra.css" />
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -23,13 +25,40 @@
 		<section class="main__sidebar sidebar">
 			<div class="sidebar__logo">
 				<a class="sidebar__link" href="#" target="_self">
-					<img class="sidebar__image" src="img/logo.svg" />
+					<img class="sidebar__image" src="img/logo-1.svg" />
+				</a>
+			</div>
+			<!--Мобильная кнопка "твоя команда"-->
+			<div class="sidebar__slider sidebar-slider">
+				<a class="sidebar-slider__link" href="#">
+					<b class="sidebar-slider__first">Твои</b>
+					<span class="sidebar-slider__second">команды</span>
 				</a>
 			</div>
 			<div class="sidebar__info sidebar-info">
 				<h1 class="sidebar-info__title">Стань</h1>
 				<img class="sidebar-info__captain" src="img/captain.svg" />
 				<span class="sidebar-info__promo">и собери</span><span class="sidebar-info__team">команду</span>
+			</div>
+			<!--Выдвигающаяся реклама-->
+			<div class="sidebar__slide slide-panel">
+				<button class="open-btn" type="button"><span class="btn-span">Призы</span></button>
+				<div class="top-panel">
+					<button class="top-panel__close" type="button"></button>
+					<h3 class="top-panel__title">Главный приз</h3>
+					<div class="top-panel__upper">
+						<p class="top-panel__description top-panel__description--blue">Sony&nbsp;Playstation&nbsp;4&nbsp;500Gb Slim&nbsp;Black&nbsp;+&nbsp;Подписка Playstation&nbsp;на&nbsp;3&nbsp;месяца каждому&nbsp;члену&nbsp;команды!</p>
+					</div>
+					<div class="top-panel__lower">
+						<p class="top-panel__description top-panel__description--white">А&nbsp;еще&nbsp;каждый&nbsp;день мы&nbsp;разыгрываем&nbsp;одну коробку&nbsp;дня,&nbsp;когда пора&nbsp;играть!</p>
+						<p class="top-panel__notification">Внешний&nbsp;вид,&nbsp;цвета&nbsp;и&nbsp;модели&nbsp;приза&nbsp;могут&nbsp;отличаться от&nbsp;изображений&nbsp;на&nbsp;баннере/сайте.</p>
+						<p class="top-panel__notification">Информация об организаторе, о правилах проведения, количестве призов, сроках,&nbsp;месте&nbsp;и&nbsp;порядке&nbsp;их&nbsp;получения&nbsp;доступна&nbsp;на&nbsp;сайте&nbsp;igraem.NICKELODEON.ru.</p>
+					</div>
+				</div>
+			</div>
+			<div class="popup-video__link">
+				<a class="popup-video__btn" href="#youtube" target="_self"></a>
+				<h3 class="popup-video__text"><b class="popup-video__press">Нажми</b><br /><b class="popup-video__here">сюда</b></h3>
 			</div>
 		</section>
 		<!--Основное содержимое страницы-->
@@ -43,7 +72,8 @@
 					<div class="register-team__wrapper register-wrapper">
 						<div class="register-wrapper__upper">
 							<div class="register-wrapper__image">
-								<img class="register-wrapper__pic" src="img/team-avatar-big.svg"/>
+								<img class="register-wrapper__photo" src="img/photo.jpg" />
+								<img class="register-wrapper__pic" src="img/team-avatar-big.png" />
 							</div>
 							<form class="register-wrapper__form register-form" method="post" action="#">
 								<ul class="register-form__list form-list">
@@ -62,39 +92,69 @@
 						</div>
 						<!--Блок авторизации и отправки данных формы-->
 						<div class="register-wrapper__submit submit-team">
-							<button class="submit-team__enter" type="button"><i class="fa fa-vk"></i>авторизация</button>
-							<button class="submit-team__submit" type="submit">Отправить!</button>
+							<button class="submit-team__enter" type="button">Аватар из VK</button>
+							<button class="submit-team__submit submit-team__submit--send" type="submit">Отправить!</button>
+							<button class="submit-team__submit submit-team__submit--register" type="submit">Регистрация!</button>
 						</div>
 					</div>
 					<!---done-->
 					<div class="register-team__wrapper register-wrapper--done">
+						<button class="register-wrapper__close" type="button"></button>
 						<div class="register-wrapper__image">
-							<img class="register-wrapper__pic" src="img/team-avatar-big.svg"/>
+							<img class="register-wrapper__photo" src="img/photo.jpg" />
+							<img class="register-wrapper__pic" src="img/team-avatar-big.png" />
 						</div>
 						<h2 class="register-wrapper__name">Иван<br />Петров</h2>
-						<b class="register-wrapper__rank">Капитан</b>
+						<b class="register-wrapper__rank visually-hidden">Капитан</b>
+						<img class="single-info__status" src="img/invite-checkbox.svg" />
+					</div>
+					<!--Введите код смс-->
+					<div class="register-team__wrapper register-wrapper--sms">
+						<button class="register-wrapper__close" type="button"></button>
+						<div class="register-wrapper__upper">
+							<div class="register-wrapper__image">
+								<img class="register-wrapper__photo" src="img/photo.jpg" />
+								<img class="register-wrapper__pic" src="img/team-avatar-big.png" />
+							</div>
+							<form class="register-wrapper__form register-form" method="post" action="#">
+								<ul class="register-form__list form-list">
+									<li class="form-list__item form-item">
+										<label class="form-item__label" for="code">Введи код,<br />полученный по SMS:</label>
+										<input class="form-item__input form-item__input--code" type="number" id="code" name="code" />
+										<span class="form-item__error">Введён неверный код!</span>
+										<span class="form-item__success">Код верный!</span>
+									</li>
+								</ul>
+							</form>
+						</div>
+						<div class="register-wrapper__submit submit-team submit-team--code">
+							<button class="submit-team__submit submit-team__submit--code" type="submit">Отправить!</button>
+						</div>
+					</div>
+					<!--Блок инструкций для регистрации-->
+					<div class="register-team__instruction register-instruction">
+						<ol class="register-instruction__list">
+							<li class="register-instruction__item">
+								<p class="register-instruction__description">Зарегистрируйся на сайте с помощью своего профиля во ВКонтакте</p>
+							</li>
+							<li class="register-instruction__item">
+								<p class="register-instruction__description">Позови друзей, отправив им ссылку-приглашение</p>
+							</li>
+							<li class="register-instruction__item">
+								<p class="register-instruction__description">Собери команду от 2 до 5 человек. Каждый день сотая команда получает крутую коробку с набором для дня, когда пора играть</p>
+							</li>
+						</ol>
 					</div>
 				</div>
 				<!--Блок приглашенных в команду-->
 				<div class="team__invite invite-team">
-					<h2 class="invite-team__title">Пригласи друзей</h2>
+					<h2 class="invite-team__title">Твоя команда</h2>
 					<ul class="invite-team__list invite-list">
 						<!--Скрыл блок, что приглашение отправлено, стилизован-->
+						<!--Single item-->
 						<li class="invite-list__item invite-item visually-hidden">
 							<header class="invite-item__header single-header single-header--sent">
-									<b class="single-header__nr single-header__nr--sent">1</b>
-									<h3 class="single-header__name">Алексей Иванов</h3>
-									<button class="single-header__delete" type="button">-</button>
-								</header>
-							<div class="invite-item__info single-info">
-									<img class="single-info__image" src="img/team-avatar-small.svg" />
-									<p class="single-info__description">Алексей Иванов зарегистрирован!</p>
-									<img class="single-info__status" src="img/invite-checkbox.svg" />
-								</div>
-						</li>
-						<li class="invite-list__item invite-item">
-							<header class="invite-item__header single-header">
-								<b class="single-header__nr">1</b>
+								<b class="single-header__nr single-header__nr--sent">1</b>
 								<h3 class="single-header__name">Алексей Иванов</h3>
 								<button class="single-header__delete" type="button">-</button>
 							</header>
@@ -104,6 +164,20 @@
 								<img class="single-info__status" src="img/invite-checkbox.svg" />
 							</div>
 						</li>
+						<!--Single item-->
+						<li class="invite-list__item invite-item">
+							<header class="invite-item__header single-header">
+								<b class="single-header__nr">1</b>
+								<h3 class="single-header__name">Алексей Иванов</h3>
+								<button class="single-header__delete" type="button">-</button>
+							</header>
+							<div class="invite-item__info single-info single-info--captain">
+								<img class="single-info__image" src="img/team-avatar-small.svg" />
+								<p class="single-info__description">Алексей Иванов зарегистрирован!</p>
+								<b class="single-info__rank">Капитан</b>
+							</div>
+						</li>
+						<!--Single item-->
 						<li class="invite-list__item invite-item">
 							<header class="invite-item__header single-header">
 								<b class="single-header__nr">2</b>
@@ -116,6 +190,7 @@
 								<img class="single-info__status" src="img/invite-checkbox.svg" />
 							</div>
 						</li>
+						<!--Single item-->
 						<li class="invite-list__item invite-item">
 							<header class="invite-item__header single-header">
 								<b class="single-header__nr">3</b>
@@ -128,6 +203,7 @@
 								<img class="single-info__status" src="img/invite-checkbox.svg" />
 							</div>
 						</li>
+						<!--Single item-->
 						<li class="invite-list__item invite-item invite-item--send">
 							<header class="invite-item__header single-header single-header--send">
 								<b class="single-header__nr single-header__nr--send">4</b>
@@ -136,8 +212,13 @@
 							</header>
 							<div class="invite-item__info single-info single-info--send">
 								<p class="single-info__description single-info__description--send">Отправь ссылку:</p>
-								<a class="single-info__link" href="#">Nickelodeon.ru/id345jbd99<img class="single-info__copy" src="img/copy.svg" /></a>
+								<a class="single-info__link" href="#">IGRAEM.NICKELODEON.RU/T/01D7B00010</a>
 								<span class="single-info__success">ссылка скопирована в буфер обмена!</span>
+								<div class="single-info__controls">
+									<button class="single-info__double" type="button"><i class="fa fa-share"></i></button>
+									<button class="single-info__sms" type="button">SMS</button>
+									<button class="single-info__vk" type="button"><i class="fa fa-vk"></i></button>
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -164,49 +245,74 @@
 					<span class="status-team__notification status-team__notification--unready visually-hidden">Команда не собрана!</span>
 					<span class="status-team__notification status-team__notification--ready">Команда готова!</span>
 				</div>
+				<!--Блок инструкции для капитана и участника-->
+				<div class="team__info info-team">
+					<div class="info-team__item info-team__item--captain">
+						<p class="info-team__description">Отправь ссылку друзьям и собери команду.</p>
+						<p class="info-team__description">Когда твои друзья зарегистрируются - обнови эту страницу и вы сможете перейти к заданию!</p>
+					</div>
+					<div class="info-team__item info-team__item--member">
+						<p class="info-team__description">Когда капитан начнет задание - обнови эту страницу и ты сможешь перейти к созданию персонажа!</p>
+					</div>
+				</div>
 				<!--Блок старта задания и информации-->
 				<div class="team__start start-team">
-					<button class="start-team__btn" type="submit">Начать задание</button>
+					<a class="start-team__btn" href="start.html">Начать задание</a>
 					<button class="start-team__info" type="button">!</button>
 				</div>
 			</div>
 			<!--Блок информации по созданным командам-->
 			<div class="content__side side">
 				<div class="side__slider side-slider">
-						<h2 class="side-slider__title">Твои команды</h2>
-						<!-- Swiper slider-->
-					  <div class="swiper-container">
-					    <div class="swiper-wrapper side-slider__wrapper">
-					      <a class="swiper-slide side-slider__item" href="#">
-									<img class="side-slider__image" src="img/other-avatar.svg" />
-									<b class="side-slider__nr">5</b>
-									<span class="side-slider__captain">Капитан команды:</span>
-									<b class="side-slider__name">Иван Петров</b>
-								</a>
-								<a class="swiper-slide side-slider__item" href="#">
-									<img class="side-slider__image" src="img/other-avatar.svg" />
-									<b class="side-slider__nr">5</b>
-									<span class="side-slider__captain">Капитан команды:</span>
-									<b class="side-slider__name">Иван Петров</b>
-								</a>
-								<a class="swiper-slide side-slider__item" href="#">
-									<img class="side-slider__image" src="img/other-avatar.svg" />
-									<b class="side-slider__nr">5</b>
-									<span class="side-slider__captain">Капитан команды:</span>
-									<b class="side-slider__name">Иван Петров</b>
-								</a>
-								<a class="swiper-slide side-slider__item" href="#">
-									<img class="side-slider__image" src="img/other-avatar.svg" />
-									<b class="side-slider__nr">5</b>
-									<span class="side-slider__captain">Капитан команды:</span>
-									<b class="side-slider__name">Иван Петров</b>
-								</a>
-					    </div>
-					    <!-- Add Arrows -->
-					    <div class="swiper-button-next"></div>
-					    <div class="swiper-button-prev"></div>
-					  </div>
+					<h2 class="side-slider__title">Твои команды</h2>
+					<!-- Swiper slider-->
+					<div class="swiper-container">
+						<div class="swiper-wrapper side-slider__wrapper">
+							<a class="swiper-slide side-slider__item side-slider__item--create" href="#">
+								<h3 class="side-slider__create">Создать<br />команду!</h3>
+							</a>
+							<a class="swiper-slide side-slider__item" href="#">
+								<div class="side-slider__image">
+									<img class="side-slider__photo" src="img/photo-1.jpg" />
+									<img class="side-slider__pic" src="img/other-avatar.png" />
+								</div>
+								<b class="side-slider__nr">5</b>
+								<span class="side-slider__captain">Капитан команды:</span>
+								<b class="side-slider__name">Иван Петров</b>
+							</a>
+							<a class="swiper-slide side-slider__item" href="#">
+								<div class="side-slider__image">
+									<img class="side-slider__photo" src="img/photo-1.jpg" />
+									<img class="side-slider__pic" src="img/other-avatar.png" />
+								</div>
+								<b class="side-slider__nr">5</b>
+								<span class="side-slider__captain">Капитан команды:</span>
+								<b class="side-slider__name">Иван Петров</b>
+							</a>
+							<a class="swiper-slide side-slider__item" href="#">
+								<div class="side-slider__image">
+									<img class="side-slider__photo" src="img/photo-1.jpg" />
+									<img class="side-slider__pic" src="img/other-avatar.png" />
+								</div>
+								<b class="side-slider__nr">5</b>
+								<span class="side-slider__captain">Капитан команды:</span>
+								<b class="side-slider__name">Иван Петров</b>
+							</a>
+							<a class="swiper-slide side-slider__item" href="#">
+								<div class="side-slider__image">
+									<img class="side-slider__photo" src="img/photo-1.jpg" />
+									<img class="side-slider__pic" src="img/other-avatar.png" />
+								</div>
+								<b class="side-slider__nr">5</b>
+								<span class="side-slider__captain">Капитан команды:</span>
+								<b class="side-slider__name">Иван Петров</b>
+							</a>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
+				</div>
 				<!--Рекламный блок-->
 				<div class="side__promo side-promo">
 					<p class="side-promo__description">Смотри&nbsp;любимые мультсериалы на&nbsp;Nickelodeon в&nbsp;Интерактивном ТВ&nbsp;от&nbsp;«Ростелеком» на&nbsp;кнопке&nbsp;номер&nbsp;301</p>
@@ -214,42 +320,289 @@
 						<img class="side-promo__image" src="img/rt.svg" />
 					</div>
 				</div>
+				<!--Ссылка на переход в галерею-->
+				<a class="side__gallery" href="gallery.html">Галерея работ</a>
 			</div>
 		</section>
 	</main>
 	<footer class="footer">
+		<button class="footer__rules footer__rules--big" type="button">Правила акции</button>
+		<button class="footer__rules footer__rules--small" type="button">Правила</button>
+		<button class="footer__howto" type="button">Как участвовать</button>
+		<button class="footer__prize" type="button">Призы</button>
 		<ul class="footer__social footer-social">
 			<li class="footer-social__item social-item social-item--yt">
-				<a class="social-item__link" href="#"><i class="fa fa-youtube-play"></i></a>
+				<a class="social-item__link" href="https://www.youtube.com/channel/UCw3vK8lNe5SZzL--rMgq-CQ"><i class="fa fa-youtube-play"></i></a>
 			</li>
 			<li class="footer-social__item social-item social-item--fb">
-				<a class="social-item__link" href="#"><i class="fa fa-facebook"></i></a>
+				<a class="social-item__link" href="https://www.facebook.com/NickelodeonRussia"><i class="fa fa-facebook"></i></a>
 			</li>
 			<li class="footer-social__item social-item social-item--vk">
-				<a class="social-item__link" href="#"><i class="fa fa-vk"></i></a>
+				<a class="social-item__link" href="https://vk.com/nickelodeonru"><i class="fa fa-vk"></i></a>
 			</li>
 			<li class="footer-social__item social-item social-item--tw">
-				<a class="social-item__link" href="#"><i class="fa fa-twitter"></i></a>
+				<a class="social-item__link" href="https://twitter.com/NickTVru"><i class="fa fa-twitter"></i></a>
 			</li>
 			<li class="footer-social__item social-item social-item--in">
-				<a class="social-item__link" href="#"><i class="fa fa-instagram"></i></a>
+				<a class="social-item__link" href="https://www.instagram.com/nickelodeon_ru/"><i class="fa fa-instagram"></i></a>
 			</li>
 			<li class="footer-social__item social-item social-item--ok">
-				<a class="social-item__link" href="#"><i class="fa fa-odnoklassniki"></i></a>
+				<a class="social-item__link" href="https://ok.ru/group/53695281103021"><i class="fa fa-odnoklassniki"></i></a>
 			</li>
 		</ul>
 	</footer>
 
-	<!--Popup-->
-	<div class="overlay overlay-on">
+	<!--Popup`ы-->
+	<div class="overlay overlay--on">
+		<!--Попап смс-->
+		<div class="popup popup-sms popup-sms__hidden">
+			<button class="popup-sms__close" type="button"></button>
+			<p class="popup-sms__title">Отправить ссылку по sms</p>
+			<div class="popup-sms__controls">
+				<input class="popup-sms__input" type="text" name="phone" value="" />
+				<span class="popup-sms__success">ссылка отправлена!</span>
+				<button class="send_sms" type="button">Отправить</button>
+			</div>
+		</div>
+		<!--Попап удаления участника-->
 		<div class="popup popup-delete popup-delete__hidden">
 			<p class="popup-delete__title">Вы точно хотите удалить участника из команды?</p>
 			<div class="popup-delete__controls">
-				<button class="popup-delete__no" type="button">Нет</button>
 				<button class="popup-delete__yes" type="button">Да</button>
+				<button class="popup-delete__no" type="button">Нет</button>
 			</div>
+		</div>
+		<!--Попап вопроса про Ростелеком-->
+		<div class="popup popup-rt popup-rt__hidden">
+			<p class="popup-rt__title">Являешься&nbsp;ли&nbsp;ты&nbsp;абонентом интерактивного&nbsp;ТВ &laquo;Ростелеком&raquo;&nbsp;(Онлайм)?</p>
+			<div class="popup-rt__controls">
+				<button class="popup-rt__yes" type="button">Да</button>
+				<button class="popup-rt__no" type="button">Нет</button>
+			</div>
+		</div>
+		<!--Попап вопроса про Николодеон-->
+		<div class="popup popup-nl popup-nl__hidden">
+			<p class="popup-nl__title">У тебя есть канал NICKELODEON?</p>
+			<div class="popup-nl__controls">
+				<button class="popup-nl__yes" type="button">Да</button>
+				<button class="popup-nl__no" type="button">Нет</button>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-1 overlay-1--on">
+		<!--Попап правил, для капитана переносится в футер-->
+		<div class="popup-rules">
+			<button class="popup-rules__close" type="button"></button>
+			<ol class="popup-rules__list">
+				<li class="popup-rules__item">
+					<p class="popup-rules__description">Зарегистрируйся на сайте с<br />помощью своего профиля во<br />ВКонтакте</p>
+				</li>
+				<li class="popup-rules__item">
+					<p class="popup-rules__description">Позови друзей, отправив им<br />ссылку-приглашение</p>
+				</li>
+				<li class="popup-rules__item">
+					<p class="popup-rules__description">Собери команду от 2 до 5 человек.<br />Каждый день сотая команда<br />получает крутую коробку с набором<br />для дня, когда пора играть</p>
+				</li>
+				<li class="popup-rules__item">
+					<p class="popup-rules__description">Составь с друзьями коллаж из ваших<br />фотографий и поделись им в<br />соцсетях</p>
+				</li>
+				<li class="popup-rules__item">
+					<p class="popup-rules__description">Выиграй приставки Sony Playstation 4<br />на всю команду!</p>
+				</li>
+			</ol>
+			<p class="popup-rules__disclaimer">Не забывай, что твои друзья тоже могут создать свои собственные команды и пригласить тебя, увеличив ваши шансы на победу!</p>
+		</div>
+		<!--Попап, аналогийчный первому, для участника-->
+		<div class="popup-steps">
+			<button class="popup-steps__close" type="button"></button>
+			<ol class="popup-steps__list">
+				<li class="popup-steps__item">
+					<p class="popup-steps__description">Зарегистрируйся на сайте с<br />помощью своего профиля во<br />ВКонтакте</p>
+				</li>
+				<li class="popup-steps__item">
+					<p class="popup-steps__description">Капитан пригласит других<br />участников и начнёт задание! </p>
+				</li>
+				<li class="popup-steps__item">
+					<p class="popup-steps__description">После того, как задание будет начато, ты сможешь перейти к нему и поучаствовать в составлении<br />коллажа с другими участниками<br />команды</p>
+				</li>
+				<li class="popup-steps__item">
+					<p class="popup-steps__description">Выиграй приставки Sony Playstation 4<br />на всю команду!</p>
+				</li>
+			</ol>
+			<p class="popup-steps__disclaimer">Ты также можешь создать свою собственную команду и вступать в другие команды, увеличив свои шансы на победу!</p>
+		</div>
+		<!--Попап правил для участника-->
+		<div class="popup-member">
+			<button class="popup-member__close" type="button"></button>
+			<p class="popup-member__description">Помни - начать задание может только капитан команды, именно он собирает участников.</p>
+			<p class="popup-member__description">Как только задание начато - поменять состав команды будет нельзя.</p>
+		</div>
+		<!--Попап правил для капитана-->
+		<div class="popup-captain">
+			<button class="popup-captain__close" type="button"></button>
+			<p class="popup-captain__description">Ты можешь начать задание, как только в твоей команде будет от 2 до 5 участников.</p>
+			<p class="popup-captain__description">Как только ты начнёшь задание, менять состав команды нельзя!</p>
+		</div>
+	</div>
+	<!--Оверлей для мобильной версии!!!-->
+	<div class="overlay-2 overlay-2--on">
+		<div class="popup-prize">
+			<div class="prize-panel">
+				<button class="prize-panel__close" type="button"></button>
+				<h3 class="prize-panel__title">Главный приз</h3>
+				<div class="prize-panel__upper">
+					<p class="prize-panel__description prize-panel__description--blue">Sony&nbsp;Playstation&nbsp;4&nbsp;500Gb Slim&nbsp;Black&nbsp;+&nbsp;Подписка Playstation&nbsp;на&nbsp;3&nbsp;месяца каждому&nbsp;члену&nbsp;команды!</p>
+				</div>
+				<div class="prize-panel__lower">
+					<p class="prize-panel__description prize-panel__description--white">А&nbsp;еще&nbsp;каждый&nbsp;день мы&nbsp;разыгрываем&nbsp;одну коробку&nbsp;дня,&nbsp;когда пора&nbsp;играть!</p>
+					<p class="prize-panel__notification">Внешний&nbsp;вид,&nbsp;цвета&nbsp;и&nbsp;модели&nbsp;приза&nbsp;могут&nbsp;отличаться от&nbsp;изображений&nbsp;на&nbsp;баннере/сайте.</p>
+					<p class="prize-panel__notification">Информация об организаторе, о правилах проведения, количестве призов, сроках,&nbsp;месте&nbsp;и&nbsp;порядке&nbsp;их&nbsp;получения&nbsp;доступна&nbsp;на&nbsp;сайте&nbsp;igraem.NICKELODEON.ru.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Оверлей для слайдера в мобильную версию-->
+	<div class="overlay-3 overlay-3--on">
+		<div class="popup-slider">
+			<button class="popup-slider__close" type="button"></button>
+			<h2 class="popup-slider__title">Твои команды</h2>
+			<!-- Swiper slider-->
+			<div class="swiper-container">
+				<div class="swiper-wrapper popup-slider__wrapper">
+					<a class="swiper-slide popup-slider__item popup-slider__item--create" href="#">
+						<h3 class="popup-slider__create">Создать<br />команду!</h3>
+					</a>
+					<a class="swiper-slide popup-slider__item" href="#">
+						<div class="popup-slider__image">
+							<img class="popup-slider__photo" src="img/photo-1.jpg" />
+							<img class="popup-slider__pic" src="img/other-avatar.png" />
+						</div>
+						<b class="popup-slider__nr">5</b>
+						<span class="popup-slider__captain">Капитан команды:</span>
+						<b class="popup-slider__name">Иван Петров</b>
+					</a>
+					<a class="swiper-slide popup-slider__item" href="#">
+						<div class="popup-slider__image">
+							<img class="popup-slider__photo" src="img/photo-1.jpg" />
+							<img class="popup-slider__pic" src="img/other-avatar.png" />
+						</div>
+						<b class="popup-slider__nr">5</b>
+						<span class="popup-slider__captain">Капитан команды:</span>
+						<b class="popup-slider__name">Иван Петров</b>
+					</a>
+					<a class="swiper-slide popup-slider__item" href="#">
+						<div class="popup-slider__image">
+							<img class="popup-slider__photo" src="img/photo-1.jpg" />
+							<img class="popup-slider__pic" src="img/other-avatar.png" />
+						</div>
+						<b class="popup-slider__nr">5</b>
+						<span class="popup-slider__captain">Капитан команды:</span>
+						<b class="popup-slider__name">Иван Петров</b>
+					</a>
+					<a class="swiper-slide popup-slider__item" href="#">
+						<div class="popup-slider__image">
+							<img class="popup-slider__photo" src="img/photo-1.jpg" />
+							<img class="popup-slider__pic" src="img/other-avatar.png" />
+						</div>
+						<b class="popup-slider__nr">5</b>
+						<span class="popup-slider__captain">Капитан команды:</span>
+						<b class="popup-slider__name">Иван Петров</b>
+					</a>
+				</div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</div>
+	<!-- video блок -->
+	<div class="overlay-player" id="youtube">
+		<h2 class="overlay-player__title">Досмотри видео до конца, чтобы участвовать в акции!</h2>
+		<iframe class="player" src="http://www.youtube.com/embed/HDm94zrbXJA" frameborder="0" allowfullscreen></iframe>
+		<a href="" onclick="void(0)" class="close"></a>
+	</div>
+	<!--Попап приглашения в вк-->
+	<div class="overlay-share overlay-share--on">
+		<div class="overlay-share__wrapper share-wrapper">
+			<button class="message__close" type="button"></button>
+			<ul class="share-wrapper__list share-list">
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-1" id="name-1" />
+						<label class="share-item__label" for="name-1"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-2" id="name-2" />
+						<label class="share-item__label" for="name-2"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-3" id="name-3" />
+						<label class="share-item__label" for="name-3"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-4" id="name-4" />
+						<label class="share-item__label" for="name-4"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-5" id="name-5" />
+						<label class="share-item__label" for="name-5"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-6" id="name-6" />
+						<label class="share-item__label" for="name-6"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-7" id="name-7" />
+						<label class="share-item__label" for="name-7"></label>
+					</div>
+				</li>
+				<!--Single item-->
+				<li class="share-list__item share-item">
+					<img class="share-item__photo" src="img/other-avatar.png" />
+					<b class="share-item__name">Анатолий Алексеев</b>
+					<div class="share-item__choice">
+						<input class="visually-hidden share-item__input share-item__input--checkbox" type="checkbox" name="name-8" id="name-8" />
+						<label class="share-item__label" for="name-8"></label>
+					</div>
+				</li>
+			</ul>
+			<button class="share-wrapper__submit" type="submit">Пригласить!</button>
 		</div>
 	</div>
 	<script src="../js/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,26 @@
+.filter-scale {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  width: 40%;
+
+  margin: 0 auto;
+
+  &__item {
+    .filter-scale__checkbox--scale + label {
+      @include checkbox-default-scale;
+
+      outline: none;
+      cursor: pointer;
+    }
+
+    .filter-scale__checkbox--scale:checked + label::after {
+      @include checkbox-checked-scale;
+
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}

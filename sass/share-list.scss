@@ -1,0 +1,33 @@
+.share-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+  height: auto;
+
+  overflow-y: scroll;
+
+  margin-bottom: 60px;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: #00c5df;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #00c5df;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #e9e5da;
+  }
+}

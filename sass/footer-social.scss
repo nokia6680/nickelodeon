@@ -1,15 +1,23 @@
 .footer-social {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: none;
+}
 
-  width: 360px;
+@media (min-width: $laptop) {
+  .footer-social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+    width: 360px;
 
-  margin-right: 5%;
-  margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-right: 5%;
+    margin-left: auto;
+
+    position: relative;
+  }
 }

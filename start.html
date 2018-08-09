@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nickelodeon</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://druzhba.nickelodeon.ru/html/css/extra.css" />
+  <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+  <!--Все содержимое страницы-->
+  <main class="start-main">
+    <section class="start-main__header start-header">
+      <div class="start-header__logo">
+        <a class="start-header__link" href="index.html" target="_self">
+          <img class="start-header__image" src="img/logo-1.svg" />
+        </a>
+      </div>
+      <!--Навигационные кнопки-->
+      <div class="start-main__slider start-controls">
+        <!--Мобильная кнопка "твоя команда"-->
+        <div class="start-controls__slider">
+          <a class="start-controls__link" href="#">
+            <b class="start-controls__first">Твои</b>
+            <span class="start-controls__second">команды</span>
+          </a>
+        </div>
+        <!--Кнопки галерея и домой-->
+        <div class="start-controls__buttons">
+          <a class="start-controls__gallery" href="gallery.html"></a>
+          <a class="start-controls__home" href="index.html"></a>
+        </div>
+      </div>
+    </section>
+    <!--Содержимое блока кастомизации персонажа + описание-->
+    <div class="start-main__content start-content">
+      <!--Кастомизация персонажа-->
+      <div class="start-content__customize start-custom">
+        <!--Слайдер выбора головы героя-->
+        <div class="start-custom__slider start-slider">
+          <!-- Swiper slider-->
+          <div class="swiper-container">
+            <div class="swiper-wrapper start-slider__wrapper">
+              <!--Single slide item-->
+              <div class="swiper-slide start-slider__item start-slider__item--bird">
+                <img class="start-slider__image" src="img/hero-1.png" />
+              </div>
+              <!--Single slide item-->
+              <div class="swiper-slide start-slider__item start-slider__item--cat">
+                <img class="start-slider__image" src="img/hero-2.png" />
+              </div>
+              <!--Single slide item-->
+              <div class="swiper-slide start-slider__item start-slider__item--squid">
+                <img class="start-slider__image" src="img/hero-3.png" />
+              </div>
+              <!--Single slide item-->
+              <div class="swiper-slide start-slider__item start-slider__item--ninja">
+                <img class="start-slider__image" src="img/hero-4.png" />
+              </div>
+              <!--Single slide item-->
+              <div class="swiper-slide start-slider__item start-slider__item--girl">
+                <img class="start-slider__image" src="img/hero-5.png" />
+              </div>
+              <!--Single slide item-->
+              <div class="swiper-slide start-slider__item start-slider__item--bear">
+                <img class="start-slider__image" src="img/hero-6.png" />
+              </div>
+              <!--Single slide item-->
+              <div class="swiper-slide start-slider__item start-slider__item--sponge">
+                <img class="start-slider__image" src="img/hero-7.png" />
+              </div>
+              <!--Single slide item-->
+              <div class="swiper-slide start-slider__item">
+                <img class="start-slider__image" src="img/hero-8.png" />
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-next"></div>
+            <div class="swiper-button-prev swiper-prev"></div>
+          </div>
+        </div>
+        <!--Кастомизация фигуры героя-->
+        <!--Фигура на команду из 5 человек-->
+        <ul class="start-custom__body start-body start-body--five">
+          <!--Левая рука-->
+          <li class="start-body__item start-body__item--leftarm">
+            <svg width="110" height="390" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+             <g>
+              <rect class="body-part" stroke="#7d7d7d" stroke-width="7" x="4" y="4" width="102" height="384" id="svg_1" fill="none"/>
+             </g>
+            </svg>
+          </li>
+          <!--Грудная клетка-->
+          <li class="start-body__item start-body__item--chest">
+            <svg width="291" height="377" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+             <g>
+              <rect class="body-part" fill="#000000" stroke="#7d7d7d" stroke-width="7" x="4" y="4" width="281" height="367" id="svg_1" fill-opacity="0"/>
+             </g>
+            </svg>
+          </li>
+          <!--Правая рука-->
+          <li class="start-body__item start-body__item--rightarm">
+            <svg width="110" height="390" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+             <g>
+              <rect class="body-part" fill="#000000" stroke="#7d7d7d" stroke-width="7" x="4" y="4" width="102" height="384" id="svg_1" fill-opacity="0"/>
+             </g>
+            </svg>
+          </li>
+          <!--Левая нога-->
+          <li class="start-body__item start-body__item--leftleg">
+            <svg width="140" height="330" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+             <g>
+              <rect class="body-part" fill-opacity="0" id="svg_1" height="314" width="126" y="4" x="4" stroke-width="7" stroke="#7d7d7d" fill="#000000"/>
+             </g>
+            </svg>
+          </li>
+          <!--Правая нога-->
+          <li class="start-body__item start-body__item--rightleg">
+            <svg width="140" height="330" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+             <g>
+              <rect class="body-part" fill-opacity="0" id="svg_1" height="314" width="126" y="4" x="4" stroke-width="7" stroke="#7d7d7d" fill="#000000"/>
+             </g>
+            </svg>
+          </li>
+        </ul>
+        <!--Фигура на 4 человека-->
+        <ul class="start-custom__body start-body start-body--four visually-hidden">
+          <li class="start-body__item start-body__item--leftup">
+            <svg width="238" height="410">
+              <path class="body-part" stroke="#7d7d7d" stroke-width="7" fill="none"
+                d="M 4 22 L 99 22 L 99 4 L 233 4 L 233 311 L 99 311 L 99 406 L 4 406 Z" />
+            </svg>
+          </li>
+          <li class="start-body__item start-body__item--rightup start-body__item--active">
+            <svg width="238" height="410">
+              <path class="body-part" stroke="#7d7d7d" stroke-width="7" fill="none"
+                d="M 4 22 L 99 22 L 99 4 L 233 4 L 233 311 L 99 311 L 99 406 L 4 406 Z" />
+            </svg>
+          </li>
+          <li class="start-body__item start-body__item--rightdown">
+            <svg width="150" height="320">
+              <path class="body-part" stroke="#7d7d7d" stroke-width="7" fill="none"
+                d="M 4 4 L 138 4 L 138 58 L 124 58 L 124 312 L 4 312 Z " />
+            </svg>
+          </li>
+          <li class="start-body__item start-body__item--leftdown">
+            <svg width="150" height="320">
+              <path class="body-part" stroke="#7d7d7d" stroke-width="7" fill="none"
+                d="M 4 4 L 138 4 L 138 58 L 124 58 L 124 312 L 4 312 Z " />
+            </svg>
+          </li>
+        </ul>
+        <!--Фигура на 3 человека-->
+        <ul class="start-custom__body start-body start-body--three visually-hidden">
+          <li class="start-body__item start-body__item--lefthalf">
+            <svg width="238" height="410">
+              <path class="body-part" stroke="#7d7d7d" stroke-width="7" fill="none"
+                d="M 4 22 L 99 22 L 99 4 L 233 4 L 233 311 L 99 311 L 99 406 L 4 406 Z" />
+            </svg>
+          </li>
+          <li class="start-body__item start-body__item--righthalf start-body__item--active">
+            <svg width="238" height="410">
+              <path class="body-part" stroke="#7d7d7d" stroke-width="7" fill="none"
+                d="M 4 22 L 99 22 L 99 4 L 233 4 L 233 311 L 99 311 L 99 406 L 4 406 Z" />
+            </svg>
+          </li>
+          <li class="start-body__item start-body__item--legs">
+            <svg width="290" height="380">
+              <path class="body-part" stroke="#7d7d7d" stroke-width="7" fill="url(#pattern)"
+                d="M 4 4 L 278 4 L 278 364 L 165 364 L 165 63 L 124 63 L 124 364 L 4 364  Z " />
+            </svg>
+          </li>
+        </ul>
+        <!--Фигура на 2 человека-->
+        <ul class="start-custom__body start-body start-body--two visually-hidden">
+          <li class="start-body__item start-body__item--upperpart">
+            <svg width="480" height="405">
+              <path class="body-part" stroke="#7d7d7d" stroke-width="7" fill="none"
+                d="M 4 22 L 99 22 L 99 4 L 373 4 L 373 22 L 468 22 L 468 399 L 373 399 L 373 291 L 99 291 L 99 399 L 4 399 Z " />
+            </svg>
+          </li>
+          <li class="start-body__item start-body__item--lowerpart">
+            <svg width="290" height="380">
+              <path class="body-part" stroke="#7d7d7d" stroke-width="7" fill="none"
+                d="M 4 4 L 278 4 L 278 364 L 165 364 L 165 63 L 124 63 L 124 364 L 4 364  Z " />
+            </svg>
+          </li>
+        </ul>
+        <!--Отправка всего этого-->
+      </div>
+      <!--Кнопка отправления коллажа-->
+      <a class="start-content__submit start-content__submit--ready" href="gallery.html">Отправить коллаж</a>
+      <!--Нотификатор, что коллаж отправлен-->
+      <a class="start-content__submit start-content__submit--success" href="gallery.html">Коллаж отправлен</a>
+      <!--Инфо блок-->
+      <div class="start-content__info start-info">
+        <div class="start-info__wrapper">
+          <p class="start-info__description start-info__description--user">ЗАГРУЗИ ФОТОГРАФИЮ В СВОЙ БЛОК И РАСПОЛОЖИ ЕЁ КАК НУЖНО! КОГДА ВСЕ ОСТАЛЬНЫЕ УЧАСТНИКИ ЗАГРУЗЯТ СВОИ ФОТОГРАФИИ, ОБНОВИ ЭТУ СТРАНИЦУ, ЧТОБЫ УВИДЕТЬ ДРУГИЕ ЧАСТИ КОЛЛАЖА, А КАПИТАН КОМАНДЫ СМОЖЕТ ОТПРАВИТЬ КОЛЛАЖ НА КОНКУРС.</p>
+          <p class="start-info__description start-info__description--captain">ОТЛИЧНО! КОГДА ВСЕ ОСТАЛЬНЫЕ УЧАСТНИКИ ЗАГРУЗЯТ СВОИ ФОТО, КАПИТАН ОТПРАВИТ ВАШ КОЛЛАЖ НА КОНКУРС.  ЧТОБЫ УВИДЕТЬ ФОТОГРАФИИ ДРУГИХ, ПЕРЕЗАГРУЗИ СТРАНИЦУ. А ПОКА ТЫ МОЖЕШЬ ПРИСОЕДИНИТЬСЯ К ДРУГИМ КОМАНДАМ И УВЕЛИЧИТЬ СВОИ ШАНСЫ НА ПОБЕДУ.</p>
+        </div>
+        <a class="start-info__home" href="index.html" target="_self">На главную</a>
+      </div>
+    </div>
+  </main>
+  <!--Footer страницы-->
+  <footer class="footer">
+		<button class="footer__rules footer__rules--big" type="button">Правила акции</button>
+		<button class="footer__rules footer__rules--small" type="button">Правила</button>
+		<button class="footer__howto" type="button">Как участвовать</button>
+		<button class="footer__prize" type="button">Призы</button>
+		<ul class="footer__social footer-social">
+			<li class="footer-social__item social-item social-item--yt">
+				<a class="social-item__link" href="https://www.youtube.com/channel/UCw3vK8lNe5SZzL--rMgq-CQ"><i class="fa fa-youtube-play"></i></a>
+			</li>
+			<li class="footer-social__item social-item social-item--fb">
+				<a class="social-item__link" href="https://www.facebook.com/NickelodeonRussia"><i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="footer-social__item social-item social-item--vk">
+				<a class="social-item__link" href="https://vk.com/nickelodeonru"><i class="fa fa-vk"></i></a>
+			</li>
+			<li class="footer-social__item social-item social-item--tw">
+				<a class="social-item__link" href="https://twitter.com/NickTVru"><i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="footer-social__item social-item social-item--in">
+				<a class="social-item__link" href="https://www.instagram.com/nickelodeon_ru/"><i class="fa fa-instagram"></i></a>
+			</li>
+			<li class="footer-social__item social-item social-item--ok">
+				<a class="social-item__link" href="https://ok.ru/group/53695281103021"><i class="fa fa-odnoklassniki"></i></a>
+			</li>
+		</ul>
+	</footer>
+  <!--Попап редактирования фото-->
+  <div class="my_crop photo-editor">
+    <div class="crop_wrap croopie-container photo-editor__container" id="my_crop_wrap">
+      <div class="cr-boundary photo-editor__backside" aria-dropeffect="none">
+
+      </div>
+      <div class="cr-slider-wrap photo-editor__slider photo-slider">
+        <input class="cr-slider photo-slider__input" type="range" step="0.0001" aria-label="zoom" min="0.3958" max="1.5000" aria-valuenow="0.475" />
+      </div>
+      <div class="actions photo-editor__actions photo-actions">
+        <div class="photo-actions__upper">
+          <button class="basic-rotate rotation-left" data-deg="-90">Повернуть влево</button>
+          <button class="basic-rotate rotation-right" data-deg="90">Повернуть вправо</button>
+        </div>
+        <div class="photo-actions__lower">
+          <button class="basic-save cancel-btn">Отменить</button>
+          <button class="basic-cancel save-btn">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

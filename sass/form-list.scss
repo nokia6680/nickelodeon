@@ -1,4 +1,18 @@
-@media (min-width: 1025px) {
+.form-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+}
+
+@media (min-width: $laptop) {
   .form-list {
     margin: 0;
     padding: 0;
@@ -11,8 +25,7 @@
     align-items: flex-start;
   }
 }
-
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
   .form-list {
     margin: 0;
     padding: 0;
@@ -25,7 +38,7 @@
     align-items: flex-start;
   }
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
   .form-list {
     margin: 0;
     padding: 0;
@@ -38,8 +51,7 @@
     align-items: flex-start;
   }
 }
-
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
   .form-list {
     margin: 0;
     padding: 0;
@@ -52,7 +64,7 @@
     align-items: flex-start;
   }
 }
-@media (min-width: 1601px) {
+@media (min-width: $widebooks) {
   .form-list {
     margin: 0;
     padding: 0;
@@ -65,8 +77,20 @@
     align-items: flex-start;
   }
 }
+@media (min-width: $hd) {
+  .form-list {
+    margin: 0;
+    padding: 0;
 
-@media (min-width: 1921px) {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (min-width: $fhd) {
   .form-list {
     margin: 0;
     padding: 0;

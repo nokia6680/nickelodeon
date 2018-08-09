@@ -1,87 +1,124 @@
-@media (min-width: 1025px) {
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  &__promo {
+    order: 2;
+  }
+
+  &__gallery {
+    display: block;
+
+    background-image: url('../img/side-link-mobile.png');
+    background-repeat: no-repeat;
+    background-size: 220px 48px;
+
+    width: 220px;
+    height: 48px;
+
+    font: {
+      size: 22px;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-gallery;
+    line-height: normal;
+
+    text-align: center;
+
+    margin-top: 30px;
+    padding-top: 10px;
+
+    text-decoration: none;
+
+    order: 1;
+  }
+}
+
+@media (min-width: $smartphones) {
   .side {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 100%;
 
-    width: 48%;
-    height: 100vh;
+    &__promo {
+      order: 2;
+    }
 
-    position: relative;
+    &__gallery {
+      display: block;
 
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 54px 52px;
+      background-image: url('../img/side-link-mobile.png');
+      background-repeat: no-repeat;
+      background-size: 331px 72px;
 
-      width: 54px;
-      height: 52px;
+      width: 331px;
+      height: 72px;
 
-      bottom: 115px;
-      right: 130px;
-      z-index: 10;
+      font: {
+        size: 30px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $text-gallery;
+      line-height: normal;
+
+      text-align: center;
+
+      margin-top: 30px;
+      padding-top: 17px;
+
+      text-decoration: none;
+
+      order: 1;
     }
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: $tablets) {
   .side {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 100%;
 
-    width: 48%;
-    height: 100vh;
-
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 67px 66px;
-
-      width: 66px;
-      height: 67px;
-
-      bottom: -150px;
-      right: 130px;
-      z-index: 10;
+    &__promo {
+      order: 2;
     }
-  }
-}
-@media (min-width: 1367px) {
-  .side {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 
-    width: 48%;
-    height: 100vh;
+    &__gallery {
+      display: block;
 
-    position: relative;
+      background-image: url('../img/side-link-mobile.png');
+      background-repeat: no-repeat;
+      background-size: 531px 116px;
 
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 70px 68px;
+      width: 531px;
+      height: 116px;
 
-      width: 70px;
-      height: 68px;
+      font: {
+        size: 50px;
+        weight: 900;
+        family: $main-font;
+      }
 
-      bottom: -30px;
-      right: 130px;
-      z-index: 10;
+      color: $text-gallery;
+      line-height: normal;
+
+      text-align: center;
+
+      margin-top: 30px;
+      padding-top: 25px;
+
+      text-decoration: none;
+
+      order: 1;
     }
   }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: $laptop) {
   .side {
     display: flex;
     flex-direction: column;
@@ -91,25 +128,55 @@
     width: 48%;
     height: 100vh;
 
-    position: relative;
+    &__promo {
+      order: 1;
+    }
 
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 101px 99px;
+    &__gallery {
+      order: 2;
+      display: block;
 
-      width: 101px;
-      height: 99px;
+      background-image: url('../img/side-link.png');
+      background-repeat: no-repeat;
+      background-size: 207px 47px;
 
-      bottom: 115px;
-      right: 130px;
-      z-index: 10;
+      width: 207px;
+      height: 47px;
+
+      font: {
+        size: 21px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $text-gallery;
+      line-height: normal;
+
+      text-align: center;
+
+      margin-top: 60px;
+      margin-left: 70px;
+      padding-top: 10px;
+
+      text-decoration: none;
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../img/toy-2.svg');
+        background-size: 67px 66px;
+
+        width: 66px;
+        height: 67px;
+
+        bottom: 90px;
+        right: 130px;
+        z-index: 10;
+      }
     }
   }
 }
-
-@media (min-width: 1601px) {
+@media (min-width: $netbooks) {
   .side {
     display: flex;
     flex-direction: column;
@@ -121,23 +188,33 @@
 
     position: relative;
 
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 101px 99px;
+    &__gallery {
+      background-size: 259px 59px;
+      width: 259px;
+      height: 59px;
 
-      width: 101px;
-      height: 99px;
+      font-size: 27px;
 
-      bottom: -100px;
-      right: 130px;
-      z-index: 10;
+      margin-top: 40px;
+      padding-top: 13px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../img/toy-2.svg');
+        background-size: 67px 66px;
+
+        width: 66px;
+        height: 67px;
+
+        bottom: 115px;
+        right: 130px;
+        z-index: 10;
+      }
     }
   }
 }
-
-@media (min-width: 1921px) {
+@media (min-width: $wide-netbooks) {
   .side {
     display: flex;
     flex-direction: column;
@@ -147,20 +224,173 @@
     width: 48%;
     height: 100vh;
 
-    position: relative;
+    &__gallery {
+      background-size: 273px 62px;
+      width: 273px;
+      height: 62px;
 
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/toy-2.svg');
-      background-size: 135px 132px;
+      font-size: 28px;
 
-      width: 135px;
-      height: 132px;
+      margin-top: 40px;
+      padding-top: 13px;
 
-      bottom: 155px;
-      right: 180px;
-      z-index: 10;
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../img/toy-2.svg');
+        background-size: 70px 68px;
+
+        width: 70px;
+        height: 68px;
+
+        bottom: 95px;
+        right: 130px;
+        z-index: 10;
+      }
+    }
+  }
+}
+@media (min-width: $notebooks) {
+  .side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 48%;
+    height: 100vh;
+
+    &__gallery {
+      background-size: 273px 62px;
+      width: 273px;
+      height: 62px;
+
+      font-size: 28px;
+
+      margin-top: 40px;
+      padding-top: 13px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../img/toy-2.svg');
+        background-size: 101px 99px;
+
+        width: 101px;
+        height: 99px;
+
+        bottom: -20px;
+        right: 130px;
+        z-index: 10;
+      }
+    }
+  }
+}
+@media (min-width: $widebooks) {
+  .side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 48%;
+    height: 100vh;
+
+    &__gallery {
+      background-size: 324px 73px;
+      width: 324px;
+      height: 73px;
+
+      font-size: 33px;
+
+      margin-top: 40px;
+      padding-top: 13px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../img/toy-2.svg');
+        background-size: 101px 99px;
+
+        width: 101px;
+        height: 99px;
+
+        bottom: -50px;
+        right: 130px;
+        z-index: 10;
+      }
+    }
+  }
+}
+@media (min-width: $hd) {
+  .side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 48%;
+    height: 100vh;
+
+    &__gallery {
+      background-size: 389px 88px;
+      width: 389px;
+      height: 88px;
+
+      font-size: 40px;
+
+      margin-top: 40px;
+      padding-top: 20px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../img/toy-2.svg');
+        background-size: 101px 99px;
+
+        width: 101px;
+        height: 99px;
+
+        bottom: -100px;
+        right: 130px;
+        z-index: 10;
+      }
+    }
+  }
+}
+@media (min-width: $fhd) {
+  .side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 48%;
+    height: 100vh;
+
+    &__gallery {
+      background-size: 519px 118px;
+      width: 519px;
+      height: 118px;
+
+      font-size: 54px;
+
+      margin-top: 50px;
+      padding-top: 20px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../img/toy-2.svg');
+        background-size: 135px 132px;
+
+        width: 135px;
+        height: 132px;
+
+        bottom: 0px;
+        right: 180px;
+        z-index: 10;
+      }
     }
   }
 }

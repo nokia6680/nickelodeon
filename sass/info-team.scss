@@ -1,0 +1,205 @@
+.info-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+  margin-top: 10px;
+
+  &__item {
+    background-image: url('../img/rules-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    width: 86%;
+  }
+
+  &__item--captain {
+    display: block;
+  }
+
+  &__item--member {
+    display: none;
+  }
+
+  &__description {
+    width: 90%;
+
+    font: {
+      size: 9px;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $overlay-1-text;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
+    padding-top: 20px;
+  }
+
+  &__description:nth-of-type(2) {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .info-team {
+    &__description {
+      font: {
+        size: 12px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .info-team {
+    &__item {
+      width: 675px;
+    }
+    &__description {
+      font: {
+        size: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .info-team {
+    margin-top: 5px;
+    &__item {
+      width: 83%;
+    }
+
+    &__description {
+      font: {
+        size: 10px;
+      }
+
+      margin-left: 10px;
+      padding-top: 5px;
+    }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .info-team {
+    margin-top: 5px;
+    &__item {
+      width: 86%;
+    }
+
+    &__description {
+      font: {
+        size: 12px;
+      }
+
+      margin-left: 15px;
+      padding-top: 10px;
+    }
+  }
+}
+
+@media (min-width: $wide-netbooks) {
+  .info-team {
+    margin-top: 5px;
+    &__item {
+      width: 86%;
+    }
+
+    &__description {
+      font: {
+        size: 14px;
+      }
+
+      margin-left: 15px;
+      padding-top: 10px;
+    }
+  }
+}
+
+@media (min-width: $notebooks ) {
+  .info-team {
+    margin-top: 5px;
+    &__item {
+      width: 86%;
+    }
+
+    &__description {
+      font: {
+        size: 16px;
+      }
+
+      margin-left: 15px;
+      padding-top: 10px;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .info-team {
+    margin-top: 5px;
+    margin-left: -10px;
+    &__item {
+      width: 86%;
+    }
+
+    &__description {
+      font: {
+        size: 16px;
+      }
+
+      margin-left: 30px;
+      padding-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .info-team {
+    margin-top: 5px;
+    margin-left: -10px;
+    &__item {
+      width: 86%;
+      padding-bottom: 20px;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font: {
+        size: 16px;
+      }
+
+      margin-left: 30px;
+      padding-top: 30px;
+    }
+  }
+}
+
+@media (min-width: $fhd) {
+  .info-team {
+    margin-top: 30px;
+    margin-left: -10px;
+    &__item {
+      width: 86%;
+    }
+
+    &__description {
+      font: {
+        size: 18px;
+      }
+
+      margin-left: 30px;
+      padding-top: 30px;
+    }
+  }
+}

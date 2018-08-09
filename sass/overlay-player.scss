@@ -1,0 +1,79 @@
+.overlay-player {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  visibility: visible;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  position: fixed;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+
+  &__title {
+    font: {
+      size: 20px;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-white;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 16%;
+    top: 14%;
+
+    @media (min-width: $netbooks) {
+      left: 24%;
+      top: 9%;
+    }
+
+    @media (min-width: $notebooks) {
+      left: 26%;
+    }
+
+    @media (min-width: $widebooks) {
+      left: 29%;
+    }
+
+    @media (min-width: $hd) {
+      left: 32%;
+      top: 13%;
+    }
+
+    @media (min-width: $fhd) {
+      left: 37%;
+      top: 20%;
+    }
+  }
+
+  .player {
+    margin: 20% auto 0;
+    width: 640px;
+    height: 480px;
+    display: block;
+
+    @media (min-width: $netbooks) {
+      margin: 10% auto 0;
+      width: 854px;
+      height: 480px;
+      display: block;
+    }
+
+    @media (min-width: $widebooks) {
+      margin: 10% auto 0;
+      width: 854px;
+      height: 480px;
+      display: block;
+    }
+  }
+}

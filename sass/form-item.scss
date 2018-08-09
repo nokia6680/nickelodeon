@@ -1,4 +1,109 @@
-@media (min-width: 1025px) {
+.form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 12px;
+
+  width: 100%;
+
+  &__label {
+    font: {
+      family: $main-font;
+      size: 12px;
+      weight: 900;
+    }
+    color: $text-label;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid $border-bg;
+    outline: none;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    font: {
+      size: 16px;
+      weight: 900;
+      family: $main-font;
+    }
+    line-height: normal;
+    color: $text-input;
+    text-transform: uppercase;
+  }
+
+  &__error {
+    font: {
+      family: $main-font;
+      size: 10px;
+      weight: 900;
+    }
+    color: $text-error;
+    line-height: normal;
+    margin-top: 2px;
+    display: none;
+  }
+
+  &__success {
+    @extend .form-item__error;
+    color: $text-label !important;
+  }
+
+  &__input--name {
+    width: 90%;
+  }
+
+  &__input--phone {
+    width: 90%;
+  }
+
+  &__input--code {
+    width: 90%;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .form-item {
+    &__label {
+      font: {
+        size: 12px;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 20px;
+      }
+    }
+
+    &__error {
+      font-size: 8px;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .form-item {
+    &__label {
+      font: {
+        size: 18px;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 32px;
+      }
+    }
+
+    &__error {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
   .form-item {
     display: flex;
     flex-direction: column;
@@ -45,16 +150,15 @@
     }
 
     &__input--name {
-      width: 160px;
+      width: 145px;
     }
 
     &__input--phone {
-      width: 126px;
+      width: 125px;
     }
   }
 }
-
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
   .form-item {
     display: flex;
     flex-direction: column;
@@ -107,9 +211,13 @@
     &__input--phone {
       width: 157px;
     }
+
+    &__input--code {
+      width: 200px;
+    }
   }
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
   .form-item {
     display: flex;
     flex-direction: column;
@@ -162,10 +270,13 @@
     &__input--phone {
       width: 168px;
     }
+
+    &__input--code {
+      width: 213px;
+    }
   }
 }
-
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
   .form-item {
     display: flex;
     flex-direction: column;
@@ -218,9 +329,13 @@
     &__input--phone {
       width: 180px;
     }
+
+    &__input--code {
+      width: 220px;
+    }
   }
 }
-@media (min-width: 1601px) {
+@media (min-width: $widebooks) {
   .form-item {
     display: flex;
     flex-direction: column;
@@ -273,9 +388,72 @@
     &__input--phone {
       width: 235px;
     }
+
+    &__input--code {
+      width: 250px;
+    }
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: $hd) {
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+    &__label {
+      font: {
+        family: $main-font;
+        size: 15px;
+        weight: 900;
+      }
+      color: $text-label;
+    }
+
+    &__input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid $border-bg;
+      outline: none;
+      padding-bottom: 4px;
+      padding-left: 5px;
+      font: {
+        size: 24px;
+        weight: 900;
+        family: $main-font;
+      }
+      line-height: normal;
+      color: $text-input;
+      text-transform: uppercase;
+    }
+
+    &__error {
+      font: {
+        family: $main-font;
+        size: 12px;
+        weight: 900;
+      }
+      color: $text-error;
+      line-height: normal;
+      margin-top: 5px;
+      display: none;
+    }
+
+    &__input--name {
+      width: 290px;
+    }
+
+    &__input--phone {
+      width: 235px;
+    }
+
+    &__input--code {
+      width: 250px;
+    }
+  }
+}
+@media (min-width: $fhd) {
   .form-item {
     margin-bottom: 15px;
 
@@ -303,6 +481,10 @@
 
     &__input--phone {
       width: 315px;
+    }
+
+    &__input--code {
+      width: 300px;
     }
   }
 }

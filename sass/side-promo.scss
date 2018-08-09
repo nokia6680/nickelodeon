@@ -1,4 +1,119 @@
-@media (min-width: 1025px) {
+.side-promo {
+  width: 286px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("../img/promo-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 286px 70px;
+  padding-left: 5px;
+  padding-top: 0;
+  padding-bottom: 30px;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-bottom: 80px;
+  position: relative;
+
+  &__description {
+    font: {
+      size: 11px;
+      weight: 900;
+      family: $main-font;
+    }
+    color: $text-white;
+    width: 275px;
+    position: relative;
+  }
+
+  &__logo {
+    width: 130px;
+    height: 56px;
+    position: absolute;
+    right: 50px;
+    bottom: -20px;
+    padding-left: 30px;
+    padding-top: 10px;
+    background-color: $promo-rt-bg;
+    box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+    -webkit-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+    -moz-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+  }
+
+  &__image {
+    width: 86px;
+    height: auto;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .side-promo {
+    width: 430px;
+    background-size: 430px 106px;
+
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 120px;
+
+    &__description {
+      font: {
+        size: 16px;
+      }
+      width: 410px;
+    }
+
+    &__logo {
+      width: 177px;
+      height: 76px;
+      position: absolute;
+      right: 50px;
+      bottom: -40px;
+      padding-left: 30px;
+      padding-top: 10px;
+    }
+
+    &__image {
+      width: 129px;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .side-promo {
+    width: 688px;
+    background-size: 688px 170px;
+
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 180px;
+
+    &__description {
+      font: {
+        size: 26px;
+      }
+      width: 670px;
+    }
+
+    &__logo {
+      width: 284px;
+      height: 123px;
+      position: absolute;
+      right: 50px;
+      bottom: -80px;
+      padding-left: 30px;
+      padding-top: 10px;
+    }
+
+    &__image {
+      width: 206px;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
   .side-promo {
     width: 100%;
     height: auto;
@@ -14,6 +129,7 @@
     padding-bottom: 97px;
     margin-top: 45px;
     margin-left: 20px;
+    margin-bottom: 0;
     position: relative;
 
     &::before {
@@ -99,8 +215,7 @@
     }
   }
 }
-
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
   .side-promo {
     width: 94%;
     height: auto;
@@ -199,7 +314,7 @@
     }
   }
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
   .side-promo {
     width: 94%;
     height: auto;
@@ -298,8 +413,7 @@
     }
   }
 }
-
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
   .side-promo {
     width: 94%;
     height: auto;
@@ -398,8 +512,7 @@
     }
   }
 }
-
-@media (min-width: 1601px) {
+@media (min-width: $widebooks) {
   .side-promo {
     width: 94%;
     height: auto;
@@ -437,7 +550,7 @@
       width: 230px;
       height: 74px;
       top: -40px;
-      right: -50px;
+      right: -15px;
       z-index: 10;
     }
 
@@ -468,10 +581,10 @@
         content: '';
         background-image: url("../img/slime-small-2.svg");
         background-size: 170px 91px;
-        width: 170px;
+        width: 100px;
         height: 91px;
         top: 15px;
-        right: -100px;
+        right: 20px;
         z-index: 10;
       }
     }
@@ -496,7 +609,104 @@
     }
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: $hd) {
+  .side-promo {
+    width: 94%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/promo-bg-new.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-left: 45px;
+    padding-top: 63px;
+    padding-bottom: 157px;
+    margin-top: 45px;
+    margin-left: 20px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url("../img/cloud-2.svg");
+      background-size: 184px 73px;
+      width: 184px;
+      height: 73px;
+      bottom: 30px;
+      left: -80px;
+      z-index: 10;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url("../img/cloud-1.svg");
+      background-size: 230px 74px;
+      width: 230px;
+      height: 74px;
+      top: -40px;
+      right: -10px;
+      z-index: 10;
+    }
+
+    &__description {
+      font: {
+        size: 30px;
+        weight: 900;
+        family: $main-font;
+      }
+      color: $text-white;
+      width: 440px;
+      position: relative;
+      margin-left: 20px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url("../img/toy-1.svg");
+        background-size: 77px 72px;
+        width: 77px;
+        height: 72px;
+        top: -115px;
+        left: 0;
+        z-index: 10;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url("../img/slime-small-2.svg");
+        background-size: 193px 91px;
+        width: 100px;
+        height: 91px;
+        top: 15px;
+        right: -10px;
+      }
+    }
+
+    &__logo {
+      width: 319px;
+      height: 138px;
+      position: absolute;
+      right: -10px;
+      bottom: 30px;
+      padding-left: 30px;
+      padding-top: 20px;
+      background-color: $promo-rt-bg;
+      box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+      -webkit-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+      -moz-box-shadow: -4px 4px 1px 1px rgba(252,215,38,1);
+    }
+
+    &__image {
+      width: 232px;
+      height: auto;
+    }
+  }
+}
+@media (min-width: $fhd) {
   .side-promo {
     width: 87%;
     height: auto;
@@ -565,10 +775,10 @@
         content: '';
         background-image: url("../img/slime-small-2.svg");
         background-size: 226px 121px;
-        width: 226px;
+        width: 91px;
         height: 121px;
         top: 33px;
-        right: -152px;
+        right: -15px;
         z-index: 10;
       }
     }

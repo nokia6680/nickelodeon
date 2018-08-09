@@ -1,32 +1,51 @@
-@media (min-width: 1025px) {
-  .register-form {
-    margin-left: 12px;
-  }
+.register-form {
+  margin-left: 12px;
+  width: 100%;
 }
 
-@media (min-width: 1281px) {
-  .register-form {
-    margin-left: 14px;
-  }
-}
-@media (min-width: 1367px) {
+@media (min-width: $smartphones) {
   .register-form {
     margin-left: 20px;
   }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: $tablets) {
+  .register-form {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .register-form {
+    margin-left: 12px;
+  }
+}
+@media (min-width: $netbooks) {
+  .register-form {
+    margin-left: 20px;
+  }
+}
+@media (min-width: $wide-netbooks) {
+  .register-form {
+    margin-left: 20px;
+  }
+}
+@media (min-width: $notebooks) {
   .register-form {
     margin-left: 25px;
   }
 }
-@media (min-width: 1601px) {
+@media (min-width: $widebooks) {
   .register-form {
     margin-left: 30px;
   }
 }
-
-@media (min-width: 1921px) {
+@media (min-width: $hd) {
+  .register-form {
+    margin-left: 30px;
+  }
+}
+@media (min-width: $fhd) {
   .register-form {
     margin-left: 42px;
   }

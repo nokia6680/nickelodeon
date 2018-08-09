@@ -1,0 +1,396 @@
+.gallery-promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-left: 45px;
+  margin-top: 20px;
+
+  display: none;
+
+  bottom: 0;
+  left: 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-image: url('../img/gallery-rt-bg.png');
+    background-repeat: no-repeat;
+    background-size: 192px 174px;
+
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  &__description {
+    font: {
+      family: $main-font;
+      size: 14px;
+      weight: 900;
+    }
+
+    color: $gallery-rt;
+    line-height: normal;
+    text-transform: uppercase;
+
+    width: 177px;
+
+    margin-top: 0;
+  }
+
+  &__image {
+    width: 123px;
+  }
+
+  &__parent {
+    display: block;
+    text-decoration: none;
+
+    font: {
+      family: $main-font;
+      size: 20px;
+      weight: 900;
+    }
+
+    color: $text-white;
+    line-height: 20px;
+
+    background-image: url('../img/gallery-parent.png');
+    background-repeat: no-repeat;
+    background-size: 180px 38px;
+
+    width: 180px;
+    height: 38px;
+
+    padding-top: 10px;
+    margin-top: 20px;
+
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $smartphones) {
+
+}
+
+@media (min-width: $tablets) {
+
+}
+
+@media (min-width: $laptop) {
+  .gallery-promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-left: 45px;
+    margin-top: 20px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      background-image: url('../img/gallery-rt-bg.png');
+      background-repeat: no-repeat;
+      background-size: 192px 174px;
+
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    &__description {
+      font: {
+        family: $main-font;
+        size: 14px;
+        weight: 900;
+      }
+
+      color: $gallery-rt;
+      line-height: normal;
+      text-transform: uppercase;
+
+      width: 177px;
+
+      margin-top: 0;
+    }
+
+    &__image {
+      width: 123px;
+    }
+
+    &__parent {
+      display: block;
+      text-decoration: none;
+
+      font: {
+        family: $main-font;
+        size: 20px;
+        weight: 900;
+      }
+
+      color: $text-white;
+      line-height: 20px;
+
+      background-image: url('../img/gallery-parent.png');
+      background-repeat: no-repeat;
+      background-size: 180px 38px;
+
+      width: 180px;
+      height: 38px;
+
+      padding-top: 10px;
+      margin-top: 20px;
+
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .gallery-promo {
+    margin-left: 45px;
+    margin-top: 20px;
+
+    &__wrapper {
+      background-size: 241px 217px;
+    }
+
+    &__description {
+      font: {
+        size: 18px;
+      }
+
+      width: 226px;
+      margin-top: 0;
+    }
+
+    &__image {
+      width: 154px;
+    }
+
+    &__parent {
+      font: {
+        size: 25px;
+      }
+      line-height: 25px;
+
+      background-size: 225px 48px;
+
+      width: 225px;
+      height: 48px;
+    }
+  }
+}
+
+@media (min-width: $wide-netbooks) {
+  .gallery-promo {
+    margin-left: 45px;
+    margin-top: 20px;
+
+    &__wrapper {
+      background-size: 257px 232px;
+      padding-top: 15px;
+    }
+
+    &__description {
+      font: {
+        size: 19px;
+      }
+
+      width: 245px;
+      margin-top: 0;
+    }
+
+    &__image {
+      width: 164px;
+    }
+
+    &__parent {
+      font: {
+        size: 26px;
+      }
+      line-height: 26px;
+
+      background-size: 240px 51px;
+
+      width: 240px;
+      height: 51px;
+
+      padding-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .gallery-promo {
+    margin-left: 45px;
+    margin-top: 20px;
+
+    &__wrapper {
+      background-size: 271px 244px;
+      padding-top: 15px;
+      padding-left: 20px;
+    }
+
+    &__description {
+      font: {
+        size: 20px;
+      }
+
+      width: 255px;
+      margin-top: 0;
+    }
+
+    &__image {
+      width: 173px;
+    }
+
+    &__parent {
+      font: {
+        size: 28px;
+      }
+      line-height: 28px;
+
+      background-size: 253px 54px;
+
+      width: 253px;
+      height: 54px;
+
+      padding-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .gallery-promo {
+    margin-left: 70px;
+    margin-top: 40px;
+
+    &__wrapper {
+      background-size: 301px 271px;
+      padding-top: 15px;
+      padding-left: 20px;
+    }
+
+    &__description {
+      font: {
+        size: 22.5px;
+      }
+
+      width: 280px;
+      margin-top: 0;
+    }
+
+    &__image {
+      width: 193px;
+    }
+
+    &__parent {
+      font: {
+        size: 31px;
+      }
+      line-height: 31px;
+
+      background-size: 281px 60px;
+
+      width: 281px;
+      height: 60px;
+
+      padding-top: 18px;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .gallery-promo {
+    margin-left: 40px;
+    margin-top: 40px;
+
+    &__wrapper {
+      background-size: 361px 326px;
+      padding-top: 15px;
+      padding-left: 20px;
+    }
+
+    &__description {
+      font: {
+        size: 27px;
+      }
+
+      width: 340px;
+      margin-top: 0;
+    }
+
+    &__image {
+      width: 231px;
+    }
+
+    &__parent {
+      font: {
+        size: 37px;
+      }
+      line-height: 37px;
+
+      background-size: 338px 72px;
+
+      width: 338px;
+      height: 72px;
+
+      padding-top: 18px;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (min-width: $fhd) {
+  .gallery-promo {
+    margin-left: 60px;
+    margin-top: 40px;
+
+    &__wrapper {
+      background-size: 482px 435px;
+      padding-top: 15px;
+      padding-left: 20px;
+    }
+
+    &__description {
+      font: {
+        size: 36px;
+      }
+
+      width: 450px;
+      margin-top: 0;
+    }
+
+    &__image {
+      width: 309px;
+    }
+
+    &__parent {
+      font: {
+        size: 50px;
+      }
+      line-height: 50px;
+
+      background-size: 451px 97px;
+
+      width: 451px;
+      height: 97px;
+
+      padding-top: 18px;
+      margin-top: 50px;
+    }
+  }
+}

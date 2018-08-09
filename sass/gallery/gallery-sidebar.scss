@@ -1,0 +1,286 @@
+.gallery-sidebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background-color: transparent;
+  background-image: url('../img/start-header-bg.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom left;
+
+  width: 100vw;
+  height: 95px;
+
+  position: relative;
+
+  &__logo {
+    width: 147px;
+    height: 69px;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  &__link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .gallery-sidebar {
+    height: 150px;
+
+    position: relative;
+
+    &__logo {
+      width: 221px;
+      height: 103px;
+      padding-left: 20px;
+      padding-top: 10px;
+    }
+
+    &__link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .gallery-sidebar {
+    height: 230px;
+
+    position: relative;
+
+    &__logo {
+      width: 355px;
+      height: 166px;
+      padding-left: 20px;
+      padding-top: 10px;
+    }
+    &__link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .gallery-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/sidebar-bg.svg");
+    background-repeat: repeat-y;
+    background-position: top -5px right;
+    background-size: cover;
+
+    margin-bottom: 0;
+
+    height: auto;
+    min-height: 768px;
+    max-height: 100vh;
+    width: 33%;
+    position: relative;
+
+    margin-left: -55px;
+    padding-left: 55px;
+
+    &__logo {
+      width: 75%;
+      padding-left: 30px;
+      padding-top: 30px;
+    }
+    &__link {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .gallery-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/sidebar-bg.svg");
+    background-repeat: repeat-y;
+    background-position: top -5px right;
+    background-size: cover;
+    min-height: 1024px;
+    max-height: 100vh;
+    width: 31%;
+    position: relative;
+
+    &__logo {
+      width: 72%;
+      padding-left: 55px;
+      padding-top: 30px;
+    }
+    &__link {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: $wide-netbooks) {
+  .gallery-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/sidebar-bg.svg");
+    background-repeat: repeat-y;
+    background-position: top -5px right;
+    background-size: cover;
+    min-height: 768px;
+    max-height: 100vh;
+    width: 36%;
+    position: relative;
+
+    &__logo {
+      width: 72%;
+      padding-left: 55px;
+      padding-top: 30px;
+    }
+    &__link {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .gallery-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/sidebar-bg.svg");
+    background-repeat: repeat-y;
+    background-position: top -5px right;
+    background-size: cover;
+    max-height: 100vh;
+    min-height: 900px;
+    height: auto;
+    width: 36%;
+    position: relative;
+
+    &__logo {
+      width: 72%;
+      padding-left: 55px;
+      padding-top: 30px;
+    }
+    &__link {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .gallery-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/sidebar-bg.svg");
+    background-repeat: repeat-y;
+    background-position: top -5px right;
+    background-size: cover;
+    min-height: 1200px;
+    max-height: 100vh;
+    width: 36%;
+    position: relative;
+
+    &__logo {
+      width: 72%;
+      padding-left: 55px;
+      padding-top: 30px;
+    }
+
+    &__link {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      z-index: 10;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .gallery-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/sidebar-bg.svg");
+    background-repeat: repeat-y;
+    background-position: top -5px right;
+    background-size: cover;
+    min-height: 1080px;
+    max-height: 100vh;
+    width: 27%;
+    position: relative;
+
+    &__logo {
+      width: 80%;
+      padding-left: 55px;
+      padding-top: 30px;
+    }
+
+    &__link {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: $fhd) {
+  .gallery-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../img/sidebar-bg.svg");
+    background-repeat: repeat-y;
+    background-position: top -5px right;
+    background-size: cover;
+    min-height: 1440px;
+    max-height: 100vh;
+    height: 100vh;
+    width: 27%;
+    position: relative;
+
+    &__logo {
+      width: 80%;
+      padding-left: 55px;
+      padding-top: 30px;
+    }
+
+    &__image {
+      width: 450px;
+      height: 265px;
+    }
+
+    &__link {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+  }
+}

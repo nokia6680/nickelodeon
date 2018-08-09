@@ -1,0 +1,169 @@
+.content-promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+
+  background-color: #fffbef;
+
+  position: relative;
+
+  margin-top: 40px;
+
+  &__parent {
+    font: {
+      size: 9px;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-white;
+    line-height: 9px;
+    text-transform: uppercase;
+
+    background-image: url('../img/parent-mb.png');
+    background-size: 76px 30px;
+    background-repeat: no-repeat;
+
+    width: 76px;
+    height: 30px;
+
+    background-color: transparent;
+    border: none;
+
+    position: absolute;
+    left: 3px;
+    top: -4px;
+
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__description {
+    font: {
+      size: 7px;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: #00aae7;
+    text-transform: uppercase;
+    line-height: 8px;
+
+    width: 250px;
+
+    padding-left: 85px;
+  }
+
+  &__rt {
+    width: 60px;
+    height: auto;
+  }
+
+  &__link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__pic {
+    width: 51px;
+    height: 21px;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .content-promo {
+    &__parent {
+      font: {
+        size: 13.75px;
+      }
+
+      line-height: 13.75px;
+      background-size: 114px 46px;
+      background-repeat: no-repeat;
+
+      width: 114px;
+      height: 46px;
+
+      position: absolute;
+      left: 3px;
+      top: -10px;
+    }
+
+    &__description {
+      font: {
+        size: 10.625px;
+      }
+
+      line-height: 11px;
+
+      width: 380px;
+      padding-left: 135px;
+    }
+
+    &__rt {
+      width: 88px;
+    }
+
+    &__pic {
+      width: 76px;
+      height: 32px;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .content-promo {
+    margin-top: 70px;
+    
+    &__parent {
+      font: {
+        size: 22px;
+      }
+
+      line-height: 22px;
+      background-size: 182px 73px;
+      background-repeat: no-repeat;
+
+      width: 182px;
+      height: 73px;
+
+      position: absolute;
+      left: 3px;
+      top: -10px;
+    }
+
+    &__description {
+      font: {
+        size: 17px;
+      }
+
+      line-height: 18px;
+
+      width: 580px;
+      padding-left: 195px;
+    }
+
+    &__rt {
+      width: 140px;
+    }
+
+    &__pic {
+      width: 122px;
+      height: 51px;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .content-promo {
+    display: none;
+  }
+}

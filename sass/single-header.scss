@@ -1,4 +1,189 @@
-@media (min-width: 1025px) {
+.single-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-left: 30px;
+  position: relative;
+  background-color: $single-header;
+
+  &--sent {
+    background-color: $single-header-sent;
+  }
+
+  &--send {
+    background-color: $single-header-sent;
+  }
+
+  &__nr {
+    font: {
+      family: $main-font;
+      size: 23px;
+      weight: 900;
+    }
+    color: $text-white;
+    line-height: normal;
+    border-radius: 18px;
+    padding-top: 5px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: -5px;
+    left: -15px;
+    background-color: $single-header;
+    z-index: 10;
+  }
+
+  &__nr--sent {
+    background-color: $single-header-sent;
+  }
+
+  &__nr--send {
+    background-color: $single-header-sent;
+  }
+
+  &__name {
+    font: {
+      family: $main-font;
+      size: 12px;
+      weight: 900;
+    }
+    color: $text-white;
+    line-height: normal;
+    margin: 0;
+  }
+
+  &__delete {
+    background-color: $single-delete;
+    position: relative;
+    border: none;
+    height: 100%;
+    font: {
+      size: 21px;
+      weight: 900;
+      family: $main-font;
+    }
+    color: $text-white;
+    margin-right: 0;
+    margin-left: auto;
+    cursor: pointer;
+    outline: none;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      top: 0;
+      left: -9px;
+      border-right: 10px solid $single-delete;
+      border-top: 13px solid transparent;
+      border-bottom: 13px solid transparent;
+    }
+  }
+}
+
+@media (min-width: $smartphones) {
+  .single-header {
+    background-color: $single-header;
+
+    &--sent {
+      background-color: $single-header-sent;
+    }
+
+    &--send {
+      background-color: $single-header-sent;
+    }
+
+    &__nr--sent {
+      background-color: $single-header-sent;
+    }
+
+    &__nr--send {
+      background-color: $single-header-sent;
+    }
+
+    &__name {
+      font: {
+        size: 15px;
+      }
+    }
+
+    &__delete {
+      font: {
+        size: 21px;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        top: 0;
+        left: -9px;
+        border-right: 10px solid $single-delete;
+        border-top: 13px solid transparent;
+        border-bottom: 13px solid transparent;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .single-header {
+    background-color: $single-header;
+
+    &--sent {
+      background-color: $single-header-sent;
+    }
+
+    &--send {
+      background-color: $single-header-sent;
+    }
+
+    &__nr--sent {
+      background-color: $single-header-sent;
+    }
+
+    &__nr--send {
+      background-color: $single-header-sent;
+    }
+
+    &__nr {
+      font-size: 28px;
+      padding-top: 1px;
+    }
+
+    &__name {
+      font: {
+        size: 24px;
+      }
+    }
+
+    &__delete {
+      font: {
+        size: 21px;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        top: 0;
+        left: -9px;
+        border-right: 10px solid $single-delete;
+        border-top: 13px solid transparent;
+        border-bottom: 13px solid transparent;
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
   .single-header {
     display: flex;
     flex-direction: row;
@@ -87,8 +272,7 @@
     }
   }
 }
-
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
   .single-header {
     display: flex;
     flex-direction: row;
@@ -133,7 +317,7 @@
     }
   }
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
   .single-header {
     display: flex;
     flex-direction: row;
@@ -159,22 +343,26 @@
     }
   }
 }
-
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
   .single-header {
     display: flex;
   }
 }
-
-@media (min-width: 1601px) {
+@media (min-width: $widebooks) {
   .single-header {
     display: flex;
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: $hd) {
+  .single-header {
+    display: flex;
+  }
+}
+@media (min-width: $fhd) {
   .single-header {
     width: 100%;
     height: 34px;
+    padding-left: 50px;
 
     &__nr {
       font: {

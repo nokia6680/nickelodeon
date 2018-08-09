@@ -1,0 +1,225 @@
+.photo-editor {
+  background-color: $editor-bg;
+
+  width: 253px;
+  height: 308px;
+
+  box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+
+  position: absolute;
+  top: 25%;
+  left: 5%;
+
+  z-index: 9999;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &__backside {
+    width: 243px;
+    height: 227px;
+    background-color: #00c5df;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .photo-editor {
+    background-color: $editor-bg;
+
+    width: 422px;
+    height: 513px;
+
+    box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+
+    position: absolute;
+    top: 25%;
+    left: 5%;
+
+    z-index: 9999;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    &__backside {
+      width: 406px;
+      height: 378px;
+      background-color: #00c5df;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .photo-editor {
+    background-color: $editor-bg;
+
+    width: 475px;
+    height: 577px;
+
+    box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+
+    position: absolute;
+    top: 25%;
+    left: 5%;
+
+    z-index: 9999;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    &__backside {
+      width: 455px;
+      height: 425px;
+      background-color: #00c5df;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .photo-editor {
+    background-color: $editor-bg;
+
+    width: 475px;
+    height: 577px;
+
+    box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+
+    position: absolute;
+    top: 25%;
+    left: 5%;
+
+    z-index: 9999;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    &__backside {
+      width: 455px;
+      height: 425px;
+      background-color: #00c5df;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .photo-editor {
+    background-color: $editor-bg;
+
+    width: 527px;
+    height: 641px;
+
+    box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:1px 1px 25px 0px rgba(0,0,0,0.3);
+
+    position: absolute;
+    top: 25%;
+    left: 5%;
+
+    z-index: 9999;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    &__backside {
+      width: 506px;
+      height: 473px;
+      background-color: #00c5df;
+    }
+  }
+}
+
+@media (min-width: $fhd) {
+  .photo-editor {
+    width: 844px;
+    height: 1027px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    &__backside {
+      width: 811px;
+      height: 757px;
+      background-color: #00c5df;
+    }
+  }
+}

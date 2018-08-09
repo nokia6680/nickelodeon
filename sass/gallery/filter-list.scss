@@ -1,0 +1,44 @@
+.filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+}
+
+@media (min-width: $widebooks) {
+  .filter-list {
+    margin-top: 20px;
+    margin-bottom: 35px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+  }
+}
+
+@media (min-width: $fhd) {
+  .filter-list {
+    margin-top: 20px;
+    margin-bottom: 55px;
+    padding-right: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+  }
+}

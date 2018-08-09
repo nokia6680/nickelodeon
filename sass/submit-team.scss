@@ -1,9 +1,135 @@
-@media (min-width: 1025px) {
+.submit-team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &--code {
+    justify-content: flex-end;
+    .submit-team__submit--code {
+      width: 130px;
+      margin-right: -13px;
+    }
+  }
+
+  &__enter {
+    background-color: $btn-enter;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    font: {
+      family: $main-font;
+      size: 8px;
+      weight: 900;
+    }
+    color: $text-white;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 7px 10px 7px 10px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__submit {
+    font-size: 14px;
+    font-family: "Gotham", sans-serif;
+    font-weight: 900;
+    width: 130px;
+    color: #fff;
+    line-height: normal;
+    background-color: transparent;
+    border: none;
+    background-image: url('../img/btn-submit-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 130px 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    text-align: center;
+    margin-right: -15px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+
+    &--send {
+      display: none;
+    }
+
+    &--register {
+      display: block;
+      padding-top: 7px;
+    }
+  }
+}
+
+@media (min-width: $smartphones) {
+  .submit-team {
+    &--code {
+      justify-content: flex-end;
+
+      .submit-team__submit--code {
+        width: 180px;
+        margin-right: -14px;
+      }
+    }
+
+    &__submit {
+      font-size: 19px;
+      width: 205px;
+      height: 36px;
+
+      background-size: 200px 36px;
+      padding-left: 20px;
+
+      margin-right: -30px;
+    }
+
+    &__enter {
+      font-size: 10px;
+    }
+  }
+}
+@media (min-width: $tablets) {
+  .submit-team {
+    &--code {
+      justify-content: flex-end;
+      .submit-team__submit--code {
+        width: 288px;
+        margin-right: -14px;
+      }
+    }
+
+    &__submit {
+      font-size: 30px;
+      width: 288px;
+      height: 58px;
+
+      background-size: 288px 58px;
+      margin-right: -18px;
+    }
+
+    &__enter {
+      font-size: 13px;
+      padding: 10px 10px 10px 10px;
+    }
+  }
+}
+@media (min-width: $laptop) {
   .submit-team {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+
+    &--code {
+      justify-content: flex-end;
+      .submit-team__submit--code {
+        width: 130px;
+        margin-right: -15px;
+      }
+    }
 
     &__enter {
       background-color: $btn-enter;
@@ -12,31 +138,23 @@
       position: relative;
       font: {
         family: $main-font;
-        size: 12px;
+        size: 8px;
         weight: 900;
       }
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
-      padding: 7px 10px 7px 30px;
+      padding: 7px 10px 7px 10px;
       cursor: pointer;
       outline: none;
-    }
-
-    .fa-vk::before {
-      position: absolute;
-      content: '\f189';
-      font-size: 18px;
-      color: $text-white;
-      top: 5px;
-      left: 8px;
     }
 
     &__submit {
       font-size: 14px;
       font-family: "Gotham", sans-serif;
       font-weight: 900;
-      width: 165px;
+      width: 135px;
+      height: 30px;
       color: #fff;
       line-height: normal;
       background-color: transparent;
@@ -44,26 +162,41 @@
       background-image: url('../img/btn-submit-bg.svg');
       background-repeat: no-repeat;
       background-size: 130px 30px;
-      padding-top: 5px;
+      padding-top: 6px;
       padding-bottom: 5px;
       padding-left: 10px;
       text-align: center;
-      margin-right: -14px;
+      margin-right: -20px;
       text-transform: uppercase;
       border: none;
       cursor: pointer;
       outline: none;
       position: relative;
     }
+
+    &__submit--send {
+      display: none;
+    }
+
+    &__submit--register {
+      display: block;
+    }
   }
 }
-
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
   .submit-team {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+
+    &--code {
+      justify-content: flex-end;
+      .submit-team__submit--code {
+        width: 170px;
+        margin-right: -15px;
+      }
+    }
 
     &__enter {
       background-color: $btn-enter;
@@ -72,24 +205,15 @@
       position: relative;
       font: {
         family: $main-font;
-        size: 14px;
+        size: 10px;
         weight: 900;
       }
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
-      padding: 10px 15px 10px 40px;
+      padding: 10px 10px 10px 10px;
       cursor: pointer;
       outline: none;
-    }
-
-    .fa-vk::before {
-      position: absolute;
-      content: '\f189';
-      font-size: 23px;
-      color: $text-white;
-      top: 5px;
-      left: 8px;
     }
 
     &__submit {
@@ -99,6 +223,7 @@
         weight: 900;
       }
       width: 170px;
+      height: 33px;
       color: $text-white;
       line-height: normal;
       background-color: transparent;
@@ -110,7 +235,7 @@
       padding-bottom: 5px;
       padding-left: 10px;
       text-align: center;
-      margin-right: -14px;
+      margin-right: -15px;
       text-transform: uppercase;
       border: none;
       cursor: pointer;
@@ -119,12 +244,16 @@
     }
   }
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
   .submit-team {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+
+    &--code {
+      justify-content: flex-end;
+    }
 
     &__enter {
       background-color: $btn-enter;
@@ -133,33 +262,25 @@
       position: relative;
       font: {
         family: $main-font;
-        size: 14px;
+        size: 10px;
         weight: 900;
       }
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
-      padding: 10px 15px 10px 40px;
+      padding: 10px 10px 10px 10px;
       cursor: pointer;
       outline: none;
     }
 
-    .fa-vk::before {
-      position: absolute;
-      content: '\f189';
-      font-size: 23px;
-      color: $text-white;
-      top: 5px;
-      left: 8px;
-    }
-
     &__submit {
       font: {
-        size: 18px;
+        size: 16px;
         family: $main-font;
         weight: 900;
       }
       width: 170px;
+      height: 33px;
       color: $text-white;
       line-height: normal;
       background-color: transparent;
@@ -171,7 +292,7 @@
       padding-bottom: 5px;
       padding-left: 10px;
       text-align: center;
-      margin-right: -14px;
+      margin-right: -15px;
       text-transform: uppercase;
       border: none;
       cursor: pointer;
@@ -180,25 +301,42 @@
     }
   }
 }
-
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
   .submit-team {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 
+    &--code {
+      justify-content: flex-end;
+    }
+
+    &__enter {
+      font-size: 13px;
+    }
+
     &__submit {
-      margin-right: -19px;
+      margin-right: -14px;
+      height: 33px;
+      font-size: 16px;
     }
   }
 }
-@media (min-width: 1601px) {
+@media (min-width: $widebooks) {
   .submit-team {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+
+    &--code {
+      justify-content: flex-end;
+      .submit-team__submit--code {
+        width: 237px;
+        margin-right: -16px;
+      }
+    }
 
     &__enter {
       background-color: $btn-enter;
@@ -213,27 +351,19 @@
       color: $text-white;
       line-height: normal;
       text-transform: uppercase;
-      padding: 10px 15px 10px 40px;
+      padding: 10px 10px 10px 10px;
       cursor: pointer;
       outline: none;
     }
 
-    .fa-vk::before {
-      position: absolute;
-      content: '\f189';
-      font-size: 23px;
-      color: $text-white;
-      top: 5px;
-      left: 8px;
-    }
-
     &__submit {
       font: {
-        size: 28px;
+        size: 24px;
         family: $main-font;
         weight: 900;
       }
       width: 237px;
+      height: 46px;
       color: $text-white;
       line-height: normal;
       background-color: transparent;
@@ -244,7 +374,7 @@
       padding-top: 5px;
       padding-bottom: 5px;
       text-align: center;
-      margin-right: -10px;
+      margin-right: -15px;
       text-transform: uppercase;
       border: none;
       cursor: pointer;
@@ -253,9 +383,81 @@
     }
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: $hd) {
   .submit-team {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &--code {
+      justify-content: flex-end;
+    }
+
+    &__enter {
+      background-color: $btn-enter;
+      border: none;
+      border-radius: 30px;
+      position: relative;
+      font: {
+        family: $main-font;
+        size: 14px;
+        weight: 900;
+      }
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+      padding: 10px 10px 10px 10px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    &__submit {
+      font: {
+        size: 24px;
+        family: $main-font;
+        weight: 900;
+      }
+      width: 237px;
+      height: 46px;
+      color: $text-white;
+      line-height: normal;
+      background-color: transparent;
+      border: none;
+      background-image: url("../img/btn-submit-bg.svg");
+      background-repeat: no-repeat;
+      background-size: 237px 46px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: center;
+      margin-right: -15px;
+      text-transform: uppercase;
+
+      border: none;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+
+      &--send {
+        display: none;
+      }
+
+      &--register {
+        display: block;
+      }
+    }
+  }
+}
+@media (min-width: $fhd) {
+  .submit-team {
+    display: flex;
+
+    &--code {
+      .submit-team__submit--code {
+        width: 315px;
+        margin-right: -16px;
+      }
+    }
 
     &__enter {
       font: {
@@ -275,9 +477,10 @@
 
     &__submit {
       font: {
-        size: 39px;
+        size: 34px;
       }
       width: 315px;
+      height: 63px;
       background-image: url("../img/btn-submit-bg.svg");
       background-repeat: no-repeat;
       background-size: 315px 63px;

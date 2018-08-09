@@ -1,0 +1,13 @@
+.parents-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 22px;
+  padding-bottom: 40px;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

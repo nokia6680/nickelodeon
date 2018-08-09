@@ -18,15 +18,23 @@ $text-black: #000;
 $text-gray: #363636;
 $text-label: #34bfb7;
 $text-input: #073f72;
+$text-gallery: #073f72;
 $text-error: #ff626b;
 $text-invite: #073f72;
 $text-send: #34bfb7;
 $other-nr: #f26722;
+$gallery-rt: #00aae7;
+$gallery-like: #f57076;
+$overlay-1-text: #073f72;
+$prize-text: #134171;
+$prize-btn: #fc5500;
 /*Цвета фона*/
 $body-bg: #073f72;
 $team-bg: #fffbef;
 $footer-bg: #363636;
 $promo-rt-bg: #fffbef;
+$start-bg: #00c5df;
+$editor-bg: #fff7df;
 
 /*Цвета интерфейса*/
 $border-bg: #34bfb7;
@@ -41,17 +49,29 @@ $start-info: #34bfb7;
 $social-item-bg: #ffffff;
 $social-hover: #ff6700;
 
-@media (min-width: 1025px) {
+@media (min-width: $laptop) {
 
 }
 
-@media (min-width: 1281px) {
+@media (min-width: $netbooks) {
 
 }
-@media (min-width: 1367px) {
+@media (min-width: $wide-netbooks) {
 
 }
 
-@media (min-width: 1441px) {
+@media (min-width: $notebooks) {
+
+}
+
+@media (min-width: $widebooks) {
+
+}
+
+@media (min-width: $hd) {
+
+}
+
+@media (min-width: $fhd) {
 
 }
