@@ -37,6 +37,7 @@
 
 @media (min-width: $tablets) {
   .overlay-parents {
+
     &__wrapper {
       width: 50%;
     }
@@ -66,7 +67,7 @@
       height: 520px;
 
       margin: 0 auto;
-      margin-top: 5%;
+      margin-top: 3%;
 
       box-shadow:6px 6px 0px 0px rgba(7,63,114,1);
       -webkit-box-shadow:6px 6px 0px 0px rgba(7,63,114,1);

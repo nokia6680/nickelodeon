@@ -83,12 +83,3 @@
     }
   }
 }
-
-@media (min-width: $netbooks) {
-  .parents-form {
-    &__submit {
-      bottom: -100px;
-      left: 100px;
-    }
-  }
-}
