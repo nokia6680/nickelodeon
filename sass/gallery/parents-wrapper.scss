@@ -4,14 +4,14 @@
     width: 100%;
 
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   &__title {
     font: {
-      size: 32px;
+      size: 11px;
       weight: 900;
       family: $main-font;
     }
@@ -21,5 +21,55 @@
     text-transform: uppercase;
 
     margin: 0;
+
+    width: 90%;
+  }
+}
+
+@media (min-width: $tablets) {
+  .parents-wrapper {
+    &__title {
+      font: {
+        size: 18px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+
+      margin: 0;
+
+      width: 90%;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .parents-wrapper {
+    &__upper {
+      background-color: #34bfb7;
+      width: 100%;
+
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+
+    &__title {
+      font: {
+        size: 32px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $text-white;
+      line-height: normal;
+      text-transform: uppercase;
+
+      margin: 0;
+    }
   }
 }

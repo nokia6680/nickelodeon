@@ -5,17 +5,17 @@
   align-items: flex-start;
 
   width: 100%;
-  margin-top: 7px;
+  margin-top: 10px;
 
   &__label {
     font: {
-      size: 20px;
+      size: 10px;
       weight: 900;
       family: $main-font;
     }
 
     color: #34bfb7;
-    line-height: 20px;
+    line-height: 10px;
     text-transform: uppercase;
 
     margin-bottom: 5px;
@@ -23,13 +23,13 @@
 
   &__input {
     font: {
-      size: 36px;
+      size: 18px;
       weight: 900;
       family: $main-font;
     }
 
     color: #073f72;
-    line-height: 36px;
+    line-height: 18px;
     text-transform: uppercase;
 
     background-color: transparent;
@@ -38,9 +38,100 @@
 
     padding-left: 5px;
 
-    width: 80%;
+    width: 95%;
 
     cursor: text;
     outline: none;
+  }
+}
+
+@media (min-width: $tablets) {
+  .parents-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+    margin-top: 10px;
+
+    &__label {
+      font: {
+        size: 16px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: #34bfb7;
+      line-height: 10px;
+      text-transform: uppercase;
+
+      margin-bottom: 5px;
+    }
+
+    &__input {
+      font: {
+        size: 22px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: #073f72;
+      line-height: 18px;
+      text-transform: uppercase;
+
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid #34bfb7;
+
+      padding-left: 5px;
+
+      width: 95%;
+
+      cursor: text;
+      outline: none;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .parents-item {
+
+    &__label {
+      font: {
+        size: 20px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: #34bfb7;
+      line-height: 20px;
+      text-transform: uppercase;
+
+      margin-bottom: 5px;
+    }
+
+    &__input {
+      font: {
+        size: 36px;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: #073f72;
+      line-height: 36px;
+      text-transform: uppercase;
+
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid #34bfb7;
+
+      padding-left: 5px;
+
+      width: 80%;
+
+      cursor: text;
+      outline: none;
+    }
   }
 }
